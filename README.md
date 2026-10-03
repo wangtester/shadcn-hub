@@ -25,7 +25,9 @@
 </p>
 
 <p align="center">
-  <img src="public/og-image.jpg" alt="shadcn-hub Preview Banner" width="100%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
+  <a href="https://wangtester.github.io/shadcn-hub/">
+    <img src="public/banner.svg" alt="shadcn-hub Panoramic Workbench" width="100%" />
+  </a>
 </p>
 
 [🚀 在线体验 Demo](https://wangtester.github.io/shadcn-hub/) •

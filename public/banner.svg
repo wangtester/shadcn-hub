@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%">
+  <defs>
+    <!-- 渐变色定义 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#0c0e17" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <radialGradient id="indigoGlow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="80%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.20" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="cyanGlow" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#121215" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#27272a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3f3f46" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="accentBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- 点阵图案 -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#71717a" fill-opacity="0.12" />
+    </pattern>
+
+    <!-- 阴影滤镜 -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- 背景底色与光晕 -->
+  <rect width="1200" height="580" fill="url(#bgGrad)" />
+  <rect width="1200" height="580" fill="url(#grid)" />
+  <rect width="1200" height="580" fill="url(#indigoGlow)" />
+  <rect width="1200" height="580" fill="url(#purpleGlow)" />
+  <rect width="1200" height="580" fill="url(#cyanGlow)" />
+
+  <!-- 顶部精巧微型模拟水平导航条 (体现 10 大生态) -->
+  <g transform="translate(60, 28)">
+    <rect width="1080" height="42" rx="21" fill="#18181b" fill-opacity="0.65" stroke="#27272a" stroke-width="1" />
+    
+    <!-- Logo 小标 -->
+    <rect x="10" y="7" width="28" height="28" rx="8" fill="url(#logoGrad)" />
+    <path d="M 20 16 L 28 21 L 20 26 Z" fill="#ffffff" />
+
+    <!-- 导航项徽章 -->
+    <g transform="translate(48, 10)">
+      <rect x="0" y="0" width="70" height="22" rx="11" fill="#6366f1" fill-opacity="0.25" stroke="#818cf8" stroke-width="1" />
+      <text x="35" y="15" fill="#e0e7ff" font-size="11" font-weight="700" text-anchor="middle" class="font-sans">Hub 大厅</text>
+
+      <text x="120" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">shadcn/ui 官方</text>
+      <text x="220" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">BoardUI</text>
+      <text x="290" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">ShadcnStore</text>
+      <text x="385" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">Refero Styles</text>
+      <text x="480" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">HeroUI Pro</text>
+      <text x="565" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">beUI</text>
+      <text x="615" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">RareUI</text>
+      <text x="680" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">Transitions</text>
+      <text x="765" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">BeautifulUI</text>
+      <text x="855" y="15" fill="#a1a1aa" font-size="11" font-weight="500" class="font-sans">ShadcnSpace</text>
+    </g>
+
+    <!-- 快捷键徽章 -->
+    <rect x="990" y="9" width="75" height="24" rx="6" fill="#27272a" fill-opacity="0.8" stroke="#3f3f46" stroke-width="1" />
+    <text x="1027" y="25" fill="#a1a1aa" font-size="11" font-weight="600" text-anchor="middle" class="font-mono">⌘ K Search</text>
+  </g>
+
+  <!-- 主视觉区：品牌标题与价值主张 -->
+  <g transform="translate(600, 140)" text-anchor="middle">
+    <!-- 主标题 Logo 标志 + 标题文字 -->
+    <g transform="translate(-180, -28)">
+      <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#logoGrad)" filter="url(#cardShadow)" />
+      <!-- 棱镜几何图形 -->
+      <polygon points="24,10 38,18 38,34 24,40 10,34 10,18" fill="none" stroke="#ffffff" stroke-width="2.5" />
+      <circle cx="24" cy="25" r="4" fill="#ffffff" />
+    </g>
+
+    <text x="25" y="10" fill="url(#brandGrad)" font-size="44" font-weight="900" letter-spacing="-1.5" class="font-sans">
+      shadcn-hub
+    </text>
+
+    <!-- 副标题 -->
+    <text x="0" y="44" fill="#cbd5e1" font-size="17" font-weight="600" class="font-sans" letter-spacing="0.5">
+      全景式 shadcn/ui 组件生态矩阵与多维对比中心
+    </text>
+    <text x="0" y="68" fill="#71717a" font-size="13" font-weight="500" class="font-sans">
+      The Panoramic Component Benchmark &amp; Cross-Ecosystem Workbench
+    </text>
+
+    <!-- 4 大核心指标胶囊条 -->
+    <g transform="translate(0, 96)">
+      <!-- Pill 1: 61 官方组件 -->
+      <g transform="translate(-360, 0)">
+        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#18181b" stroke="#3f3f46" stroke-width="1" />
+        <circle cx="-65" cy="0" r="4" fill="#10b981" />
+        <text x="-50" y="4" fill="#f4f4f5" font-size="11" font-weight="700" text-anchor="start" class="font-sans">61 款官方组件</text>
+        <text x="25" y="4" fill="#71717a" font-size="10" font-weight="500" text-anchor="start" class="font-sans">· 100%实装</text>
+      </g>
+
+      <!-- Pill 2: 19 款图表 -->
+      <g transform="translate(-120, 0)">
+        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#18181b" stroke="#3f3f46" stroke-width="1" />
+        <circle cx="-65" cy="0" r="4" fill="#6366f1" />
+        <text x="-50" y="4" fill="#f4f4f5" font-size="11" font-weight="700" text-anchor="start" class="font-sans">19 款图表</text>
+        <text x="5" y="4" fill="#71717a" font-size="10" font-weight="500" text-anchor="start" class="font-sans">+ AI Agentic</text>
+      </g>
+
+      <!-- Pill 3: 39 类区块 -->
+      <g transform="translate(120, 0)">
+        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#18181b" stroke="#3f3f46" stroke-width="1" />
+        <circle cx="-65" cy="0" r="4" fill="#f59e0b" />
+        <text x="-50" y="4" fill="#f4f4f5" font-size="11" font-weight="700" text-anchor="start" class="font-sans">39 类业务区块</text>
+        <text x="30" y="4" fill="#71717a" font-size="10" font-weight="500" text-anchor="start" class="font-sans">Storefront</text>
+      </g>
+
+      <!-- Pill 4: 9 大流派 -->
+      <g transform="translate(360, 0)">
+        <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#18181b" stroke="#3f3f46" stroke-width="1" />
+        <circle cx="-65" cy="0" r="4" fill="#ec4899" />
+        <text x="-50" y="4" fill="#f4f4f5" font-size="11" font-weight="700" text-anchor="start" class="font-sans">9 大现代流派</text>
+        <text x="30" y="4" fill="#71717a" font-size="10" font-weight="500" text-anchor="start" class="font-sans">Linear/Geist</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 底部 3 扇高保真 UI 模块透视图 (展示真实业务能力) -->
+  <g transform="translate(60, 275)">
+    <!-- 卡片 1 (左侧): shadcn 核心原子组件实装 (Button / Input / Switch / Badge) -->
+    <g transform="translate(0, 15)">
+      <rect width="330" height="245" rx="16" fill="url(#cardGrad)" stroke="url(#cardBorder)" stroke-width="1.2" filter="url(#cardShadow)" />
+      
+      <!-- 窗口标题栏 -->
+      <circle cx="24" cy="22" r="5" fill="#ef4444" fill-opacity="0.8" />
+      <circle cx="38" cy="22" r="5" fill="#f59e0b" fill-opacity="0.8" />
+      <circle cx="52" cy="22" r="5" fill="#10b981" fill-opacity="0.8" />
+      <text x="75" y="26" fill="#a1a1aa" font-size="11" font-weight="600" class="font-mono">shadcn/ui Core · 61 Components</text>
+
+      <!-- 内部组件演示 -->
+      <g transform="translate(20, 50)">
+        <!-- 按钮组 -->
+        <rect x="0" y="0" width="85" height="30" rx="8" fill="#ffffff" />
+        <text x="42" y="19" fill="#09090b" font-size="11" font-weight="700" text-anchor="middle" class="font-sans">Primary</text>
+
+        <rect x="95" y="0" width="85" height="30" rx="8" fill="#27272a" stroke="#3f3f46" stroke-width="1" />
+        <text x="137" y="19" fill="#f4f4f5" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Secondary</text>
+
+        <rect x="190" y="0" width="95" height="30" rx="8" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="1" />
+        <text x="237" y="19" fill="#ef4444" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Destructive</text>
+
+        <!-- 输入框模拟 -->
+        <g transform="translate(0, 45)">
+          <rect width="285" height="34" rx="8" fill="#09090b" stroke="#3f3f46" stroke-width="1" />
+          <text x="14" y="21" fill="#71717a" font-size="11" class="font-mono">name@example.com</text>
+          <rect x="220" y="7" width="55" height="20" rx="4" fill="#27272a" />
+          <text x="247" y="21" fill="#a1a1aa" font-size="10" font-weight="600" text-anchor="middle" class="font-mono">Verify</text>
+        </g>
+
+        <!-- Switch & Slider -->
+        <g transform="translate(0, 95)">
+          <!-- Switch -->
+          <rect width="44" height="24" rx="12" fill="#6366f1" />
+          <circle cx="30" cy="12" r="9" fill="#ffffff" />
+          <text x="56" y="16" fill="#f4f4f5" font-size="11" font-weight="600" class="font-sans">Live Mode</text>
+
+          <!-- Slider 槽 -->
+          <g transform="translate(140, 6)">
+            <rect width="145" height="6" rx="3" fill="#27272a" />
+            <rect width="90" height="6" rx="3" fill="#6366f1" />
+            <circle cx="90" cy="3" r="7" fill="#ffffff" stroke="#6366f1" stroke-width="2" />
+          </g>
+        </g>
+
+        <!-- Base UI 兼容提示 -->
+        <g transform="translate(0, 142)">
+          <rect width="285" height="32" rx="6" fill="#27272a" fill-opacity="0.4" stroke="#3f3f46" stroke-dasharray="3,3" stroke-width="1" />
+          <text x="142" y="20" fill="#a1a1aa" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">@base-ui/react · base-nova 规范支持</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 卡片 2 (居中高亮): BoardUI 高阶图表 + AI Agentic 智能体控制台 -->
+    <g transform="translate(370, 0)">
+      <rect width="340" height="260" rx="16" fill="url(#cardGrad)" stroke="url(#accentBorder)" stroke-width="1.8" filter="url(#cardShadow)" />
+      
+      <!-- 窗口标题栏 -->
+      <circle cx="24" cy="22" r="5" fill="#ef4444" fill-opacity="0.8" />
+      <circle cx="38" cy="22" r="5" fill="#f59e0b" fill-opacity="0.8" />
+      <circle cx="52" cy="22" r="5" fill="#10b981" fill-opacity="0.8" />
+      <text x="75" y="26" fill="#e0e7ff" font-size="11" font-weight="700" class="font-mono">BoardUI · 19 Charts &amp; Agentic</text>
+
+      <!-- 实时图表区域 (真实曲线) -->
+      <g transform="translate(25, 48)">
+        <text x="0" y="14" fill="#71717a" font-size="10" font-weight="600" class="font-mono">ACTIVE USERS CONCURRENCY</text>
+        <text x="0" y="36" fill="#ffffff" font-size="20" font-weight="800" class="font-sans">148,290 <tspan fill="#10b981" font-size="11" font-weight="600">+24.8%</tspan></text>
+
+        <!-- 面积图折线 -->
+        <g transform="translate(0, 50)">
+          <!-- 面积渐变 -->
+          <path d="M 0 55 Q 40 40, 80 50 T 150 25 T 220 35 T 290 8 L 290 75 L 0 75 Z" fill="url(#chartGrad)" />
+          <!-- 折线主体 -->
+          <path d="M 0 55 Q 40 40, 80 50 T 150 25 T 220 35 T 290 8" fill="none" stroke="#6366f1" stroke-width="2.5" />
+          <circle cx="290" cy="8" r="4" fill="#a855f7" stroke="#ffffff" stroke-width="1.5" />
+        </g>
+
+        <!-- AI Agentic 状态胶囊 -->
+        <g transform="translate(0, 142)">
+          <rect width="290" height="50" rx="8" fill="#1e1b4b" fill-opacity="0.5" stroke="#4338ca" stroke-width="1" />
+          <circle cx="16" cy="18" r="4" fill="#a855f7" />
+          <text x="28" y="22" fill="#c7d2fe" font-size="11" font-weight="700" class="font-mono">AI Reasoning Chain</text>
+          <text x="215" y="22" fill="#818cf8" font-size="10" font-weight="600" class="font-mono">0.34s · 840 tok</text>
+          
+          <!-- 思维链进度条 -->
+          <rect x="16" y="32" width="258" height="5" rx="2.5" fill="#312e81" />
+          <rect x="16" y="32" width="190" height="5" rx="2.5" fill="#a855f7" />
+        </g>
+      </g>
+    </g>
+
+    <!-- 卡片 3 (右侧): Refero 9 大设计风格流派对比 + 商业区块 -->
+    <g transform="translate(750, 15)">
+      <rect width="330" height="245" rx="16" fill="url(#cardGrad)" stroke="url(#cardBorder)" stroke-width="1.2" filter="url(#cardShadow)" />
+      
+      <!-- 窗口标题栏 -->
+      <circle cx="24" cy="22" r="5" fill="#ef4444" fill-opacity="0.8" />
+      <circle cx="38" cy="22" r="5" fill="#f59e0b" fill-opacity="0.8" />
+      <circle cx="52" cy="22" r="5" fill="#10b981" fill-opacity="0.8" />
+      <text x="75" y="26" fill="#a1a1aa" font-size="11" font-weight="600" class="font-mono">Design Systems · 9 Styles</text>
+
+      <!-- 9 大设计流派标签矩阵 -->
+      <g transform="translate(20, 50)">
+        <!-- Row 1: Linear, Geist, Apple -->
+        <g transform="translate(0, 0)">
+          <rect width="88" height="28" rx="6" fill="#1c1917" stroke="#44403c" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#a8a29e" />
+          <text x="24" y="18" fill="#fafaf9" font-size="11" font-weight="600" class="font-sans">Linear</text>
+
+          <rect x="96" width="88" height="28" rx="6" fill="#000000" stroke="#52525b" stroke-width="1" />
+          <circle cx="108" cy="14" r="3" fill="#ffffff" />
+          <text x="120" y="18" fill="#ffffff" font-size="11" font-weight="600" class="font-sans">Geist</text>
+
+          <rect x="192" width="92" height="28" rx="14" fill="#27272a" stroke="#3f3f46" stroke-width="1" />
+          <circle cx="206" cy="14" r="3" fill="#38bdf8" />
+          <text x="218" y="18" fill="#f4f4f5" font-size="11" font-weight="600" class="font-sans">Apple</text>
+        </g>
+
+        <!-- Row 2: Neo-Brutalism, Stripe, Supabase -->
+        <g transform="translate(0, 38)">
+          <rect width="110" height="28" rx="2" fill="#fde047" stroke="#000000" stroke-width="2" />
+          <text x="55" y="18" fill="#000000" font-size="11" font-weight="800" text-anchor="middle" class="font-sans">Brutalism</text>
+
+          <rect x="118" width="76" height="28" rx="6" fill="#6366f1" fill-opacity="0.25" stroke="#6366f1" stroke-width="1" />
+          <text x="156" y="18" fill="#c7d2fe" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Stripe</text>
+
+          <rect x="202" width="82" height="28" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+          <text x="243" y="18" fill="#a7f3d0" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Supabase</text>
+        </g>
+
+        <!-- Row 3: Raycast, Notion, Perplexity -->
+        <g transform="translate(0, 76)">
+          <rect width="88" height="28" rx="6" fill="#ef4444" fill-opacity="0.2" stroke="#f87171" stroke-width="1" />
+          <text x="44" y="18" fill="#fca5a5" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Raycast</text>
+
+          <rect x="96" width="88" height="28" rx="6" fill="#292524" stroke="#78716c" stroke-width="1" />
+          <text x="140" y="18" fill="#e7e5e4" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Notion</text>
+
+          <rect x="192" width="92" height="28" rx="6" fill="#083344" stroke="#06b6d4" stroke-width="1" />
+          <text x="238" y="18" fill="#a5f3fc" font-size="11" font-weight="600" text-anchor="middle" class="font-sans">Perplexity</text>
+        </g>
+
+        <!-- 商业区块与电商一览 -->
+        <g transform="translate(0, 116)">
+          <rect width="285" height="58" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1" />
+          <text x="12" y="22" fill="#f4f4f5" font-size="11" font-weight="700" class="font-sans">39 类业务区块 + 电商套件</text>
+          <text x="12" y="42" fill="#71717a" font-size="10" font-weight="500" class="font-sans">Hero · Bento · Pricing · Cart Drawer · Testimonials</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
