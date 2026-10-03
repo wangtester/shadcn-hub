@@ -15,6 +15,7 @@
   <a href="https://base-ui.com"><img src="https://img.shields.io/badge/@base--ui/react-v1.8-ea580c?style=for-the-badge" alt="Base UI" /></a>
   <a href="https://github.com/wangtester/shadcn-hub/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/wangtester/shadcn-hub/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI" alt="CI Status" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License" /></a>
+  <a href="https://wangtester.github.io/shadcn-hub/"><img src="https://api.visitorbadge.io/api/visitors?path=wangtester.shadcn-hub&label=%E8%AE%BF%E5%AE%A2%E6%95%B0&labelColor=%2327272a&countColor=%236366f1&style=flat-square" alt="Visitors" /></a>
 </p>
 
 <p align="center">

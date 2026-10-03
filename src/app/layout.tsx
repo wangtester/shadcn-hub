@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { TopNav } from "@/components/top-nav";
+import { SiteFooter } from "@/components/site-footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toast";
 
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1 flex flex-col w-full">
             {children}
           </main>
+          <SiteFooter />
           <Toaster />
         </TooltipProvider>
       </body>
