@@ -18,6 +18,21 @@
   杜绝虚标，全部组件 100% 实机渲染、真实可交互、零编译报错，专为企业级设计系统选型与高效开发打造。
 </p>
 
+<!-- 10 大生态直达标牌与 SEO 关键词直显 -->
+<p align="center">
+  <b>📦 全量实装收录生态索引：</b><br/>
+  <a href="#1-shadcnui-官方核心库全量-61-款组件"><code>shadcn/ui 官方核心 (61)</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>BoardUI (19 图表 &amp; AI)</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>ShadcnStore (39 区块)</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>Refero Styles (9 流派)</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>HeroUI Pro</code></a><br/>
+  <a href="#2-生态与垂直扩展站点"><code>beUI 动效</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>RareUI 物理交互</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>Transitions.dev</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>BeautifulUI 美学</code></a> •
+  <a href="#2-生态与垂直扩展站点"><code>ShadcnSpace 控制台</code></a>
+</p>
+
 <p align="center">
   <a href="https://wangtester.github.io/shadcn-hub/">
     <img src="https://img.shields.io/badge/🚀_在线预览_Live_Demo-点击立即体验-indigo?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
@@ -48,12 +63,18 @@
 
 ## 💡 为什么需要 shadcn-hub？
 
-在日常的前端与全栈研发中，以 [shadcn/ui](https://ui.shadcn.com) 为代表的无头（Headless）组件范式已成为行业标准。然而，随着社区的高速演进，生态站点与 Blocks 资源高度分散（如 BoardUI 图表、ShadcnStore 商业区块、Refero 设计规范、各类微动效库等），开发者面临：
-1. **对比困难**：缺少统一的环境在同一视图下直观比对不同库的交互、样貌与样式规范。
-2. **文档与代码脱节**：许多聚合站点仅有静态截图或统计数字，缺乏真实 React 代码和即时交互。
-3. **架构升级断代**：shadcn 全新 **base-nova** 架构已转向 `@base-ui/react`，原旧有 Radix 范式存在大量兼容差异。
+在日常的前端与全栈研发中，以 [shadcn/ui](https://ui.shadcn.com) 为代表的无头组件已成为现代 React/Next.js 生态的事实标准。然而，随着社区衍生项目的爆发式增长，大量优秀的组件库与 Blocks 呈现**严重碎片化**分布：
+- 想要专业仪表盘图表，需要单独探索 **[BoardUI](https://www.boardui.com)**；
+- 想要商业级落地页与电商区块，需要单独翻阅 **[ShadcnStore](https://shadcnstore.com)**；
+- 想要探索 Linear、Geist、Stripe 等现代主流设计风格规范，需要查阅 **[Refero Design](https://styles.refero.design)**；
+- 想要 SaaS 团队后台应用界面，需要查找 **[HeroUI Pro](https://heroui.pro)**；
+- 想要极致打字机、流光边框、物理流体等微动效，又需要分别引入 **[beUI](https://beui.dev)**、**[RareUI](https://www.rareui.com)**、**[Transitions.dev](https://transitions.dev)** 或 **[BeautifulUI](https://www.beautifului.dev)**。
 
-**`shadcn-hub`** 应运而生 —— 它将官方 61 款核心组件与 9 大生态站点全部集成在单一工程中，提供**统一双层导航、全实机渲染、严格 1:1 数量对齐**的高保真参考基座。
+不仅在十几个独立网站间来回跳转极其繁琐，许多展示站还存在“标注几十个但页面只有三四个占位图”的虚标问题。更关键的是，shadcn 最新 **base-nova** 架构已经转向 `@base-ui/react`，原旧有 Radix 范式存在大量兼容差异。
+
+**`shadcn-hub`** 彻底解决了这一切 —— 它将 **shadcn/ui 官方全量 61 款原子组件** 与上述 **9 大衍生生态** 统一收录并全部实机运行在一个项目中，提供**双层全景导航、全局 Cmd+K 搜索、全实装真实代码、严格 1:1 数量对齐**的一站式基座。
+
+> 🌐 **English Overview**: *shadcn-hub is an all-in-one panoramic workbench and cross-ecosystem benchmark for shadcn/ui. It collects the official 61 core components alongside 9 curated derivative libraries (BoardUI, ShadcnStore, Refero Styles, HeroUI Pro, beUI, RareUI, Transitions.dev, BeautifulUI, ShadcnSpace) with 100% interactive running code, dual navigation, and global Cmd+K search built on Next.js 16, Tailwind CSS v4, and @base-ui/react.*
 
 ---
 
