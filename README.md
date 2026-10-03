@@ -26,7 +26,11 @@
 
 <p align="center">
   <a href="https://wangtester.github.io/shadcn-hub/">
-    <img src="public/banner.svg" alt="shadcn-hub Panoramic Workbench" width="100%" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="public/banner-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="public/banner-light.svg">
+      <img alt="shadcn-hub Panoramic Workbench" src="public/banner-light.svg" width="100%">
+    </picture>
   </a>
 </p>
 
