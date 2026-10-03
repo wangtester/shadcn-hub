@@ -16,8 +16,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "shadcn 全生态组件与区块全景展示系统",
-  description: "聚合 shadcn/ui 官方组件与 9 大生态扩展组件库 (ShadcnSpace, BoardUI, HeroUI, beUI, RareUI 等) 的全景对比系统",
+  title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
+  description: "一站式聚合收录 shadcn/ui 官方全量 61 款基础组件 + 9 大顶尖社区扩展库与商业级 Blocks，100% 实机渲染与真实可交互对比。",
+  keywords: ["shadcn", "shadcn/ui", "Next.js 16", "Tailwind CSS v4", "Base UI", "React 19", "UI Components", "Design System", "Dashboard", "BoardUI", "ShadcnStore", "Refero Design"],
+  authors: [{ name: "wangtester" }],
+  openGraph: {
+    title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
+    description: "聚合 61 款官方核心组件及 9 大生态扩展库，全实机交互体验与设计风格评测",
+    url: "https://github.com/wangtester/shadcn-hub",
+    siteName: "shadcn-hub",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1280,
+        height: 720,
+        alt: "shadcn-hub Open Graph Banner",
+      },
+    ],
+    locale: "zh_CN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
+    description: "聚合 61 款官方核心组件及 9 大生态扩展库，全实机交互体验与设计风格评测",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

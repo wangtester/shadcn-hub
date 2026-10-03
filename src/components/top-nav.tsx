@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Layers, Moon, Sun, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Layers, Moon, Sun, Star } from "lucide-react";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { GlobalSearch } from "@/components/global-search";
 
 const siteNavs = [
   { href: "/", label: "首页 Hub", short: "Hub" },
@@ -42,7 +43,7 @@ export function TopNav() {
           <div className="h-7 w-7 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shadow-xs">
             <Layers className="h-4 w-4" />
           </div>
-          <span className="hidden sm:inline-block tracking-tight">shadcn 全生态画廊</span>
+          <span className="hidden sm:inline-block tracking-tight font-extrabold">shadcn-hub</span>
         </Link>
 
         {/* 水平导航链接，支持横向无滚动条平滑拖拽/滚动 */}
@@ -68,14 +69,29 @@ export function TopNav() {
           </nav>
         </div>
 
-        {/* 右侧操作区 */}
+        {/* 右侧操作区：全站搜索、GitHub 链接、暗黑模式切换 */}
         <div className="flex items-center gap-2 shrink-0">
+          <GlobalSearch />
+
+          <a
+            href="https://github.com/wangtester/shadcn-hub"
+            target="_blank"
+            rel="noreferrer"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "sm" }),
+              "hidden lg:flex items-center gap-1.5 h-8 text-xs font-medium rounded-lg"
+            )}
+          >
+            <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+            <span>Star on GitHub</span>
+          </a>
+
           <Button
             variant="ghost"
             size="icon-sm"
             onClick={() => setDark((d) => !d)}
             aria-label="切换主题"
-            className="rounded-lg"
+            className="rounded-lg h-8 w-8"
           >
             {dark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
           </Button>

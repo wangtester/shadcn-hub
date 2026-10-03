@@ -40,7 +40,7 @@ export function SidebarLayout({
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const NavContent = () => (
+  const navContent = (
     <div className="space-y-6 py-2">
       <div className="px-3 pb-3 border-b">
         <div className="flex items-center gap-2">
@@ -104,7 +104,7 @@ export function SidebarLayout({
       {/* 桌面端固定侧边栏 */}
       <aside className="hidden md:block w-64 shrink-0 border-r bg-card/40 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
         <ScrollArea className="h-full px-2 py-4">
-          <NavContent />
+          {navContent}
         </ScrollArea>
       </aside>
 
@@ -120,7 +120,7 @@ export function SidebarLayout({
             <SheetHeader className="mb-2">
               <SheetTitle className="text-left">{siteTitle}</SheetTitle>
             </SheetHeader>
-            <NavContent />
+            {navContent}
           </SheetContent>
         </Sheet>
       </div>
