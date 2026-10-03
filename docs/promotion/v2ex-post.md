@@ -34,6 +34,7 @@
 
 项目现已开源在 GitHub，欢迎大家体验、提 Issue 或 Star 🌟 支持！
 
+- **在线预览**：https://wangtester.github.io/shadcn-hub/
 - **GitHub 仓库**：https://github.com/wangtester/shadcn-hub
 - **开源协议**：MIT License
 

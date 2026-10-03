@@ -12,6 +12,7 @@
 ### 项目简介
 - **项目名称**：shadcn-hub
 - **项目地址**：https://github.com/wangtester/shadcn-hub
+- **在线预览**：https://wangtester.github.io/shadcn-hub/
 - **开源协议**：MIT
 
 ### 为什么推荐？

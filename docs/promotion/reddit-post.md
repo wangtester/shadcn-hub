@@ -18,6 +18,7 @@ However, exploring and comparing them has been cumbersome:
 - With the transition to Base UI (shadcn base-nova) and Tailwind CSS v4, keeping track of modern syntax and conventions can get tricky.
 
 To solve this for myself and the community, I built and open-sourced **shadcn-hub**:
+🌐 **Live Demo**: https://wangtester.github.io/shadcn-hub/
 👉 **GitHub Repo**: https://github.com/wangtester/shadcn-hub
 
 ### What's included:

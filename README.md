@@ -19,9 +19,16 @@
 </p>
 
 <p align="center">
+  <a href="https://wangtester.github.io/shadcn-hub/">
+    <img src="https://img.shields.io/badge/🚀_在线预览_Live_Demo-点击立即体验-indigo?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center">
   <img src="public/og-image.jpg" alt="shadcn-hub Preview Banner" width="100%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
 </p>
 
+[🚀 在线体验 Demo](https://wangtester.github.io/shadcn-hub/) •
 [✨ 核心特性](#-核心特性) •
 [🗺️ 站点与组件全景矩阵](#️-站点与组件全景矩阵) •
 [🎨 9 大设计流派实景](#-9-大设计流派实景对比) •

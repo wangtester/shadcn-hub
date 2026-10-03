@@ -19,7 +19,7 @@ A panoramic component workbench & cross-ecosystem benchmark for the modern @shad
 🧱 39 ShadcnStore section categories
 🎨 9 modern design styles (Linear, Geist, Apple, Stripe...)
 ⚡ Next.js 16 + Tailwind CSS v4 + @base-ui/react
-
+🌐 Live Demo: https://wangtester.github.io/shadcn-hub/
 🔗 GitHub: https://github.com/wangtester/shadcn-hub
 
 Retweets appreciated! 🧵👇
