@@ -2,7 +2,7 @@
 
 # 🌌 shadcn-hub
 ### The Panoramic Component Benchmark & Multi-Ecosystem Workbench for shadcn/ui
-**Compare, inspect, and benchmark 61 official core components and 9 curated ecosystem libraries side-by-side.**
+**Compare, inspect, and benchmark 64 official core components and 9 curated ecosystem libraries side-by-side.**
 
 <p align="center">
   <b>English</b> | <a href="README.zh-CN.md">简体中文</a>
@@ -26,7 +26,7 @@
 <!-- 10 Ecosystem Quick Navigation Index -->
 <p align="center">
   <b>📦 Implemented Ecosystems &amp; Direct Index:</b><br/>
-  <a href="#1-official-shadcnui-core-library-61-components"><code>shadcn/ui Core (61)</code></a> •
+  <a href="#1-official-shadcnui-core-library-64-components"><code>shadcn/ui Core (64)</code></a> •
   <a href="#2-ecosystem--vertical-extensions"><code>BoardUI (19 Charts &amp; AI)</code></a> •
   <a href="#2-ecosystem--vertical-extensions"><code>ShadcnStore (39 Blocks)</code></a> •
   <a href="#2-ecosystem--vertical-extensions"><code>Refero Styles (9 Styles)</code></a> •
@@ -78,7 +78,7 @@ In modern frontend and full-stack development, headless UI powered by [shadcn/ui
 
 Switching between a dozen disparate websites is tedious. Moreover, many showcase galleries suffer from **fake numbers or static placeholder mockups** that don't actually run. Crucially, the newest **shadcn base-nova** architecture has migrated to `@base-ui/react`, introducing significant API shifts compared to legacy Radix conventions.
 
-**`shadcn-hub`** solves this completely — it aggregates the **official 61 core components** and **9 leading ecosystem libraries** into a unified, high-fidelity workbench with **dual-layer navigation, global `⌘ + K` search, 100% interactive running code, and strict 1:1 count parity**.
+**`shadcn-hub`** solves this completely — it aggregates the **official 64 core components** and **9 leading ecosystem libraries** into a unified, high-fidelity workbench with **dual-layer navigation, global `⌘ + K` search, 100% interactive running code, and strict 1:1 count parity**.
 
 ---
 
@@ -90,7 +90,7 @@ Switching between a dozen disparate websites is tedious. Moreover, many showcase
   - **Top Sticky Ecosystem Switcher**: Seamlessly switch between the 10 ecosystems; native Dark/Light theme toggle.
   - **Left Responsive Sidebar Drawer**: Multi-dimensional categorisation by functional domain, block type, or visual design language.
 - 🔍 **Global Command Palette (`⌘ + K` / `Ctrl + K`)**
-  Fuzzy-search across all 61 core components, 19 charts, 39 business blocks, and 9 design styles with instant keyboard navigation.
+  Fuzzy-search across all 64 core components, 19 charts, 39 business blocks, and 9 design styles with instant keyboard navigation.
 - ⚡ **Cutting-Edge Tech Stack**
   - **Next.js 16 (App Router + Turbopack)**: Blazing fast compilation and 48 pre-rendered static pages.
   - **Tailwind CSS v4**: Powered by native CSS variables.
@@ -103,7 +103,7 @@ Switching between a dozen disparate websites is tedious. Moreover, many showcase
 
 | # | Ecosystem / Site | Source URL | Rendered Items | Core Categories & Scope |
 | :-: | :--- | :--- | :-: | :--- |
-| **01** | **shadcn/ui Core** | [ui.shadcn.com](https://ui.shadcn.com) | **61 Components** | Forms (16), Layout (8), Overlay (9), Data (8), Nav (5), Feedback (8), Extended (7) |
+| **01** | **shadcn/ui Core** | [ui.shadcn.com](https://ui.shadcn.com) | **64 Components** | Forms (17), Layout (8), Overlay (8), Data (9), Nav (5), Feedback (8), Extended (9) |
 | **02** | **BoardUI** | [boardui.com](https://www.boardui.com) | **19 Charts + AI Kit** | 19 dashboard charts; AI Thinking Chain, Token Monitor, Web Search stream |
 | **03** | **ShadcnStore** | [shadcnstore.com](https://shadcnstore.com) | **39 Block Types + Shop** | All 39 vertical section categories (Hero, Bento, Pricing...); Cart drawer |
 | **04** | **Refero Styles** | [refero.design](https://styles.refero.design) | **9 Styles + Tokens** | Linear, Geist, Apple, Neo-Brutalism, Stripe, Supabase... tokens & real UI |
@@ -116,31 +116,32 @@ Switching between a dozen disparate websites is tedious. Moreover, many showcase
 
 ---
 
-### 📦 Official shadcn/ui Core Components (61/61)
+### 📦 Official shadcn/ui Core Components (64/64)
 
 <details>
-<summary><b>Click to expand full 61-component checklist</b></summary>
+<summary><b>Click to expand full 64-component checklist</b></summary>
 
 ```
-├── 📝 Forms (16)
+├── 📝 Forms (17)
 │   ├── Button, ButtonGroup, Input, InputGroup, Field, Textarea
 │   ├── Select, NativeSelect, Checkbox, RadioGroup, Switch, Slider
-│   └── Toggle, ToggleGroup, InputOTP, Label
+│   └── Toggle, ToggleGroup, InputOTP, Label, DatePicker
 ├── 📐 Layout (8)
 │   ├── Card, Accordion, Tabs, Separator
 │   └── Collapsible, AspectRatio, Resizable, ScrollArea
-├── 💬 Overlay (9)
+├── 💬 Overlay (8)
 │   ├── Dialog, AlertDialog, Sheet, Drawer, Popover
-│   └── HoverCard, Tooltip, DropdownMenu, ContextMenu
-├── 📊 Data Display (8)
-│   ├── Table, Calendar, Chart, Carousel
+│   └── HoverCard, Tooltip, ContextMenu
+├── 📊 Data Display (9)
+│   ├── Table, DataTable, Calendar, Chart, Carousel
 │   └── Avatar, Badge, Combobox, Command
 ├── 🧭 Navigation (5)
 │   └── Breadcrumb, NavigationMenu, Menubar, Pagination, DropdownMenu
 ├── 🔔 Feedback (8)
 │   └── Alert, Toast, Progress, Skeleton, Spinner, Kbd, Empty, Message
-└── 🧩 Extended (7)
-    └── Attachment, Item, Marker, Direction, Questionnaire, MessageScroller, Sidebar
+└── 🧩 Extended & Typography (9)
+    ├── Attachment, Item, Marker, Direction, Questionnaire, MessageScroller, Sidebar,
+    └── Bubble, Typography (Official Typeset & Headings)
 ```
 
 </details>
@@ -204,14 +205,14 @@ shadcn-hub/
 │   │   ├── layout.tsx              # Root layout with TopNav & TooltipProvider
 │   │   ├── page.tsx                # Ecosystem Hub hall
 │   │   ├── globals.css             # Tailwind CSS v4 variables
-│   │   ├── shadcn/                 # 61 Official Core Components
-│   │   │   ├── forms/              # Forms (16 items)
+│   │   ├── shadcn/                 # 64 Official Core Components
+│   │   │   ├── forms/              # Forms (17 items)
 │   │   │   ├── layout/             # Layout (8 items)
-│   │   │   ├── overlay/            # Overlay (9 items)
-│   │   │   ├── data/               # Data display (8 items)
+│   │   │   ├── overlay/            # Overlay (8 items)
+│   │   │   ├── data/               # Data display (9 items)
 │   │   │   ├── navigation/         # Navigation (5 items)
 │   │   │   ├── feedback/           # Feedback (8 items)
-│   │   │   └── extended/           # Extended components (7 items)
+│   │   │   └── extended/           # Extended & Typography (9 items)
 │   │   └── sites/                  # 9 Derivative Ecosystems
 │   │       ├── boardui/            # 19 Charts + AI Agentic suite
 │   │       ├── shadcnstore/        # 39 Section blocks + E-Commerce store

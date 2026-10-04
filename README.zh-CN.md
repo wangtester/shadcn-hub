@@ -19,14 +19,14 @@
 </p>
 
 <p align="center">
-  <b>一站式聚合收录 shadcn/ui 官方全量 61 款基础组件 + 9 大顶尖社区扩展库与商业级 Blocks</b><br/>
+  <b>一站式聚合收录 shadcn/ui 官方全量 64 款基础组件 + 9 大顶尖社区扩展库与商业级 Blocks</b><br/>
   杜绝虚标，全部组件 100% 实机渲染、真实可交互、零编译报错，专为企业级设计系统选型与高效开发打造。
 </p>
 
 <!-- 10 大生态直达标牌与 SEO 关键词直显 -->
 <p align="center">
   <b>📦 全量实装收录生态索引：</b><br/>
-  <a href="#1-shadcnui-官方核心库全量-61-款组件"><code>shadcn/ui 官方核心 (61)</code></a> •
+  <a href="#1-shadcnui-官方核心库全量-64-款组件"><code>shadcn/ui 官方核心 (64)</code></a> •
   <a href="#2-生态与垂直扩展站点"><code>BoardUI (19 图表 &amp; AI)</code></a> •
   <a href="#2-生态与垂直扩展站点"><code>ShadcnStore (39 区块)</code></a> •
   <a href="#2-生态与垂直扩展站点"><code>Refero Styles (9 流派)</code></a> •
@@ -77,9 +77,9 @@
 
 不仅在十几个独立网站间来回跳转极其繁琐，许多展示站还存在“标注几十个但页面只有三四个占位图”的虚标问题。更关键的是，shadcn 最新 **base-nova** 架构已经转向 `@base-ui/react`，原旧有 Radix 范式存在大量兼容差异。
 
-**`shadcn-hub`** 彻底解决了这一切 —— 它将 **shadcn/ui 官方全量 61 款原子组件** 与上述 **9 大衍生生态** 统一收录并全部实机运行在一个项目中，提供**双层全景导航、全局 Cmd+K 搜索、全实装真实代码、严格 1:1 数量对齐**的一站式基座。
+**`shadcn-hub`** 彻底解决了这一切 —— 它将 **shadcn/ui 官方全量 64 款原子组件** 与上述 **9 大衍生生态** 统一收录并全部实机运行在一个项目中，提供**双层全景导航、全局 Cmd+K 搜索、全实装真实代码、严格 1:1 数量对齐**的一站式基座。
 
-> 🌐 **English Overview**: *shadcn-hub is an all-in-one panoramic workbench and cross-ecosystem benchmark for shadcn/ui. It collects the official 61 core components alongside 9 curated derivative libraries (BoardUI, ShadcnStore, Refero Styles, HeroUI Pro, beUI, RareUI, Transitions.dev, BeautifulUI, ShadcnSpace) with 100% interactive running code, dual navigation, and global Cmd+K search built on Next.js 16, Tailwind CSS v4, and @base-ui/react.*
+> 🌐 **English Overview**: *shadcn-hub is an all-in-one panoramic workbench and cross-ecosystem benchmark for shadcn/ui. It collects the official 64 core components alongside 9 curated derivative libraries (BoardUI, ShadcnStore, Refero Styles, HeroUI Pro, beUI, RareUI, Transitions.dev, BeautifulUI, ShadcnSpace) with 100% interactive running code, dual navigation, and global Cmd+K search built on Next.js 16, Tailwind CSS v4, and @base-ui/react.*
 
 ---
 
@@ -104,7 +104,7 @@
 
 | 入口 | 站点名称 | 官方/原站 | 实装组件/区块数量 | 包含的核心分类与内容 |
 | :--- | :--- | :--- | :---: | :--- |
-| **01** | **shadcn/ui 官方库** | [ui.shadcn.com](https://ui.shadcn.com) | **61 款组件** | 表单(16)、布局(8)、浮层(9)、数据(8)、导航(5)、反馈(8)、扩展(7) |
+| **01** | **shadcn/ui 官方库** | [ui.shadcn.com](https://ui.shadcn.com) | **64 款全量** | 表单(17)、布局(8)、浮层(8)、数据(9)、导航(5)、反馈(8)、扩展(9) |
 | **02** | **BoardUI** | [boardui.com](https://www.boardui.com) | **19 款图表 + AI 套件** | 19 种高阶仪表盘图表；AI 思维链、Token 监控、Web Search 多源流 |
 | **03** | **ShadcnStore** | [shadcnstore.com](https://shadcnstore.com) | **39 类区块 + Storefront** | 全站 39 个细分类目索引（Hero, Pricing, Bento 等）；电商购物车全套件 |
 | **04** | **Refero Styles** | [refero.design](https://styles.refero.design) | **9 大设计风格 + Tokens** | Linear, Geist, Apple, Neo-Brutalism 等 9 大流派实机代码与规范调色盘 |
@@ -117,32 +117,33 @@
 
 ---
 
-### 📦 shadcn/ui 官方 61 款全量组件清单
+### 📦 shadcn/ui 官方 64 款全量组件清单
 
 <details>
-<summary><b>点击展开查看 61 款官方组件逐项对应清单</b></summary>
+<summary><b>点击展开查看 64 款官方组件逐项对应清单</b></summary>
 
 ```
-├── 📝 表单系统 Forms (16 款)
+├── 📝 表单系统 Forms (17 款)
 │   ├── Button, ButtonGroup, Input, InputGroup, Field, Textarea
 │   ├── Select, NativeSelect, Checkbox, RadioGroup, Switch, Slider
-│   └── Toggle, ToggleGroup, InputOTP, Label
+│   └── Toggle, ToggleGroup, InputOTP, Label, DatePicker
 ├── 📐 容器布局 Layout (8 款)
 │   ├── Card, Accordion, Tabs, Separator
 │   └── Collapsible, AspectRatio, Resizable, ScrollArea
-├── 💬 浮层交互 Overlay (9 款)
+├── 💬 浮层交互 Overlay (8 款)
 │   ├── Dialog, AlertDialog, Sheet, Drawer, Popover
-│   └── HoverCard, Tooltip, DropdownMenu, ContextMenu
-├── 📊 数据呈现 Data (8 款)
-│   ├── Table, Calendar, Chart, Carousel
+│   └── HoverCard, Tooltip, ContextMenu
+├── 📊 数据呈现 Data (9 款)
+│   ├── Table, DataTable, Calendar, Chart, Carousel
 │   └── Avatar, Badge, Combobox, Command
 ├── 🧭 导航菜单 Navigation (5 款)
 │   └── Breadcrumb, NavigationMenu, Menubar, Pagination, DropdownMenu
 ├── 🔔 状态反馈 Feedback (8 款)
 │   └── Alert, Toast, Progress, Skeleton, Spinner, Kbd, Empty, Message
-└── 🧩 扩展组件 Extended (7 款)
-    └── Attachment (附件), Item (行项), Marker (标记), Direction (方向),
-        Questionnaire (答题卡), MessageScroller (消息滚动), Sidebar (侧栏)
+└── 🧩 扩展与排版 Extended (9 款)
+    ├── Attachment (附件), Item (行项), Marker (标记), Direction (方向),
+    ├── Questionnaire (答题卡), MessageScroller (消息滚动), Sidebar (侧栏),
+    └── Bubble (对话气泡), Typography (官方规范排版)
 ```
 
 </details>
@@ -206,14 +207,14 @@ shadcn-hub/
 │   │   ├── layout.tsx              # 全局 RootLayout（集成 TopNav 与 ThemeProvider）
 │   │   ├── page.tsx                # 全景 Ecosystem Hub 大厅
 │   │   ├── globals.css             # Tailwind CSS v4 与核心变量
-│   │   ├── shadcn/                 # 官方 61 款核心组件分类路由
-│   │   │   ├── forms/              # 表单分类 (16 组件)
+│   │   ├── shadcn/                 # 官方 64 款核心组件分类路由
+│   │   │   ├── forms/              # 表单分类 (17 组件)
 │   │   │   ├── layout/             # 布局分类 (8 组件)
-│   │   │   ├── overlay/            # 浮层分类 (9 组件)
-│   │   │   ├── data/               # 数据分类 (8 组件)
+│   │   │   ├── overlay/            # 浮层分类 (8 组件)
+│   │   │   ├── data/               # 数据分类 (9 组件)
 │   │   │   ├── navigation/         # 导航分类 (5 组件)
 │   │   │   ├── feedback/           # 反馈分类 (8 组件)
-│   │   │   └── extended/           # 扩展分类 (7 组件)
+│   │   │   └── extended/           # 扩展与排版分类 (9 组件)
 │   │   └── sites/                  # 9 大生态扩展站点
 │   │       ├── boardui/            # 19 款工业图表 + AI Agentic 套件
 │   │       ├── shadcnstore/        # 39 类营销/业务 Blocks + 电商 Storefront

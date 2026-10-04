@@ -10,6 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from "@/components/ui/command";
 import { Combobox, ComboboxInput, ComboboxContent, ComboboxList, ComboboxItem, ComboboxEmpty } from "@/components/ui/combobox";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { DataTable, type DataTableColumn } from "@/components/ui/data-table";
 import { ChartContainer, ChartTooltip, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from "recharts";
 
@@ -19,6 +20,44 @@ const invoices = [
   { id: "INV-003", status: "待付款", method: "微信企业支付", amount: "¥3,200.00" },
   { id: "INV-004", status: "已支付", method: "对公银行转账", amount: "¥4,500.00" },
   { id: "INV-005", status: "已支付", method: "Apple Pay", amount: "¥890.00" },
+];
+
+const paymentRecords = [
+  { id: "PAY-1001", client: "上海科技有限公司", email: "contact@shanghai-tech.com", status: "成功", amount: 12500, date: "2026-10-01" },
+  { id: "PAY-1002", client: "北京超算云计算", email: "billing@beijing-cloud.cn", status: "处理中", amount: 4800, date: "2026-10-02" },
+  { id: "PAY-1003", client: "深圳智能终端研发", email: "finance@sz-smart.com", status: "成功", amount: 9600, date: "2026-10-02" },
+  { id: "PAY-1004", client: "杭州未来零售电商", email: "service@hz-retail.com", status: "异常", amount: 1200, date: "2026-10-03" },
+  { id: "PAY-1005", client: "广州现代物流供应链", email: "admin@gz-logistics.cn", status: "成功", amount: 18900, date: "2026-10-03" },
+  { id: "PAY-1006", client: "成都互动数娱网络", email: "pay@cd-games.com", status: "处理中", amount: 3400, date: "2026-10-04" },
+  { id: "PAY-1007", client: "武汉光谷光电芯片", email: "account@wh-chips.cn", status: "成功", amount: 26000, date: "2026-10-04" },
+  { id: "PAY-1008", client: "南京生物健康医药", email: "order@nj-pharma.com", status: "成功", amount: 7700, date: "2026-10-04" },
+];
+
+const dataTableColumns: DataTableColumn<(typeof paymentRecords)[0]>[] = [
+  { key: "id", header: "订单编号", sortable: true, className: "font-mono font-medium w-28" },
+  { key: "client", header: "签约企业", sortable: true },
+  { key: "email", header: "对公邮箱", className: "text-muted-foreground font-mono" },
+  {
+    key: "status",
+    header: "交易状态",
+    sortable: true,
+    accessor: (item) => (
+      <Badge
+        variant={item.status === "成功" ? "default" : item.status === "处理中" ? "secondary" : "destructive"}
+        className="text-[11px]"
+      >
+        {item.status}
+      </Badge>
+    ),
+  },
+  {
+    key: "amount",
+    header: "结算金额",
+    sortable: true,
+    className: "text-right font-mono font-semibold",
+    accessor: (item) => `¥${item.amount.toLocaleString()}`,
+  },
+  { key: "date", header: "交易日期", sortable: true, className: "text-muted-foreground w-28" },
 ];
 
 const chartData = [
@@ -149,6 +188,19 @@ export default function DataPage() {
             ))}
           </TableBody>
         </Table>
+      </Section>
+
+      {/* DataTable */}
+      <Section
+        title="DataTable 现代化高阶数据表格"
+        description="基于 TanStack 理念封装的生产级数据表格：支持即时模糊搜索过滤、多列排序、全选/单行多选勾选与分页控制器"
+      >
+        <DataTable
+          data={paymentRecords}
+          columns={dataTableColumns}
+          pageSize={4}
+          searchPlaceholder="按企业名、订单号或状态搜索..."
+        />
       </Section>
 
       {/* Calendar */}

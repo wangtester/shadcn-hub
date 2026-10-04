@@ -18,6 +18,7 @@ import { Toggle } from "@/components/ui/toggle";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from "@/components/ui/input-otp";
 import { Field, FieldLabel, FieldDescription, FieldError } from "@/components/ui/field";
+import { DatePicker, DateRangePicker, DatePickerWithPresets } from "@/components/ui/date-picker";
 import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight, Search, Mail, AtSign, ChevronDown } from "lucide-react";
 
 export default function FormsPage() {
@@ -301,6 +302,32 @@ export default function FormsPage() {
             </InputOTPGroup>
           </InputOTP>
           {otpValue && <p className="text-sm text-muted-foreground">当前值: <span className="font-mono font-medium text-foreground">{otpValue}</span></p>}
+        </div>
+      </Section>
+
+      {/* DatePicker */}
+      <Section
+        title="DatePicker 日期选择与范围预设"
+        description="基于 Popover 与 Calendar 复合架构封装的高灵活性日期选择：支持单日期、起止区间范围选择与快捷预设"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <div className="space-y-2">
+            <Label>单日期拾取 (Single Date)</Label>
+            <DatePicker />
+            <p className="text-[11px] text-muted-foreground">标准单日点选，内置中文本地化格式</p>
+          </div>
+
+          <div className="space-y-2">
+            <Label>日期区间选择 (Date Range)</Label>
+            <DateRangePicker />
+            <p className="text-[11px] text-muted-foreground">双月份跨越式起止区间选择</p>
+          </div>
+
+          <div className="space-y-2">
+            <Label>快捷预设拾取 (Presets)</Label>
+            <DatePickerWithPresets />
+            <p className="text-[11px] text-muted-foreground">提供今天、明天、一周后等快捷按钮</p>
+          </div>
         </div>
       </Section>
     </div>

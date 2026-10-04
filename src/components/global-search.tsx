@@ -25,7 +25,7 @@ interface SearchItem {
 const SEARCH_ITEMS: SearchItem[] = [
   // 10 大入口
   { title: "全景生态大厅 (Hub)", category: "生态站点", href: "/", keywords: ["home", "hub", "index", "overview", "首页"] },
-  { title: "shadcn/ui 官方核心库 (61 组件)", category: "生态站点", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
+  { title: "shadcn/ui 官方核心库 (64 全量组件)", category: "生态站点", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
   { title: "BoardUI 仪表盘与 AI 智能体 (19 图表)", category: "生态站点", href: "/sites/boardui", keywords: ["boardui", "charts", "agent", "dashboard"] },
   { title: "ShadcnStore 商业区块与电商 (39 类目)", category: "生态站点", href: "/sites/shadcnstore", keywords: ["store", "blocks", "ecommerce", "sections"] },
   { title: "Refero Styles (9 大现代设计风格)", category: "生态站点", href: "/sites/refero", keywords: ["refero", "design", "tokens", "styles", "linear", "geist"] },
@@ -39,6 +39,7 @@ const SEARCH_ITEMS: SearchItem[] = [
   // shadcn 官方组件
   { title: "Button 按钮 / ButtonGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["button", "group", "input", "click"] },
   { title: "Input 输入框 / InputGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["input", "text", "form"] },
+  { title: "DatePicker 日期与区间范围选择器", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["datepicker", "date", "calendar", "range", "presets", "日期"] },
   { title: "Select 下拉选择器", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["select", "dropdown", "option"] },
   { title: "Checkbox 复选框 / Switch 开关", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["checkbox", "switch", "toggle"] },
   { title: "Slider 滑块 / InputOTP 验证码", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["slider", "otp", "code", "range"] },
@@ -49,11 +50,14 @@ const SEARCH_ITEMS: SearchItem[] = [
   { title: "Popover 气泡卡片 / Tooltip 文字提示", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["popover", "tooltip", "hover"] },
   { title: "DropdownMenu / ContextMenu 上下文菜单", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["menu", "context", "dropdown"] },
   { title: "Table 数据表格", category: "shadcn 组件", href: "/shadcn/data", keywords: ["table", "grid", "data", "row"] },
+  { title: "DataTable 现代化高阶数据表格 (搜索/排序/分页/多选)", category: "shadcn 组件", href: "/shadcn/data", keywords: ["datatable", "table", "tanstack", "pagination", "sort", "filter"] },
   { title: "Calendar 日历选择器", category: "shadcn 组件", href: "/shadcn/data", keywords: ["calendar", "date", "picker"] },
   { title: "Chart 数据图表", category: "shadcn 组件", href: "/shadcn/data", keywords: ["chart", "recharts", "graph"] },
   { title: "Carousel 走马灯轮播", category: "shadcn 组件", href: "/shadcn/data", keywords: ["carousel", "slider", "embla"] },
   { title: "Avatar 头像 / Badge 徽章", category: "shadcn 组件", href: "/shadcn/data", keywords: ["avatar", "badge", "tag"] },
   { title: "Attachment 附件卡 / Item 列表行", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["attachment", "item", "marker", "direction"] },
+  { title: "Bubble 智能对话气泡与反馈反应", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["bubble", "chat", "message", "reaction", "ai"] },
+  { title: "Typography & Typeset 官方规范排版", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["typography", "typeset", "heading", "blockquote", "prose", "text"] },
 
   // BoardUI 图表与 Agent
   { title: "19 款工业级仪表盘图表 (Area, Funnel, Radar...)", category: "BoardUI", href: "/sites/boardui/charts", keywords: ["charts", "recharts", "bar", "radar", "sankey", "speedometer"] },

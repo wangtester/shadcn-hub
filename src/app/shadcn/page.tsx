@@ -7,8 +7,8 @@ const categories = [
   {
     href: "/shadcn/forms",
     title: "01. 表单交互体系",
-    description: "Button, ButtonGroup, Input, InputGroup, Field, Textarea, Select, NativeSelect, Checkbox, RadioGroup, Switch, Slider, Toggle, ToggleGroup, InputOTP, Label",
-    badge: "16 个已实装",
+    description: "Button, ButtonGroup, Input, InputGroup, Field, Textarea, Select, NativeSelect, Checkbox, RadioGroup, Switch, Slider, Toggle, ToggleGroup, InputOTP, Label, DatePicker",
+    badge: "17 个已实装",
     color: "border-blue-500/20 bg-blue-500/5 hover:border-blue-500/40",
   },
   {
@@ -22,14 +22,14 @@ const categories = [
     href: "/shadcn/overlay",
     title: "03. 浮层与弹窗组件",
     description: "Dialog, AlertDialog, Sheet, Drawer, Popover, HoverCard, Tooltip, DropdownMenu, ContextMenu 等模态交互",
-    badge: "9 个已实装",
+    badge: "8 个已实装",
     color: "border-amber-500/20 bg-amber-500/5 hover:border-amber-500/40",
   },
   {
     href: "/shadcn/data",
     title: "04. 数据呈现与筛选",
-    description: "Table, Calendar, Chart (Recharts + ChartContainer), Carousel, Avatar, Badge, Combobox, Command 面板",
-    badge: "8 个已实装",
+    description: "Table, DataTable, Calendar, Chart (Recharts + ChartContainer), Carousel, Avatar, Badge, Combobox, Command 面板",
+    badge: "9 个已实装",
     color: "border-emerald-500/20 bg-emerald-500/5 hover:border-emerald-500/40",
   },
   {
@@ -42,15 +42,15 @@ const categories = [
   {
     href: "/shadcn/feedback",
     title: "06. 状态反馈与提示",
-    description: "Alert, Toast (Toaster), Progress, Skeleton, Spinner, Kbd, Empty 空状态, Message, Bubble 对话气泡",
+    description: "Alert, Toast (Toaster), Progress, Skeleton, Spinner, Kbd, Empty 空状态, Message 消息体系",
     badge: "8 个已实装",
     color: "border-cyan-500/20 bg-cyan-500/5 hover:border-cyan-500/40",
   },
   {
     href: "/shadcn/extended",
     title: "07. AI与扩展基元",
-    description: "Attachment 附件卡、Item 结构列表、Marker 视觉标记、Direction 文字方向、Questionnaire 问卷、MessageScroller 消息流、Sidebar 侧边栏",
-    badge: "7 个已实装",
+    description: "Attachment 附件卡、Item 结构列表、Marker 视觉标记、Direction 文字方向、Questionnaire 问卷、MessageScroller 消息流、Sidebar 侧边栏、Bubble 对话气泡、Typography 官方排版",
+    badge: "9 个已实装",
     color: "border-indigo-500/20 bg-indigo-500/5 hover:border-indigo-500/40",
   },
 ];
@@ -58,12 +58,12 @@ const categories = [
 const allComponents = [
   "Accordion", "Alert", "AlertDialog", "AspectRatio", "Attachment", "Avatar", "Badge",
   "Breadcrumb", "Bubble", "Button", "ButtonGroup", "Calendar", "Card", "Carousel", "Chart",
-  "Checkbox", "Collapsible", "Combobox", "Command", "ContextMenu", "Dialog", "Drawer",
+  "Checkbox", "Collapsible", "Combobox", "Command", "ContextMenu", "DataTable", "DatePicker", "Dialog", "Direction", "Drawer",
   "DropdownMenu", "Empty", "Field", "HoverCard", "Input", "InputGroup", "InputOTP", "Item",
   "Kbd", "Label", "Marker", "Menubar", "Message", "MessageScroller", "NativeSelect",
   "NavigationMenu", "Pagination", "Popover", "Progress", "Questionnaire", "RadioGroup",
   "Resizable", "ScrollArea", "Select", "Separator", "Sheet", "Sidebar", "Skeleton", "Slider",
-  "Spinner", "Switch", "Table", "Tabs", "Textarea", "Toast", "Toggle", "ToggleGroup", "Tooltip"
+  "Spinner", "Switch", "Table", "Tabs", "Textarea", "Toast", "Toggle", "ToggleGroup", "Tooltip", "Typography"
 ];
 
 export default function ShadcnOverviewPage() {
@@ -76,7 +76,7 @@ export default function ShadcnOverviewPage() {
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight">shadcn/ui 官方全量组件体系</h1>
         <p className="text-muted-foreground mt-2 max-w-3xl">
-          已全量安装并配置完成官方 60+ 原子及复合组件。请在左侧侧边栏切换不同类别查看组件的实际运行效果与交互细节。
+          已全量安装并配置完成官方全部 64 款原子及复合组件。请在左侧侧边栏切换不同类别查看组件的实际运行效果与交互细节。
         </p>
       </div>
 
@@ -84,7 +84,7 @@ export default function ShadcnOverviewPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="p-4 rounded-xl border bg-card/60">
           <p className="text-xs text-muted-foreground font-medium">已集成组件总数</p>
-          <p className="text-2xl font-bold mt-1">61 个</p>
+          <p className="text-2xl font-bold mt-1">64 个 (100%全量)</p>
         </div>
         <div className="p-4 rounded-xl border bg-card/60">
           <p className="text-xs text-muted-foreground font-medium">设计规范</p>
