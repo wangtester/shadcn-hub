@@ -1,99 +1,90 @@
-import Link from "next/link";
+"use client";
+
+import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, ArrowRight, LayoutGrid, Tag, Truck, Check } from "lucide-react";
-
-const sectionsList = [
-  "Navbars", "Hero Sections", "Features", "Testimonials", "FAQ Sections",
-  "Pricing Tables", "Team Sections", "Footer Sections", "CTA Sections",
-  "Stats Sections", "Blog Sections", "Logo Clouds", "Bento Grids", "Contact Sections"
-];
+import { ShoppingBag, ArrowRight, ExternalLink, Tag, Check, Star } from "lucide-react";
 
 export default function ShadcnStoreOverview() {
+  const [cartCount, setCartCount] = useState(1);
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <div className="border-b pb-6">
         <div className="flex items-center gap-2 mb-2">
-          <Badge className="bg-blue-500/10 text-blue-600 border-blue-500/30">生产就绪生态</Badge>
-          <span className="text-xs text-muted-foreground font-mono">https://shadcnstore.com</span>
+          <Badge className="bg-blue-500/10 text-blue-600 border-blue-500/30">ShadcnStore 全生态</Badge>
+          <a
+            href="https://shadcnstore.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1 font-mono"
+          >
+            <span>shadcnstore.com</span>
+            <ExternalLink className="h-3 w-3" />
+          </a>
         </div>
-        <h1 className="text-3xl font-extrabold tracking-tight">ShadcnStore 区块市场与电商生态</h1>
-        <p className="text-muted-foreground mt-2 max-w-3xl leading-relaxed">
-          ShadcnStore 汇聚了 269+ 个生产就绪的 UI 区块，覆盖 39 个细分业务门类。
-          不仅包含完备的营销落地页 Blocks，还专项针对电商独立站提供完整的商品橱窗、购物车抽屉与结账漏斗。
+        <h1 className="text-3xl font-extrabold tracking-tight">ShadcnStore · 电商商城与多门类区块</h1>
+        <p className="text-muted-foreground mt-2 max-w-3xl leading-relaxed text-sm">
+          涵盖 39 个业务门类的生产就绪组件。下方直接嵌入代表性电商商品卡与购买交互，点击即刻体验，无需跳转。
         </p>
-        <div className="flex gap-3 mt-4">
-          <Link href="/sites/shadcnstore/sections">
-            <Button size="sm">查看营销 Sections</Button>
-          </Link>
-          <Link href="/sites/shadcnstore/ecommerce">
-            <Button size="sm" variant="outline">体验电商 Storefront</Button>
-          </Link>
-        </div>
       </div>
 
-      {/* 指标数据 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="p-4 rounded-xl border bg-card">
-          <p className="text-xs text-muted-foreground">生产级 Blocks</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">269+</p>
-        </div>
-        <div className="p-4 rounded-xl border bg-card">
-          <p className="text-xs text-muted-foreground">细分业务分类</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">39 类</p>
-        </div>
-        <div className="p-4 rounded-xl border bg-card">
-          <p className="text-xs text-muted-foreground">开源免费区块</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">55 个</p>
-        </div>
-        <div className="p-4 rounded-xl border bg-card">
-          <p className="text-xs text-muted-foreground">适配前端框架</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">Next / Remix</p>
-        </div>
-      </div>
-
-      {/* 39 门类展示 */}
-      <div className="rounded-xl border bg-card p-6">
-        <h3 className="text-base font-bold mb-3 flex items-center gap-2">
-          <LayoutGrid className="h-4 w-4 text-primary" />
-          ShadcnStore 核心涵盖区块类目
-        </h3>
-        <div className="flex flex-wrap gap-2">
-          {sectionsList.map((sec) => (
-            <Badge key={sec} variant="secondary" className="text-xs py-1 px-2.5">
-              {sec}
-            </Badge>
-          ))}
-          <Badge variant="outline" className="text-xs text-muted-foreground">+ 其余 25 个专业门类</Badge>
-        </div>
-      </div>
-
-      {/* 子页面入口 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <Link href="/sites/shadcnstore/sections" className="block group">
-          <div className="p-5 rounded-xl border bg-card hover:border-primary/50 transition-all">
-            <div className="flex items-center justify-between">
-              <span className="font-bold text-base">营销区块展示 (Sections)</span>
-              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition-transform" />
+      {/* 嵌入组件 1: 现代电商商品橱窗卡片 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="rounded-2xl border bg-card/60 shadow-xs overflow-hidden">
+          <div className="h-44 bg-gradient-to-tr from-muted/50 via-blue-500/10 to-indigo-500/10 flex items-center justify-center relative">
+            <Badge className="absolute top-3 left-3 bg-blue-500 text-white text-[10px]">热销款</Badge>
+            <div className="w-20 h-20 rounded-2xl bg-card border shadow-xl flex items-center justify-center">
+              <ShoppingBag className="h-8 w-8 text-blue-500" />
             </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              Bento Grid、客户评价 Testimonial 卡片组、高频折叠 FAQ 问答、品牌合作 Logo 云
+          </div>
+          <CardHeader className="pb-2">
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-base font-bold">Studio Wireless Pro 耳机</CardTitle>
+              <span className="text-base font-black font-mono text-foreground">$299.00</span>
+            </div>
+            <CardDescription className="text-xs">主动降噪与高保真空间音频</CardDescription>
+          </CardHeader>
+          <CardContent className="pt-2">
+            <div className="flex items-center justify-between pt-2 border-t">
+              <div className="flex items-center gap-1 text-xs text-amber-500 font-semibold">
+                <Star className="h-3.5 w-3.5 fill-current" />
+                <span>4.9 (1,280 评价)</span>
+              </div>
+              <Button
+                size="sm"
+                onClick={() => setCartCount((prev) => prev + 1)}
+                className="rounded-xl text-xs bg-blue-600 hover:bg-blue-700 text-white gap-1.5"
+              >
+                <ShoppingBag className="h-3.5 w-3.5" />
+                <span>加入购物车 ({cartCount})</span>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* 嵌入组件 2: 促销折扣横幅与保障卡 */}
+        <div className="p-6 rounded-2xl border bg-gradient-to-br from-card via-blue-500/5 to-card shadow-xs flex flex-col justify-between">
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Tag className="h-4 w-4 text-blue-500" />
+              <h3 className="font-bold text-sm">限时专属促销优惠</h3>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              即刻结算享受全球包邮与 30 天无理由退换货保障，完美契合 Stripe 与 Shopify 结账流。
             </p>
           </div>
-        </Link>
 
-        <Link href="/sites/shadcnstore/ecommerce" className="block group">
-          <div className="p-5 rounded-xl border bg-card hover:border-primary/50 transition-all">
-            <div className="flex items-center justify-between">
-              <span className="font-bold text-base">电商商城组件 (Storefront)</span>
-              <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition-transform" />
+          <div className="pt-4 border-t space-y-2 text-xs">
+            <div className="flex items-center gap-2 text-emerald-600 font-medium">
+              <Check className="h-4 w-4" /> 全球 48 小时极速顺丰冷链
             </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              带折扣标签与快速加购的商品卡片、购物车滑出抽屉、多维度属性筛选侧边栏
-            </p>
+            <div className="flex items-center gap-2 text-emerald-600 font-medium">
+              <Check className="h-4 w-4" /> 256 位银行级 SSL 加密交易
+            </div>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

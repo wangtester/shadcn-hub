@@ -1,138 +1,102 @@
 "use client";
 
-import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import React, { useState } from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, ExternalLink, Wand2, Compass, Layers, ShieldCheck, Eye } from "lucide-react";
+import { Sparkles, ExternalLink, Zap, Layers, MapPin, ArrowRight } from "lucide-react";
 
 export default function AceternityOverviewPage() {
+  const [pinHovered, setPinHovered] = useState(false);
+
   return (
-    <div className="space-y-8 max-w-5xl">
-      {/* 顶部标语 */}
-      <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-background p-6 md:p-8">
-        <div className="flex flex-wrap items-center gap-2 mb-3">
-          <Badge variant="outline" className="bg-cyan-500/10 text-cyan-600 border-cyan-500/30 font-mono text-xs">
-            ui.aceternity.com
-          </Badge>
-          <Badge variant="secondary" className="text-xs">
-            暗黑极客美学典范
-          </Badge>
-        </div>
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
-          Aceternity UI：将网站视觉拉升至艺术高度
-        </h1>
-        <p className="text-sm md:text-base text-muted-foreground max-w-3xl leading-relaxed">
-          由著名全栈设计师 Manu Arora 倾力打造。Aceternity 改变了传统 Web 组件“灰白平铺”的死板面貌，将 3D 透视倾斜、
-          流体光锥、聚光神灯效应与高频星光粒子无缝植入 shadcn 与 Tailwind CSS 生态，让专业设计师的产品瞬间具备顶奢科技感。
-        </p>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Link href="/sites/aceternity/components">
-            <Button className="gap-2 text-xs md:text-sm font-semibold shadow-xs">
-              <Sparkles className="h-4 w-4" />
-              <span>体验 Lamp 聚光与 3D Pin 组件</span>
-            </Button>
-          </Link>
-          <Link href="/sites/aceternity/blocks">
-            <Button variant="outline" className="gap-2 text-xs md:text-sm font-semibold">
-              <Layers className="h-4 w-4" />
-              <span>查看 Tracing Beam 追踪区块</span>
-            </Button>
-          </Link>
+    <div className="space-y-10">
+      {/* 顶部标语与来源 */}
+      <div className="border-b pb-6">
+        <div className="flex items-center gap-2 mb-2">
+          <Badge className="bg-cyan-500/10 text-cyan-500 border-cyan-500/20 font-medium">Aceternity 全生态</Badge>
           <a
-            href="https://ui.aceternity.com"
+            href="https://ui.aceternity.com/components"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground ml-2 font-medium"
+            className="text-xs text-muted-foreground hover:text-cyan-500 transition-colors flex items-center gap-1 font-mono"
           >
-            <span>访问 Aceternity 官网</span>
-            <ExternalLink className="h-3.5 w-3.5" />
+            <span>ui.aceternity.com/components</span>
+            <ExternalLink className="h-3 w-3" />
           </a>
+        </div>
+        <h1 className="text-3xl font-extrabold tracking-tight">Aceternity UI · 暗黑极客视差与 3D 艺术美学</h1>
+        <p className="text-muted-foreground mt-2 max-w-3xl leading-relaxed text-sm">
+          开创性的 3D 透视倾斜、Lamp 聚光神灯与流光轨迹系统。下方直接嵌入官方最著名的代表性实机组件，点击直接交互。
+        </p>
+      </div>
+
+      {/* 嵌入组件 1: Lamp Effect 聚光神灯舞台 */}
+      <div className="relative rounded-2xl border bg-zinc-950 overflow-hidden text-center py-12 px-6">
+        {/* Lamp Cone 光锥 */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-32 bg-cyan-500/30 blur-[60px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-cyan-400 shadow-[0_0_20px_#06b6d4]" />
+
+        <div className="relative z-10 max-w-lg mx-auto space-y-3">
+          <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/30 text-xs font-mono">
+            Aceternity Lamp Core
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white">
+            Lamp Effect 聚光舞台
+          </h2>
+          <p className="text-xs text-zinc-400 leading-relaxed">
+            神灯光锥从上方倾泻而下，柔和漫反射点亮核心标题。无需冗长跳转，直接在此感知聚光呼吸感。
+          </p>
         </div>
       </div>
 
-      {/* 3 大核心审美支柱 */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="border-cyan-500/20 bg-cyan-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-600 mb-2">
-              <Sparkles className="h-4 w-4" />
-            </div>
-            <CardTitle className="text-base">Atmospheric 光影氛围渲染</CardTitle>
-            <CardDescription className="text-xs">
-              通过放射状渐变、光锥投射与反向高光，让原本二维平面的界面呈现出舞台剧般的纵深感。
-            </CardDescription>
-          </CardHeader>
-        </Card>
+      {/* 嵌入组件 2: 3D Pin 针点悬浮浮层 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          onMouseEnter={() => setPinHovered(true)}
+          onMouseLeave={() => setPinHovered(false)}
+          className="rounded-2xl border bg-card/60 p-6 shadow-xs relative group cursor-pointer"
+        >
+          <div className="flex items-center justify-between mb-3">
+            <CardTitle className="text-base font-bold">3D Pin · 针点立体悬浮卡</CardTitle>
+            <Badge variant="outline" className="text-[10px]">3D Pin</Badge>
+          </div>
+          <div className="p-6 rounded-xl border bg-zinc-900 text-white relative overflow-hidden transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-cyan-500/10">
+            {pinHovered && (
+              <div className="absolute top-2 right-2 flex items-center gap-1 text-[10px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-full border border-cyan-500/30">
+                <MapPin className="h-3 w-3" /> Pin 激活
+              </div>
+            )}
+            <h4 className="font-bold text-sm">San Francisco · Cluster 01</h4>
+            <p className="text-xs text-zinc-400 mt-1">边缘节点算力池已部署完成，延迟小于 4ms。</p>
+          </div>
+          <p className="text-[11px] text-muted-foreground mt-3">鼠标移入触发 3D 浮层悬起与坐标指示针点</p>
+        </div>
 
-        <Card className="border-blue-500/20 bg-blue-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-600 mb-2">
-              <Eye className="h-4 w-4" />
+        {/* 嵌入组件 3: Hover Border Gradient */}
+        <div className="rounded-2xl border bg-card/60 p-6 shadow-xs flex flex-col justify-between">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <CardTitle className="text-base font-bold">Hover Border Gradient · 渐变光斑环绕</CardTitle>
+              <Badge variant="outline" className="text-[10px]">Radial Border</Badge>
             </div>
-            <CardTitle className="text-base">3D Perspective 三维透视触感</CardTitle>
-            <CardDescription className="text-xs">
-              卡片跟随光标倾斜、图钉从平面弹出、粒子在空间漂浮，赋予数字界面物理世界的重力与触觉。
-            </CardDescription>
-          </CardHeader>
-        </Card>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              跟随光标实时计算角度的渐变高光边框，让操作具有真实的物理光线折射感。
+            </p>
+          </div>
 
-        <Card className="border-purple-500/20 bg-purple-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-600 mb-2">
-              <ShieldCheck className="h-4 w-4" />
-            </div>
-            <CardTitle className="text-base">Copy-Paste 现代化免维护</CardTitle>
-            <CardDescription className="text-xs">
-              采用与 shadcn 完全一致的 Copy-Paste 源码所有权模式，无黑盒打包，所有动效变量透明可定制。
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-
-      {/* 收录入口 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card className="hover:border-primary/50 transition-colors">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <Badge variant="outline" className="text-[10px]">Visual Components</Badge>
-              <span className="text-xs text-muted-foreground font-mono">/sites/aceternity/components</span>
-            </div>
-            <CardTitle className="text-base mt-2">聚光与 3D 视觉基元 (4 项实装)</CardTitle>
-            <CardDescription className="text-xs">
-              收录 Lamp Header（聚光神灯效应）、Sparkles & Stars（星空粒子）、3D Pin Card（空间图钉悬浮）、Hover Border Gradient（流动渐变边框）。
-            </CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <Link href="/sites/aceternity/components" className="w-full">
-              <Button variant="secondary" size="sm" className="w-full justify-between text-xs">
-                <span>体验视觉动效</span>
-                <ArrowRight className="h-3.5 w-3.5" />
+          <div className="pt-6">
+            <div className="p-4 rounded-xl border border-cyan-500/40 bg-gradient-to-r from-card via-cyan-500/5 to-card flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Zap className="h-4 w-4 text-cyan-500" />
+                <span className="text-xs font-semibold">体验光斑跟随微交互</span>
+              </div>
+              <Button size="sm" className="rounded-xl text-xs bg-cyan-500 hover:bg-cyan-600 text-black font-semibold">
+                触碰激活
               </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card className="hover:border-primary/50 transition-colors">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <Badge variant="outline" className="text-[10px]">Immersive Blocks</Badge>
-              <span className="text-xs text-muted-foreground font-mono">/sites/aceternity/blocks</span>
             </div>
-            <CardTitle className="text-base mt-2">光束追踪与背景展台 (2 款区块)</CardTitle>
-            <CardDescription className="text-xs">
-              收录 Tracing Beam 页面长文阅读轨迹光线跟踪、Background Beams 全屏科技光网展台区块。
-            </CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <Link href="/sites/aceternity/blocks" className="w-full">
-              <Button variant="secondary" size="sm" className="w-full justify-between text-xs">
-                <span>查看实景区块</span>
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
+          </div>
+        </div>
       </div>
     </div>
   );

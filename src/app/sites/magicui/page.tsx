@@ -1,141 +1,142 @@
 "use client";
 
-import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import React, { useState } from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, ExternalLink, Wand2, Compass, Layers, CheckCircle2, Box, Cpu } from "lucide-react";
+import {
+  Sparkles,
+  Zap,
+  Layers,
+  ArrowRight,
+  ExternalLink,
+  Laptop,
+  Terminal,
+  Folder,
+  Settings,
+  MessageSquare,
+  Flame,
+  Star,
+  CheckCircle2,
+} from "lucide-react";
 
 export default function MagicUIOverviewPage() {
+  const [activeDock, setActiveDock] = useState<string>("finder");
+  const [shimmerClicked, setShimmerClicked] = useState(false);
+
+  const dockItems = [
+    { id: "finder", label: "Finder", icon: <Folder className="h-5 w-5 text-blue-500" /> },
+    { id: "terminal", label: "Terminal", icon: <Terminal className="h-5 w-5 text-emerald-500" /> },
+    { id: "chat", label: "Messages", icon: <MessageSquare className="h-5 w-5 text-pink-500" /> },
+    { id: "settings", label: "Settings", icon: <Settings className="h-5 w-5 text-amber-500" /> },
+  ];
+
   return (
-    <div className="space-y-8 max-w-5xl">
-      {/* 顶部标语 */}
-      <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-background p-6 md:p-8">
-        <div className="flex flex-wrap items-center gap-2 mb-3">
-          <Badge variant="outline" className="bg-indigo-500/10 text-indigo-600 border-indigo-500/30 font-mono text-xs">
-            magicui.design
-          </Badge>
-          <Badge variant="secondary" className="text-xs">
-            Design Engineers 动效圣经
-          </Badge>
-        </div>
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
-          Magic UI：专为设计工程师打造的高级 UI 库
-        </h1>
-        <p className="text-sm md:text-base text-muted-foreground max-w-3xl leading-relaxed">
-          在现代 Web 产品中，“设计工程师（Design Engineer）”正在重新定义产品的品质边界。Magic UI 弥合了 Figma 设计稿与生产级代码之间的鸿沟，
-          提供开箱即用的 Marquee、Bento Grid、Animated Beam、Meteors 等高质量动效与区块，让每一个 Landing Page 和功能介绍都具备殿堂级的交互质感。
-        </p>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Link href="/sites/magicui/components">
-            <Button className="gap-2 text-xs md:text-sm font-semibold shadow-xs">
-              <Sparkles className="h-4 w-4" />
-              <span>探索 5 款核心动效组件</span>
-            </Button>
-          </Link>
-          <Link href="/sites/magicui/blocks">
-            <Button variant="outline" className="gap-2 text-xs md:text-sm font-semibold">
-              <Layers className="h-4 w-4" />
-              <span>浏览 Bento 与营销区块</span>
-            </Button>
-          </Link>
+    <div className="space-y-10">
+      {/* 顶部标语与来源 */}
+      <div className="border-b pb-6">
+        <div className="flex items-center gap-2 mb-2">
+          <Badge className="bg-indigo-500/10 text-indigo-500 border-indigo-500/20 font-medium">Magic UI 全生态</Badge>
           <a
-            href="https://magicui.design"
+            href="https://magicui.design/docs/components"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground ml-2 font-medium"
+            className="text-xs text-muted-foreground hover:text-indigo-500 transition-colors flex items-center gap-1 font-mono"
           >
-            <span>访问 Magic UI 官方文档</span>
-            <ExternalLink className="h-3.5 w-3.5" />
+            <span>magicui.design/docs/components</span>
+            <ExternalLink className="h-3 w-3" />
           </a>
         </div>
+        <h1 className="text-3xl font-extrabold tracking-tight">Magic UI · 设计工程师的高级动效库</h1>
+        <p className="text-muted-foreground mt-2 max-w-3xl leading-relaxed text-sm">
+          专为 Landing Page 与高转化界面打造的微交互圣经。下方直接嵌入官方最受推崇的代表性实机组件，点击即刻体验，无需跳转。
+        </p>
       </div>
 
-      {/* 核心设计哲学拆解 */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="border-indigo-500/20 bg-indigo-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-600 mb-2">
-              <Sparkles className="h-4 w-4" />
-            </div>
-            <CardTitle className="text-base">Subtle & Delightful 细腻微动效</CardTitle>
-            <CardDescription className="text-xs">
-              动效不是为了炫技，而是为了引导注意力与传递层级。所有交互均拥有精准的物理阻尼与流光衰减。
-            </CardDescription>
-          </CardHeader>
-        </Card>
-
-        <Card className="border-purple-500/20 bg-purple-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-600 mb-2">
-              <Layers className="h-4 w-4" />
-            </div>
-            <CardTitle className="text-base">Bento-First 非对称空间架构</CardTitle>
-            <CardDescription className="text-xs">
-              针对现代复杂业务特性展示，提供基于 Bento Grid 的模块化卡片叙事能力，视觉重心错落有致。
-            </CardDescription>
-          </CardHeader>
-        </Card>
-
-        <Card className="border-pink-500/20 bg-pink-500/5">
-          <CardHeader className="pb-2">
-            <div className="h-8 w-8 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-600 mb-2">
-              <Cpu className="h-4 w-4" />
-            </div>
-            <CardTitle className="text-base">shadcn/ui 原生无缝融合</CardTitle>
-            <CardDescription className="text-xs">
-              与 Tailwind CSS v4 及 shadcn 共享设计变量体系（Tokens），无需额外复杂的引入配置即可一键复制套用。
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-
-      {/* 实录收录导航 */}
-      <div className="space-y-4">
-        <h2 className="text-lg font-bold tracking-tight">本站收录的 Magic UI 专区</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="hover:border-primary/50 transition-colors">
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <Badge variant="outline" className="text-[10px]">Components</Badge>
-                <span className="text-xs text-muted-foreground font-mono">/sites/magicui/components</span>
-              </div>
-              <CardTitle className="text-base mt-2">核心动效组件 (5 项实装)</CardTitle>
-              <CardDescription className="text-xs">
-                收录 Marquee 跑马灯、Animated Beam 动态数据流、Border Beam 流光边框、Orbiting Circles 行星轨道、Ripple 水波纹容器。
-              </CardDescription>
-            </CardHeader>
-            <CardFooter>
-              <Link href="/sites/magicui/components" className="w-full">
-                <Button variant="secondary" size="sm" className="w-full justify-between text-xs">
-                  <span>查看实机交互体验</span>
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-
-          <Card className="hover:border-primary/50 transition-colors">
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <Badge variant="outline" className="text-[10px]">Blocks</Badge>
-                <span className="text-xs text-muted-foreground font-mono">/sites/magicui/blocks</span>
-              </div>
-              <CardTitle className="text-base mt-2">Bento 与着陆页区块 (3 项实装)</CardTitle>
-              <CardDescription className="text-xs">
-                收录 Magic Bento Grid 互动网格、Meteors 划破星空特性卡、Retro Grid 3D 网格营销落地页首屏。
-              </CardDescription>
-            </CardHeader>
-            <CardFooter>
-              <Link href="/sites/magicui/blocks" className="w-full">
-                <Button variant="secondary" size="sm" className="w-full justify-between text-xs">
-                  <span>查看完整区块架构</span>
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
+      {/* 嵌入组件 1: macOS 风格 Dock 交互坞 */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-lg font-bold flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-indigo-500" />
+              1. Dock · macOS 拟真弹性交互坞
+            </h2>
+            <p className="text-xs text-muted-foreground">鼠标悬浮时产生平滑物理缩放波形，支持点击激活微状态</p>
+          </div>
+          <Badge variant="outline" className="text-[10px]">直接嵌入运行</Badge>
         </div>
+
+        <div className="p-8 rounded-2xl border bg-gradient-to-b from-card/80 to-muted/30 backdrop-blur-md flex flex-col items-center justify-center min-h-[160px]">
+          <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-card/90 border shadow-2xl backdrop-blur-xl">
+            {dockItems.map((item) => {
+              const isActive = activeDock === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveDock(item.id)}
+                  className={`p-3 rounded-xl transition-all duration-200 relative group hover:-translate-y-2 hover:scale-125 ${
+                    isActive ? "bg-muted shadow-xs" : "hover:bg-muted/60"
+                  }`}
+                >
+                  {item.icon}
+                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-popover text-popover-foreground text-[10px] px-2 py-0.5 rounded shadow-sm whitespace-nowrap pointer-events-none">
+                    {item.label}
+                  </div>
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-indigo-500" />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-muted-foreground mt-4">
+            当前激活应用: <span className="font-bold text-foreground capitalize">{activeDock}</span>
+          </p>
+        </div>
+      </div>
+
+      {/* 嵌入组件 2: Shimmer Button & Border Beam 流光边框 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Shimmer Button */}
+        <Card className="rounded-2xl border bg-card/60 shadow-xs">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base font-bold">2. Shimmer Button · 珍珠光泽流动按钮</CardTitle>
+            <CardDescription className="text-xs">斜向流光持续在暗色按钮四周律动掠过</CardDescription>
+          </CardHeader>
+          <CardContent className="h-44 flex flex-col items-center justify-center gap-3">
+            <button
+              onClick={() => setShimmerClicked(true)}
+              className="relative inline-flex h-12 overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 active:scale-95 transition-transform"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-6 py-1 text-xs font-semibold text-white backdrop-blur-3xl gap-2">
+                <Sparkles className="h-4 w-4 text-purple-400" />
+                <span>{shimmerClicked ? "已触发高阶微交互！" : "即刻体验 Shimmer Button"}</span>
+              </span>
+            </button>
+            <p className="text-[11px] text-muted-foreground">原生纯 CSS 实现，零 JS 掉帧隐患</p>
+          </CardContent>
+        </Card>
+
+        {/* Border Beam 卡片 */}
+        <Card className="rounded-2xl border bg-card/60 shadow-xs relative overflow-hidden">
+          <div className="absolute inset-0 rounded-2xl p-[1px] pointer-events-none">
+            <div className="w-full h-full rounded-2xl bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent animate-[shine_4s_linear_infinite]" />
+          </div>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base font-bold">3. Border Beam · 环绕追踪光束</CardTitle>
+            <CardDescription className="text-xs">一束高亮微光沿卡片四周边框做闭环追踪巡游</CardDescription>
+          </CardHeader>
+          <CardContent className="h-44 flex flex-col items-center justify-center text-center p-6">
+            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-2">
+              <Zap className="h-5 w-5" />
+            </div>
+            <p className="text-xs font-semibold">自闭合光子轨迹卡片</p>
+            <p className="text-[11px] text-muted-foreground mt-1 max-w-xs">
+              适合重点推介定价卡（Featured Pricing）、推荐产品或 VIP 徽章容器。
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );

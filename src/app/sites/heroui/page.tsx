@@ -125,17 +125,44 @@ export default function HeroUIOverview() {
           我们在此完整收录并实装了官方涵盖的 Charts（8款）、Data Display（10款）、AI Components（9款）、
           Feedback（7款）以及营销与中后台 Blocks，全部真实交互，即刻在 shadcn-hub 上一站式体验。
         </p>
-        <div className="flex flex-wrap gap-3 mt-6">
-          <Link href="/sites/heroui/charts">
-            <Button size="sm" className="rounded-xl bg-pink-500 hover:bg-pink-600 text-white">体验 Charts 图表体系</Button>
-          </Link>
-          <Link href="/sites/heroui/ai">
-            <Button size="sm" variant="outline" className="rounded-xl">体验 AI 智能体组件</Button>
-          </Link>
-          <Link href="/sites/heroui/data">
-            <Button size="sm" variant="outline" className="rounded-xl">体验 Data Display 数据基元</Button>
-          </Link>
+      {/* 嵌入组件 1: HeroUI Pro 标志性 Holo Card & CoT 思考链 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Holo Card */}
+        <div className="relative group overflow-hidden rounded-2xl border p-6 bg-gradient-to-br from-card via-card to-pink-500/10 shadow-xs hover:shadow-xl transition-all duration-300">
+          <div className="absolute -top-12 -right-12 w-28 h-28 bg-pink-500/20 rounded-full blur-2xl pointer-events-none" />
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Holo Card · 全息微质感</span>
+            <Badge className="bg-pink-500 text-white text-[10px]">OLED 光效</Badge>
+          </div>
+          <div className="mt-4">
+            <div className="text-3xl font-black tracking-tight text-foreground">$128,450.00</div>
+            <div className="flex items-center gap-1.5 mt-1 text-xs text-emerald-500 font-medium">
+              <TrendingUp className="h-3 w-3" />
+              <span>+14.8% 环比上月增长</span>
+            </div>
+          </div>
+          <div className="mt-5 pt-3 border-t border-border/50 text-[11px] text-muted-foreground flex justify-between">
+            <span>设计特征: rounded-2xl 超大圆角</span>
+            <span className="text-foreground font-medium">即刻可用</span>
+          </div>
         </div>
+
+        {/* 嵌入组件 2: Chain Of Thought 思考链 */}
+        <div className="rounded-2xl border bg-card/60 p-6 shadow-xs space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Bot className="h-4 w-4 text-pink-500" />
+              <h3 className="font-bold text-sm">Chain Of Thought · 智能体思考链</h3>
+            </div>
+            <Badge variant="outline" className="text-[10px]">1.8s 推理</Badge>
+          </div>
+          <div className="p-3 rounded-xl border bg-muted/20 text-xs font-mono text-muted-foreground space-y-1">
+            <div className="text-pink-500 font-bold">Step 1: 解析大圆角与微光晕设计变量</div>
+            <div className="text-purple-500 font-bold">Step 2: 实机嵌入全部 36+ 项官方核心组件</div>
+            <div className="text-emerald-500 font-bold">Step 3: 零跳板直接加载渲染完毕</div>
+          </div>
+        </div>
+      </div>
       </div>
 
       {/* 核心板块卡片矩阵 */}

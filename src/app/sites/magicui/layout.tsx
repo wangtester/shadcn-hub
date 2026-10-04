@@ -5,21 +5,18 @@ import { LayoutDashboard, Sparkles, Box, LayoutGrid } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "概览",
+    groupTitle: "精选",
     items: [
-      { title: "概览", href: "/sites/magicui", icon: <LayoutDashboard /> },
+      { title: "总览", href: "/sites/magicui", icon: <LayoutDashboard /> },
     ],
   },
   {
     groupTitle: "组件",
     items: [
       { title: "动效组件", href: "/sites/magicui/components", badge: "5款", icon: <Sparkles /> },
-    ],
-  },
-  {
-    groupTitle: "区块",
-    items: [
+      { title: "文本动效", href: "/sites/magicui/text", badge: "6款", icon: <Box /> },
       { title: "Bento区块", href: "/sites/magicui/blocks", badge: "3款", icon: <LayoutGrid /> },
+      { title: "背景图案", href: "/sites/magicui/backgrounds", badge: "4款", icon: <Sparkles /> },
     ],
   },
 ];
