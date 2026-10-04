@@ -17,13 +17,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wangtester.github.io/shadcn-hub"),
   title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-  description: "一站式聚合收录 shadcn/ui 官方全量 61 款基础组件 + 9 大顶尖社区扩展库与商业级 Blocks，100% 实机渲染与真实可交互对比。",
-  keywords: ["shadcn", "shadcn/ui", "Next.js 16", "Tailwind CSS v4", "Base UI", "React 19", "UI Components", "Design System", "Dashboard", "BoardUI", "ShadcnStore", "Refero Design"],
+  description: "一站式聚合收录 shadcn/ui 官方全量 64 款原子组件 + 11 大顶尖社区扩展库与商业级 Blocks，以及 24+ 款前端设计师常备百宝箱，100% 实机渲染与真实可交互对比。",
+  keywords: [
+    "shadcn",
+    "shadcn/ui",
+    "Next.js 16",
+    "Tailwind CSS v4",
+    "Base UI",
+    "React 19",
+    "UI Components",
+    "Design System",
+    "Dashboard",
+    "Magic UI",
+    "Aceternity UI",
+    "BoardUI",
+    "ShadcnStore",
+    "Refero Design",
+    "Designer Tools",
+    "Bento Grid",
+  ],
   authors: [{ name: "wangtester" }],
   openGraph: {
     title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-    description: "聚合 61 款官方核心组件及 9 大生态扩展库，全实机交互体验与设计风格评测",
+    description: "聚合 64 款官方核心组件、11 大顶尖生态扩展库与设计师百宝箱，全实机交互体验与设计流派评测",
     url: "https://github.com/wangtester/shadcn-hub",
     siteName: "shadcn-hub",
     images: [
@@ -40,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-    description: "聚合 61 款官方核心组件及 9 大生态扩展库，全实机交互体验与设计风格评测",
+    description: "聚合 64 款官方核心组件、11 大顶尖生态扩展库与设计师百宝箱，全实机交互体验与设计流派评测",
     images: ["/og-image.jpg"],
   },
 };

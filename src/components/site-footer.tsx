@@ -21,7 +21,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="text-[11px] text-muted-foreground mt-0.5">
-              收录 61 款官方组件 + 9 大生态扩展 · Next.js 16 & @base-ui/react
+              收录 64 款官方组件 + 11 大生态扩展库 + 24+ 款设计师百宝箱 · Next.js 16 & @base-ui/react
             </p>
           </div>
         </div>
