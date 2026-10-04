@@ -10,7 +10,10 @@ import { GlobalSearch } from "@/components/global-search";
 
 const siteNavs = [
   { href: "/", label: "首页 Hub", short: "Hub" },
+  { href: "/tools", label: "🛠️ 设计师百宝箱", short: "Tools" },
   { href: "/shadcn", label: "shadcn/ui 官方", short: "shadcn" },
+  { href: "/sites/magicui", label: "Magic UI", short: "Magic" },
+  { href: "/sites/aceternity", label: "Aceternity UI", short: "Aceternity" },
   { href: "/sites/shadcnspace", label: "ShadcnSpace", short: "Space" },
   { href: "/sites/shadcnstore", label: "ShadcnStore", short: "Store" },
   { href: "/sites/boardui", label: "BoardUI", short: "BoardUI" },

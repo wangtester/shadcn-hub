@@ -127,6 +127,28 @@ const siteList: SiteCard[] = [
     icon: <Gem className="h-5 w-5 text-rose-500" />,
     highlights: ["Aurora 极光流光卡", "高光渐变胶囊徽标", "立体折射磨砂面板"],
   },
+  {
+    title: "Magic UI",
+    category: "Design Engineer Motion",
+    url: "/sites/magicui",
+    originUrl: "https://magicui.design",
+    desc: "专为设计工程师打造的高级动效库：Marquee 跑马灯、Animated Beam 节点数据流、Border Beam 边框流光与 Magic Bento Grid。",
+    badge: "50+ 动效组件与 Bento",
+    tagColor: "bg-indigo-500/10 text-indigo-600 border-indigo-500/30",
+    icon: <Sparkles className="h-5 w-5 text-indigo-500" />,
+    highlights: ["Marquee 无缝跑马灯", "Animated Beam 连线", "Border Beam 流光边框"],
+  },
+  {
+    title: "Aceternity UI",
+    category: "Visual Aesthetics",
+    url: "/sites/aceternity",
+    originUrl: "https://ui.aceternity.com",
+    desc: "将网站拉升至艺术高度的暗黑极客美学：Lamp Header 神灯聚光、Sparkles 星光粒子、3D Pin 空间图钉与 Tracing Beam 追踪流。",
+    badge: "顶奢视觉与 3D 透视",
+    tagColor: "bg-cyan-500/10 text-cyan-600 border-cyan-500/30",
+    icon: <Wand2 className="h-5 w-5 text-cyan-500" />,
+    highlights: ["Lamp Header 聚光光锥", "Sparkles 星空粒子", "3D Pin 空间倾斜卡片"],
+  },
 ];
 
 export default function HomeHubPage() {
@@ -139,10 +161,10 @@ export default function HomeHubPage() {
           <span>全网首个 shadcn 全生态全量组件与 Blocks 大一统画廊</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-tight">
-          聚合 shadcn/ui 与 <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">9 大扩展组件库生态</span>
+          聚合 shadcn/ui 与 <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">11 大扩展组件库生态</span>
         </h1>
         <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-          一个站点统一聚合全部官方原子组件与 9 个精选生态扩展库。
+          一个站点统一聚合全部官方原子组件与 11 个精选顶尖生态扩展库（包含 Magic UI 与 Aceternity UI）。
           点击任意站点即可进入专属的双层系统：顶部导航快速跨站，左侧垂直侧边栏切换不同类目的页面与 Blocks，同屏对比全网最前沿的 UI 交互与视觉效果。
         </p>
       </div>
@@ -151,18 +173,18 @@ export default function HomeHubPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
           <p className="text-xs text-muted-foreground font-semibold">聚合设计生态库</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">10 个</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">官方库 + 9 大生态扩展</p>
+          <p className="text-3xl font-extrabold mt-1 text-primary">12 个</p>
+          <p className="text-[11px] text-muted-foreground mt-0.5">官方核心 + 11 大顶尖生态扩展</p>
         </div>
         <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
           <p className="text-xs text-muted-foreground font-semibold">生产级 Blocks 总量</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">800+</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">覆盖落地页/后台/电商</p>
+          <p className="text-3xl font-extrabold mt-1 text-primary">1,000+</p>
+          <p className="text-[11px] text-muted-foreground mt-0.5">覆盖落地页/后台/电商/动效</p>
         </div>
         <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
           <p className="text-xs text-muted-foreground font-semibold">图表卡片 & 动效</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">19+ Cards</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">Motion 弹簧与流体球</p>
+          <p className="text-3xl font-extrabold mt-1 text-primary">30+ Cards</p>
+          <p className="text-[11px] text-muted-foreground mt-0.5">Marquee / 3D Pin / 弹簧流体</p>
         </div>
         <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
           <p className="text-xs text-muted-foreground font-semibold">主流设计美学对比</p>
@@ -171,7 +193,28 @@ export default function HomeHubPage() {
         </div>
       </div>
 
-      {/* 10 个站点全景展示矩阵卡片 */}
+      {/* 专属推荐：前端设计师常备工具箱 Banner */}
+      <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="space-y-2 text-center md:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground">
+            <span>NEW FEATURE</span>
+          </div>
+          <h2 className="text-xl md:text-2xl font-bold tracking-tight">
+            🛠️ 专业前端设计师必备工具箱上线
+          </h2>
+          <p className="text-xs md:text-sm text-muted-foreground max-w-2xl leading-relaxed">
+            收录实景测色、真实产品交互走查、苹果风网格弥散、非线性多层阴影、CSS 弹性曲线与 WCAG 色盲视力模拟等 24+ 款专业神器，支持一键直达与链接复制。
+          </p>
+        </div>
+        <Link href="/tools" className="shrink-0">
+          <Button className="gap-2 font-bold px-6 shadow-md">
+            <span>进入设计师工具箱</span>
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+        </Link>
+      </div>
+
+      {/* 12 个站点全景展示矩阵卡片 */}
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>

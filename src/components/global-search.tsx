@@ -23,9 +23,12 @@ interface SearchItem {
 }
 
 const SEARCH_ITEMS: SearchItem[] = [
-  // 10 大入口
+  // 生态入口与百宝箱
   { title: "全景生态大厅 (Hub)", category: "生态站点", href: "/", keywords: ["home", "hub", "index", "overview", "首页"] },
+  { title: "🛠️ 前端设计师常备工具箱 (Toolbox)", category: "生态站点", href: "/tools", keywords: ["tools", "toolbox", "color", "palette", "mobbin", "coolors", "shadow", "bezier", "工具", "调色"] },
   { title: "shadcn/ui 官方核心库 (64 全量组件)", category: "生态站点", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
+  { title: "Magic UI 动效库 (50+ 动效与 Bento)", category: "生态站点", href: "/sites/magicui", keywords: ["magicui", "magic", "motion", "marquee", "beam", "meteors", "orbit", "bento"] },
+  { title: "Aceternity UI 顶奢视觉库 (Lamp/3D Pin)", category: "生态站点", href: "/sites/aceternity", keywords: ["aceternity", "lamp", "sparkles", "pin", "tracing", "beams"] },
   { title: "BoardUI 仪表盘与 AI 智能体 (19 图表)", category: "生态站点", href: "/sites/boardui", keywords: ["boardui", "charts", "agent", "dashboard"] },
   { title: "ShadcnStore 商业区块与电商 (39 类目)", category: "生态站点", href: "/sites/shadcnstore", keywords: ["store", "blocks", "ecommerce", "sections"] },
   { title: "Refero Styles (9 大现代设计风格)", category: "生态站点", href: "/sites/refero", keywords: ["refero", "design", "tokens", "styles", "linear", "geist"] },
@@ -71,6 +74,11 @@ const SEARCH_ITEMS: SearchItem[] = [
   { title: "Transitions.dev 动态置换 (Text Swap 垂直轮转/胶囊徽章形变)", category: "交互与区块", href: "/sites/transitions/morphing", keywords: ["transitions", "morphing", "text-swap", "badge-morph"] },
   { title: "ShadcnStore 高频落地页区块 (Bento 便当盒/定价表/指标墙/CTA)", category: "交互与区块", href: "/sites/shadcnstore/sections", keywords: ["shadcnstore", "bento", "pricing", "stats", "cta", "landing"] },
   { title: "Refero AI DESIGN.md 规范即时导出生成器", category: "交互与区块", href: "/sites/refero/tokens", keywords: ["refero", "design-md", "tokens", "export", "markdown"] },
+  { title: "Magic UI 动效组件 (Marquee/Animated Beam/Border Beam/Orbit/Ripple)", category: "交互与区块", href: "/sites/magicui/components", keywords: ["magicui", "marquee", "beam", "border-beam", "orbit", "ripple"] },
+  { title: "Magic UI 营销区块 (Magic Bento Grid/Meteors 流星/Retro Grid)", category: "交互与区块", href: "/sites/magicui/blocks", keywords: ["magicui", "bento", "meteors", "retro-grid", "landing"] },
+  { title: "Aceternity 视觉基元 (Lamp 神灯聚光/Sparkles 星空/3D Pin 图钉)", category: "交互与区块", href: "/sites/aceternity/components", keywords: ["aceternity", "lamp", "sparkles", "3d-pin", "conic", "gradient"] },
+  { title: "Aceternity 沉浸区块 (Tracing Beam 阅读光束/Background Beams)", category: "交互与区块", href: "/sites/aceternity/blocks", keywords: ["aceternity", "tracing-beam", "background-beams", "showcase"] },
+  { title: "🛠️ 前端设计师常用工具合集 (Coolors/Mobbin/Fontshare/WhoCanUse)", category: "交互与区块", href: "/tools", keywords: ["tools", "coolors", "mobbin", "godly", "fontshare", "haikei", "shadow", "bezier", "whocanuse"] },
 
   // Refero 9 大设计流派
   { title: "Linear 灰阶极简风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["linear", "dark", "monochrome", "minimal"] },
