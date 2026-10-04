@@ -169,27 +169,37 @@ export default function HomeHubPage() {
         </p>
       </div>
 
-      {/* 综合指标 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
-          <p className="text-xs text-muted-foreground font-semibold">聚合设计生态库</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">12 个</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">官方核心 + 11 大顶尖生态扩展</p>
+      {/* 综合指标 6 维矩阵 */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">聚合设计生态库</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-primary">12 个</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">1 核心 + 11 扩展</p>
         </div>
-        <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
-          <p className="text-xs text-muted-foreground font-semibold">生产级 Blocks 总量</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">1,000+</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">覆盖落地页/后台/电商/动效</p>
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">官方核心组件</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-blue-600 dark:text-blue-400">64 款</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">100% 官方全量</p>
         </div>
-        <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
-          <p className="text-xs text-muted-foreground font-semibold">图表卡片 & 动效</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">30+ Cards</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">Marquee / 3D Pin / 弹簧流体</p>
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">生产级 Blocks</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-indigo-600 dark:text-indigo-400">1,000+</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">39 类业务区块</p>
         </div>
-        <div className="p-4 rounded-xl border bg-card/60 shadow-xs text-center">
-          <p className="text-xs text-muted-foreground font-semibold">主流设计美学对比</p>
-          <p className="text-3xl font-extrabold mt-1 text-primary">9 大风格</p>
-          <p className="text-[11px] text-muted-foreground mt-0.5">Linear / Vercel / Apple</p>
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">设计师百宝箱</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-amber-600 dark:text-amber-400">24+ 款</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">7 大专业维度</p>
+        </div>
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">高阶图表与动效</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-purple-600 dark:text-purple-400">35+ 项</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">Lamp / Pin / 19 图表</p>
+        </div>
+        <div className="p-3.5 rounded-xl border bg-card/60 shadow-2xs text-center hover:border-primary/40 transition-colors">
+          <p className="text-[11px] text-muted-foreground font-semibold">预渲染静态路由</p>
+          <p className="text-2xl md:text-3xl font-black mt-1 text-emerald-600 dark:text-emerald-400">58 个</p>
+          <p className="text-[10px] text-muted-foreground mt-0.5 font-mono">Turbopack 静态生成</p>
         </div>
       </div>
 
@@ -208,7 +218,7 @@ export default function HomeHubPage() {
         </div>
         <Link href="/tools" className="shrink-0">
           <Button className="gap-2 font-bold px-6 shadow-md">
-            <span>进入设计师工具箱</span>
+            <span>进入设计师工具箱 (24+ 工具)</span>
             <ArrowRight className="h-4 w-4" />
           </Button>
         </Link>
@@ -216,10 +226,18 @@ export default function HomeHubPage() {
 
       {/* 12 个站点全景展示矩阵卡片 */}
       <div className="space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">全部聚合站点与组件库全景</h2>
-            <p className="text-xs text-muted-foreground mt-1">每个站点均配备专属的顶部导航和左侧垂直侧边栏菜单</p>
+            <p className="text-xs text-muted-foreground mt-1">每个站点均配备专属的双层导航体系与左侧响应式抽屉菜单</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <Badge variant="outline" className="text-xs font-mono bg-primary/5 text-primary border-primary/20">
+              12 大站点全量收录
+            </Badge>
+            <Badge variant="secondary" className="text-xs font-mono">
+              58 个预渲染页面
+            </Badge>
           </div>
         </div>
 
