@@ -33,7 +33,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { GlobalSearch } from "@/components/global-search";
 
 interface EcosystemItem {
@@ -134,6 +134,18 @@ export function TopNav() {
   const [dark, setDark] = useState(false);
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setPopoverOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setPopoverOpen(false);
+    }, 180);
+  };
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
@@ -198,29 +210,36 @@ export function TopNav() {
               </span>
             </Link>
 
-            {/* 3. 生态库全集 下拉浮层 (11 社区库，一目了然) */}
-            <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
-              <PopoverTrigger
-                className={cn(
-                  "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
-                  isEcosystemActive
-                    ? "bg-primary/15 text-primary border-primary/30 font-semibold"
-                    : "border-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
-                )}
-              >
-                <Grid className="h-3.5 w-3.5" />
-                <span>生态库全集</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
-                  11 库
-                </span>
-                <ChevronDown className={cn("h-3.5 w-3.5 transition-transform duration-200", popoverOpen && "rotate-180")} />
-              </PopoverTrigger>
+            {/* 3. 生态库全集 下拉浮层 (11 社区库，一目了然，支持 Hover 与点击) */}
+            <div
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="relative inline-flex items-center"
+            >
+              <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
+                <PopoverTrigger
+                  className={cn(
+                    "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
+                    isEcosystemActive
+                      ? "bg-primary/15 text-primary border-primary/30 font-semibold"
+                      : "border-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
+                  )}
+                >
+                  <Grid className="h-3.5 w-3.5" />
+                  <span>生态库全集</span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
+                    11 库
+                  </span>
+                  <ChevronDown className={cn("h-3.5 w-3.5 transition-transform duration-200", popoverOpen && "rotate-180")} />
+                </PopoverTrigger>
 
-              <PopoverContent
-                align="start"
-                sideOffset={8}
-                className="w-[600px] p-0 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
-              >
+                <PopoverContent
+                  align="start"
+                  sideOffset={8}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className="w-[600px] p-0 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
+                >
                 <div className="grid grid-cols-2 divide-x p-4 gap-4">
                   {/* 左列：动效与视觉前沿 (6 个) */}
                   <div className="space-y-2.5">
@@ -321,6 +340,7 @@ export function TopNav() {
                 </div>
               </PopoverContent>
             </Popover>
+          </div>
 
             {/* 4. 前端设计师常备工具箱 */}
             <Link
