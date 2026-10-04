@@ -5,16 +5,16 @@ import { LayoutDashboard, Store, Layers, ShoppingBag } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "ShadcnStore 核心",
+    groupTitle: "概览",
     items: [
-      { title: "概览与 39 个分类", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "特色区块与商城",
+    groupTitle: "区块",
     items: [
-      { title: "营销区块 (Sections)", href: "/sites/shadcnstore/sections", badge: "Bento/FAQ", icon: <Layers /> },
-      { title: "电商套件 (Storefront)", href: "/sites/shadcnstore/ecommerce", badge: "Products", icon: <ShoppingBag /> },
+      { title: "营销区块", href: "/sites/shadcnstore/sections", badge: "Bento", icon: <Layers /> },
+      { title: "电商套件", href: "/sites/shadcnstore/ecommerce", badge: "Shop", icon: <ShoppingBag /> },
     ],
   },
 ];

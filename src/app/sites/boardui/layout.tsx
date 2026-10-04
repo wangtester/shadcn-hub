@@ -5,17 +5,17 @@ import { LayoutDashboard, BarChart2, Bot, SlidersHorizontal } from "lucide-react
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "BoardUI 看板系统",
+    groupTitle: "概览",
     items: [
-      { title: "概览与设计系统", href: "/sites/boardui", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/boardui", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "看板与智能组件",
+    groupTitle: "组件",
     items: [
-      { title: "核心看板基元 (Components)", href: "/sites/boardui/components", badge: "Tokens", icon: <SlidersHorizontal /> },
-      { title: "图表卡片 (Chart Cards)", href: "/sites/boardui/charts", badge: "19 Cards", icon: <BarChart2 /> },
-      { title: "AI Agent & SaaS 控制台", href: "/sites/boardui/agentic", badge: "Agentic", icon: <Bot /> },
+      { title: "看板基元", href: "/sites/boardui/components", badge: "Tokens", icon: <SlidersHorizontal /> },
+      { title: "图表卡片", href: "/sites/boardui/charts", badge: "19 Cards", icon: <BarChart2 /> },
+      { title: "智能控制台", href: "/sites/boardui/agentic", badge: "Agentic", icon: <Bot /> },
     ],
   },
 ];

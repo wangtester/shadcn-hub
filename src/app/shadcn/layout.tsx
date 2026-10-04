@@ -5,21 +5,21 @@ import { LayoutDashboard, CheckSquare, Layers, MessageSquare, BarChart3, Compass
 
 const shadcnMenuGroups: MenuGroup[] = [
   {
-    groupTitle: "核心总览",
+    groupTitle: "总览",
     items: [
-      { title: "全量组件总览 (64/64)", href: "/shadcn", icon: <LayoutDashboard /> },
+      { title: "全部组件", href: "/shadcn", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "交互分类 (按真实安装组件 1:1 对齐)",
+    groupTitle: "分类",
     items: [
-      { title: "表单组件 (Forms)", href: "/shadcn/forms", badge: "17项", icon: <CheckSquare /> },
-      { title: "布局组件 (Layout)", href: "/shadcn/layout", badge: "8项", icon: <Layers /> },
-      { title: "浮层组件 (Overlay)", href: "/shadcn/overlay", badge: "8项", icon: <MessageSquare /> },
-      { title: "数据展示 (Data)", href: "/shadcn/data", badge: "9项", icon: <BarChart3 /> },
-      { title: "页面导航 (Navigation)", href: "/shadcn/navigation", badge: "5项", icon: <Compass /> },
-      { title: "反馈提示 (Feedback)", href: "/shadcn/feedback", badge: "8项", icon: <BellRing /> },
-      { title: "AI与扩展基元 (Extended)", href: "/shadcn/extended", badge: "9项", icon: <Sparkles /> },
+      { title: "表单", href: "/shadcn/forms", badge: "17项", icon: <CheckSquare /> },
+      { title: "布局", href: "/shadcn/layout", badge: "8项", icon: <Layers /> },
+      { title: "浮层", href: "/shadcn/overlay", badge: "8项", icon: <MessageSquare /> },
+      { title: "数据展示", href: "/shadcn/data", badge: "9项", icon: <BarChart3 /> },
+      { title: "导航", href: "/shadcn/navigation", badge: "5项", icon: <Compass /> },
+      { title: "反馈", href: "/shadcn/feedback", badge: "8项", icon: <BellRing /> },
+      { title: "扩展基元", href: "/shadcn/extended", badge: "9项", icon: <Sparkles /> },
     ],
   },
 ];

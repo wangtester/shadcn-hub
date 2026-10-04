@@ -5,16 +5,16 @@ import { LayoutDashboard, ArrowLeftRight, Layers, Split } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "Transitions.dev 核心",
+    groupTitle: "概览",
     items: [
-      { title: "概览与过渡哲学", href: "/sites/transitions", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/transitions", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "动效过渡分类",
+    groupTitle: "过渡",
     items: [
-      { title: "容器展开与变形 (Morphing)", href: "/sites/transitions/morphing", badge: "Spring", icon: <ArrowLeftRight /> },
-      { title: "交错阶梯入场 (Stagger)", href: "/sites/transitions/stagger", badge: "Cascade", icon: <Layers /> },
+      { title: "容器变形", href: "/sites/transitions/morphing", badge: "Spring", icon: <ArrowLeftRight /> },
+      { title: "阶梯入场", href: "/sites/transitions/stagger", badge: "Cascade", icon: <Layers /> },
     ],
   },
 ];

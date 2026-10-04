@@ -5,21 +5,21 @@ import { LayoutDashboard, Wand2, Sparkles, Lamp, Layers } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "Aceternity UI 系统",
+    groupTitle: "概览",
     items: [
-      { title: "概览与极客视觉哲学", href: "/sites/aceternity", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/aceternity", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "高质感视觉组件 (Components)",
+    groupTitle: "组件",
     items: [
-      { title: "聚光与 3D 视觉基元", href: "/sites/aceternity/components", badge: "Lamp & Pin", icon: <Sparkles /> },
+      { title: "视觉组件", href: "/sites/aceternity/components", badge: "Lamp & Pin", icon: <Sparkles /> },
     ],
   },
   {
-    groupTitle: "沉浸式科技区块 (Blocks)",
+    groupTitle: "区块",
     items: [
-      { title: "光束追踪与背景展台", href: "/sites/aceternity/blocks", badge: "Tracing Beam", icon: <Layers /> },
+      { title: "科技区块", href: "/sites/aceternity/blocks", badge: "Tracing Beam", icon: <Layers /> },
     ],
   },
 ];

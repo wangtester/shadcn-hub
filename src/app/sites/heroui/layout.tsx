@@ -5,25 +5,25 @@ import { LayoutDashboard, Sparkles, SlidersHorizontal, PieChart, Layers, Bot, Sm
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "HeroUI 概览",
+    groupTitle: "概览",
     items: [
-      { title: "全景组件总览", href: "/sites/heroui", icon: <LayoutDashboard /> },
+      { title: "总览", href: "/sites/heroui", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "Components 组件生态",
+    groupTitle: "组件",
     items: [
-      { title: "Charts 图表体系", href: "/sites/heroui/charts", badge: "8 款", icon: <PieChart /> },
-      { title: "Data Display 数据展示", href: "/sites/heroui/data", badge: "10 款", icon: <Layers /> },
-      { title: "AI 智能交互基元", href: "/sites/heroui/ai", badge: "Agent", icon: <Bot /> },
-      { title: "Feedback 反馈与交互", href: "/sites/heroui/feedback", badge: "微交互", icon: <Smile /> },
+      { title: "图表", href: "/sites/heroui/charts", badge: "8款", icon: <PieChart /> },
+      { title: "数据呈现", href: "/sites/heroui/data", badge: "10款", icon: <Layers /> },
+      { title: "AI 交互", href: "/sites/heroui/ai", badge: "Agent", icon: <Bot /> },
+      { title: "反馈微交互", href: "/sites/heroui/feedback", badge: "反馈", icon: <Smile /> },
     ],
   },
   {
-    groupTitle: "Pro 业务区块 (Blocks)",
+    groupTitle: "区块",
     items: [
-      { title: "营销落地页 (Marketing)", href: "/sites/heroui/marketing", badge: "Glow", icon: <Sparkles /> },
-      { title: "应用与控制台 (Application)", href: "/sites/heroui/application", badge: "Console", icon: <SlidersHorizontal /> },
+      { title: "营销落地", href: "/sites/heroui/marketing", badge: "Glow", icon: <Sparkles /> },
+      { title: "控制台应用", href: "/sites/heroui/application", badge: "Console", icon: <SlidersHorizontal /> },
     ],
   },
 ];

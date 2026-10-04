@@ -5,17 +5,17 @@ import { LayoutDashboard, Sparkles, Gem, Layers } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "BeautifulUI 美学系统",
+    groupTitle: "概览",
     items: [
-      { title: "概览与美学理念", href: "/sites/beautifului", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/beautifului", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "高颜值与 AI-Native",
+    groupTitle: "组件",
     items: [
-      { title: "视觉亮点组件 (Accents)", href: "/sites/beautifului/accents", badge: "Glow", icon: <Sparkles /> },
-      { title: "创意拟态卡片 (Cards)", href: "/sites/beautifului/cards", badge: "Glass", icon: <Gem /> },
-      { title: "AI-Native 决策卡 (Agentic)", href: "/sites/beautifului/agentic", badge: "HITL", icon: <Layers /> },
+      { title: "高光组件", href: "/sites/beautifului/accents", badge: "Glow", icon: <Sparkles /> },
+      { title: "拟态卡片", href: "/sites/beautifului/cards", badge: "Glass", icon: <Gem /> },
+      { title: "AI 决策卡", href: "/sites/beautifului/agentic", badge: "HITL", icon: <Layers /> },
     ],
   },
 ];

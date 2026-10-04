@@ -5,16 +5,16 @@ import { LayoutDashboard, Palette, Sliders, Contrast } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "Refero Styles 核心",
+    groupTitle: "概览",
     items: [
-      { title: "概览与设计风格库", href: "/sites/refero", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/refero", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "风格与规范体系",
+    groupTitle: "体系",
     items: [
-      { title: "9大主流设计风格对比", href: "/sites/refero/styles", badge: "9 Styles", icon: <Palette /> },
-      { title: "Design Tokens & 色彩规范", href: "/sites/refero/tokens", badge: "Tokens", icon: <Contrast /> },
+      { title: "风格对比", href: "/sites/refero/styles", badge: "9种", icon: <Palette /> },
+      { title: "变量规范", href: "/sites/refero/tokens", badge: "Tokens", icon: <Contrast /> },
     ],
   },
 ];

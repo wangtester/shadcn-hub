@@ -5,16 +5,16 @@ import { LayoutDashboard, Sparkles, Wand2, Compass } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "RareUI 稀缺组件",
+    groupTitle: "概览",
     items: [
-      { title: "概览与设计哲学", href: "/sites/rareui", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/rareui", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "稀缺交互与动效",
+    groupTitle: "组件",
     items: [
-      { title: "流体与微交互 (Fluid & Micro)", href: "/sites/rareui/interactive", badge: "Fluid Orb", icon: <Wand2 /> },
-      { title: "悬浮发光卡片 (Glow Cards)", href: "/sites/rareui/cards", badge: "Magnetic", icon: <Sparkles /> },
+      { title: "流体微交互", href: "/sites/rareui/interactive", badge: "Fluid", icon: <Wand2 /> },
+      { title: "发光卡片", href: "/sites/rareui/cards", badge: "Magnetic", icon: <Sparkles /> },
     ],
   },
 ];

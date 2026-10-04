@@ -5,17 +5,17 @@ import { LayoutDashboard, Sparkles, PieChart, PanelLeftOpen } from "lucide-react
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "ShadcnSpace 核心",
+    groupTitle: "概览",
     items: [
-      { title: "概览与生态特性", href: "/sites/shadcnspace", icon: <LayoutDashboard /> },
+      { title: "概览", href: "/sites/shadcnspace", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "生产级区块 (Blocks)",
+    groupTitle: "区块",
     items: [
-      { title: "营销区块 (Marketing)", href: "/sites/shadcnspace/marketing", badge: "Hero/CTA", icon: <Sparkles /> },
-      { title: "仪表盘区块 (Dashboard)", href: "/sites/shadcnspace/dashboard", badge: "Analytics", icon: <PieChart /> },
-      { title: "整页模板 (Pages)", href: "/sites/shadcnspace/pages", badge: "Auth/Admin", icon: <PanelLeftOpen /> },
+      { title: "营销区块", href: "/sites/shadcnspace/marketing", badge: "Hero", icon: <Sparkles /> },
+      { title: "仪表盘", href: "/sites/shadcnspace/dashboard", badge: "Data", icon: <PieChart /> },
+      { title: "整页模板", href: "/sites/shadcnspace/pages", badge: "Admin", icon: <PanelLeftOpen /> },
     ],
   },
 ];
