@@ -1,20 +1,21 @@
 "use client";
 
 import { SidebarLayout, type MenuGroup } from "@/components/sidebar-layout";
-import { LayoutDashboard, Store, Layers, ShoppingBag } from "lucide-react";
+import { LayoutDashboard, Store, Layers, ShoppingBag, Table } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "概览",
+    groupTitle: "精选",
     items: [
-      { title: "概览", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
+      { title: "总览", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
     ],
   },
   {
     groupTitle: "区块",
     items: [
-      { title: "营销区块", href: "/sites/shadcnstore/sections", badge: "Bento", icon: <Layers /> },
-      { title: "电商套件", href: "/sites/shadcnstore/ecommerce", badge: "Shop", icon: <ShoppingBag /> },
+      { title: "营销区块", href: "/sites/shadcnstore/sections", badge: "19类", icon: <Layers /> },
+      { title: "电商套件", href: "/sites/shadcnstore/ecommerce", badge: "9类", icon: <ShoppingBag /> },
+      { title: "应用后台", href: "/sites/shadcnstore/application", badge: "11类", icon: <Table /> },
     ],
   },
 ];
