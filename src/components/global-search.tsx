@@ -37,7 +37,6 @@ const SEARCH_ITEMS: SearchItem[] = [
   { title: "RareUI 物理交互 (流体球/灵动岛)", category: "生态站点", href: "/sites/rareui", keywords: ["rareui", "fluid", "orb", "island"] },
   { title: "Transitions.dev (弹簧滑块/交错入场)", category: "生态站点", href: "/sites/transitions", keywords: ["transitions", "spring", "stagger"] },
   { title: "BeautifulUI (极光背景/毛玻璃卡片)", category: "生态站点", href: "/sites/beautifului", keywords: ["beautifului", "aurora", "glassmorphism"] },
-  { title: "ShadcnSpace (Bento/CLI/控制台)", category: "生态站点", href: "/sites/shadcnspace", keywords: ["space", "bento", "cli", "auth"] },
 
   // shadcn 官方组件
   { title: "Button 按钮 / ButtonGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["button", "group", "input", "click"] },

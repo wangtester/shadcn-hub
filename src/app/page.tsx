@@ -153,17 +153,6 @@ const siteList: SiteCard[] = [
     badge: "高质感",
     icon: <Gem className="h-4 w-4 text-rose-500" />,
   },
-  {
-    id: "shadcnspace",
-    title: "ShadcnSpace",
-    category: "system",
-    categoryLabel: "模板与控制台",
-    url: "/sites/shadcnspace",
-    originUrl: "https://shadcnspace.com",
-    desc: "生产级高可用 Blocks 与完整 Dashboard 模板，支持非对称 Bento 网格、CLI 安装代码块与身份控制台。",
-    badge: "模板套件",
-    icon: <Grid className="h-4 w-4 text-emerald-500" />,
-  },
 ];
 
 export default function HomeHubPage() {
@@ -183,7 +172,7 @@ export default function HomeHubPage() {
         </h1>
 
         <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          精选收录 64 款官方组件与 11 个优质社区衍生库，全部组件支持 100% 真实交互运行。
+          精选收录 64 款官方组件与 10 个优质社区衍生库，全部组件支持 100% 真实交互运行。
         </p>
       </section>
 

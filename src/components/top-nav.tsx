@@ -109,12 +109,6 @@ const systemEcosystems: EcosystemItem[] = [
     desc: "工作空间、应用布局与大圆角规范",
     icon: <Cpu className="h-4 w-4 text-pink-500" />,
   },
-  {
-    title: "ShadcnSpace",
-    href: "/sites/shadcnspace",
-    desc: "控制台模板、鉴权界面与代码块",
-    icon: <Grid className="h-4 w-4 text-emerald-500" />,
-  },
 ];
 
 export function TopNav() {
@@ -213,7 +207,7 @@ export function TopNav() {
                   <Grid className="h-3.5 w-3.5" />
                   <span>生态扩展</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
-                    11
+                    10
                   </span>
                   <ChevronDown className={cn("h-3.5 w-3.5 transition-transform duration-200", popoverOpen && "rotate-180")} />
                 </PopoverTrigger>
@@ -226,11 +220,11 @@ export function TopNav() {
                   className="w-[560px] p-3.5 rounded-2xl shadow-xl border bg-popover/98 backdrop-blur"
                 >
                   <div className="grid grid-cols-2 divide-x gap-3">
-                    {/* 左列：动效与视觉 (6 个) */}
+                    {/* 左列：动效与交互 */}
                     <div className="space-y-2">
                       <div className="pb-1 border-b px-1">
                         <span className="text-[11px] font-semibold text-muted-foreground">
-                          动效与视觉 (6)
+                          动效与交互
                         </span>
                       </div>
                       <div className="space-y-0.5">
