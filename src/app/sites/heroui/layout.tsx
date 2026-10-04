@@ -1,20 +1,29 @@
 "use client";
 
 import { SidebarLayout, type MenuGroup } from "@/components/sidebar-layout";
-import { LayoutDashboard, Sparkles, SlidersHorizontal, UserCheck } from "lucide-react";
+import { LayoutDashboard, Sparkles, SlidersHorizontal, PieChart, Layers, Bot, Smile } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
-    groupTitle: "HeroUI 核心体系",
+    groupTitle: "HeroUI 概览",
     items: [
-      { title: "概览与设计语言", href: "/sites/heroui", icon: <LayoutDashboard /> },
+      { title: "全景组件总览", href: "/sites/heroui", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "Pro 区块与业务流",
+    groupTitle: "Components 组件生态",
     items: [
-      { title: "营销落地页 (Marketing)", href: "/sites/heroui/marketing", badge: "Hero/Glow", icon: <Sparkles /> },
-      { title: "应用与表单流 (Application)", href: "/sites/heroui/application", badge: "Settings", icon: <SlidersHorizontal /> },
+      { title: "Charts 图表体系", href: "/sites/heroui/charts", badge: "8 款", icon: <PieChart /> },
+      { title: "Data Display 数据展示", href: "/sites/heroui/data", badge: "10 款", icon: <Layers /> },
+      { title: "AI 智能交互基元", href: "/sites/heroui/ai", badge: "Agent", icon: <Bot /> },
+      { title: "Feedback 反馈与交互", href: "/sites/heroui/feedback", badge: "微交互", icon: <Smile /> },
+    ],
+  },
+  {
+    groupTitle: "Pro 业务区块 (Blocks)",
+    items: [
+      { title: "营销落地页 (Marketing)", href: "/sites/heroui/marketing", badge: "Glow", icon: <Sparkles /> },
+      { title: "应用与控制台 (Application)", href: "/sites/heroui/application", badge: "Console", icon: <SlidersHorizontal /> },
     ],
   },
 ];
