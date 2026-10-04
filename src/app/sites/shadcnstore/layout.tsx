@@ -1,21 +1,46 @@
 "use client";
 
 import { SidebarLayout, type MenuGroup } from "@/components/sidebar-layout";
-import { LayoutDashboard, Store, Layers, ShoppingBag, Table } from "lucide-react";
+import { 
+  LayoutDashboard, 
+  Sparkles, 
+  Layers, 
+  CreditCard, 
+  HelpCircle, 
+  ShoppingBag, 
+  CheckSquare, 
+  Table, 
+  ShieldCheck 
+} from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
     groupTitle: "精选",
     items: [
-      { title: "总览", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
+      { title: "全景总览", href: "/sites/shadcnstore", icon: <LayoutDashboard /> },
     ],
   },
   {
-    groupTitle: "区块",
+    groupTitle: "营销区块",
     items: [
-      { title: "营销区块", href: "/sites/shadcnstore/sections", badge: "19类", icon: <Layers /> },
-      { title: "电商套件", href: "/sites/shadcnstore/ecommerce", badge: "9类", icon: <ShoppingBag /> },
-      { title: "应用后台", href: "/sites/shadcnstore/application", badge: "11类", icon: <Table /> },
+      { title: "Hero首屏", href: "/sites/shadcnstore/hero", badge: "Hot", icon: <Sparkles /> },
+      { title: "功能特性", href: "/sites/shadcnstore/features", badge: "Bento", icon: <Layers /> },
+      { title: "价格方案", href: "/sites/shadcnstore/pricing", icon: <CreditCard /> },
+      { title: "常见问题", href: "/sites/shadcnstore/faqs", icon: <HelpCircle /> },
+    ],
+  },
+  {
+    groupTitle: "电商套件",
+    items: [
+      { title: "商品橱窗", href: "/sites/shadcnstore/products", badge: "Pro", icon: <ShoppingBag /> },
+      { title: "结算订单", href: "/sites/shadcnstore/checkout", icon: <CheckSquare /> },
+    ],
+  },
+  {
+    groupTitle: "应用后台",
+    items: [
+      { title: "数据表格", href: "/sites/shadcnstore/datatables", icon: <Table /> },
+      { title: "认证安全", href: "/sites/shadcnstore/auth", icon: <ShieldCheck /> },
     ],
   },
 ];
