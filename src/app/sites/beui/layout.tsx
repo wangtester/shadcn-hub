@@ -1,7 +1,7 @@
 "use client";
 
 import { SidebarLayout, type MenuGroup } from "@/components/sidebar-layout";
-import { LayoutDashboard, Type, MousePointerClick, Sparkles } from "lucide-react";
+import { LayoutDashboard, Type, MousePointerClick, Sparkles, Layers } from "lucide-react";
 
 const menuGroups: MenuGroup[] = [
   {
@@ -16,6 +16,7 @@ const menuGroups: MenuGroup[] = [
       { title: "文本动态特效 (Text)", href: "/sites/beui/text", badge: "Typing", icon: <Type /> },
       { title: "按钮动态微交互 (Buttons)", href: "/sites/beui/buttons", badge: "Shimmer", icon: <MousePointerClick /> },
       { title: "卡片光效动效 (Cards)", href: "/sites/beui/cards", badge: "Spotlight", icon: <Sparkles /> },
+      { title: "交互动效基元 (Interactive)", href: "/sites/beui/interactive", badge: "Upload", icon: <Layers /> },
     ],
   },
 ];

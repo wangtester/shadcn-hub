@@ -1,8 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { PageHeader, Section } from "@/components/section";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Copy, Check, Sparkles, FileText, Code2 } from "lucide-react";
 
 const colorTokens = [
   { name: "--background", hex: "#09090b", desc: "主页面背景暗基色" },
@@ -14,7 +17,50 @@ const colorTokens = [
   { name: "--destructive", hex: "#ef4444", desc: "危险操作、警示与删除" },
 ];
 
+const styleTemplates: Record<string, string> = {
+  Linear: `# DESIGN.md - Linear Dark Aesthetic
+## Visual Philosophy
+- Theme: Monochromatic dark gray (#0d0d10) with subtle 1px border glow.
+- Border: 1px solid rgba(255, 255, 255, 0.08)
+- Radius: 8px (rounded-lg) for buttons, 12px (rounded-xl) for cards.
+- Accent: Indigo/Violet #5e6ad2 for subtle active badges.
+- Keyboard: First-class shortcuts and micro-interactions.`,
+
+  Geist: `# DESIGN.md - Vercel Geist Minimalist
+## Visual Philosophy
+- Theme: Absolute high-contrast monochrome (#000000 / #ffffff).
+- Border: Crisp 1px geometric dividing lines (#eaeaea / #333333).
+- Radius: Precise 6px to 8px.
+- Typography: Geist Sans, tight tracking (-0.02em).
+- Vibe: Developer-centric, high information density.`,
+
+  Apple: `# DESIGN.md - Apple Smooth Human Interface
+## Visual Philosophy
+- Theme: Clean neutrals with continuous super-elliptical curvature.
+- Radius: Squircle rounded-2xl (16px) to rounded-3xl (24px).
+- Shadow: Ultra-soft diffuse ambient elevation.
+- Typography: SF Pro, large optical headings, generous white space.
+- Vibe: Premium tactile feel and effortless clarity.`,
+
+  "Neo-Brutalism": `# DESIGN.md - Neo-Brutalism Raw Energy
+## Visual Philosophy
+- Theme: High-saturation neon yellow/pink with pure jet-black ink.
+- Border: 2.5px solid #000000 hard strokes.
+- Shadow: 4px 4px 0px #000000 (offset hard drop shadow).
+- Radius: Zero or slight rounded-md (4px).
+- Vibe: Irreverent, playful, unapologetic bold contrast.`,
+};
+
 export default function ReferoTokensPage() {
+  const [selectedStyle, setSelectedStyle] = useState<string>("Linear");
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(styleTemplates[selectedStyle] || "");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="space-y-8">
       <PageHeader
@@ -50,21 +96,48 @@ export default function ReferoTokensPage() {
           </Table>
         </Section>
 
-        {/* DESIGN.md 规范预览 */}
-        <Section title="AI-readable DESIGN.md 规范文件" description="可直接交给大模型用于生成完全一致的页面设计">
-          <div className="rounded-xl border bg-zinc-950 p-4 font-mono text-xs text-zinc-300 overflow-x-auto space-y-2">
-            <p className="text-zinc-500 font-bold"># DESIGN.md - Refero Unified Specs</p>
-            <p className="text-indigo-400">## Typography & Hierarchy</p>
-            <p className="text-zinc-400">- Heading font: Geist Sans / Inter (bold, -0.03em tracking)</p>
-            <p className="text-zinc-400">- Mono font: Geist Mono / JetBrains Mono</p>
-            <p className="text-zinc-400">- Scale: xs(12px), sm(14px), base(16px), xl(20px), 3xl(30px)</p>
-            <p className="text-indigo-400 pt-2">## Spacing & Radius</p>
-            <p className="text-zinc-400">- Base unit: 4px</p>
-            <p className="text-zinc-400">- Card radius: 12px (rounded-xl) or 24px (rounded-3xl)</p>
-            <p className="text-zinc-400">- Button radius: 8px (default) or 9999px (pill)</p>
-            <p className="text-indigo-400 pt-2">## Surface Shadows</p>
-            <p className="text-zinc-400">- Minimalist: 0 1px 2px 0 rgba(0,0,0,0.05)</p>
-            <p className="text-zinc-400">- Linear Glow: 0 0 20px -5px rgba(99,102,241,0.15)</p>
+        {/* DESIGN.md 规范即时导出生成器 */}
+        <Section title="AI-readable DESIGN.md 规范即时导出" description="支持按风格切换，直接复制给 Cursor / Claude Code 使用">
+          <div className="space-y-3">
+            {/* 风格切换标签 */}
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex flex-wrap gap-1.5">
+                {Object.keys(styleTemplates).map((styleName) => (
+                  <button
+                    key={styleName}
+                    onClick={() => setSelectedStyle(styleName)}
+                    className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${
+                      selectedStyle === styleName
+                        ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                        : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {styleName}
+                  </button>
+                ))}
+              </div>
+              <Button size="sm" variant="outline" onClick={handleCopy} className="h-7 text-xs gap-1.5">
+                {copied ? (
+                  <>
+                    <Check className="h-3 w-3 text-emerald-500" />
+                    <span>已复制规范</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="h-3 w-3" />
+                    <span>复制 DESIGN.md</span>
+                  </>
+                )}
+              </Button>
+            </div>
+
+            {/* Markdown 代码框 */}
+            <div className="rounded-xl border bg-zinc-950 p-4 font-mono text-xs text-zinc-300 overflow-x-auto whitespace-pre-wrap leading-relaxed">
+              {styleTemplates[selectedStyle]}
+            </div>
+            <p className="text-[11px] text-muted-foreground">
+              提示：将此文件保存为项目根目录的 <code>DESIGN.md</code>，AI 编程助手将强制遵循此设计系统。
+            </p>
           </div>
         </Section>
       </div>

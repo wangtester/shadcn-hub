@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { PageHeader, Section } from "@/components/section";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -60,6 +61,7 @@ const all39Sections: SectionMeta[] = [
 ];
 
 export default function ShadcnStoreSectionsPage() {
+  const [yearly, setYearly] = useState(true);
   return (
     <div className="space-y-10">
       <div className="border-b pb-4">
@@ -149,6 +151,131 @@ export default function ShadcnStoreSectionsPage() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </Section>
+
+        {/* 4. Bento Grid */}
+        <Section title="Section #13: Bento Grids 便当盒非对称矩阵" description="主次分明的高信息密度卡片编排">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="md:col-span-2 p-6 rounded-2xl border bg-gradient-to-br from-indigo-500/10 via-card to-card flex flex-col justify-between">
+              <div>
+                <Badge className="bg-indigo-500/10 text-indigo-600 border-indigo-500/20 text-xs mb-2">主卡视觉焦点</Badge>
+                <h3 className="text-xl font-bold">自动化持续集成与部署流水线</h3>
+                <p className="text-xs text-muted-foreground mt-2 max-w-md leading-relaxed">
+                  通过深度整合 Next.js 16 与 GitHub Actions，每一次代码变更均在秒级内完成自动化编译校验与静态部署。
+                </p>
+              </div>
+              <div className="mt-6 p-3 rounded-xl border bg-background/80 font-mono text-xs text-muted-foreground flex items-center justify-between">
+                <span>git commit -m "feat: complete blocks"</span>
+                <span className="text-emerald-500 font-bold">100% PASS</span>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl border bg-card flex flex-col justify-between">
+              <div>
+                <div className="h-10 w-10 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center mb-3">
+                  <Cpu className="h-5 w-5" />
+                </div>
+                <h4 className="font-bold text-sm">边缘推理引擎</h4>
+                <p className="text-xs text-muted-foreground mt-1">全球 300+ 边缘计算节点，平均响应延迟 &lt; 30ms。</p>
+              </div>
+              <div className="pt-4 border-t text-[11px] text-primary font-medium flex items-center gap-1">
+                <span>查看节点网络</span>
+                <ArrowRight className="h-3 w-3" />
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        {/* 5. Pricing Tables */}
+        <Section title="Section #06: Pricing Tables 商业价格方案" description="带月付/年付 8 折滑动切换与功能打钩对比清单">
+          <div className="space-y-6">
+            <div className="flex justify-center items-center gap-3">
+              <span className={`text-xs font-semibold ${!yearly ? "text-foreground" : "text-muted-foreground"}`}>按月结算</span>
+              <button
+                onClick={() => setYearly(!yearly)}
+                className="relative inline-flex h-6 w-11 items-center rounded-full bg-primary transition-colors cursor-pointer"
+                aria-label="切换按年结算"
+              >
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-background transition-transform ${yearly ? "translate-x-6" : "translate-x-1"}`} />
+              </button>
+              <div className="flex items-center gap-1.5">
+                <span className={`text-xs font-semibold ${yearly ? "text-foreground" : "text-muted-foreground"}`}>按年结算</span>
+                <Badge className="bg-emerald-500/10 text-emerald-600 border-0 text-[10px]">立省 20%</Badge>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {/* 免费版 */}
+              <div className="p-6 rounded-2xl border bg-card/60 flex flex-col justify-between">
+                <div>
+                  <h4 className="font-bold text-base">社区基础版</h4>
+                  <p className="text-xs text-muted-foreground mt-0.5">适合个人开发者与小微开源项目</p>
+                  <p className="text-3xl font-extrabold font-mono mt-4">¥0 <span className="text-xs text-muted-foreground font-normal">/永久免费</span></p>
+                  <div className="space-y-2.5 mt-6 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-500" /> 64 款官方全量基础组件</div>
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-500" /> MIT 开源商业无限制许可</div>
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-500" /> 基础社区支持</div>
+                  </div>
+                </div>
+                <Button variant="outline" size="sm" className="w-full mt-6 text-xs">立即体验</Button>
+              </div>
+
+              {/* Pro 商业版 */}
+              <div className="p-6 rounded-2xl border-2 border-primary bg-primary/5 flex flex-col justify-between shadow-md relative">
+                <Badge className="absolute -top-2.5 right-6 bg-primary text-primary-foreground text-[10px]">最受欢迎</Badge>
+                <div>
+                  <h4 className="font-bold text-base">团队商业版</h4>
+                  <p className="text-xs text-muted-foreground mt-0.5">专为高生产力企业研发与商业团队设计</p>
+                  <p className="text-3xl font-extrabold font-mono mt-4">
+                    {yearly ? "¥199" : "¥249"} <span className="text-xs text-muted-foreground font-normal">/月</span>
+                  </p>
+                  <div className="space-y-2.5 mt-6 text-xs font-medium text-foreground">
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> 全部 10 大衍生生态与 Blocks</div>
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> 39 个业务类目全套完整源码</div>
+                    <div className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> 专属优先技术工单与 SLA 支持</div>
+                  </div>
+                </div>
+                <Button size="sm" className="w-full mt-6 text-xs">升级至 Pro 版</Button>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        {/* 6. Stats Grid */}
+        <Section title="Section #10: Stats Sections 数据指标统计墙" description="全景大号关键绩效数字指标与同比百分比">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-5 rounded-xl border bg-card/60 text-center">
+              <p className="text-3xl font-extrabold font-mono text-primary">64</p>
+              <p className="text-xs text-muted-foreground mt-1 font-medium">官方核心组件 100% 实机实装</p>
+            </div>
+            <div className="p-5 rounded-xl border bg-card/60 text-center">
+              <p className="text-3xl font-extrabold font-mono text-primary">39</p>
+              <p className="text-xs text-muted-foreground mt-1 font-medium">商业业务细分类目覆盖</p>
+            </div>
+            <div className="p-5 rounded-xl border bg-card/60 text-center">
+              <p className="text-3xl font-extrabold font-mono text-primary">10</p>
+              <p className="text-xs text-muted-foreground mt-1 font-medium">全球主流生态站点统一基座</p>
+            </div>
+            <div className="p-5 rounded-xl border bg-card/60 text-center">
+              <p className="text-3xl font-extrabold font-mono text-emerald-600">0</p>
+              <p className="text-xs text-muted-foreground mt-1 font-medium">编译告警与静态构建报错</p>
+            </div>
+          </div>
+        </Section>
+
+        {/* 7. CTA Section */}
+        <Section title="Section #09: CTA Sections 行动号召横幅" description="全宽渐变光晕与强转化率引导条">
+          <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/15 via-purple-500/10 to-background p-8 text-center space-y-4">
+            <Badge className="bg-primary/10 text-primary border-primary/20 text-xs">即刻开始构建</Badge>
+            <h3 className="text-2xl font-bold tracking-tight">准备好在您的下一个项目中应用现代化组件库了吗？</h3>
+            <p className="text-xs text-muted-foreground max-w-xl mx-auto leading-relaxed">
+              体验 100% 真实交互、严谨 1:1 对齐的代码基座。无需任何等待，立即开启生产级研发。
+            </p>
+            <div className="pt-2 flex justify-center gap-3">
+              <Button size="sm">立即在线试用</Button>
+              <Button size="sm" variant="outline">查阅开发文档</Button>
+            </div>
           </div>
         </Section>
       </div>

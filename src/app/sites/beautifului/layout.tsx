@@ -11,10 +11,11 @@ const menuGroups: MenuGroup[] = [
     ],
   },
   {
-    groupTitle: "高颜值组件",
+    groupTitle: "高颜值与 AI-Native",
     items: [
       { title: "视觉亮点组件 (Accents)", href: "/sites/beautifului/accents", badge: "Glow", icon: <Sparkles /> },
       { title: "创意拟态卡片 (Cards)", href: "/sites/beautifului/cards", badge: "Glass", icon: <Gem /> },
+      { title: "AI-Native 决策卡 (Agentic)", href: "/sites/beautifului/agentic", badge: "HITL", icon: <Layers /> },
     ],
   },
 ];

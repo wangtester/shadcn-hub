@@ -62,6 +62,15 @@ const SEARCH_ITEMS: SearchItem[] = [
   // BoardUI 图表与 Agent
   { title: "19 款工业级仪表盘图表 (Area, Funnel, Radar...)", category: "BoardUI", href: "/sites/boardui/charts", keywords: ["charts", "recharts", "bar", "radar", "sankey", "speedometer"] },
   { title: "AI Agentic 智能体交互 (思维链/Token/联网流)", category: "BoardUI", href: "/sites/boardui/agentic", keywords: ["agent", "reasoning", "thinking", "tokens", "llm", "ai"] },
+  { title: "BoardUI 核心基元 (通告横条/过滤芯片/环比微指标卡)", category: "BoardUI", href: "/sites/boardui/components", keywords: ["boardui", "banner", "chips", "kpi", "delta", "metrics"] },
+
+  // 生态创新与交互 (BeautifulUI, beUI, RareUI, Transitions, ShadcnStore)
+  { title: "BeautifulUI AI Agentic 人机协同卡 (HITL 审批/工具芯片/RAG 块)", category: "交互与区块", href: "/sites/beautifului/agentic", keywords: ["beautifului", "hitl", "agent", "tool-call", "rag", "chunks"] },
+  { title: "beUI 交互微动效 (拖拽文件上传/磁吸分段胶囊)", category: "交互与区块", href: "/sites/beui/interactive", keywords: ["beui", "drag-drop", "upload", "segmented-menu", "motion"] },
+  { title: "RareUI 物理交互 (展开式文件盒/微动摇摆铃铛/表情反应槽)", category: "交互与区块", href: "/sites/rareui/interactive", keywords: ["rareui", "folders", "bell", "reaction", "physics"] },
+  { title: "Transitions.dev 动态置换 (Text Swap 垂直轮转/胶囊徽章形变)", category: "交互与区块", href: "/sites/transitions/morphing", keywords: ["transitions", "morphing", "text-swap", "badge-morph"] },
+  { title: "ShadcnStore 高频落地页区块 (Bento 便当盒/定价表/指标墙/CTA)", category: "交互与区块", href: "/sites/shadcnstore/sections", keywords: ["shadcnstore", "bento", "pricing", "stats", "cta", "landing"] },
+  { title: "Refero AI DESIGN.md 规范即时导出生成器", category: "交互与区块", href: "/sites/refero/tokens", keywords: ["refero", "design-md", "tokens", "export", "markdown"] },
 
   // Refero 9 大设计流派
   { title: "Linear 灰阶极简风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["linear", "dark", "monochrome", "minimal"] },
@@ -95,7 +104,7 @@ export function GlobalSearch() {
     router.push(href);
   };
 
-  const categories = ["生态站点", "shadcn 组件", "BoardUI", "设计流派"];
+  const categories = ["生态站点", "shadcn 组件", "BoardUI", "交互与区块", "设计流派"];
 
   return (
     <>
