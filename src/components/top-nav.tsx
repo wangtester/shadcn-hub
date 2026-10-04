@@ -40,91 +40,79 @@ interface EcosystemItem {
   title: string;
   href: string;
   desc: string;
-  badge: string;
   icon: React.ReactNode;
 }
 
-// 动效与视觉前沿 (6 个)
+// 动效与交互 (6 个)
 const motionEcosystems: EcosystemItem[] = [
   {
     title: "Magic UI",
     href: "/sites/magicui",
     desc: "跑马灯、节点光束、流光边框与 Bento 网格",
-    badge: "Motion",
     icon: <Sparkles className="h-4 w-4 text-indigo-500" />,
   },
   {
     title: "Aceternity UI",
     href: "/sites/aceternity",
-    desc: "Lamp 聚光神灯、星空粒子与 3D 透视图钉",
-    badge: "Aesthetics",
+    desc: "Lamp 聚光神灯、星空粒子与 3D 透视",
     icon: <Wand2 className="h-4 w-4 text-cyan-500" />,
   },
   {
     title: "beUI",
     href: "/sites/beui",
-    desc: "打字机文本、Spotlight 光斑跟随与拖拽上传",
-    badge: "Interactive",
+    desc: "打字机文本、光斑跟随与交互组件",
     icon: <Sparkles className="h-4 w-4 text-blue-500" />,
   },
   {
     title: "RareUI",
     href: "/sites/rareui",
-    desc: "Fluid Orb 流体球、灵动岛与展开式文件夹",
-    badge: "Physics",
+    desc: "Fluid Orb 流体球、灵动岛与展开文件夹",
     icon: <Compass className="h-4 w-4 text-purple-500" />,
   },
   {
     title: "Transitions.dev",
     href: "/sites/transitions",
-    desc: "Spring 弹簧滑块、文本置换与胶囊状态形变",
-    badge: "Morphing",
+    desc: "物理弹簧、文本轮转与视图过渡",
     icon: <Layers className="h-4 w-4 text-teal-500" />,
   },
   {
     title: "BeautifulUI",
     href: "/sites/beautifului",
-    desc: "极光高光背景、磨砂拟态与 AI 协同审批卡",
-    badge: "Visual",
+    desc: "极光高光、磨砂质感与设计组件",
     icon: <Gem className="h-4 w-4 text-rose-500" />,
   },
 ];
 
-// 业务区块与设计系统 (5 个)
+// 区块与系统 (5 个)
 const systemEcosystems: EcosystemItem[] = [
   {
     title: "BoardUI",
     href: "/sites/boardui",
-    desc: "19 款工业级图表、AI 思考链与看板基元",
-    badge: "19 Charts",
+    desc: "工业级图表、AI 思考链与看板卡片",
     icon: <BarChart2 className="h-4 w-4 text-violet-500" />,
   },
   {
     title: "ShadcnStore",
     href: "/sites/shadcnstore",
-    desc: "39 类高频商业落地页区块与完整电商组件",
-    badge: "39 Sections",
+    desc: "落地页区块、定价表与电商组件",
     icon: <Store className="h-4 w-4 text-indigo-500" />,
   },
   {
     title: "Refero Styles",
     href: "/sites/refero",
-    desc: "9 大主流流派实景对比与 DESIGN.md 导出",
-    badge: "9 Styles",
+    desc: "主流设计风格对比与规范参考",
     icon: <Palette className="h-4 w-4 text-amber-500" />,
   },
   {
     title: "HeroUI Pro",
     href: "/sites/heroui",
-    desc: "SaaS 团队工作空间、计费周期与大圆角偏好",
-    badge: "SaaS App",
+    desc: "工作空间、应用布局与大圆角规范",
     icon: <Cpu className="h-4 w-4 text-pink-500" />,
   },
   {
     title: "ShadcnSpace",
     href: "/sites/shadcnspace",
-    desc: "Bento 栅格、CLI 安装代码块与现代鉴权控制台",
-    badge: "Templates",
+    desc: "控制台模板、鉴权界面与代码块",
     icon: <Grid className="h-4 w-4 text-emerald-500" />,
   },
 ];
@@ -172,15 +160,12 @@ export function TopNav() {
             </div>
             <div className="flex items-center gap-2">
               <span className="tracking-tight font-extrabold text-foreground">shadcn-hub</span>
-              <span className="hidden xl:inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary border border-primary/20">
-                12 大生态 · 64 官方组件
-              </span>
             </div>
           </Link>
 
           {/* 桌面端主导航条 (零滚动设计，绝对不截断) */}
           <nav className="hidden md:flex items-center gap-1">
-            {/* 1. 首页 Hub */}
+            {/* 1. 首页 */}
             <Link
               href="/"
               className={cn(
@@ -190,10 +175,10 @@ export function TopNav() {
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              全景大厅
+              首页
             </Link>
 
-            {/* 2. shadcn 官方核心库 */}
+            {/* 2. shadcn 官方组件 */}
             <Link
               href="/shadcn"
               className={cn(
@@ -204,13 +189,13 @@ export function TopNav() {
               )}
             >
               <Box className="h-3.5 w-3.5" />
-              <span>官方核心</span>
+              <span>官方组件</span>
               <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-muted text-foreground/80 font-mono font-semibold">
                 64
               </span>
             </Link>
 
-            {/* 3. 生态库全集 下拉浮层 (11 社区库，一目了然，支持 Hover 与点击) */}
+            {/* 3. 生态扩展 下拉浮层 (11 社区库，一目了然，支持 Hover 与点击) */}
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -226,9 +211,9 @@ export function TopNav() {
                   )}
                 >
                   <Grid className="h-3.5 w-3.5" />
-                  <span>生态库全集</span>
+                  <span>生态扩展</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
-                    11 库
+                    11
                   </span>
                   <ChevronDown className={cn("h-3.5 w-3.5 transition-transform duration-200", popoverOpen && "rotate-180")} />
                 </PopoverTrigger>
@@ -238,149 +223,93 @@ export function TopNav() {
                   sideOffset={8}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
-                  className="w-[600px] p-0 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
+                  className="w-[560px] p-3.5 rounded-2xl shadow-xl border bg-popover/98 backdrop-blur"
                 >
-                <div className="grid grid-cols-2 divide-x p-4 gap-4">
-                  {/* 左列：动效与视觉前沿 (6 个) */}
-                  <div className="space-y-2.5">
-                    <div className="flex items-center justify-between pb-1.5 border-b px-1">
-                      <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-                        <Sparkles className="h-3.5 w-3.5 text-indigo-500" />
-                        动效与视觉美学 (6)
-                      </span>
-                      <span className="text-[10px] text-muted-foreground font-mono">Motion & Visual</span>
-                    </div>
-                    <div className="space-y-1">
-                      {motionEcosystems.map((eco) => (
-                        <Link
-                          key={eco.href}
-                          href={eco.href}
-                          onClick={() => setPopoverOpen(false)}
-                          className={cn(
-                            "flex items-start gap-2.5 p-2 rounded-xl transition-all hover:bg-muted/70 group",
-                            pathname.startsWith(eco.href) && "bg-muted font-semibold"
-                          )}
-                        >
-                          <div className="p-1.5 rounded-lg bg-background border shadow-2xs group-hover:scale-105 transition-transform shrink-0 mt-0.5">
-                            {eco.icon}
-                          </div>
-                          <div className="overflow-hidden">
-                            <div className="flex items-center gap-1.5">
-                              <span className="text-xs font-bold group-hover:text-primary transition-colors">
+                  <div className="grid grid-cols-2 divide-x gap-3">
+                    {/* 左列：动效与视觉 (6 个) */}
+                    <div className="space-y-2">
+                      <div className="pb-1 border-b px-1">
+                        <span className="text-[11px] font-semibold text-muted-foreground">
+                          动效与视觉 (6)
+                        </span>
+                      </div>
+                      <div className="space-y-0.5">
+                        {motionEcosystems.map((eco) => (
+                          <Link
+                            key={eco.href}
+                            href={eco.href}
+                            onClick={() => setPopoverOpen(false)}
+                            className={cn(
+                              "flex items-start gap-2.5 p-2 rounded-xl transition-all hover:bg-muted/70 group",
+                              pathname.startsWith(eco.href) && "bg-muted font-semibold"
+                            )}
+                          >
+                            <div className="p-1 rounded-lg bg-background border shadow-2xs group-hover:scale-105 transition-transform shrink-0 mt-0.5">
+                              {eco.icon}
+                            </div>
+                            <div className="overflow-hidden">
+                              <span className="text-xs font-bold group-hover:text-primary transition-colors block">
                                 {eco.title}
                               </span>
-                              <span className="text-[9px] px-1 py-0.2 rounded bg-muted-foreground/10 text-muted-foreground font-mono">
-                                {eco.badge}
-                              </span>
+                              <p className="text-[11px] text-muted-foreground truncate leading-tight mt-0.5">
+                                {eco.desc}
+                              </p>
                             </div>
-                            <p className="text-[11px] text-muted-foreground truncate leading-tight mt-0.5">
-                              {eco.desc}
-                            </p>
-                          </div>
-                        </Link>
-                      ))}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
 
-                  {/* 右列：业务区块与设计系统 (5 个) */}
-                  <div className="space-y-2.5 pl-4">
-                    <div className="flex items-center justify-between pb-1.5 border-b px-1">
-                      <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-                        <BarChart2 className="h-3.5 w-3.5 text-violet-500" />
-                        区块与系统 (5)
-                      </span>
-                      <span className="text-[10px] text-muted-foreground font-mono">Blocks & SaaS</span>
-                    </div>
-                    <div className="space-y-1">
-                      {systemEcosystems.map((eco) => (
-                        <Link
-                          key={eco.href}
-                          href={eco.href}
-                          onClick={() => setPopoverOpen(false)}
-                          className={cn(
-                            "flex items-start gap-2.5 p-2 rounded-xl transition-all hover:bg-muted/70 group",
-                            pathname.startsWith(eco.href) && "bg-muted font-semibold"
-                          )}
-                        >
-                          <div className="p-1.5 rounded-lg bg-background border shadow-2xs group-hover:scale-105 transition-transform shrink-0 mt-0.5">
-                            {eco.icon}
-                          </div>
-                          <div className="overflow-hidden">
-                            <div className="flex items-center gap-1.5">
-                              <span className="text-xs font-bold group-hover:text-primary transition-colors">
+                    {/* 右列：区块与系统 */}
+                    <div className="space-y-2 pl-3">
+                      <div className="pb-1 border-b px-1">
+                        <span className="text-[11px] font-semibold text-muted-foreground">
+                          区块与系统
+                        </span>
+                      </div>
+                      <div className="space-y-0.5">
+                        {systemEcosystems.map((eco) => (
+                          <Link
+                            key={eco.href}
+                            href={eco.href}
+                            onClick={() => setPopoverOpen(false)}
+                            className={cn(
+                              "flex items-start gap-2.5 p-2 rounded-xl transition-all hover:bg-muted/70 group",
+                              pathname.startsWith(eco.href) && "bg-muted font-semibold"
+                            )}
+                          >
+                            <div className="p-1 rounded-lg bg-background border shadow-2xs group-hover:scale-105 transition-transform shrink-0 mt-0.5">
+                              {eco.icon}
+                            </div>
+                            <div className="overflow-hidden">
+                              <span className="text-xs font-bold group-hover:text-primary transition-colors block">
                                 {eco.title}
                               </span>
-                              <span className="text-[9px] px-1 py-0.2 rounded bg-muted-foreground/10 text-muted-foreground font-mono">
-                                {eco.badge}
-                              </span>
+                              <p className="text-[11px] text-muted-foreground truncate leading-tight mt-0.5">
+                                {eco.desc}
+                              </p>
                             </div>
-                            <p className="text-[11px] text-muted-foreground truncate leading-tight mt-0.5">
-                              {eco.desc}
-                            </p>
-                          </div>
-                        </Link>
-                      ))}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </PopoverContent>
+              </Popover>
+            </div>
 
-                {/* 底部条：全站快速统计 */}
-                <div className="bg-muted/40 border-t px-4 py-2.5 rounded-b-2xl flex items-center justify-between text-xs">
-                  <span className="text-[11px] text-muted-foreground">
-                    共收录 <strong className="text-foreground">11 个精选生态扩展库</strong> · 100% 真实交互
-                  </span>
-                  <Link
-                    href="/"
-                    onClick={() => setPopoverOpen(false)}
-                    className="text-[11px] text-primary font-medium hover:underline flex items-center gap-1"
-                  >
-                    <span>在首页对比全部站点</span>
-                    <ArrowRight className="h-3 w-3" />
-                  </Link>
-                </div>
-              </PopoverContent>
-            </Popover>
-          </div>
-
-            {/* 4. 前端设计师常备工具箱 */}
+            {/* 4. 设计工具 */}
             <Link
               href="/tools"
               className={cn(
-                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5 relative",
+                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5",
                 pathname === "/tools"
                   ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <Wrench className="h-3.5 w-3.5 text-amber-500" />
-              <span>设计师百宝箱</span>
-              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 font-bold border border-amber-500/30">
-                24+
-              </span>
-            </Link>
-
-            {/* 5. 宽屏展示两个最受关注的快捷胶囊 (Magic UI 与 BoardUI) */}
-            <Link
-              href="/sites/magicui"
-              className={cn(
-                "hidden 2xl:flex px-2.5 py-1 text-xs rounded-md transition-all items-center gap-1 font-medium",
-                pathname.startsWith("/sites/magicui")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "text-muted-foreground/80 hover:text-foreground hover:bg-muted/50"
-              )}
-            >
-              <span>Magic UI</span>
-            </Link>
-            <Link
-              href="/sites/boardui"
-              className={cn(
-                "hidden 2xl:flex px-2.5 py-1 text-xs rounded-md transition-all items-center gap-1 font-medium",
-                pathname.startsWith("/sites/boardui")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "text-muted-foreground/80 hover:text-foreground hover:bg-muted/50"
-              )}
-            >
-              <span>BoardUI</span>
+              <Wrench className="h-3.5 w-3.5" />
+              <span>设计工具</span>
             </Link>
           </nav>
         </div>
@@ -421,71 +350,63 @@ export function TopNav() {
               <Menu className="h-4 w-4" />
             </SheetTrigger>
 
-            <SheetContent side="right" className="w-[300px] sm:w-[360px] p-6 overflow-y-auto">
+            <SheetContent side="right" className="w-[300px] sm:w-[340px] p-6 overflow-y-auto">
               <SheetHeader className="pb-4 border-b text-left">
                 <SheetTitle className="flex items-center gap-2 text-base font-bold">
                   <div className="h-6 w-6 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
                     <Layers className="h-3.5 w-3.5" />
                   </div>
-                  <span>全景生态导航</span>
+                  <span>shadcn-hub</span>
                 </SheetTitle>
-                <p className="text-xs text-muted-foreground mt-1">
-                  12 个生态站点 · 64 官方组件 · 24+ 款设计师工具
-                </p>
               </SheetHeader>
 
-              <div className="py-4 space-y-6">
+              <div className="py-4 space-y-5">
                 {/* 核心入口 */}
                 <div className="space-y-1">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-2 mb-1">
-                    核心入口
-                  </div>
                   <Link
                     href="/"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2 rounded-lg text-xs font-medium",
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
                       pathname === "/" ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                     )}
                   >
-                    <span>全景大厅 (Home Hub)</span>
-                    <span className="text-[10px] font-mono">12 Sites</span>
+                    <span>首页</span>
                   </Link>
                   <Link
                     href="/shadcn"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2 rounded-lg text-xs font-medium",
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
                       pathname.startsWith("/shadcn") ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                     )}
                   >
-                    <span className="flex items-center gap-1.5">
-                      <Box className="h-3.5 w-3.5" />
-                      <span>shadcn/ui 官方核心库</span>
+                    <span className="flex items-center gap-2">
+                      <Box className="h-4 w-4" />
+                      <span>官方组件</span>
                     </span>
-                    <span className="text-[10px] font-mono">64 款全量</span>
+                    <span className="text-[11px] font-mono opacity-80">64</span>
                   </Link>
                   <Link
                     href="/tools"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2 rounded-lg text-xs font-medium",
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
                       pathname === "/tools" ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                     )}
                   >
-                    <span className="flex items-center gap-1.5">
-                      <Wrench className="h-3.5 w-3.5 text-amber-500" />
-                      <span>前端设计师常备工具箱</span>
+                    <span className="flex items-center gap-2">
+                      <Wrench className="h-4 w-4" />
+                      <span>设计工具</span>
                     </span>
-                    <span className="text-[10px] font-mono text-amber-600 font-bold">24+ Tools</span>
+                    <span className="text-[11px] font-mono opacity-80">24</span>
                   </Link>
                 </div>
 
-                {/* 动效生态 */}
+                {/* 动效与交互 */}
                 <div className="space-y-1">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-2 mb-1 flex items-center justify-between">
-                    <span>动效与视觉前沿</span>
-                    <span className="font-mono text-[9px]">6 个站点</span>
+                  <div className="text-[11px] font-semibold text-muted-foreground px-2 mb-1.5">
+                    动效与交互
                   </div>
                   {motionEcosystems.map((item) => (
                     <Link
@@ -493,24 +414,20 @@ export function TopNav() {
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
                       className={cn(
-                        "flex items-center justify-between p-2 rounded-lg text-xs font-medium",
+                        "flex items-center gap-2.5 p-2 rounded-xl text-xs font-medium",
                         pathname.startsWith(item.href) ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                       )}
                     >
-                      <div className="flex items-center gap-2">
-                        {item.icon}
-                        <span>{item.title}</span>
-                      </div>
-                      <span className="text-[10px] text-muted-foreground font-mono">{item.badge}</span>
+                      {item.icon}
+                      <span>{item.title}</span>
                     </Link>
                   ))}
                 </div>
 
-                {/* 业务区块生态 */}
+                {/* 区块与系统 */}
                 <div className="space-y-1">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-2 mb-1 flex items-center justify-between">
-                    <span>区块与设计系统</span>
-                    <span className="font-mono text-[9px]">5 个站点</span>
+                  <div className="text-[11px] font-semibold text-muted-foreground px-2 mb-1.5">
+                    区块与系统
                   </div>
                   {systemEcosystems.map((item) => (
                     <Link
@@ -518,15 +435,12 @@ export function TopNav() {
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
                       className={cn(
-                        "flex items-center justify-between p-2 rounded-lg text-xs font-medium",
+                        "flex items-center gap-2.5 p-2 rounded-xl text-xs font-medium",
                         pathname.startsWith(item.href) ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                       )}
                     >
-                      <div className="flex items-center gap-2">
-                        {item.icon}
-                        <span>{item.title}</span>
-                      </div>
-                      <span className="text-[10px] text-muted-foreground font-mono">{item.badge}</span>
+                      {item.icon}
+                      <span>{item.title}</span>
                     </Link>
                   ))}
                 </div>

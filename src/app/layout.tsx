@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wangtester.github.io/shadcn-hub"),
-  title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-  description: "一站式聚合收录 shadcn/ui 官方全量 64 款原子组件 + 11 大顶尖社区扩展库与商业级 Blocks，以及 24+ 款前端设计师常备百宝箱，100% 实机渲染与真实可交互对比。",
+  title: "shadcn-hub · shadcn 生态组件与区块画廊",
+  description: "精选收录 shadcn/ui 官方全量 64 款组件与 11 个优质社区衍生库，全部组件支持 100% 真实交互运行。",
   keywords: [
     "shadcn",
     "shadcn/ui",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "wangtester" }],
   openGraph: {
-    title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-    description: "聚合 64 款官方核心组件、11 大顶尖生态扩展库与设计师百宝箱，全实机交互体验与设计流派评测",
+    title: "shadcn-hub · shadcn 生态组件与区块画廊",
+    description: "精选收录 64 款官方组件与 11 个优质社区衍生库，全部组件支持 100% 真实交互运行。",
     url: "https://github.com/wangtester/shadcn-hub",
     siteName: "shadcn-hub",
     images: [

@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌌 shadcn-hub
-### 全景式 shadcn/ui 组件生态矩阵与多维对比中心
+### shadcn 生态组件与区块画廊
 **A Panoramic Component Workbench & Cross-Ecosystem Benchmark for shadcn/ui**
 
 <p align="center">
@@ -85,7 +85,7 @@
 
 不仅在十几个独立网站间来回跳转极其繁琐，许多展示站还存在“标注几十个但页面只有三四个占位图”的虚标问题。更关键的是，shadcn 最新 **base-nova** 架构已经转向 `@base-ui/react`，原旧有 Radix 范式存在大量兼容差异。
 
-**`shadcn-hub`** 彻底解决了这一切 —— 它将 **shadcn/ui 官方全量 64 款原子组件**、**11 大衍生生态** 以及 **24+ 款专业前端设计师百宝箱** 统一收录并全部实机运行在一个项目中，提供**双层全景导航、全局 Cmd+K 搜索、全实装真实代码、严格 1:1 数量对齐**的一站式基座。
+**`shadcn-hub`** 彻底解决了这一切 —— 它将 **shadcn/ui 官方全量 64 款组件**、**11 大衍生生态** 以及 **24+ 款专业前端设计师百宝箱** 统一收录并全部实机运行在一个项目中，提供**双层全景导航、全局 Cmd+K 搜索、全实装真实代码、严格 1:1 数量对齐**的一站式画廊。
 
 > 🌐 **English Overview**: *shadcn-hub is an all-in-one panoramic workbench and cross-ecosystem benchmark for shadcn/ui. It collects the official 64 core components alongside 11 curated derivative libraries (Magic UI, Aceternity UI, BoardUI, ShadcnStore, Refero Styles, HeroUI Pro, beUI, RareUI, Transitions.dev, BeautifulUI, ShadcnSpace) and a curated Designer Toolbox with 100% interactive running code, dual navigation, and global Cmd+K search built on Next.js 16, Tailwind CSS v4, and @base-ui/react.*
 

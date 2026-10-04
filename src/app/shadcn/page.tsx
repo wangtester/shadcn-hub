@@ -76,7 +76,7 @@ export default function ShadcnOverviewPage() {
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight">shadcn/ui 官方全量组件体系</h1>
         <p className="text-muted-foreground mt-2 max-w-3xl">
-          已全量安装并配置完成官方全部 64 款原子及复合组件。请在左侧侧边栏切换不同类别查看组件的实际运行效果与交互细节。
+          已全量安装并配置完成官方全部 64 款基础与复合组件。请在左侧侧边栏切换不同类别查看组件的实际运行效果与交互细节。
         </p>
       </div>
 
