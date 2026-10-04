@@ -397,45 +397,35 @@ export default function DesignerToolsPage() {
   }, [activeCategory, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground pb-20">
+    <div className="min-h-screen bg-background text-foreground pb-24">
       {/* 顶部 Hero 区域 */}
-      <section className="relative overflow-hidden border-b bg-gradient-to-b from-muted/50 via-background to-background py-12 md:py-16">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]" />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-6xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 mb-4">
-            <Bookmark className="h-3.5 w-3.5 fill-primary" />
-            <span>Design Engineers & UI/UX Toolbox</span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+      <section className="border-b py-12 md:py-16 text-center">
+        <div className="container mx-auto px-4 md:px-6 max-w-3xl space-y-4">
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-foreground">
             前端设计师常备工具箱
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            严选收录全球顶尖设计工程师（Design Engineers）与专业 UI/UX 设计师高频使用的必备神器。涵盖实景测色、
-            真实应用走查、微交互曲线、多层自然漫反射阴影与 WCAG 无障碍审计，每个工具均支持一键直达与链接复制。
+          <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            精选收录 24 款专业级设计神器，涵盖实景测色、应用走查、非线性阴影、贝塞尔动效与无障碍审计。
           </p>
 
-          {/* 搜索栏与统计指标 */}
-          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 max-w-2xl">
-            <div className="relative flex-1">
+          {/* 搜索栏 */}
+          <div className="pt-4 max-w-xl mx-auto">
+            <div className="relative">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="搜索工具名称、功能特性 (如 Tailwind, 阴影, 走查, 色盲)..."
-                className="pl-10 h-11 bg-background border-muted-foreground/20 rounded-xl text-sm shadow-xs focus-visible:ring-primary"
+                placeholder="搜索工具名称或特性 (如 Tailwind, 阴影, 走查, 色盲)..."
+                className="pl-10 h-10 bg-muted/40 border-border/50 rounded-xl text-xs md:text-sm shadow-2xs focus-visible:ring-primary"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground cursor-pointer"
                 >
                   清除
                 </button>
               )}
-            </div>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground px-2 shrink-0">
-              <Filter className="h-3.5 w-3.5" />
-              <span>共收录 <strong className="text-foreground font-semibold">{DESIGNER_TOOLS.length}</strong> 款精选工具</span>
             </div>
           </div>
         </div>
@@ -443,25 +433,25 @@ export default function DesignerToolsPage() {
 
       {/* 分类过滤器条目 */}
       <div className="sticky top-14 z-40 bg-background/95 backdrop-blur border-b shadow-2xs">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl py-3 overflow-x-auto scrollbar-none">
-          <div className="flex items-center gap-2 min-w-max">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl py-2.5 overflow-x-auto scrollbar-none">
+          <div className="flex items-center gap-1.5 min-w-max p-1 rounded-xl bg-muted/40 border border-border/40 text-xs">
             {CATEGORIES.map((cat) => {
               const isActive = activeCategory === cat.key;
               return (
                 <button
                   key={cat.key}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition-all ${
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer ${
                     isActive
-                      ? "bg-primary text-primary-foreground shadow-xs font-semibold"
-                      : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
+                      ? "bg-background text-foreground shadow-xs font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {cat.icon}
                   <span>{cat.label}</span>
                   <span
-                    className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                      isActive ? "bg-primary-foreground/20 text-primary-foreground" : "bg-background text-muted-foreground"
+                    className={`text-[10px] px-1 py-0.2 rounded-full ${
+                      isActive ? "bg-muted font-mono" : "text-muted-foreground/60"
                     }`}
                   >
                     {cat.count}
@@ -473,8 +463,8 @@ export default function DesignerToolsPage() {
         </div>
       </div>
 
-      {/* 主体卡片网格 */}
-      <main className="container mx-auto px-4 md:px-6 max-w-6xl mt-8">
+      {/* 主体卡片网格 (极简轻奢与大呼吸感) */}
+      <main className="container mx-auto px-4 md:px-6 max-w-6xl mt-10">
         {filteredTools.length === 0 ? (
           <div className="py-20 text-center rounded-2xl border border-dashed bg-muted/20">
             <Compass className="h-10 w-10 text-muted-foreground mx-auto mb-3 opacity-60" />
@@ -493,68 +483,59 @@ export default function DesignerToolsPage() {
             </Button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTools.map((tool) => {
               const isCopied = copiedId === tool.id;
               return (
-                <Card
+                <div
                   key={tool.id}
-                  className="flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-primary/40 group relative overflow-hidden bg-card"
+                  className="p-6 rounded-2xl border border-border/50 bg-card/30 hover:border-primary/40 hover:bg-card/60 transition-all duration-200 flex flex-col justify-between group select-none"
                 >
-                  {tool.recommended && (
-                    <div className="absolute top-0 right-0 w-14 h-14 overflow-hidden pointer-events-none">
-                      <div className="absolute transform rotate-45 bg-primary text-[9px] font-bold text-primary-foreground py-0.5 right-[-32px] top-[14px] w-[110px] text-center shadow-xs">
-                        HOT
+                  <div>
+                    {/* 头部：名称 + 极简 Badge + 外跳箭头 */}
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <div className="flex items-center gap-2">
+                        <h2 className="text-base font-bold text-foreground group-hover:text-primary transition-colors">
+                          {tool.name}
+                        </h2>
+                        <Badge variant="outline" className="text-[10px] font-mono shrink-0 bg-background/50 font-normal">
+                          {tool.categoryLabel}
+                        </Badge>
                       </div>
-                    </div>
-                  )}
 
-                  <CardHeader className="pb-3">
-                    <div className="flex items-center justify-between gap-2 mb-1.5">
-                      <span className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
-                        <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
-                        {tool.categoryLabel}
-                      </span>
-                      <Badge variant="outline" className={`text-[10px] font-medium ${tool.tagColor}`}>
-                        {tool.badge}
-                      </Badge>
+                      <a
+                        href={tool.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-muted-foreground/50 hover:text-foreground transition-colors p-0.5"
+                        title="访问官网"
+                      >
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
                     </div>
-                    <CardTitle className="text-lg font-bold flex items-center justify-between group-hover:text-primary transition-colors">
-                      <span>{tool.name}</span>
-                    </CardTitle>
-                    <CardDescription className="text-xs leading-relaxed text-muted-foreground line-clamp-3 mt-1.5">
+
+                    {/* 描述内容 */}
+                    <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2 mt-2">
                       {tool.description}
-                    </CardDescription>
-                  </CardHeader>
+                    </p>
+                  </div>
 
-                  <CardContent className="pb-3">
-                    <div className="flex flex-wrap gap-1.5">
-                      {tool.features.map((feat, idx) => (
-                        <span
-                          key={idx}
-                          className="text-[10px] px-2 py-0.5 rounded-md bg-muted text-muted-foreground font-mono"
-                        >
-                          {feat}
-                        </span>
-                      ))}
-                    </div>
-                  </CardContent>
-
-                  <CardFooter className="pt-3 border-t bg-muted/10 flex items-center justify-between gap-2">
+                  {/* 底部行动条 */}
+                  <div className="mt-5 pt-3 border-t border-border/40 flex items-center justify-between text-xs">
                     <button
                       onClick={() => handleCopy(tool)}
-                      className="text-xs text-muted-foreground hover:text-foreground flex items-center gap-1.5 py-1 px-2 rounded-md hover:bg-muted transition-colors"
-                      title="复制网站链接"
+                      className="text-[11px] text-muted-foreground hover:text-foreground flex items-center gap-1.5 transition-colors cursor-pointer py-1 px-1.5 rounded hover:bg-muted"
+                      title="复制工具链接"
                     >
                       {isCopied ? (
                         <>
-                          <Check className="h-3.5 w-3.5 text-emerald-500" />
-                          <span className="text-[11px] text-emerald-600 font-medium">已复制链接</span>
+                          <Check className="h-3 w-3 text-emerald-500" />
+                          <span className="text-emerald-600 font-medium">已复制</span>
                         </>
                       ) : (
                         <>
-                          <Copy className="h-3.5 w-3.5" />
-                          <span className="text-[11px]">复制 URL</span>
+                          <Copy className="h-3 w-3" />
+                          <span>复制链接</span>
                         </>
                       )}
                     </button>
@@ -563,13 +544,13 @@ export default function DesignerToolsPage() {
                       href={tool.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1 text-xs font-semibold px-3 py-1.5 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-2xs group/link"
+                      className="text-[11px] text-primary hover:underline flex items-center gap-1 font-medium font-mono"
                     >
-                      <span>访问官网</span>
-                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                      <span>直达工具</span>
+                      <ExternalLink className="h-3 w-3" />
                     </a>
-                  </CardFooter>
-                </Card>
+                  </div>
+                </div>
               );
             })}
           </div>

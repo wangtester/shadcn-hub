@@ -41,20 +41,19 @@ export function SidebarLayout({
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navContent = (
-    <div className="space-y-6 py-2">
+    <div className="space-y-5 py-2">
       <div className="px-3 pb-3 border-b">
         <div className="flex items-center gap-2">
-          <h2 className="text-base font-bold tracking-tight text-foreground truncate">{siteTitle}</h2>
-          {siteBadge && <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4">{siteBadge}</Badge>}
+          <h2 className="text-sm font-bold tracking-tight text-foreground truncate">{siteTitle}</h2>
+          {siteBadge && <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 font-mono">{siteBadge}</Badge>}
         </div>
-        {siteDesc && <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{siteDesc}</p>}
       </div>
 
       <div className="space-y-4 px-1">
         {menuGroups.map((group, idx) => (
           <div key={idx} className="space-y-1">
             {group.groupTitle && (
-              <h4 className="px-3 text-xs font-semibold text-muted-foreground tracking-wider uppercase mb-1">
+              <h4 className="px-3 text-[11px] font-semibold text-muted-foreground tracking-wider uppercase mb-1">
                 {group.groupTitle}
               </h4>
             )}
@@ -67,7 +66,7 @@ export function SidebarLayout({
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between px-3 py-2 text-sm font-medium rounded-lg transition-all group",
+                      "flex items-center justify-between px-3 py-2 text-xs md:text-sm font-medium rounded-lg transition-all group",
                       isActive
                         ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                         : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -102,7 +101,7 @@ export function SidebarLayout({
   return (
     <div className="flex min-h-[calc(100vh-3.5rem)] w-full">
       {/* 桌面端固定侧边栏 */}
-      <aside className="hidden md:block w-64 shrink-0 border-r bg-card/40 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
+      <aside className="hidden md:block w-60 shrink-0 border-r bg-card/30 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
         <ScrollArea className="h-full px-2 py-4">
           {navContent}
         </ScrollArea>
@@ -125,8 +124,8 @@ export function SidebarLayout({
         </Sheet>
       </div>
 
-      {/* 右侧主内容展示区 */}
-      <div className="flex-1 min-w-0 p-4 md:p-8 max-w-7xl mx-auto">
+      {/* 右侧主内容展示区 (开阔画布与大留白) */}
+      <div className="flex-1 min-w-0 px-6 md:px-12 lg:px-16 py-8 md:py-14 max-w-6xl mx-auto">
         {children}
       </div>
     </div>
