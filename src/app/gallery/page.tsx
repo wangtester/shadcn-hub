@@ -19,18 +19,15 @@ import {
   Sparkles,
   Box,
   Layout,
-  Filter,
-  CheckCircle2,
-  Clock,
   RotateCcw,
-  SlidersHorizontal,
   Compass,
   ArrowUpRight,
-  Grid as GridIcon,
   Tag,
 } from "lucide-react";
+import { useI18n } from "@/context/i18n-context";
 
 export default function GalleryPage() {
+  const { isEn, t } = useI18n();
   const [search, setSearch] = useState("");
   const [selectedSite, setSelectedSite] = useState<string>("all");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -88,36 +85,35 @@ export default function GalleryPage() {
       <section className="space-y-4">
         <div className="flex flex-wrap items-center gap-2">
           <Badge className="bg-primary/10 text-primary border-primary/20 text-xs font-mono font-medium">
-            Live Component & Block Gallery
+            {t("gallery.badge")}
           </Badge>
           <span className="text-xs text-muted-foreground font-mono">
-            28 大源站全景覆盖 · 100% 原地交互实机渲染
+            {t("gallery.sub")}
           </span>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <h1 className="text-3xl md:text-4xl font-black tracking-tight text-foreground">
-              全景组件与区块原生画廊
+              {t("gallery.title")}
             </h1>
             <p className="text-sm text-muted-foreground mt-1.5 max-w-3xl leading-relaxed">
-              汇集 28 家现代顶尖 UI 资源库的原子组件（Component）、复合区块（Block）与整页模板（Template）。
-              所有资源均直接在卡片内以 React 交互式组件原地运行，并在右上角配备源站具体组件页面的直达外链。
+              {t("gallery.desc")}
             </p>
           </div>
 
           <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground shrink-0 bg-muted/40 p-2 rounded-xl border">
             <div className="text-center px-3 border-r">
               <div className="text-base font-bold text-foreground">{SITES_METADATA.length}</div>
-              <div className="text-[10px]">来源站点</div>
+              <div className="text-[10px]">{isEn ? "Sources" : "来源站点"}</div>
             </div>
             <div className="text-center px-3 border-r">
               <div className="text-base font-bold text-primary">{REGISTRY_DATA.length}</div>
-              <div className="text-[10px]">原地收录</div>
+              <div className="text-[10px]">{isEn ? "Live Sandbox" : "原地收录"}</div>
             </div>
             <div className="text-center px-3">
               <div className="text-base font-bold text-emerald-500">100%</div>
-              <div className="text-[10px]">直达外链</div>
+              <div className="text-[10px]">{isEn ? "Official Links" : "直达外链"}</div>
             </div>
           </div>
         </div>
@@ -132,13 +128,13 @@ export default function GalleryPage() {
             <Input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="搜索组件名称、中文名、技术标签或站点 (如: Dock, 2FA, Kibo, 跑马灯)..."
+              placeholder={t("gallery.searchPlaceholder")}
               className="pl-9 h-9 text-xs bg-background"
             />
             {search && (
               <button
                 onClick={() => setSearch("")}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground p-1"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground p-1 cursor-pointer"
               >
                 ✕
               </button>
@@ -148,10 +144,10 @@ export default function GalleryPage() {
           {/* 类别切换胶囊 */}
           <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs">
             {[
-              { id: "all", label: "全部形态", count: categoryStats.all, icon: <Layers className="h-3 w-3" /> },
-              { id: "component", label: "原子组件", count: categoryStats.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
-              { id: "block", label: "复合区块", count: categoryStats.block, icon: <Layout className="h-3 w-3 text-indigo-500" /> },
-              { id: "template", label: "页面模板", count: categoryStats.template, icon: <Sparkles className="h-3 w-3 text-purple-500" /> },
+              { id: "all", label: isEn ? "All" : "全部形态", count: categoryStats.all, icon: <Layers className="h-3 w-3" /> },
+              { id: "component", label: isEn ? "Components" : "原子组件", count: categoryStats.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
+              { id: "block", label: isEn ? "Blocks" : "复合区块", count: categoryStats.block, icon: <Layout className="h-3 w-3 text-indigo-500" /> },
+              { id: "template", label: isEn ? "Templates" : "页面模板", count: categoryStats.template, icon: <Sparkles className="h-3 w-3 text-purple-500" /> },
             ].map((tab) => {
               const active = selectedCategory === tab.id;
               return (
@@ -179,14 +175,15 @@ export default function GalleryPage() {
         <div className="space-y-2 pt-2 border-t border-border/40">
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span className="flex items-center gap-1.5 font-medium">
-              <Compass className="h-3.5 w-3.5 text-primary" /> 按来源站点筛选 (28 个源站)：
+              <Compass className="h-3.5 w-3.5 text-primary" />
+              <span>{isEn ? "Filter by Source (28 Target Sources):" : "按来源站点筛选 (28 个源站)："}</span>
             </span>
             {(selectedSite !== "all" || selectedCategory !== "all" || search) && (
               <button
                 onClick={resetFilters}
                 className="text-xs text-primary hover:underline flex items-center gap-1 cursor-pointer font-mono"
               >
-                <RotateCcw className="h-3 w-3" /> 重置筛选
+                <RotateCcw className="h-3 w-3" /> {t("gallery.reset")}
               </button>
             )}
           </div>
@@ -200,7 +197,7 @@ export default function GalleryPage() {
                   : "bg-muted/50 hover:bg-muted text-muted-foreground hover:text-foreground"
               }`}
             >
-              全部站点 ({REGISTRY_DATA.length})
+              {isEn ? `All Sources (${REGISTRY_DATA.length})` : `全部站点 (${REGISTRY_DATA.length})`}
             </button>
 
             {SITES_METADATA.map((site) => {
@@ -230,24 +227,38 @@ export default function GalleryPage() {
       {/* 结果计数条 */}
       <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
         <div>
-          找到 <span className="font-mono font-bold text-foreground">{filteredItems.length}</span> 个原地可交互组件与区块
-          {selectedSite !== "all" && (
-            <span> · 站点: <code className="text-primary font-mono">{selectedSite}</code></span>
-          )}
-          {selectedCategory !== "all" && (
-            <span> · 类型: <code className="text-primary font-mono">{selectedCategory}</code></span>
+          {isEn ? (
+            <>
+              Found <span className="font-mono font-bold text-foreground">{filteredItems.length}</span> live interactive items
+              {selectedSite !== "all" && (
+                <span> · Site: <code className="text-primary font-mono">{selectedSite}</code></span>
+              )}
+              {selectedCategory !== "all" && (
+                <span> · Category: <code className="text-primary font-mono">{selectedCategory}</code></span>
+              )}
+            </>
+          ) : (
+            <>
+              找到 <span className="font-mono font-bold text-foreground">{filteredItems.length}</span> 个原地可交互组件与区块
+              {selectedSite !== "all" && (
+                <span> · 站点: <code className="text-primary font-mono">{selectedSite}</code></span>
+              )}
+              {selectedCategory !== "all" && (
+                <span> · 类型: <code className="text-primary font-mono">{selectedCategory}</code></span>
+              )}
+            </>
           )}
         </div>
-        <span className="font-mono text-[11px]">Live Preview Active</span>
+        <span className="font-mono text-[11px] text-emerald-500 font-medium">100% Live In-Place</span>
       </div>
 
       {/* 原地渲染卡片网格 */}
       {filteredItems.length === 0 ? (
         <div className="text-center py-16 border rounded-2xl bg-card/40 space-y-3">
-          <p className="text-sm font-semibold text-foreground">没有找到匹配的组件或区块</p>
-          <p className="text-xs text-muted-foreground">可尝试更换搜索关键词或重置筛选条件</p>
+          <p className="text-sm font-semibold text-foreground">{t("gallery.emptyTitle")}</p>
+          <p className="text-xs text-muted-foreground">{t("gallery.emptyDesc")}</p>
           <Button size="sm" variant="outline" onClick={resetFilters} className="text-xs">
-            重置所有条件
+            {t("gallery.emptyClear")}
           </Button>
         </div>
       ) : (
@@ -286,22 +297,22 @@ export default function GalleryPage() {
                     href={item.originUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={`在原站查看 ${item.name} (${item.originUrl})`}
+                    title={isEn ? `View ${item.name} on source site (${item.originUrl})` : `在原站查看 ${item.name} (${item.originUrl})`}
                     className="flex items-center gap-1 text-[11px] font-mono text-muted-foreground hover:text-primary hover:bg-primary/10 px-2 py-1 rounded-md transition-colors border border-transparent hover:border-primary/20 shrink-0 cursor-pointer"
                   >
-                    <span>原站详情</span>
+                    <span>{t("gallery.sourceDetails")}</span>
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
                 </div>
 
-                {/* 组件名称与中文说明 */}
+                {/* 组件名称与说明 */}
                 <div>
                   <div className="flex items-baseline gap-2">
                     <h3 className="font-bold text-sm text-foreground tracking-tight group-hover:text-primary transition-colors">
                       {item.name}
                     </h3>
                     <span className="text-[11px] text-muted-foreground font-medium">
-                      {item.nameCn}
+                      {isEn ? "" : item.nameCn}
                     </span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1 leading-relaxed line-clamp-2">
@@ -310,7 +321,7 @@ export default function GalleryPage() {
                 </div>
               </div>
 
-              {/* 卡片主体：100% 原地真实交互式 React 组件渲染 (Live Component Preview) */}
+              {/* 卡片主体：100% 原地真实交互式 React 组件渲染 */}
               <div className="p-4 flex-1 flex flex-col justify-center">
                 <RegistryLivePreview componentKey={item.componentKey} />
               </div>

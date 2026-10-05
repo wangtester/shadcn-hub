@@ -5,6 +5,7 @@ import { TopNav } from "@/components/top-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toast";
+import { I18nProvider } from "@/context/i18n-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wangtester.github.io/shadcn-hub"),
-  title: "shadcn-hub · shadcn 生态组件与区块画廊",
-  description: "精选收录 shadcn/ui 官方全量 64 款组件与 10 个优质社区衍生库，全部组件支持 100% 真实交互运行。",
+  title: "shadcn-hub · shadcn Ecosystem Components & Blocks Gallery",
+  description: "Curated collection of 64 official shadcn/ui components and 28 mainstream UI ecosystem libraries with 100% interactive live preview.",
   keywords: [
     "shadcn",
     "shadcn/ui",
@@ -40,8 +41,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "wangtester" }],
   openGraph: {
-    title: "shadcn-hub · shadcn 生态组件与区块画廊",
-    description: "精选收录 64 款官方组件与 10 个优质社区衍生库，全部组件支持 100% 真实交互运行。",
+    title: "shadcn-hub · shadcn Ecosystem Components & Blocks Gallery",
+    description: "Curated collection of 64 official components and 28 mainstream UI libraries with 100% live interactive rendering.",
     url: "https://github.com/wangtester/shadcn-hub",
     siteName: "shadcn-hub",
     images: [
@@ -52,13 +53,13 @@ export const metadata: Metadata = {
         alt: "shadcn-hub Open Graph Banner",
       },
     ],
-    locale: "zh_CN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "shadcn-hub · 全景式 shadcn/ui 组件生态矩阵与多维对比中心",
-    description: "聚合 64 款官方核心组件、11 大顶尖生态扩展库与设计师百宝箱，全实机交互体验与设计流派评测",
+    title: "shadcn-hub · shadcn Ecosystem Components & Blocks Matrix",
+    description: "64 official core components, 28 top UI libraries, and designer toolbox with 100% in-place interactive sandbox",
     images: ["/og-image.jpg"],
   },
 };
@@ -66,18 +67,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="zh"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <TooltipProvider>
-          <TopNav />
-          <main className="flex-1 flex flex-col w-full">
-            {children}
-          </main>
-          <SiteFooter />
-          <Toaster />
-        </TooltipProvider>
+        <I18nProvider>
+          <TooltipProvider>
+            <TopNav />
+            <main className="flex-1 flex flex-col w-full">
+              {children}
+            </main>
+            <SiteFooter />
+            <Toaster />
+          </TooltipProvider>
+        </I18nProvider>
       </body>
     </html>
   );

@@ -27,7 +27,12 @@ export default function FormsPage() {
 
   return (
     <div>
-      <PageHeader title="表单组件" description="包含按钮、输入框、选择器、滑块、开关等全部表单交互组件" />
+      <PageHeader
+        title="表单组件"
+        titleEn="Form Components"
+        description="包含按钮、输入框、选择器、滑块、开关等全部表单交互组件"
+        descriptionEn="Interactive form components including buttons, inputs, selects, sliders, toggles, OTP inputs, and date pickers"
+      />
 
       {/* Button & ButtonGroup */}
       <Section title="Button & ButtonGroup 按钮与按钮组" description="支持多种样式变体、尺寸和组合形态">

@@ -29,7 +29,9 @@ export default function ShadcnExtendedPage() {
     <div className="space-y-10">
       <PageHeader
         title="AI 交互、扩展基元与排版系统组件 (9个)"
+        titleEn="AI Interactions & Extended Primitives (9 Components)"
         description="包含 Attachment 附件卡、Item 结构列表项、Marker 视觉标记、Direction 文字方向、Questionnaire 交互问卷卡、MessageScroller 消息流、Sidebar 基元、Bubble AI 气泡与 Typography 官方排版系统"
+        descriptionEn="Attachment cards, Item rows, visual Markers, Text direction, interactive Questionnaire, Message stream, Sidebar, AI chat bubbles, and official Typography"
       />
 
       {/* 1. Attachment */}

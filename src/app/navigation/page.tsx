@@ -19,7 +19,12 @@ const featureLinks = [
 export default function NavigationPage() {
   return (
     <div>
-      <PageHeader title="导航组件" description="包含顶部多级导航、面包屑导航路径、类桌面端菜单栏与数据分页组件" />
+      <PageHeader
+        title="导航组件"
+        titleEn="Navigation Components"
+        description="包含顶部多级导航、面包屑导航路径、类桌面端菜单栏与数据分页组件"
+        descriptionEn="Multi-level navigation menus, breadcrumbs, menubars, and pagination for hierarchical apps"
+      />
 
       {/* Breadcrumb */}
       <Section title="Breadcrumb 面包屑路径" description="标明当前在多层级信息架构中的层级与回退跳转">

@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Layers, Star, ExternalLink, Activity, Users, ShieldCheck } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Layers, Star, Users, ShieldCheck } from "lucide-react";
+import { useI18n } from "@/context/i18n-context";
 
 export function SiteFooter() {
+  const { t } = useI18n();
+
   return (
     <footer className="border-t bg-muted/20 py-8 px-4 md:px-8 text-xs text-muted-foreground mt-auto">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -16,7 +18,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-2">
             <span className="font-semibold text-foreground tracking-tight">shadcn-hub</span>
             <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-              100% 严格实装
+              {t("footer.badge")}
             </span>
           </div>
         </div>
@@ -25,7 +27,7 @@ export function SiteFooter() {
         <div className="flex items-center gap-3 bg-background border rounded-lg px-3 py-1.5 shadow-2xs">
           <div className="flex items-center gap-1.5 text-foreground font-medium">
             <Users className="h-3.5 w-3.5 text-indigo-500" />
-            <span>访问量统计</span>
+            <span>{t("footer.visitors")}</span>
           </div>
           <span className="text-muted-foreground/40">|</span>
           {/* 实时访客计数徽标 */}
@@ -48,7 +50,7 @@ export function SiteFooter() {
             className="hover:text-foreground flex items-center gap-1 transition-colors"
           >
             <Star className="h-3 w-3 text-amber-500 fill-amber-500" />
-            <span>Star on GitHub</span>
+            <span>{t("footer.star")}</span>
           </a>
           <a
             href="https://github.com/wangtester/shadcn-hub/blob/main/LICENSE"
@@ -57,7 +59,7 @@ export function SiteFooter() {
             className="hover:text-foreground flex items-center gap-1 transition-colors"
           >
             <ShieldCheck className="h-3 w-3" />
-            <span>MIT License</span>
+            <span>{t("footer.license")}</span>
           </a>
         </div>
       </div>

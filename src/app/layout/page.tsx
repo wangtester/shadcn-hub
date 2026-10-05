@@ -21,7 +21,12 @@ export default function LayoutPage() {
 
   return (
     <div>
-      <PageHeader title="布局组件" description="卡片、折叠面板、分页标签、区域划分与尺寸调节等结构组织组件" />
+      <PageHeader
+        title="布局组件"
+        titleEn="Layout Components"
+        description="卡片、折叠面板、分页标签、区域划分与尺寸调节等结构组织组件"
+        descriptionEn="Cards, accordions, tabs, separators, collapsibles, and resizable layout panels"
+      />
 
       {/* Card */}
       <Section title="Card 卡片" description="结构清晰的内容容器">

@@ -21,10 +21,8 @@ import {
   Sparkles,
   Search,
   Tag,
-  ArrowLeft,
-  CheckCircle2,
-  SlidersHorizontal,
 } from "lucide-react";
+import { useI18n } from "@/context/i18n-context";
 
 interface SitePageTemplateProps {
   siteId: string;
@@ -39,6 +37,7 @@ export function SitePageTemplate({
   customDesc,
   children,
 }: SitePageTemplateProps) {
+  const { isEn, t } = useI18n();
   const site = SITES_METADATA.find((s) => s.id === siteId);
   const items = useMemo(() => {
     return REGISTRY_DATA.filter((i) => i.siteId === siteId);
@@ -68,7 +67,7 @@ export function SitePageTemplate({
     return (
       <div className="container mx-auto px-4 py-16 text-center space-y-4">
         <Link href="/gallery" className={buttonVariants({ variant: "outline" })}>
-          返回全景画廊
+          {t("template.back")}
         </Link>
       </div>
     );
@@ -87,11 +86,11 @@ export function SitePageTemplate({
       <div className="flex items-center justify-between gap-4 border-b pb-4">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Link href="/" className="hover:text-foreground transition-colors">
-            首页
+            {t("template.breadcrumbHome")}
           </Link>
           <span>/</span>
           <Link href="/gallery" className="hover:text-foreground transition-colors">
-            全景画廊
+            {t("template.breadcrumbGallery")}
           </Link>
           <span>/</span>
           <span className="font-semibold text-foreground font-mono">{site.name}</span>
@@ -103,7 +102,7 @@ export function SitePageTemplate({
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-xs font-mono font-medium text-primary hover:underline bg-primary/10 hover:bg-primary/20 px-3 py-1.5 rounded-lg transition-colors border border-primary/20"
         >
-          <span>访问原站官网</span>
+          <span>{t("template.visitOfficial")}</span>
           <ArrowUpRight className="h-3.5 w-3.5" />
         </a>
       </div>
@@ -115,7 +114,7 @@ export function SitePageTemplate({
             {site.badge}
           </Badge>
           <Badge variant="outline" className="font-mono text-xs">
-            已收录 {items.length} 个实机资源
+            {isEn ? `${items.length} Live Items` : `已收录 ${items.length} 个实机资源`}
           </Badge>
           <span className="text-xs text-muted-foreground font-mono">
             {site.url}
@@ -123,11 +122,11 @@ export function SitePageTemplate({
         </div>
 
         <h1 className="text-2xl md:text-4xl font-black tracking-tight text-foreground">
-          {customTitle || `${site.name} 组件与区块展厅`}
+          {customTitle || (isEn ? `${site.name} Components & Blocks Exhibition` : `${site.name} 组件与区块展厅`)}
         </h1>
 
         <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
-          {customDesc || site.desc} · 全部收录资源已完成代码适配，支持卡片内原地实时交互渲染。
+          {customDesc || (isEn ? `${site.name} — All collected resources adapted with source code, 100% interactive live preview in cards.` : `${site.desc} · 全部收录资源已完成代码适配，支持卡片内原地实时交互渲染。`)}
         </p>
       </div>
 
@@ -141,13 +140,13 @@ export function SitePageTemplate({
           <Input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={`在 ${site.name} 中搜索组件...`}
+            placeholder={isEn ? `Search components in ${site.name}...` : `在 ${site.name} 中搜索组件...`}
             className="pl-9 h-8 text-xs bg-background"
           />
           {search && (
             <button
               onClick={() => setSearch("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground cursor-pointer"
             >
               ✕
             </button>
@@ -157,10 +156,10 @@ export function SitePageTemplate({
         {/* 类别筛选 */}
         <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs">
           {[
-            { id: "all", label: "全部", count: categoryCounts.all, icon: <Layers className="h-3 w-3" /> },
-            { id: "component", label: "组件", count: categoryCounts.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
-            { id: "block", label: "区块", count: categoryCounts.block, icon: <Layout className="h-3 w-3 text-indigo-500" /> },
-            { id: "template", label: "模板", count: categoryCounts.template, icon: <Sparkles className="h-3 w-3 text-purple-500" /> },
+            { id: "all", label: isEn ? "All" : "全部", count: categoryCounts.all, icon: <Layers className="h-3 w-3" /> },
+            { id: "component", label: isEn ? "Components" : "组件", count: categoryCounts.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
+            { id: "block", label: isEn ? "Blocks" : "区块", count: categoryCounts.block, icon: <Layout className="h-3 w-3 text-indigo-500" /> },
+            { id: "template", label: isEn ? "Templates" : "模板", count: categoryCounts.template, icon: <Sparkles className="h-3 w-3 text-purple-500" /> },
           ].map((tab) => {
             const active = categoryFilter === tab.id;
             return (
@@ -187,9 +186,9 @@ export function SitePageTemplate({
       {/* 原地实机交互预览网格 */}
       {filteredItems.length === 0 ? (
         <div className="text-center py-12 border rounded-xl bg-card/40 space-y-2">
-          <p className="text-xs text-muted-foreground">未找到匹配的组件</p>
+          <p className="text-xs text-muted-foreground">{t("template.empty")}</p>
           <Button size="sm" variant="ghost" onClick={() => { setSearch(""); setCategoryFilter("all"); }}>
-            清除筛选
+            {t("template.clear")}
           </Button>
         </div>
       ) : (
@@ -225,10 +224,10 @@ export function SitePageTemplate({
                     href={item.originUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={`在原站查看 ${item.name} (${item.originUrl})`}
+                    title={isEn ? `View ${item.name} on origin site (${item.originUrl})` : `在原站查看 ${item.name} (${item.originUrl})`}
                     className="flex items-center gap-1 text-[11px] font-mono text-muted-foreground hover:text-primary hover:bg-primary/10 px-2 py-1 rounded-md transition-colors border border-transparent hover:border-primary/20 shrink-0 cursor-pointer"
                   >
-                    <span>原站详情</span>
+                    <span>{t("template.sourceDetails")}</span>
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
                 </div>
@@ -239,7 +238,7 @@ export function SitePageTemplate({
                       {item.name}
                     </h3>
                     <span className="text-[11px] text-muted-foreground font-medium">
-                      {item.nameCn}
+                      {isEn ? "" : item.nameCn}
                     </span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1 leading-relaxed line-clamp-2">

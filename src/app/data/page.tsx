@@ -107,7 +107,12 @@ export default function DataPage() {
 
   return (
     <div>
-      <PageHeader title="数据展示" description="表格、图表、日历、轮播图、组合搜索框与命令面板等数据渲染与筛选组件" />
+      <PageHeader
+        title="数据展示"
+        titleEn="Data Display Components"
+        description="表格、图表、日历、轮播图、组合搜索框与命令面板等数据渲染与筛选组件"
+        descriptionEn="Modern data tables, calendars, charts, carousels, avatars, badges, and command palettes"
+      />
 
       {/* Avatar */}
       <Section title="Avatar 用户头像" description="图片、文字回退与群组堆叠展现">

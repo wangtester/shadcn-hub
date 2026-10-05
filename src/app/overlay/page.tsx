@@ -20,7 +20,12 @@ import { CalendarDays, ChevronDown, Settings, User, LogOut, Copy, Trash2, HelpCi
 export default function OverlayPage() {
   return (
     <div>
-      <PageHeader title="浮层组件" description="模态对话框、侧边抽屉、底部弹窗、悬浮卡片、气泡提示与右键菜单等" />
+      <PageHeader
+        title="浮层组件"
+        titleEn="Overlay Components"
+        description="模态对话框、侧边抽屉、底部弹窗、悬浮卡片、气泡提示与右键菜单等"
+        descriptionEn="Modal dialogs, side sheets, drawers, hover cards, tooltips, and context menus"
+      />
 
       {/* Dialog */}
       <Section title="Dialog 模态对话框" description="需要打断当前流程进行确认或输入的核心浮层">

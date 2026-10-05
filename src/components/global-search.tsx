@@ -11,98 +11,96 @@ import {
   CommandItem,
   CommandSeparator,
 } from "@/components/ui/command";
-import { Search, Compass, Layout, Sparkles, Palette, BarChart3, Layers, ShoppingBag, Wand2 } from "lucide-react";
+import { Search, Compass } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useI18n } from "@/context/i18n-context";
 
 interface SearchItem {
   title: string;
+  titleEn: string;
   category: string;
+  categoryEn: string;
   href: string;
   keywords?: string[];
-  icon?: React.ReactNode;
 }
 
 const SEARCH_ITEMS: SearchItem[] = [
-  // 生态入口与百宝箱
-  { title: "全景生态大厅 (Hub)", category: "生态站点", href: "/", keywords: ["home", "hub", "index", "overview", "首页"] },
-  { title: "✨ 全景组件与区块原生画廊 (28 源站实机预览)", category: "生态站点", href: "/gallery", keywords: ["gallery", "preview", "live", "kibo", "origin", "tailark", "画廊", "实机", "预览", "28", "全部"] },
-  { title: "🛠️ 前端设计师常备工具箱 (Toolbox)", category: "生态站点", href: "/tools", keywords: ["tools", "toolbox", "color", "palette", "mobbin", "coolors", "shadow", "bezier", "工具", "调色"] },
-  { title: "shadcn/ui 官方核心库 (64 全量组件)", category: "生态站点", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
-  { title: "Magic UI 动效库 (50+ 动效与 Bento)", category: "生态站点", href: "/sites/magicui", keywords: ["magicui", "magic", "motion", "marquee", "beam", "meteors", "orbit", "bento"] },
-  { title: "Aceternity UI 顶奢视觉库 (Lamp/3D Pin)", category: "生态站点", href: "/sites/aceternity", keywords: ["aceternity", "lamp", "sparkles", "pin", "tracing", "beams"] },
-  { title: "BoardUI 仪表盘与 AI 智能体 (19 图表)", category: "生态站点", href: "/sites/boardui", keywords: ["boardui", "charts", "agent", "dashboard"] },
-  { title: "ShadcnStore 商业区块与电商 (39 类目)", category: "生态站点", href: "/sites/shadcnstore", keywords: ["store", "blocks", "ecommerce", "sections"] },
-  { title: "Refero Styles (9 大现代设计风格)", category: "生态站点", href: "/sites/refero", keywords: ["refero", "design", "tokens", "styles", "linear", "geist"] },
-  { title: "HeroUI Pro (营销与 SaaS 应用)", category: "生态站点", href: "/sites/heroui", keywords: ["heroui", "marketing", "pricing", "saas"] },
-  { title: "beUI 动效套件 (打字机/流光边框)", category: "生态站点", href: "/sites/beui", keywords: ["beui", "motion", "animation", "spotlight"] },
-  { title: "RareUI 物理交互 (流体球/灵动岛)", category: "生态站点", href: "/sites/rareui", keywords: ["rareui", "fluid", "orb", "island"] },
-  { title: "Transitions.dev (弹簧滑块/交错入场)", category: "生态站点", href: "/sites/transitions", keywords: ["transitions", "spring", "stagger"] },
-  { title: "BeautifulUI (极光背景/毛玻璃卡片)", category: "生态站点", href: "/sites/beautifului", keywords: ["beautifului", "aurora", "glassmorphism"] },
-  { title: "Kibo UI (协同多光标/堆叠头像/甘特图)", category: "生态站点", href: "/gallery?site=kibo", keywords: ["kibo", "cursor", "avatar-stack", "gantt", "kanban", "table"] },
-  { title: "Velora UI (Token 流式监控/思考轨迹)", category: "生态站点", href: "/gallery?site=veloraui", keywords: ["velora", "token", "ai", "thinking", "trace"] },
-  { title: "Motion Primitives (字符交错/光迹边框)", category: "生态站点", href: "/gallery?site=motion-primitives", keywords: ["motion-primitives", "border-trail", "text-effect"] },
-  { title: "Origin UI (Base UI 标签胶囊/步进器)", category: "生态站点", href: "/gallery?site=origin-ui", keywords: ["origin", "base-ui", "coss", "tag-input"] },
-  { title: "Tailark (深色科技流光 Hero/Bento)", category: "生态站点", href: "/gallery?site=tailark", keywords: ["tailark", "hero", "bento", "blocks"] },
-  { title: "21st.dev (社区组件坞/客户墙/高奢模板)", category: "生态站点", href: "/gallery?site=21st", keywords: ["21st", "dock", "community", "template"] },
-  { title: "Shadcnblocks (自动补全/非对称 Hero/SaaS 模板)", category: "生态站点", href: "/gallery?site=shadcnblocks", keywords: ["shadcnblocks", "autocomplete", "blocks", "template"] },
-  { title: "shadcn.io (2FA 安全验证/Solaris 模板)", category: "生态站点", href: "/gallery?site=shadcn-io", keywords: ["shadcn-io", "2fa", "security", "solaris"] },
+  // Ecosystem Sites
+  { title: "全景生态大厅 (Hub)", titleEn: "Ecosystem Panorama Hub", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/", keywords: ["home", "hub", "index", "overview", "首页"] },
+  { title: "✨ 全景组件与区块原生画廊 (28 源站实机预览)", titleEn: "✨ Live Components & Blocks Gallery (28 Sources)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery", keywords: ["gallery", "preview", "live", "kibo", "origin", "tailark", "画廊", "实机", "预览", "28", "全部"] },
+  { title: "🛠️ 前端设计师常备工具箱 (Toolbox)", titleEn: "🛠️ Designer Curated Toolbox (40+ Tools)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/tools", keywords: ["tools", "toolbox", "color", "palette", "mobbin", "coolors", "shadow", "bezier", "工具", "调色"] },
+  { title: "shadcn/ui 官方核心库 (64 全量组件)", titleEn: "shadcn/ui Official Matrix (64 Components)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
+  { title: "Magic UI 动效库 (50+ 动效与 Bento)", titleEn: "Magic UI Motion Library (50+ Effects)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/magicui", keywords: ["magicui", "magic", "motion", "marquee", "beam", "meteors", "orbit", "bento"] },
+  { title: "Aceternity UI 顶奢视觉库 (Lamp/3D Pin)", titleEn: "Aceternity UI Visual Aesthetics (Lamp/3D Pin)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/aceternity", keywords: ["aceternity", "lamp", "sparkles", "pin", "tracing", "beams"] },
+  { title: "BoardUI 仪表盘与 AI 智能体 (19 图表)", titleEn: "BoardUI Dashboards & AI Agent (19 Charts)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/boardui", keywords: ["boardui", "charts", "agent", "dashboard"] },
+  { title: "ShadcnStore 商业区块与电商 (39 类目)", titleEn: "ShadcnStore Commercial Blocks (39 Categories)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/shadcnstore", keywords: ["store", "blocks", "ecommerce", "sections"] },
+  { title: "Refero Styles (9 大现代设计风格)", titleEn: "Refero Styles (9 Product Design Norms)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/refero", keywords: ["refero", "design", "tokens", "styles", "linear", "geist"] },
+  { title: "HeroUI Pro (营销与 SaaS 应用)", titleEn: "HeroUI Pro (SaaS & Marketing)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/heroui", keywords: ["heroui", "marketing", "pricing", "saas"] },
+  { title: "beUI 动效套件 (打字机/流光边框)", titleEn: "beUI Motion Suite (Typewriter & Glow)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/beui", keywords: ["beui", "motion", "animation", "spotlight"] },
+  { title: "RareUI 物理交互 (流体球/灵动岛)", titleEn: "RareUI Physics Micro-interactions (Fluid Orb)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/rareui", keywords: ["rareui", "fluid", "orb", "island"] },
+  { title: "Transitions.dev (弹簧滑块/交错入场)", titleEn: "Transitions.dev (Spring & View Transitions)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/transitions", keywords: ["transitions", "spring", "stagger"] },
+  { title: "BeautifulUI (极光背景/毛玻璃卡片)", titleEn: "BeautifulUI (Aurora Glow & Frosted Glass)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/sites/beautifului", keywords: ["beautifului", "aurora", "glassmorphism"] },
+  { title: "Kibo UI (协同多光标/堆叠头像/甘特图)", titleEn: "Kibo UI (Multiplayer Cursors & Gantt)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=kibo", keywords: ["kibo", "cursor", "avatar-stack", "gantt", "kanban", "table"] },
+  { title: "Velora UI (Token 流式监控/思考轨迹)", titleEn: "Velora UI (Token Streaming & AI Trace)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=veloraui", keywords: ["velora", "token", "ai", "thinking", "trace"] },
+  { title: "Motion Primitives (字符交错/光迹边框)", titleEn: "Motion Primitives (Text Effect & Border Trail)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=motion-primitives", keywords: ["motion-primitives", "border-trail", "text-effect"] },
+  { title: "Origin UI (Base UI 标签胶囊/步进器)", titleEn: "Origin UI (Base UI Tag Chips & Stepper)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=origin-ui", keywords: ["origin", "base-ui", "coss", "tag-input"] },
+  { title: "Tailark (深色科技流光 Hero/Bento)", titleEn: "Tailark (Dark Tech Hero & Bento)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=tailark", keywords: ["tailark", "hero", "bento", "blocks"] },
+  { title: "21st.dev (社区组件坞/客户墙/高奢模板)", titleEn: "21st.dev (Community Dock & Glass Templates)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=21st", keywords: ["21st", "dock", "community", "template"] },
+  { title: "Shadcnblocks (自动补全/非对称 Hero/SaaS 模板)", titleEn: "Shadcnblocks (Autocomplete & SaaS Blocks)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=shadcnblocks", keywords: ["shadcnblocks", "autocomplete", "blocks", "template"] },
+  { title: "shadcn.io (2FA 安全验证/Solaris 模板)", titleEn: "shadcn.io (2FA Security & Solaris Blocks)", category: "生态站点", categoryEn: "Ecosystem Sites", href: "/gallery?site=shadcn-io", keywords: ["shadcn-io", "2fa", "security", "solaris"] },
 
-  // shadcn 官方组件
-  { title: "Button 按钮 / ButtonGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["button", "group", "input", "click"] },
-  { title: "Input 输入框 / InputGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["input", "text", "form"] },
-  { title: "DatePicker 日期与区间范围选择器", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["datepicker", "date", "calendar", "range", "presets", "日期"] },
-  { title: "Select 下拉选择器", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["select", "dropdown", "option"] },
-  { title: "Checkbox 复选框 / Switch 开关", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["checkbox", "switch", "toggle"] },
-  { title: "Slider 滑块 / InputOTP 验证码", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["slider", "otp", "code", "range"] },
-  { title: "Card 卡片容器", category: "shadcn 组件", href: "/shadcn/layout", keywords: ["card", "layout", "box"] },
-  { title: "Tabs 选项卡 / Accordion 手风琴", category: "shadcn 组件", href: "/shadcn/layout", keywords: ["tabs", "accordion", "collapse"] },
-  { title: "Dialog 对话框 / AlertDialog 警示框", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["dialog", "modal", "alert"] },
-  { title: "Sheet 侧边抽屉 / Drawer 下拉抽屉", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["sheet", "drawer", "slide"] },
-  { title: "Popover 气泡卡片 / Tooltip 文字提示", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["popover", "tooltip", "hover"] },
-  { title: "DropdownMenu / ContextMenu 上下文菜单", category: "shadcn 组件", href: "/shadcn/overlay", keywords: ["menu", "context", "dropdown"] },
-  { title: "Table 数据表格", category: "shadcn 组件", href: "/shadcn/data", keywords: ["table", "grid", "data", "row"] },
-  { title: "DataTable 现代化高阶数据表格 (搜索/排序/分页/多选)", category: "shadcn 组件", href: "/shadcn/data", keywords: ["datatable", "table", "tanstack", "pagination", "sort", "filter"] },
-  { title: "Calendar 日历选择器", category: "shadcn 组件", href: "/shadcn/data", keywords: ["calendar", "date", "picker"] },
-  { title: "Chart 数据图表", category: "shadcn 组件", href: "/shadcn/data", keywords: ["chart", "recharts", "graph"] },
-  { title: "Carousel 走马灯轮播", category: "shadcn 组件", href: "/shadcn/data", keywords: ["carousel", "slider", "embla"] },
-  { title: "Avatar 头像 / Badge 徽章", category: "shadcn 组件", href: "/shadcn/data", keywords: ["avatar", "badge", "tag"] },
-  { title: "Attachment 附件卡 / Item 列表行", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["attachment", "item", "marker", "direction"] },
-  { title: "Bubble 智能对话气泡与反馈反应", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["bubble", "chat", "message", "reaction", "ai"] },
-  { title: "Typography & Typeset 官方规范排版", category: "shadcn 组件", href: "/shadcn/extended", keywords: ["typography", "typeset", "heading", "blockquote", "prose", "text"] },
+  // shadcn Official Components
+  { title: "Button 按钮 / ButtonGroup", titleEn: "Button / ButtonGroup", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["button", "group", "input", "click"] },
+  { title: "Input 输入框 / InputGroup", titleEn: "Input / InputGroup", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["input", "text", "form"] },
+  { title: "DatePicker 日期与区间范围选择器", titleEn: "DatePicker & DateRangePicker", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["datepicker", "date", "calendar", "range", "presets", "日期"] },
+  { title: "Select 下拉选择器", titleEn: "Select / Dropdown", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["select", "dropdown", "option"] },
+  { title: "Checkbox 复选框 / Switch 开关", titleEn: "Checkbox / Switch", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["checkbox", "switch", "toggle"] },
+  { title: "Slider 滑块 / InputOTP 验证码", titleEn: "Slider / InputOTP", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/forms", keywords: ["slider", "otp", "code", "range"] },
+  { title: "Card 卡片容器", titleEn: "Card Container", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/layout", keywords: ["card", "layout", "box"] },
+  { title: "Tabs 选项卡 / Accordion 手风琴", titleEn: "Tabs / Accordion", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/layout", keywords: ["tabs", "accordion", "collapse"] },
+  { title: "Dialog 对话框 / AlertDialog 警示框", titleEn: "Dialog / AlertDialog", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/overlay", keywords: ["dialog", "modal", "alert"] },
+  { title: "Sheet 侧边抽屉 / Drawer 下拉抽屉", titleEn: "Sheet / Drawer", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/overlay", keywords: ["sheet", "drawer", "slide"] },
+  { title: "Popover 气泡卡片 / Tooltip 文字提示", titleEn: "Popover / Tooltip", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/overlay", keywords: ["popover", "tooltip", "hover"] },
+  { title: "DropdownMenu / ContextMenu 上下文菜单", titleEn: "DropdownMenu / ContextMenu", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/overlay", keywords: ["menu", "context", "dropdown"] },
+  { title: "Table 数据表格", titleEn: "Table (Data Grid)", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["table", "grid", "data", "row"] },
+  { title: "DataTable 现代化高阶数据表格 (搜索/排序/分页/多选)", titleEn: "DataTable Advanced Grid (Search, Sort, Pagination)", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["datatable", "table", "tanstack", "pagination", "sort", "filter"] },
+  { title: "Calendar 日历选择器", titleEn: "Calendar Picker", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["calendar", "date", "picker"] },
+  { title: "Chart 数据图表 (Recharts)", titleEn: "Chart (Recharts Theme)", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["chart", "recharts", "graph"] },
+  { title: "Carousel 走马灯轮播", titleEn: "Carousel (Embla)", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["carousel", "slider", "embla"] },
+  { title: "Avatar 头像 / Badge 徽章", titleEn: "Avatar / Badge", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/data", keywords: ["avatar", "badge", "tag"] },
+  { title: "Attachment 附件卡 / Item 列表行", titleEn: "Attachment Card / Item Row", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/extended", keywords: ["attachment", "item", "marker", "direction"] },
+  { title: "Bubble 智能对话气泡与反馈反应", titleEn: "Bubble AI Chat Bubble & Reactions", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/extended", keywords: ["bubble", "chat", "message", "reaction", "ai"] },
+  { title: "Typography & Typeset 官方规范排版", titleEn: "Typography & Typeset Spec", category: "shadcn 组件", categoryEn: "shadcn Components", href: "/shadcn/extended", keywords: ["typography", "typeset", "heading", "blockquote", "prose", "text"] },
 
-  // BoardUI 图表与 Agent
-  { title: "19 款工业级仪表盘图表 (Area, Funnel, Radar...)", category: "BoardUI", href: "/sites/boardui/charts", keywords: ["charts", "recharts", "bar", "radar", "sankey", "speedometer"] },
-  { title: "AI Agentic 智能体交互 (思维链/Token/联网流)", category: "BoardUI", href: "/sites/boardui/agentic", keywords: ["agent", "reasoning", "thinking", "tokens", "llm", "ai"] },
-  { title: "BoardUI 核心基元 (通告横条/过滤芯片/环比微指标卡)", category: "BoardUI", href: "/sites/boardui/components", keywords: ["boardui", "banner", "chips", "kpi", "delta", "metrics"] },
+  // BoardUI
+  { title: "19 款工业级仪表盘图表 (Area, Funnel, Radar...)", titleEn: "19 Industrial Charts (Area, Funnel, Radar...)", category: "BoardUI", categoryEn: "BoardUI", href: "/sites/boardui/charts", keywords: ["charts", "recharts", "bar", "radar", "sankey", "speedometer"] },
+  { title: "AI Agentic 智能体交互 (思维链/Token/联网流)", titleEn: "AI Agentic Interactions (Reasoning & Token Trace)", category: "BoardUI", categoryEn: "BoardUI", href: "/sites/boardui/agentic", keywords: ["agent", "reasoning", "thinking", "tokens", "llm", "ai"] },
+  { title: "BoardUI 核心基元 (通告横条/过滤芯片/环比微指标卡)", titleEn: "BoardUI Primitives (Banners, Filter Chips, Delta KPI)", category: "BoardUI", categoryEn: "BoardUI", href: "/sites/boardui/components", keywords: ["boardui", "banner", "chips", "kpi", "delta", "metrics"] },
 
-  // 生态创新与交互 (BeautifulUI, beUI, RareUI, Transitions, ShadcnStore)
-  { title: "BeautifulUI AI Agentic 人机协同卡 (HITL 审批/工具芯片/RAG 块)", category: "交互与区块", href: "/sites/beautifului/agentic", keywords: ["beautifului", "hitl", "agent", "tool-call", "rag", "chunks"] },
-  { title: "beUI 交互微动效 (拖拽文件上传/磁吸分段胶囊)", category: "交互与区块", href: "/sites/beui/interactive", keywords: ["beui", "drag-drop", "upload", "segmented-menu", "motion"] },
-  { title: "RareUI 物理交互 (展开式文件盒/微动摇摆铃铛/表情反应槽)", category: "交互与区块", href: "/sites/rareui/interactive", keywords: ["rareui", "folders", "bell", "reaction", "physics"] },
-  { title: "Transitions.dev 动态置换 (Text Swap 垂直轮转/胶囊徽章形变)", category: "交互与区块", href: "/sites/transitions/morphing", keywords: ["transitions", "morphing", "text-swap", "badge-morph"] },
-  { title: "ShadcnStore 高频落地页区块 (Bento 便当盒/定价表/指标墙/CTA)", category: "交互与区块", href: "/sites/shadcnstore/sections", keywords: ["shadcnstore", "bento", "pricing", "stats", "cta", "landing"] },
-  { title: "Refero AI DESIGN.md 规范即时导出生成器", category: "交互与区块", href: "/sites/refero/tokens", keywords: ["refero", "design-md", "tokens", "export", "markdown"] },
-  { title: "Magic UI 动效组件 (Marquee/Animated Beam/Border Beam/Orbit/Ripple)", category: "交互与区块", href: "/sites/magicui/components", keywords: ["magicui", "marquee", "beam", "border-beam", "orbit", "ripple"] },
-  { title: "Magic UI 营销区块 (Magic Bento Grid/Meteors 流星/Retro Grid)", category: "交互与区块", href: "/sites/magicui/blocks", keywords: ["magicui", "bento", "meteors", "retro-grid", "landing"] },
-  { title: "Aceternity 视觉基元 (Lamp 神灯聚光/Sparkles 星空/3D Pin 图钉)", category: "交互与区块", href: "/sites/aceternity/components", keywords: ["aceternity", "lamp", "sparkles", "3d-pin", "conic", "gradient"] },
-  { title: "Aceternity 沉浸区块 (Tracing Beam 阅读光束/Background Beams)", category: "交互与区块", href: "/sites/aceternity/blocks", keywords: ["aceternity", "tracing-beam", "background-beams", "showcase"] },
-  { title: "🛠️ 前端设计师常用工具合集 (Coolors/Mobbin/Fontshare/WhoCanUse)", category: "交互与区块", href: "/tools", keywords: ["tools", "coolors", "mobbin", "godly", "fontshare", "haikei", "shadow", "bezier", "whocanuse"] },
+  // Interactive & Blocks
+  { title: "BeautifulUI AI Agentic 人机协同卡 (HITL 审批/工具芯片/RAG 块)", titleEn: "BeautifulUI AI HITL Approval Cards & RAG Chunks", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/beautifului/agentic", keywords: ["beautifului", "hitl", "agent", "tool-call", "rag", "chunks"] },
+  { title: "beUI 交互微动效 (拖拽文件上传/磁吸分段胶囊)", titleEn: "beUI Drag-Drop File Upload & Segmented Dock", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/beui/interactive", keywords: ["beui", "drag-drop", "upload", "segmented-menu", "motion"] },
+  { title: "RareUI 物理交互 (展开式文件盒/微动摇摆铃铛/表情反应槽)", titleEn: "RareUI Physical Folders, Jiggle Bell, Reactions", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/rareui/interactive", keywords: ["rareui", "folders", "bell", "reaction", "physics"] },
+  { title: "Transitions.dev 动态置换 (Text Swap 垂直轮转/胶囊徽章形变)", titleEn: "Transitions.dev Text Swap & Badge Morphing", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/transitions/morphing", keywords: ["transitions", "morphing", "text-swap", "badge-morph"] },
+  { title: "ShadcnStore 高频落地页区块 (Bento 便当盒/定价表/指标墙/CTA)", titleEn: "ShadcnStore High-Frequency Landing Blocks (Bento, Pricing, CTA)", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/shadcnstore/sections", keywords: ["shadcnstore", "bento", "pricing", "stats", "cta", "landing"] },
+  { title: "Refero AI DESIGN.md 规范即时导出生成器", titleEn: "Refero DESIGN.md Spec Live Generator & Export", category: "交互与区块", categoryEn: "Interactive Blocks", href: "/sites/refero/tokens", keywords: ["refero", "design-md", "tokens", "export", "markdown"] },
 
-  // Refero 9 大设计流派
-  { title: "Linear 灰阶极简风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["linear", "dark", "monochrome", "minimal"] },
-  { title: "Vercel Geist 黑白纯粹风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["geist", "vercel", "black-white"] },
-  { title: "Apple Smooth 大曲率柔光风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["apple", "squircle", "smooth", "radius"] },
-  { title: "Neo-Brutalism 新野兽派硬边风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["neo-brutalism", "brutalist", "contrast", "shadow"] },
-  { title: "Stripe Fintech 金融高奢渐变风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["stripe", "fintech", "gradient"] },
-  { title: "Supabase Dark Neon 霓虹极客风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["supabase", "emerald", "neon", "hacker"] },
-  { title: "Raycast Desktop 桌面原生质感", category: "设计流派", href: "/sites/refero/styles", keywords: ["raycast", "desktop", "mac", "spotlight"] },
-  { title: "Notion Document 纸质排版风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["notion", "paper", "document", "minimal"] },
-  { title: "Perplexity AI Fluid 柔光流体风格", category: "设计流派", href: "/sites/refero/styles", keywords: ["perplexity", "fluid", "glow", "ai"] },
+  // Design Styles
+  { title: "Linear 灰阶极简风格", titleEn: "Linear Monochrome Minimalist Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["linear", "dark", "monochrome", "minimal"] },
+  { title: "Vercel Geist 黑白纯粹风格", titleEn: "Vercel Geist Pure Black & White Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["geist", "vercel", "black-white"] },
+  { title: "Apple Smooth 大曲率柔光风格", titleEn: "Apple Smooth High-Curvature Squircle Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["apple", "squircle", "smooth", "radius"] },
+  { title: "Neo-Brutalism 新野兽派硬边风格", titleEn: "Neo-Brutalism High Contrast Hard Border Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["neo-brutalism", "brutalist", "contrast", "shadow"] },
+  { title: "Stripe Fintech 金融高奢渐变风格", titleEn: "Stripe Fintech High-End Gradient Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["stripe", "fintech", "gradient"] },
+  { title: "Supabase Dark Neon 霓虹极客风格", titleEn: "Supabase Dark Neon Hacker Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["supabase", "emerald", "neon", "hacker"] },
+  { title: "Raycast Desktop 桌面原生质感", titleEn: "Raycast Desktop Native Spotlight Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["raycast", "desktop", "mac", "spotlight"] },
+  { title: "Notion Document 纸质排版风格", titleEn: "Notion Document Clean Paper Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["notion", "paper", "document", "minimal"] },
+  { title: "Perplexity AI Fluid 柔光流体风格", titleEn: "Perplexity AI Fluid Soft Glow Style", category: "设计流派", categoryEn: "Design Styles", href: "/sites/refero/styles", keywords: ["perplexity", "fluid", "glow", "ai"] },
 ];
 
 export function GlobalSearch() {
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
+  const { isEn } = useI18n();
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -120,7 +118,9 @@ export function GlobalSearch() {
     router.push(href);
   };
 
-  const categories = ["生态站点", "shadcn 组件", "BoardUI", "交互与区块", "设计流派"];
+  const categories = isEn
+    ? ["Ecosystem Sites", "shadcn Components", "BoardUI", "Interactive Blocks", "Design Styles"]
+    : ["生态站点", "shadcn 组件", "BoardUI", "交互与区块", "设计流派"];
 
   return (
     <>
@@ -130,8 +130,12 @@ export function GlobalSearch() {
         className="relative h-8 w-full md:w-56 justify-start rounded-lg text-xs font-normal text-muted-foreground shadow-none bg-muted/40 hover:bg-muted"
       >
         <Search className="mr-2 h-3.5 w-3.5" />
-        <span className="hidden sm:inline-block">全局搜索组件或流派...</span>
-        <span className="inline-block sm:hidden">搜索...</span>
+        <span className="hidden sm:inline-block">
+          {isEn ? "Search components & styles..." : "全局搜索组件或流派..."}
+        </span>
+        <span className="inline-block sm:hidden">
+          {isEn ? "Search..." : "搜索..."}
+        </span>
         <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-background px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
           <span className="text-xs">⌘</span>K
         </kbd>
@@ -140,33 +144,50 @@ export function GlobalSearch() {
       <CommandDialog
         open={open}
         onOpenChange={setOpen}
-        title="全站搜索"
-        description="搜索 61 款官方组件、19 种图表、39 类 Blocks 与 9 大设计流派"
+        title={isEn ? "Global Search" : "全站搜索"}
+        description={
+          isEn
+            ? "Search 64 official components, 19 charts, 39 block categories, and 9 design styles"
+            : "搜索 64 款官方组件、19 种图表、39 类 Blocks 与 9 大设计流派"
+        }
       >
-        <CommandInput placeholder="输入组件、图表或风格名称 (如 button, chart, linear, agent)..." />
+        <CommandInput
+          placeholder={
+            isEn
+              ? "Type component, chart, or style (e.g. button, chart, linear, agent)..."
+              : "输入组件、图表或风格名称 (如 button, chart, linear, agent)..."
+          }
+        />
         <CommandList className="max-h-[360px]">
-          <CommandEmpty>未找到相关组件或站点。</CommandEmpty>
+          <CommandEmpty>
+            {isEn ? "No matching components or sites found." : "未找到相关组件或站点。"}
+          </CommandEmpty>
           {categories.map((cat, idx) => {
-            const items = SEARCH_ITEMS.filter((i) => i.category === cat);
+            const items = SEARCH_ITEMS.filter((i) =>
+              isEn ? i.categoryEn === cat : i.category === cat
+            );
             if (items.length === 0) return null;
             return (
               <React.Fragment key={cat}>
                 {idx > 0 && <CommandSeparator />}
                 <CommandGroup heading={cat}>
-                  {items.map((item) => (
-                    <CommandItem
-                      key={item.title + item.href}
-                      value={`${item.title} ${item.keywords?.join(" ") || ""}`}
-                      onSelect={() => handleSelect(item.href)}
-                      className="cursor-pointer flex items-center justify-between text-xs py-2"
-                    >
-                      <div className="flex items-center gap-2">
-                        <Compass className="h-3.5 w-3.5 text-muted-foreground" />
-                        <span className="font-medium">{item.title}</span>
-                      </div>
-                      <span className="text-[10px] text-muted-foreground font-mono">{item.href}</span>
-                    </CommandItem>
-                  ))}
+                  {items.map((item) => {
+                    const titleText = isEn ? item.titleEn : item.title;
+                    return (
+                      <CommandItem
+                        key={item.title + item.href}
+                        value={`${titleText} ${item.title} ${item.keywords?.join(" ") || ""}`}
+                        onSelect={() => handleSelect(item.href)}
+                        className="cursor-pointer flex items-center justify-between text-xs py-2"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Compass className="h-3.5 w-3.5 text-muted-foreground" />
+                          <span className="font-medium">{titleText}</span>
+                        </div>
+                        <span className="text-[10px] text-muted-foreground font-mono">{item.href}</span>
+                      </CommandItem>
+                    );
+                  })}
                 </CommandGroup>
               </React.Fragment>
             );

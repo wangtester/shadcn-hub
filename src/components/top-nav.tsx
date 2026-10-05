@@ -41,6 +41,8 @@ import {
 } from "@/components/ui/sheet";
 import { useState, useEffect, useRef } from "react";
 import { GlobalSearch } from "@/components/global-search";
+import { LanguageToggle } from "@/components/language-toggle";
+import { useI18n } from "@/context/i18n-context";
 
 export interface EcosystemSiteItem {
   id: string;
@@ -48,13 +50,16 @@ export interface EcosystemSiteItem {
   href: string;
   originUrl: string;
   badge: string;
+  badgeEn: string;
   desc: string;
+  descEn: string;
   icon: React.ReactNode;
 }
 
 export interface EcosystemGroup {
   id: "motion" | "blocks" | "system" | "ai";
   label: string;
+  labelEn: string;
   icon: React.ReactNode;
   sites: EcosystemSiteItem[];
 }
@@ -63,6 +68,7 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
   {
     id: "motion",
     label: "动效与前沿视觉",
+    labelEn: "Motion & Cutting-Edge Visuals",
     icon: <Sparkles className="h-4 w-4 text-indigo-500" />,
     sites: [
       {
@@ -71,7 +77,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/magicui",
         originUrl: "https://magicui.design",
         badge: "动效基元",
+        badgeEn: "Motion",
         desc: "双向跑马灯、节点光束、流光边框与 Bento 网格",
+        descEn: "Marquee, animated beams, border beams, and Bento grids",
         icon: <Sparkles className="h-4 w-4 text-indigo-500" />,
       },
       {
@@ -80,7 +88,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/aceternity",
         originUrl: "https://ui.aceternity.com",
         badge: "极客美学",
+        badgeEn: "Aesthetics",
         desc: "Lamp 聚光神灯、星空粒子与 3D 透视图钉",
+        descEn: "Lamp spotlight, sparkles particles, and 3D perspective pins",
         icon: <Wand2 className="h-4 w-4 text-cyan-500" />,
       },
       {
@@ -89,7 +99,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/beui",
         originUrl: "https://beui.dev",
         badge: "微交互",
+        badgeEn: "Micro-UX",
         desc: "打字机文本、光斑跟随与交互拖拽上传盒",
+        descEn: "Typewriter text, spotlight follow, and interactive drag-drop upload",
         icon: <Sparkles className="h-4 w-4 text-blue-500" />,
       },
       {
@@ -98,7 +110,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/rareui",
         originUrl: "https://www.rareui.com",
         badge: "物理动效",
+        badgeEn: "Physics",
         desc: "Fluid Orb 流体球、灵动岛与物理微交互",
+        descEn: "Fluid Orb, dynamic island, and realistic physics interactions",
         icon: <Compass className="h-4 w-4 text-purple-500" />,
       },
       {
@@ -107,7 +121,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/transitions",
         originUrl: "https://transitions.dev",
         badge: "视图过渡",
+        badgeEn: "Transitions",
         desc: "物理弹簧、文本轮转与原生 View Transitions",
+        descEn: "Spring physics, text rotation, and native View Transitions",
         icon: <Layers className="h-4 w-4 text-teal-500" />,
       },
       {
@@ -116,7 +132,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/beautifului",
         originUrl: "https://www.beautifului.dev",
         badge: "高质感视觉",
+        badgeEn: "High-End",
         desc: "极光高光、磨砂质感与 HITL 人机协同审批卡",
+        descEn: "Aurora glow, frosted glassmorphism, and HITL collaborative cards",
         icon: <Gem className="h-4 w-4 text-rose-500" />,
       },
       {
@@ -125,7 +143,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/motion-primitives",
         originUrl: "https://motion-primitives.com",
         badge: "Framer基元",
+        badgeEn: "Framer",
         desc: "基于 Motion 的字符逐字动画与连续流光边框",
+        descEn: "Character text reveals and continuous border trail animations",
         icon: <Sparkles className="h-4 w-4 text-amber-500" />,
       },
     ],
@@ -133,6 +153,7 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
   {
     id: "blocks",
     label: "商业区块与模板",
+    labelEn: "Commercial Blocks & Templates",
     icon: <Store className="h-4 w-4 text-emerald-500" />,
     sites: [
       {
@@ -141,7 +162,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcnstore",
         originUrl: "https://shadcnstore.com",
         badge: "39类目",
+        badgeEn: "39 Classes",
         desc: "高频落地页区块、SaaS 阶梯定价表与电商模块",
+        descEn: "Landing page sections, SaaS tiered pricing, and e-commerce blocks",
         icon: <Store className="h-4 w-4 text-indigo-500" />,
       },
       {
@@ -150,7 +173,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcnblocks",
         originUrl: "https://www.shadcnblocks.com",
         badge: "复合区块",
+        badgeEn: "Blocks",
         desc: "带标签自动补全、非对称 Hero 与整套 SaaS 模板",
+        descEn: "Tag autocomplete, asymmetric Hero, and full SaaS templates",
         icon: <Store className="h-4 w-4 text-blue-500" />,
       },
       {
@@ -159,7 +184,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcn-io",
         originUrl: "https://www.shadcn.io",
         badge: "6000+Blocks",
+        badgeEn: "6000+",
         desc: "2FA 二次安全验证、无障碍合规与 Solaris 纯白模板",
+        descEn: "2FA authentication, accessibility compliance, and Solaris templates",
         icon: <ShieldCheck className="h-4 w-4 text-emerald-500" />,
       },
       {
@@ -168,7 +195,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/tailark",
         originUrl: "https://tailark.com",
         badge: "霓虹营销",
+        badgeEn: "Neon",
         desc: "多层径向高斯模糊光晕 Hero 与深色科技 Bento 矩阵",
+        descEn: "Multi-layer Gaussian blur glow Hero and dark tech Bento matrix",
         icon: <Flame className="h-4 w-4 text-indigo-500" />,
       },
       {
@@ -177,7 +206,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcnstudio",
         originUrl: "https://shadcnstudio.com",
         badge: "深色商业套件",
+        badgeEn: "Dark Suite",
         desc: "1000+ 免费与 Pro 级企业定价矩阵与社会背书区块",
+        descEn: "1000+ free and Pro enterprise pricing tables and social proofs",
         icon: <Store className="h-4 w-4 text-amber-500" />,
       },
       {
@@ -186,7 +217,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/21st",
         originUrl: "https://21st.dev",
         badge: "社区创新",
+        badgeEn: "Community",
         desc: "社区微交互胶囊坞、合作伙伴墙与高奢毛玻璃整页模板",
+        descEn: "Community micro-interaction dock, partner wall, and glass templates",
         icon: <Sparkles className="h-4 w-4 text-violet-500" />,
       },
       {
@@ -195,7 +228,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcnspace",
         originUrl: "https://shadcnspace.com",
         badge: "营销与看板",
+        badgeEn: "Marketing",
         desc: "全景运营看板曲线与现代营销落地页复合区块套件",
+        descEn: "Analytics dashboards and modern marketing landing block suites",
         icon: <Box className="h-4 w-4 text-teal-500" />,
       },
     ],
@@ -203,6 +238,7 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
   {
     id: "system",
     label: "企业系统与工程",
+    labelEn: "Enterprise Systems & Engineering",
     icon: <BarChart2 className="h-4 w-4 text-blue-500" />,
     sites: [
       {
@@ -211,7 +247,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/shadcn",
         originUrl: "https://ui.shadcn.com",
         badge: "官方64款",
+        badgeEn: "64 Official",
         desc: "全量表单、布局、浮层、高阶数据表格与无障碍基元",
+        descEn: "Full forms, layouts, overlays, Data Grid, and base primitives",
         icon: <Box className="h-4 w-4 text-blue-500" />,
       },
       {
@@ -220,7 +258,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/heroui",
         originUrl: "https://heroui.pro",
         badge: "SaaS应用",
+        badgeEn: "SaaS App",
         desc: "大圆角柔和微光规范、团队工作空间与权限管理",
+        descEn: "Curved radiuses, soft glow, team workspaces, and roles",
         icon: <Cpu className="h-4 w-4 text-pink-500" />,
       },
       {
@@ -229,7 +269,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/boardui",
         originUrl: "https://www.boardui.com",
         badge: "工业图表",
+        badgeEn: "Industrial",
         desc: "数据密集型工业图表、AI 思考链与决策流水线",
+        descEn: "Dense industrial charts, AI reasoning trace, and pipelines",
         icon: <BarChart2 className="h-4 w-4 text-violet-500" />,
       },
       {
@@ -238,7 +280,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/refero",
         originUrl: "https://styles.refero.design",
         badge: "9大流派",
+        badgeEn: "9 Styles",
         desc: "Linear、Geist、Apple、新野兽派等顶尖产品规范对比",
+        descEn: "Linear, Geist, Apple, Neo-Brutalism design system comparisons",
         icon: <Palette className="h-4 w-4 text-amber-500" />,
       },
       {
@@ -247,7 +291,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/reui",
         originUrl: "https://reui.io",
         badge: "列冻结表格",
+        badgeEn: "Data Grid",
         desc: "企业级高阶列冻结 Data Grid、活动甘特图与事件日历",
+        descEn: "Enterprise column-freezing Data Grid, Gantt, and calendars",
         icon: <Grid className="h-4 w-4 text-emerald-500" />,
       },
       {
@@ -256,7 +302,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/origin-ui",
         originUrl: "https://coss.com/ui",
         badge: "Base UI",
+        badgeEn: "Base UI",
         desc: "基于新兴 Base UI 体系的防重 Chips 标签输入与步进器",
+        descEn: "Base UI-driven chips tag inputs, sliders, and steppers",
         icon: <Box className="h-4 w-4 text-blue-500" />,
       },
       {
@@ -265,7 +313,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/mynaui",
         originUrl: "https://mynaui.com",
         badge: "Figma对齐",
+        badgeEn: "Figma Grid",
         desc: "依照 Figma 像素网格对齐的高品质分段吸附胶囊导航",
+        descEn: "Figma pixel-grid aligned segmented capsule docks and buttons",
         icon: <Palette className="h-4 w-4 text-cyan-500" />,
       },
     ],
@@ -273,6 +323,7 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
   {
     id: "ai",
     label: "AI 交互与协同生产力",
+    labelEn: "AI Interaction & Productivity",
     icon: <Bot className="h-4 w-4 text-purple-500" />,
     sites: [
       {
@@ -281,7 +332,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/veloraui",
         originUrl: "https://veloraui.vercel.app",
         badge: "AI等待态",
+        badgeEn: "AI Waiting",
         desc: "实时 Token/s 流速模拟、思维链展开轨迹与等待交互",
+        descEn: "Real-time Token stream simulation and thinking chain trace",
         icon: <Cpu className="h-4 w-4 text-cyan-500" />,
       },
       {
@@ -290,7 +343,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/skiper",
         originUrl: "https://skiper-ui.com",
         badge: "3D陀螺仪",
+        badgeEn: "3D Gyro",
         desc: "3D 俯仰视角倾斜跟随与鼠标径向光斑极客交互卡",
+        descEn: "3D tilt perspective follow and mouse radial spotlight cards",
         icon: <Compass className="h-4 w-4 text-rose-500" />,
       },
       {
@@ -299,7 +354,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/eldora",
         originUrl: "https://www.eldoraui.site",
         badge: "真机外壳",
+        badgeEn: "Device Mockup",
         desc: "高拟真 macOS Safari 浏览器外壳与手机设备容器",
+        descEn: "macOS Safari browser mockups and mobile device containers",
         icon: <Smartphone className="h-4 w-4 text-teal-500" />,
       },
       {
@@ -308,7 +365,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/kibo",
         originUrl: "https://www.kibo-ui.com",
         badge: "协同生产力",
+        badgeEn: "Productivity",
         desc: "多人实时协同光标、悬停头像堆叠与里程碑甘特条",
+        descEn: "Multiplayer live cursors, avatar stacks, and milestone Gantt bars",
         icon: <MousePointer2 className="h-4 w-4 text-purple-500" />,
       },
       {
@@ -317,7 +376,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/kokonut",
         originUrl: "https://kokonutui.com",
         badge: "AI输入条",
+        badgeEn: "AI Input",
         desc: "磨砂玻璃拟态与现代多模型 AI 提示词输入控制条",
+        descEn: "Glassmorphic AI prompt input bars and multi-model controls",
         icon: <Gem className="h-4 w-4 text-pink-500" />,
       },
       {
@@ -326,7 +387,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/animate-ui",
         originUrl: "https://animate-ui.com",
         badge: "粒子光晕",
+        badgeEn: "Particles",
         desc: "粒子光爆微动效按钮、弹性状态浮层与平滑过渡",
+        descEn: "Particle burst buttons, spring status popovers, and smooth transitions",
         icon: <Sparkles className="h-4 w-4 text-orange-500" />,
       },
       {
@@ -335,7 +398,9 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         href: "/sites/shadcn-charts",
         originUrl: "https://ui.shadcn.com/charts",
         badge: "官方图表",
+        badgeEn: "Charts",
         desc: "双色平滑渐变面积图、堆叠柱状图与现代数据可视化",
+        descEn: "Gradient area charts, stacked bar charts, and data visualization",
         icon: <BarChart2 className="h-4 w-4 text-indigo-500" />,
       },
     ],
@@ -344,6 +409,7 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
 
 export function TopNav() {
   const pathname = usePathname();
+  const { isEn, t } = useI18n();
   const [dark, setDark] = useState(false);
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -376,7 +442,7 @@ export function TopNav() {
               <Layers className="h-4 w-4" />
             </div>
             <div className="flex items-center gap-2">
-              <span className="tracking-tight font-extrabold text-foreground">shadcn-hub</span>
+              <span className="tracking-tight font-extrabold text-foreground">{t("nav.logo")}</span>
             </div>
           </Link>
 
@@ -391,7 +457,7 @@ export function TopNav() {
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              首页
+              {t("nav.home")}
             </Link>
 
             {/* 官方组件 */}
@@ -405,7 +471,7 @@ export function TopNav() {
               )}
             >
               <Box className="h-3.5 w-3.5" />
-              <span>官方组件</span>
+              <span>{t("nav.official")}</span>
               <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-muted text-foreground/80 font-mono font-semibold">
                 64
               </span>
@@ -422,9 +488,9 @@ export function TopNav() {
               )}
             >
               <Sparkles className="h-3.5 w-3.5 text-amber-500" />
-              <span>全景画廊</span>
+              <span>{t("nav.gallery")}</span>
               <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono font-bold">
-                实机预览
+                {t("nav.galleryBadge")}
               </span>
             </Link>
 
@@ -444,7 +510,7 @@ export function TopNav() {
                   )}
                 >
                   <Grid className="h-3.5 w-3.5" />
-                  <span>28 目标源站</span>
+                  <span>{t("nav.sources")}</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
                     28
                   </span>
@@ -461,16 +527,16 @@ export function TopNav() {
                   sideOffset={8}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
-                  className="w-[780px] p-4.5 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
+                  className="w-[820px] p-4.5 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
                 >
-                  {/* 4 大分类 4 列精简平铺，无网站冗余介绍 */}
+                  {/* 4 大分类 4 列精简平铺 */}
                   <div className="grid grid-cols-4 gap-3">
                     {ECOSYSTEM_28_GROUPS.map((grp) => (
                       <div key={grp.id} className="space-y-2">
                         {/* 分类标题栏 */}
                         <div className="flex items-center gap-1.5 pb-2 border-b text-xs font-bold text-foreground">
                           {grp.icon}
-                          <span>{grp.label}</span>
+                          <span className="truncate">{isEn ? grp.labelEn : grp.label}</span>
                         </div>
 
                         {/* 站点精简列表 */}
@@ -513,7 +579,7 @@ export function TopNav() {
                                       : "bg-muted text-muted-foreground/80 group-hover/item:bg-muted-foreground/15"
                                   )}
                                 >
-                                  {site.badge}
+                                  {isEn ? site.badgeEn : site.badge}
                                 </span>
                               </Link>
                             );
@@ -526,14 +592,14 @@ export function TopNav() {
                   {/* 底部全景画廊直达条 */}
                   <div className="mt-3.5 pt-2.5 border-t flex items-center justify-between text-xs text-muted-foreground">
                     <span className="font-mono text-[11px] text-muted-foreground/80">
-                      28 大主流源站 · 100% 原地真实交互运行
+                      {t("nav.sourcesSub")}
                     </span>
                     <Link
                       href="/gallery"
                       onClick={() => setPopoverOpen(false)}
                       className="font-medium text-primary hover:underline flex items-center gap-1 text-xs"
                     >
-                      <span>进入全景画廊</span>
+                      <span>{t("nav.enterGallery")}</span>
                       <ArrowRight className="h-3 w-3" />
                     </Link>
                   </div>
@@ -552,14 +618,17 @@ export function TopNav() {
               )}
             >
               <Wrench className="h-3.5 w-3.5" />
-              <span>设计工具</span>
+              <span>{t("nav.tools")}</span>
             </Link>
           </nav>
         </div>
 
-        {/* 右侧：全局搜索、主题切换与移动端菜单 */}
+        {/* 右侧：全局搜索、语言切换、GitHub、主题切换与移动端菜单 */}
         <div className="flex items-center gap-2 shrink-0">
           <GlobalSearch />
+
+          {/* 专业设计师中英语言切换器 */}
+          <LanguageToggle />
 
           <a
             href="https://github.com/wangtester/shadcn-hub"
@@ -571,14 +640,14 @@ export function TopNav() {
             )}
           >
             <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-            <span>Star on GitHub</span>
+            <span>{t("nav.star")}</span>
           </a>
 
           <Button
             variant="ghost"
             size="icon-sm"
             onClick={() => setDark((d) => !d)}
-            aria-label="切换主题"
+            aria-label={t("nav.theme")}
             className="rounded-lg h-8 w-8"
           >
             {dark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
@@ -587,7 +656,7 @@ export function TopNav() {
           {/* 移动端汉堡菜单 (Sheet 抽屉) */}
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger
-              aria-label="打开移动端主菜单"
+              aria-label={t("nav.mobileMenu")}
               className={cn(
                 buttonVariants({ variant: "outline", size: "icon-sm" }),
                 "md:hidden h-8 w-8 rounded-lg cursor-pointer"
@@ -607,6 +676,9 @@ export function TopNav() {
               </SheetHeader>
 
               <div className="py-4 space-y-5">
+                {/* 移动端语言切换 */}
+                <LanguageToggle variant="mobile" />
+
                 {/* 核心入口 */}
                 <div className="space-y-1">
                   <Link
@@ -617,7 +689,7 @@ export function TopNav() {
                       pathname === "/" ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
                     )}
                   >
-                    <span>首页</span>
+                    <span>{t("nav.home")}</span>
                   </Link>
 
                   <Link
@@ -630,7 +702,7 @@ export function TopNav() {
                   >
                     <span className="flex items-center gap-2">
                       <Sparkles className="h-4 w-4 text-amber-500" />
-                      <span>全景画廊 (28 源站实机)</span>
+                      <span>{isEn ? "Live Gallery (28 Sources)" : "全景画廊 (28 源站实机)"}</span>
                     </span>
                     <Badge variant="outline" className="text-[10px] text-amber-500 border-amber-500/30">
                       Live
@@ -647,7 +719,7 @@ export function TopNav() {
                   >
                     <span className="flex items-center gap-2">
                       <Box className="h-4 w-4" />
-                      <span>官方 64 组件</span>
+                      <span>{t("nav.official64")}</span>
                     </span>
                     <span className="text-[11px] font-mono opacity-80">64</span>
                   </Link>
@@ -662,7 +734,7 @@ export function TopNav() {
                   >
                     <span className="flex items-center gap-2">
                       <Wrench className="h-4 w-4" />
-                      <span>设计工具箱</span>
+                      <span>{t("nav.toolsBox")}</span>
                     </span>
                   </Link>
                 </div>
@@ -670,7 +742,7 @@ export function TopNav() {
                 {/* 28 大源站全量列表 */}
                 <div className="space-y-4 pt-3 border-t">
                   <h4 className="text-xs font-bold text-foreground flex items-center justify-between">
-                    <span>28 大 UI 目标源站</span>
+                    <span>{t("nav.allSourcesList")}</span>
                     <Badge variant="secondary" className="font-mono text-[10px]">28</Badge>
                   </h4>
 
@@ -678,7 +750,7 @@ export function TopNav() {
                     <div key={grp.id} className="space-y-1">
                       <span className="text-[11px] font-bold text-muted-foreground flex items-center gap-1.5 px-2">
                         {grp.icon}
-                        <span>{grp.label}</span>
+                        <span>{isEn ? grp.labelEn : grp.label}</span>
                       </span>
                       <div className="space-y-0.5">
                         {grp.sites.map((site) => (
@@ -693,7 +765,7 @@ export function TopNav() {
                           >
                             <span className="truncate">{site.title}</span>
                             <Badge variant="outline" className="text-[9px] font-mono px-1 py-0 h-4">
-                              {site.badge}
+                              {isEn ? site.badgeEn : site.badge}
                             </Badge>
                           </Link>
                         ))}

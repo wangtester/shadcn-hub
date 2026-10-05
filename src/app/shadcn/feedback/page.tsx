@@ -36,7 +36,12 @@ export default function FeedbackPage() {
 
   return (
     <div>
-      <PageHeader title="反馈与提示组件" description="警告横幅、全局轻提示、加载骨架屏、加载指示器、空状态以及会话气泡等组件" />
+      <PageHeader
+        title="反馈与提示组件"
+        titleEn="Feedback & Status Components"
+        description="警告横幅、全局轻提示、加载骨架屏、加载指示器、空状态以及会话气泡等组件"
+        descriptionEn="Alert banners, global toasts, loading skeletons, spinners, and empty states"
+      />
 
       {/* Alert */}
       <Section title="Alert 警告通知横幅" description="向用户传达高优先级系统状态或操作结果">
