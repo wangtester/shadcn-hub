@@ -491,6 +491,146 @@ export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
       return <BeUIVoiceOrbDemo />;
     case "beui-approval-demo":
       return <BeUIApprovalDemo />;
+    case "beui-agents-agent-activity-demo":
+      return <BeUI_beui_agents_agent_activity />;
+    case "beui-agents-ai-sidebar-demo":
+      return <BeUI_beui_agents_ai_sidebar />;
+    case "beui-agents-chat-app-demo":
+      return <BeUI_beui_agents_chat_app />;
+    case "beui-agents-citations-demo":
+      return <BeUI_beui_agents_citations />;
+    case "beui-agents-code-block-demo":
+      return <BeUI_beui_agents_code_block />;
+    case "beui-agents-file-diff-demo":
+      return <BeUI_beui_agents_file_diff />;
+    case "beui-agents-image-generation-demo":
+      return <BeUI_beui_agents_image_generation />;
+    case "beui-agents-loading-states-demo":
+      return <BeUI_beui_agents_loading_states />;
+    case "beui-agents-message-demo":
+      return <BeUI_beui_agents_message />;
+    case "beui-agents-message-bubble-demo":
+      return <BeUI_beui_agents_message_bubble />;
+    case "beui-agents-message-scroller-demo":
+      return <BeUI_beui_agents_message_scroller />;
+    case "beui-agents-prompt-input-demo":
+      return <BeUI_beui_agents_prompt_input />;
+    case "beui-agents-streaming-response-demo":
+      return <BeUI_beui_agents_streaming_response />;
+    case "beui-agents-todo-list-demo":
+      return <BeUI_beui_agents_todo_list />;
+    case "beui-agents-tool-approval-demo":
+      return <BeUI_beui_agents_tool_approval />;
+    case "beui-agents-tool-result-demo":
+      return <BeUI_beui_agents_tool_result />;
+    case "beui-blocks-bloom-menu-demo":
+      return <BeUI_beui_blocks_bloom_menu />;
+    case "beui-blocks-card-folder-demo":
+      return <BeUI_beui_blocks_card_folder />;
+    case "beui-blocks-expandable-action-bar-demo":
+      return <BeUI_beui_blocks_expandable_action_bar />;
+    case "beui-blocks-expandable-tabs-demo":
+      return <BeUI_beui_blocks_expandable_tabs />;
+    case "beui-blocks-file-upload-demo":
+      return <BeUI_beui_blocks_file_upload />;
+    case "beui-blocks-infinite-masonry-demo":
+      return <BeUI_beui_blocks_infinite_masonry />;
+    case "beui-blocks-knockout-bracket-demo":
+      return <BeUI_beui_blocks_knockout_bracket />;
+    case "beui-blocks-morphing-tabs-demo":
+      return <BeUI_beui_blocks_morphing_tabs />;
+    case "beui-blocks-not-found-demo":
+      return <BeUI_beui_blocks_not_found />;
+    case "beui-blocks-overflow-actions-demo":
+      return <BeUI_beui_blocks_overflow_actions />;
+    case "beui-blocks-prediction-market-demo":
+      return <BeUI_beui_blocks_prediction_market />;
+    case "beui-blocks-signup-form-demo":
+      return <BeUI_beui_blocks_signup_form />;
+    case "beui-blocks-swap-demo":
+      return <BeUI_beui_blocks_swap />;
+    case "beui-blocks-swipeable-list-demo":
+      return <BeUI_beui_blocks_swipeable_list />;
+    case "beui-blocks-wallet-card-demo":
+      return <BeUI_beui_blocks_wallet_card />;
+    case "beui-motion-animated-badge-demo":
+      return <BeUI_beui_motion_animated_badge />;
+    case "beui-motion-animated-sidebar-demo":
+      return <BeUI_beui_motion_animated_sidebar />;
+    case "beui-motion-bottom-sheet-demo":
+      return <BeUI_beui_motion_bottom_sheet />;
+    case "beui-motion-bounce-sidebar-demo":
+      return <BeUI_beui_motion_bounce_sidebar />;
+    case "beui-motion-bouncy-accordion-demo":
+      return <BeUI_beui_motion_bouncy_accordion />;
+    case "beui-motion-breadcrumb-demo":
+      return <BeUI_beui_motion_breadcrumb />;
+    case "beui-motion-button-demo":
+      return <BeUI_beui_motion_button />;
+    case "beui-motion-center-morph-modal-demo":
+      return <BeUI_beui_motion_center_morph_modal />;
+    case "beui-motion-checkbox-demo":
+      return <BeUI_beui_motion_checkbox />;
+    case "beui-motion-combobox-demo":
+      return <BeUI_beui_motion_combobox />;
+    case "beui-motion-context-menu-demo":
+      return <BeUI_beui_motion_context_menu />;
+    case "beui-motion-cylinder-carousel-demo":
+      return <BeUI_beui_motion_cylinder_carousel />;
+    case "beui-motion-date-range-picker-demo":
+      return <BeUI_beui_motion_date_range_picker />;
+    case "beui-motion-dock-demo":
+      return <BeUI_beui_motion_dock />;
+    case "beui-motion-drawer-demo":
+      return <BeUI_beui_motion_drawer />;
+    case "beui-motion-expandable-control-demo":
+      return <BeUI_beui_motion_expandable_control />;
+    case "beui-motion-file-tree-demo":
+      return <BeUI_beui_motion_file_tree />;
+    case "beui-motion-image-viewer-demo":
+      return <BeUI_beui_motion_image_viewer />;
+    case "beui-motion-input-demo":
+      return <BeUI_beui_motion_input />;
+    case "beui-motion-loader-demo":
+      return <BeUI_beui_motion_loader />;
+    case "beui-motion-marquee-demo":
+      return <BeUI_beui_motion_marquee />;
+    case "beui-motion-morphing-modal-demo":
+      return <BeUI_beui_motion_morphing_modal />;
+    case "beui-motion-multi-select-demo":
+      return <BeUI_beui_motion_multi_select />;
+    case "beui-motion-number-demo":
+      return <BeUI_beui_motion_number />;
+    case "beui-motion-popover-demo":
+      return <BeUI_beui_motion_popover />;
+    case "beui-motion-preview-rail-demo":
+      return <BeUI_beui_motion_preview_rail />;
+    case "beui-motion-pull-to-refresh-demo":
+      return <BeUI_beui_motion_pull_to_refresh />;
+    case "beui-motion-radio-demo":
+      return <BeUI_beui_motion_radio />;
+    case "beui-motion-range-slider-demo":
+      return <BeUI_beui_motion_range_slider />;
+    case "beui-motion-scroll-animation-demo":
+      return <BeUI_beui_motion_scroll_animation />;
+    case "beui-motion-select-demo":
+      return <BeUI_beui_motion_select />;
+    case "beui-motion-shader-background-demo":
+      return <BeUI_beui_motion_shader_background />;
+    case "beui-motion-shared-layout-bg-demo":
+      return <BeUI_beui_motion_shared_layout_bg />;
+    case "beui-motion-switch-demo":
+      return <BeUI_beui_motion_switch />;
+    case "beui-motion-table-demo":
+      return <BeUI_beui_motion_table />;
+    case "beui-motion-tabs-demo":
+      return <BeUI_beui_motion_tabs />;
+    case "beui-motion-text-animation-demo":
+      return <BeUI_beui_motion_text_animation />;
+    case "beui-motion-theme-toggle-demo":
+      return <BeUI_beui_motion_theme_toggle />;
+    case "beui-motion-tooltip-demo":
+      return <BeUI_beui_motion_tooltip />;
 
     default:
       return (
@@ -4282,6 +4422,1756 @@ function BeUIApprovalDemo() {
           {approved ? "✓ Command Dispatched" : "✗ Execution Aborted"}
         </p>
       )}
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_agent_activity() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Agent Activity</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_ai_sidebar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Ai Sidebar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_chat_app() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Chat App</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_citations() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Citations</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_code_block() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Code Block</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_file_diff() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">File Diff</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_image_generation() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Image Generation</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_loading_states() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Loading States</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_message() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Message</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_message_bubble() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Message Bubble</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_message_scroller() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Message Scroller</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_prompt_input() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Prompt Input</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_streaming_response() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Streaming Response</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_todo_list() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Todo List</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_tool_approval() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tool Approval</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_agents_tool_result() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tool Result</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_bloom_menu() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Bloom Menu</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_card_folder() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Card Folder</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_expandable_action_bar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Expandable Action Bar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_expandable_tabs() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Expandable Tabs</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_file_upload() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">File Upload</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_infinite_masonry() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Infinite Masonry</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_knockout_bracket() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Knockout Bracket</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_morphing_tabs() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Morphing Tabs</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_not_found() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Not Found</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_overflow_actions() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Overflow Actions</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_prediction_market() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Prediction Market</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_signup_form() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Signup Form</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_swap() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Swap</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_swipeable_list() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Swipeable List</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_blocks_wallet_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Wallet Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_animated_badge() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Animated Badge</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_animated_sidebar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Animated Sidebar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_bottom_sheet() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Bottom Sheet</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_bounce_sidebar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Bounce Sidebar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_bouncy_accordion() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Bouncy Accordion</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_breadcrumb() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Breadcrumb</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_button() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Button</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_center_morph_modal() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Center Morph Modal</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_checkbox() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Checkbox</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_combobox() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Combobox</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_context_menu() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Context Menu</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_cylinder_carousel() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Cylinder Carousel</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_date_range_picker() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Date Range Picker</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_dock() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Dock</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_drawer() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Drawer</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_expandable_control() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Expandable Control</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_file_tree() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">File Tree</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_image_viewer() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Image Viewer</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_input() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Input</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_loader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Loader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_marquee() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Marquee</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_morphing_modal() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Morphing Modal</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_multi_select() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Multi Select</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_number() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Number</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_popover() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Popover</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_preview_rail() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Preview Rail</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_pull_to_refresh() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Pull To Refresh</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_radio() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Radio</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_range_slider() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Range Slider</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_scroll_animation() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Scroll Animation</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_select() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Select</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_shader_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Shader Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_shared_layout_bg() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Shared Layout Bg</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_switch() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Switch</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_table() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Table</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_tabs() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tabs</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_text_animation() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Text Animation</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_theme_toggle() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Theme Toggle</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function BeUI_beui_motion_tooltip() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(3);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tooltip</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Ready"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-muted/30 border flex flex-col items-center justify-center min-h-[60px] space-y-1">
+        <div className={`h-2.5 w-2.5 rounded-full transition-all ${active ? "bg-primary scale-125 animate-ping" : "bg-muted-foreground/40"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Interactive State: {active ? "Engaged" : "Idle"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
     </div>
   );
 }
