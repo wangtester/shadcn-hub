@@ -8,21 +8,16 @@ export function SiteFooter() {
   return (
     <footer className="border-t bg-muted/20 py-8 px-4 md:px-8 text-xs text-muted-foreground mt-auto">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* 左侧：项目标识与理念 */}
-        <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+        {/* 左侧：项目标识 */}
+        <div className="flex items-center gap-3">
           <div className="h-7 w-7 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-xs">
             <Layers className="h-4 w-4" />
           </div>
-          <div>
-            <div className="flex items-center gap-2 justify-center sm:justify-start">
-              <span className="font-semibold text-foreground tracking-tight">shadcn-hub</span>
-              <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                100% 严格实装
-              </span>
-            </div>
-            <p className="text-[11px] text-muted-foreground mt-0.5">
-              收录 64 款官方组件 + 10 大生态扩展库 + 24+ 款设计师工具 · Next.js 16 & @base-ui/react
-            </p>
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-foreground tracking-tight">shadcn-hub</span>
+            <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              100% 严格实装
+            </span>
           </div>
         </div>
 

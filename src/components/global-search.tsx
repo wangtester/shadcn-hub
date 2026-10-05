@@ -25,6 +25,7 @@ interface SearchItem {
 const SEARCH_ITEMS: SearchItem[] = [
   // 生态入口与百宝箱
   { title: "全景生态大厅 (Hub)", category: "生态站点", href: "/", keywords: ["home", "hub", "index", "overview", "首页"] },
+  { title: "✨ 全景组件与区块原生画廊 (28 源站实机预览)", category: "生态站点", href: "/gallery", keywords: ["gallery", "preview", "live", "kibo", "origin", "tailark", "画廊", "实机", "预览", "28", "全部"] },
   { title: "🛠️ 前端设计师常备工具箱 (Toolbox)", category: "生态站点", href: "/tools", keywords: ["tools", "toolbox", "color", "palette", "mobbin", "coolors", "shadow", "bezier", "工具", "调色"] },
   { title: "shadcn/ui 官方核心库 (64 全量组件)", category: "生态站点", href: "/shadcn", keywords: ["shadcn", "core", "components", "官方"] },
   { title: "Magic UI 动效库 (50+ 动效与 Bento)", category: "生态站点", href: "/sites/magicui", keywords: ["magicui", "magic", "motion", "marquee", "beam", "meteors", "orbit", "bento"] },
@@ -37,6 +38,14 @@ const SEARCH_ITEMS: SearchItem[] = [
   { title: "RareUI 物理交互 (流体球/灵动岛)", category: "生态站点", href: "/sites/rareui", keywords: ["rareui", "fluid", "orb", "island"] },
   { title: "Transitions.dev (弹簧滑块/交错入场)", category: "生态站点", href: "/sites/transitions", keywords: ["transitions", "spring", "stagger"] },
   { title: "BeautifulUI (极光背景/毛玻璃卡片)", category: "生态站点", href: "/sites/beautifului", keywords: ["beautifului", "aurora", "glassmorphism"] },
+  { title: "Kibo UI (协同多光标/堆叠头像/甘特图)", category: "生态站点", href: "/gallery?site=kibo", keywords: ["kibo", "cursor", "avatar-stack", "gantt", "kanban", "table"] },
+  { title: "Velora UI (Token 流式监控/思考轨迹)", category: "生态站点", href: "/gallery?site=veloraui", keywords: ["velora", "token", "ai", "thinking", "trace"] },
+  { title: "Motion Primitives (字符交错/光迹边框)", category: "生态站点", href: "/gallery?site=motion-primitives", keywords: ["motion-primitives", "border-trail", "text-effect"] },
+  { title: "Origin UI (Base UI 标签胶囊/步进器)", category: "生态站点", href: "/gallery?site=origin-ui", keywords: ["origin", "base-ui", "coss", "tag-input"] },
+  { title: "Tailark (深色科技流光 Hero/Bento)", category: "生态站点", href: "/gallery?site=tailark", keywords: ["tailark", "hero", "bento", "blocks"] },
+  { title: "21st.dev (社区组件坞/客户墙/高奢模板)", category: "生态站点", href: "/gallery?site=21st", keywords: ["21st", "dock", "community", "template"] },
+  { title: "Shadcnblocks (自动补全/非对称 Hero/SaaS 模板)", category: "生态站点", href: "/gallery?site=shadcnblocks", keywords: ["shadcnblocks", "autocomplete", "blocks", "template"] },
+  { title: "shadcn.io (2FA 安全验证/Solaris 模板)", category: "生态站点", href: "/gallery?site=shadcn-io", keywords: ["shadcn-io", "2fa", "security", "solaris"] },
 
   // shadcn 官方组件
   { title: "Button 按钮 / ButtonGroup", category: "shadcn 组件", href: "/shadcn/forms", keywords: ["button", "group", "input", "click"] },
