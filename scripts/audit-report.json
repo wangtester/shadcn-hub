@@ -1,0 +1,226 @@
+{
+  "shadcn": {
+    "siteId": "shadcn",
+    "siteName": "ui.shadcn.com",
+    "totalItems": 64,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "magicui": {
+    "siteId": "magicui",
+    "siteName": "magicui.design",
+    "totalItems": 77,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "aceternity": {
+    "siteId": "aceternity",
+    "siteName": "ui.aceternity.com",
+    "totalItems": 113,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "boardui": {
+    "siteId": "boardui",
+    "siteName": "boardui.com",
+    "totalItems": 97,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcnstore": {
+    "siteId": "shadcnstore",
+    "siteName": "shadcnstore.com",
+    "totalItems": 20,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "refero": {
+    "siteId": "refero",
+    "siteName": "styles.refero.design",
+    "totalItems": 31,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "heroui": {
+    "siteId": "heroui",
+    "siteName": "heroui.pro",
+    "totalItems": 65,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcnspace": {
+    "siteId": "shadcnspace",
+    "siteName": "shadcnspace.com",
+    "totalItems": 22,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "beui": {
+    "siteId": "beui",
+    "siteName": "beui.dev",
+    "totalItems": 89,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "rareui": {
+    "siteId": "rareui",
+    "siteName": "rareui.com",
+    "totalItems": 12,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "transitions": {
+    "siteId": "transitions",
+    "siteName": "transitions.dev",
+    "totalItems": 12,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "beautifului": {
+    "siteId": "beautifului",
+    "siteName": "beautifului.dev",
+    "totalItems": 10,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "21st": {
+    "siteId": "21st",
+    "siteName": "21st.dev",
+    "totalItems": 30,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcnblocks": {
+    "siteId": "shadcnblocks",
+    "siteName": "Shadcnblocks",
+    "totalItems": 51,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcn-io": {
+    "siteId": "shadcn-io",
+    "siteName": "shadcn.io",
+    "totalItems": 84,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "tailark": {
+    "siteId": "tailark",
+    "siteName": "Tailark",
+    "totalItems": 12,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "veloraui": {
+    "siteId": "veloraui",
+    "siteName": "Velora UI",
+    "totalItems": 9,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "motion-primitives": {
+    "siteId": "motion-primitives",
+    "siteName": "Motion Primitives",
+    "totalItems": 22,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "skiper": {
+    "siteId": "skiper",
+    "siteName": "Skiper UI",
+    "totalItems": 14,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "eldora": {
+    "siteId": "eldora",
+    "siteName": "Eldora UI",
+    "totalItems": 34,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "kibo": {
+    "siteId": "kibo",
+    "siteName": "Kibo UI",
+    "totalItems": 33,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "kokonut": {
+    "siteId": "kokonut",
+    "siteName": "Kokonut UI",
+    "totalItems": 18,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "animate-ui": {
+    "siteId": "animate-ui",
+    "siteName": "Animate UI",
+    "totalItems": 52,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "origin-ui": {
+    "siteId": "origin-ui",
+    "siteName": "Origin UI",
+    "totalItems": 33,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "reui": {
+    "siteId": "reui",
+    "siteName": "ReUI",
+    "totalItems": 83,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "mynaui": {
+    "siteId": "mynaui",
+    "siteName": "MynaUI",
+    "totalItems": 69,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcn-charts": {
+    "siteId": "shadcn-charts",
+    "siteName": "shadcn/ui Charts",
+    "totalItems": 24,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  },
+  "shadcnstudio": {
+    "siteId": "shadcnstudio",
+    "siteName": "shadcnstudio.com",
+    "totalItems": 50,
+    "duplicateUrls": [],
+    "aggregationUrls": [],
+    "duplicateNamesOrSlugs": []
+  }
+}
