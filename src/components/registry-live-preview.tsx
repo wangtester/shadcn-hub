@@ -385,6 +385,212 @@ export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
       return <AceternityCardHoverDemo />;
     case "aceternity-tracing-beam-demo":
       return <AceternityTracingBeamDemo />;
+    case "aceternity-3d-card-effect-demo":
+      return <Aceternity_aceternity_3d_card_effect />;
+    case "aceternity-3d-globe-demo":
+      return <Aceternity_aceternity_3d_globe />;
+    case "aceternity-3d-marquee-demo":
+      return <Aceternity_aceternity_3d_marquee />;
+    case "aceternity-animated-modal-demo":
+      return <Aceternity_aceternity_animated_modal />;
+    case "aceternity-animated-testimonials-demo":
+      return <Aceternity_aceternity_animated_testimonials />;
+    case "aceternity-animated-tooltip-demo":
+      return <Aceternity_aceternity_animated_tooltip />;
+    case "aceternity-apple-cards-carousel-demo":
+      return <Aceternity_aceternity_apple_cards_carousel />;
+    case "aceternity-ascii-art-demo":
+      return <Aceternity_aceternity_ascii_art />;
+    case "aceternity-aurora-background-demo":
+      return <Aceternity_aceternity_aurora_background />;
+    case "aceternity-background-beams-with-collision-demo":
+      return <Aceternity_aceternity_background_beams_with_collision />;
+    case "aceternity-background-boxes-demo":
+      return <Aceternity_aceternity_background_boxes />;
+    case "aceternity-background-gradient-demo":
+      return <Aceternity_aceternity_background_gradient />;
+    case "aceternity-background-gradient-animation-demo":
+      return <Aceternity_aceternity_background_gradient_animation />;
+    case "aceternity-background-lines-demo":
+      return <Aceternity_aceternity_background_lines />;
+    case "aceternity-background-ripple-effect-demo":
+      return <Aceternity_aceternity_background_ripple_effect />;
+    case "aceternity-bento-grid-demo":
+      return <Aceternity_aceternity_bento_grid />;
+    case "aceternity-canvas-reveal-effect-demo":
+      return <Aceternity_aceternity_canvas_reveal_effect />;
+    case "aceternity-canvas-text-demo":
+      return <Aceternity_aceternity_canvas_text />;
+    case "aceternity-card-spotlight-demo":
+      return <Aceternity_aceternity_card_spotlight />;
+    case "aceternity-card-stack-demo":
+      return <Aceternity_aceternity_card_stack />;
+    case "aceternity-cards-free-demo":
+      return <Aceternity_aceternity_cards_free />;
+    case "aceternity-carousel-demo":
+      return <Aceternity_aceternity_carousel />;
+    case "aceternity-chromatic-image-demo":
+      return <Aceternity_aceternity_chromatic_image />;
+    case "aceternity-cloud-shader-demo":
+      return <Aceternity_aceternity_cloud_shader />;
+    case "aceternity-code-block-demo":
+      return <Aceternity_aceternity_code_block />;
+    case "aceternity-colourful-text-demo":
+      return <Aceternity_aceternity_colourful_text />;
+    case "aceternity-comet-card-demo":
+      return <Aceternity_aceternity_comet_card />;
+    case "aceternity-compare-demo":
+      return <Aceternity_aceternity_compare />;
+    case "aceternity-container-cover-demo":
+      return <Aceternity_aceternity_container_cover />;
+    case "aceternity-container-scroll-animation-demo":
+      return <Aceternity_aceternity_container_scroll_animation />;
+    case "aceternity-container-text-flip-demo":
+      return <Aceternity_aceternity_container_text_flip />;
+    case "aceternity-direction-aware-hover-demo":
+      return <Aceternity_aceternity_direction_aware_hover />;
+    case "aceternity-dither-shader-demo":
+      return <Aceternity_aceternity_dither_shader />;
+    case "aceternity-dotted-glow-background-demo":
+      return <Aceternity_aceternity_dotted_glow_background />;
+    case "aceternity-draggable-card-demo":
+      return <Aceternity_aceternity_draggable_card />;
+    case "aceternity-encrypted-text-demo":
+      return <Aceternity_aceternity_encrypted_text />;
+    case "aceternity-evervault-card-demo":
+      return <Aceternity_aceternity_evervault_card />;
+    case "aceternity-expandable-card-demo":
+      return <Aceternity_aceternity_expandable_card />;
+    case "aceternity-feature-sections-free-demo":
+      return <Aceternity_aceternity_feature_sections_free />;
+    case "aceternity-file-upload-demo":
+      return <Aceternity_aceternity_file_upload />;
+    case "aceternity-flip-words-demo":
+      return <Aceternity_aceternity_flip_words />;
+    case "aceternity-floating-dock-demo":
+      return <Aceternity_aceternity_floating_dock />;
+    case "aceternity-floating-navbar-demo":
+      return <Aceternity_aceternity_floating_navbar />;
+    case "aceternity-focus-cards-demo":
+      return <Aceternity_aceternity_focus_cards />;
+    case "aceternity-following-pointer-demo":
+      return <Aceternity_aceternity_following_pointer />;
+    case "aceternity-github-globe-demo":
+      return <Aceternity_aceternity_github_globe />;
+    case "aceternity-glare-card-demo":
+      return <Aceternity_aceternity_glare_card />;
+    case "aceternity-glowing-effect-demo":
+      return <Aceternity_aceternity_glowing_effect />;
+    case "aceternity-glowing-stars-effect-demo":
+      return <Aceternity_aceternity_glowing_stars_effect />;
+    case "aceternity-gooey-input-demo":
+      return <Aceternity_aceternity_gooey_input />;
+    case "aceternity-google-gemini-effect-demo":
+      return <Aceternity_aceternity_google_gemini_effect />;
+    case "aceternity-grid-and-dot-backgrounds-demo":
+      return <Aceternity_aceternity_grid_and_dot_backgrounds />;
+    case "aceternity-hero-parallax-demo":
+      return <Aceternity_aceternity_hero_parallax />;
+    case "aceternity-hero-sections-free-demo":
+      return <Aceternity_aceternity_hero_sections_free />;
+    case "aceternity-hover-border-gradient-demo":
+      return <Aceternity_aceternity_hover_border_gradient />;
+    case "aceternity-image-generation-loader-demo":
+      return <Aceternity_aceternity_image_generation_loader />;
+    case "aceternity-images-badge-demo":
+      return <Aceternity_aceternity_images_badge />;
+    case "aceternity-images-slider-demo":
+      return <Aceternity_aceternity_images_slider />;
+    case "aceternity-infinite-moving-cards-demo":
+      return <Aceternity_aceternity_infinite_moving_cards />;
+    case "aceternity-keyboard-demo":
+      return <Aceternity_aceternity_keyboard />;
+    case "aceternity-layout-grid-demo":
+      return <Aceternity_aceternity_layout_grid />;
+    case "aceternity-layout-text-flip-demo":
+      return <Aceternity_aceternity_layout_text_flip />;
+    case "aceternity-lens-demo":
+      return <Aceternity_aceternity_lens />;
+    case "aceternity-link-preview-demo":
+      return <Aceternity_aceternity_link_preview />;
+    case "aceternity-loader-demo":
+      return <Aceternity_aceternity_loader />;
+    case "aceternity-macbook-scroll-demo":
+      return <Aceternity_aceternity_macbook_scroll />;
+    case "aceternity-magnetic-button-demo":
+      return <Aceternity_aceternity_magnetic_button />;
+    case "aceternity-meteors-demo":
+      return <Aceternity_aceternity_meteors />;
+    case "aceternity-moving-border-demo":
+      return <Aceternity_aceternity_moving_border />;
+    case "aceternity-multi-step-loader-demo":
+      return <Aceternity_aceternity_multi_step_loader />;
+    case "aceternity-navbar-menu-demo":
+      return <Aceternity_aceternity_navbar_menu />;
+    case "aceternity-noise-background-demo":
+      return <Aceternity_aceternity_noise_background />;
+    case "aceternity-notch-demo":
+      return <Aceternity_aceternity_notch />;
+    case "aceternity-parallax-hero-images-demo":
+      return <Aceternity_aceternity_parallax_hero_images />;
+    case "aceternity-parallax-scroll-demo":
+      return <Aceternity_aceternity_parallax_scroll />;
+    case "aceternity-pixelated-canvas-demo":
+      return <Aceternity_aceternity_pixelated_canvas />;
+    case "aceternity-placeholders-and-vanish-input-demo":
+      return <Aceternity_aceternity_placeholders_and_vanish_input />;
+    case "aceternity-pointer-highlight-demo":
+      return <Aceternity_aceternity_pointer_highlight />;
+    case "aceternity-resizable-navbar-demo":
+      return <Aceternity_aceternity_resizable_navbar />;
+    case "aceternity-scales-demo":
+      return <Aceternity_aceternity_scales />;
+    case "aceternity-shooting-stars-and-stars-background-demo":
+      return <Aceternity_aceternity_shooting_stars_and_stars_background />;
+    case "aceternity-sidebar-demo":
+      return <Aceternity_aceternity_sidebar />;
+    case "aceternity-signup-form-demo":
+      return <Aceternity_aceternity_signup_form />;
+    case "aceternity-spotlight-demo":
+      return <Aceternity_aceternity_spotlight />;
+    case "aceternity-spotlight-new-demo":
+      return <Aceternity_aceternity_spotlight_new />;
+    case "aceternity-squiggly-text-demo":
+      return <Aceternity_aceternity_squiggly_text />;
+    case "aceternity-stateful-button-demo":
+      return <Aceternity_aceternity_stateful_button />;
+    case "aceternity-sticky-banner-demo":
+      return <Aceternity_aceternity_sticky_banner />;
+    case "aceternity-sticky-scroll-reveal-demo":
+      return <Aceternity_aceternity_sticky_scroll_reveal />;
+    case "aceternity-svg-mask-effect-demo":
+      return <Aceternity_aceternity_svg_mask_effect />;
+    case "aceternity-tabs-demo":
+      return <Aceternity_aceternity_tabs />;
+    case "aceternity-terminal-demo":
+      return <Aceternity_aceternity_terminal />;
+    case "aceternity-text-flipping-board-demo":
+      return <Aceternity_aceternity_text_flipping_board />;
+    case "aceternity-text-generate-effect-demo":
+      return <Aceternity_aceternity_text_generate_effect />;
+    case "aceternity-text-hover-effect-demo":
+      return <Aceternity_aceternity_text_hover_effect />;
+    case "aceternity-text-reveal-card-demo":
+      return <Aceternity_aceternity_text_reveal_card />;
+    case "aceternity-timeline-demo":
+      return <Aceternity_aceternity_timeline />;
+    case "aceternity-tooltip-card-demo":
+      return <Aceternity_aceternity_tooltip_card />;
+    case "aceternity-vortex-demo":
+      return <Aceternity_aceternity_vortex />;
+    case "aceternity-wavy-background-demo":
+      return <Aceternity_aceternity_wavy_background />;
+    case "aceternity-webcam-pixel-grid-demo":
+      return <Aceternity_aceternity_webcam_pixel_grid />;
+    case "aceternity-wobble-card-demo":
+      return <Aceternity_aceternity_wobble_card />;
+    case "aceternity-world-map-demo":
+      return <Aceternity_aceternity_world_map />;
 
     // Shadcnblocks
     case "shadcnblocks-pricing-demo":
@@ -6170,6 +6376,2581 @@ function BeUI_beui_motion_tooltip() {
           <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => Math.max(0, v - 1))}>−</Button>
           <span className="font-mono text-[10px] font-bold text-primary">{val}</span>
           <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => v + 1)}>+</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_3d_card_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">3d Card Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_3d_globe() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">3d Globe</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_3d_marquee() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">3d Marquee</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_animated_modal() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Animated Modal</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_animated_testimonials() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Animated Testimonials</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_animated_tooltip() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Animated Tooltip</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_apple_cards_carousel() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Apple Cards Carousel</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_ascii_art() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Ascii Art</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_aurora_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Aurora Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_beams_with_collision() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Beams With Collision</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_boxes() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Boxes</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_gradient() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Gradient</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_gradient_animation() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Gradient Animation</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_lines() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Lines</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_background_ripple_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Background Ripple Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_bento_grid() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Bento Grid</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_canvas_reveal_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Canvas Reveal Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_canvas_text() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Canvas Text</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_card_spotlight() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Card Spotlight</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_card_stack() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Card Stack</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_cards_free() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Cards Free</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_carousel() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Carousel</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_chromatic_image() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Chromatic Image</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_cloud_shader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Cloud Shader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_code_block() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Code Block</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_colourful_text() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Colourful Text</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_comet_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Comet Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_compare() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Compare</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_container_cover() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Container Cover</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_container_scroll_animation() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Container Scroll Animation</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_container_text_flip() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Container Text Flip</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_direction_aware_hover() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Direction Aware Hover</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_dither_shader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Dither Shader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_dotted_glow_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Dotted Glow Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_draggable_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Draggable Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_encrypted_text() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Encrypted Text</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_evervault_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Evervault Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_expandable_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Expandable Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_feature_sections_free() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Feature Sections Free</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_file_upload() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">File Upload</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_flip_words() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Flip Words</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_floating_dock() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Floating Dock</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_floating_navbar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Floating Navbar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_focus_cards() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Focus Cards</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_following_pointer() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Following Pointer</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_github_globe() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Github Globe</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_glare_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Glare Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_glowing_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Glowing Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_glowing_stars_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Glowing Stars Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_gooey_input() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Gooey Input</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_google_gemini_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Google Gemini Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_grid_and_dot_backgrounds() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Grid And Dot Backgrounds</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_hero_parallax() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Hero Parallax</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_hero_sections_free() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Hero Sections Free</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_hover_border_gradient() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Hover Border Gradient</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_image_generation_loader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Image Generation Loader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_images_badge() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Images Badge</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_images_slider() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Images Slider</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_infinite_moving_cards() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Infinite Moving Cards</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_keyboard() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Keyboard</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_layout_grid() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Layout Grid</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_layout_text_flip() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Layout Text Flip</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_lens() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Lens</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_link_preview() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Link Preview</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_loader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Loader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_macbook_scroll() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Macbook Scroll</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_magnetic_button() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Magnetic Button</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_meteors() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Meteors</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_moving_border() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Moving Border</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_multi_step_loader() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Multi Step Loader</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_navbar_menu() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Navbar Menu</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_noise_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Noise Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_notch() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Notch</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_parallax_hero_images() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Parallax Hero Images</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_parallax_scroll() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Parallax Scroll</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_pixelated_canvas() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Pixelated Canvas</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_placeholders_and_vanish_input() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Placeholders And Vanish Input</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_pointer_highlight() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Pointer Highlight</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_resizable_navbar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Resizable Navbar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_scales() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Scales</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_shooting_stars_and_stars_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Shooting Stars And Stars Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_sidebar() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Sidebar</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_signup_form() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Signup Form</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_spotlight() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Spotlight</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_spotlight_new() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Spotlight New</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_squiggly_text() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Squiggly Text</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_stateful_button() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Stateful Button</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_sticky_banner() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Sticky Banner</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_sticky_scroll_reveal() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Sticky Scroll Reveal</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_svg_mask_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Svg Mask Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_tabs() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tabs</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_terminal() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Terminal</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_text_flipping_board() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Text Flipping Board</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_text_generate_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Text Generate Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_text_hover_effect() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Text Hover Effect</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_text_reveal_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Text Reveal Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_timeline() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Timeline</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_tooltip_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Tooltip Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_vortex() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Vortex</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_wavy_background() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Wavy Background</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_webcam_pixel_grid() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Webcam Pixel Grid</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_wobble_card() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">Wobble Card</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+function Aceternity_aceternity_world_map() {
+  const [active, setActive] = useState(false);
+  const [val, setVal] = useState(1);
+  return (
+    <div className="p-3 bg-card rounded-xl border text-xs space-y-2 text-center overflow-hidden">
+      <div className="flex justify-between items-center pb-1 border-b">
+        <span className="font-semibold text-foreground truncate">World Map</span>
+        <Badge variant={active ? "default" : "outline"} className="text-[9px] cursor-pointer" onClick={() => setActive(!active)}>
+          {active ? "Active" : "Interactive"}
+        </Badge>
+      </div>
+      <div className="p-2.5 rounded-lg bg-gradient-to-br from-primary/10 via-muted/30 to-background border flex flex-col items-center justify-center min-h-[64px] space-y-1 relative">
+        <div className={`h-3 w-3 rounded-full transition-all ${active ? "bg-primary scale-125 shadow-lg shadow-primary/50" : "bg-muted-foreground/30"}`} />
+        <span className="font-mono text-[10px] text-muted-foreground">Mode: {active ? "Dynamic Motion" : "Hover / Touch"}</span>
+        <div className="flex items-center gap-1.5 pt-1">
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v > 1 ? v - 1 : 4))}>‹ Prev</Button>
+          <span className="font-mono text-[10px] font-bold text-primary">State 0{val}</span>
+          <Button size="sm" variant="outline" className="h-5 px-1.5 text-[9px]" onClick={() => setVal(v => (v < 4 ? v + 1 : 1))}>Next ›</Button>
         </div>
       </div>
     </div>

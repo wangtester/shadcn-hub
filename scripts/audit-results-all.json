@@ -1,0 +1,341 @@
+[
+  {
+    "id": "shadcn",
+    "name": "ui.shadcn.com",
+    "localCount": 13,
+    "remoteCount": 197,
+    "sampleSlugs": [
+      "https://ui.shadcn.com/docs/components/aria/accordion",
+      "https://ui.shadcn.com/docs/components/aria/alert-dialog",
+      "https://ui.shadcn.com/docs/components/aria/alert",
+      "https://ui.shadcn.com/docs/components/aria/aspect-ratio",
+      "https://ui.shadcn.com/docs/components/aria/attachment"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "magicui",
+    "name": "magicui.design",
+    "localCount": 12,
+    "remoteCount": 77,
+    "sampleSlugs": [
+      "https://magicui.design/docs/components/android",
+      "https://magicui.design/docs/components/animated-beam",
+      "https://magicui.design/docs/components/animated-circular-progress-bar",
+      "https://magicui.design/docs/components/animated-gradient-text",
+      "https://magicui.design/docs/components/animated-grid-pattern"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "aceternity",
+    "name": "ui.aceternity.com",
+    "localCount": 10,
+    "remoteCount": 319,
+    "sampleSlugs": [
+      "https://ui.aceternity.com/components/3d-card-effect",
+      "https://ui.aceternity.com/components/3d-globe",
+      "https://ui.aceternity.com/components/3d-marquee",
+      "https://ui.aceternity.com/components/3d-pin",
+      "https://ui.aceternity.com/components/add-utilities"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "shadcnblocks",
+    "name": "shadcnblocks.com",
+    "localCount": 9,
+    "remoteCount": 429,
+    "sampleSlugs": [
+      "https://www.shadcnblocks.com/blocks/free",
+      "https://www.shadcnblocks.com/blocks/about",
+      "https://www.shadcnblocks.com/blocks/accept-invite",
+      "https://www.shadcnblocks.com/blocks/address-book",
+      "https://www.shadcnblocks.com/blocks/application-shell"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "shadcnstore",
+    "name": "shadcnstore.com",
+    "localCount": 4,
+    "remoteCount": 42,
+    "sampleSlugs": [
+      "https://shadcnstore.com/blocks/marketing",
+      "https://shadcnstore.com/blocks/e-commerce",
+      "https://shadcnstore.com/blocks/application",
+      "https://shadcnstore.com/blocks/marketing/navbars",
+      "https://shadcnstore.com/blocks/e-commerce/storefront-hero"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "origin-ui",
+    "name": "originui.com",
+    "localCount": 7,
+    "remoteCount": 55,
+    "sampleSlugs": [
+      "/ui/docs/components/accordion",
+      "/ui/docs/components/alert",
+      "/ui/docs/components/alert-dialog",
+      "/ui/docs/components/autocomplete",
+      "/ui/docs/components/avatar"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "eldora",
+    "name": "eldoraui.site",
+    "localCount": 2,
+    "remoteCount": 34,
+    "sampleSlugs": [
+      "https://www.eldoraui.site/docs/components/animated-badge",
+      "https://www.eldoraui.site/docs/components/animated-frameworks",
+      "https://www.eldoraui.site/docs/components/animated-list",
+      "https://www.eldoraui.site/docs/components/animated-shiny-button",
+      "https://www.eldoraui.site/docs/components/blur-in-text"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "skiper",
+    "name": "skiper-ui.com",
+    "localCount": 2,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "kibo",
+    "name": "kibo-ui.com",
+    "localCount": 7,
+    "remoteCount": 42,
+    "sampleSlugs": [
+      "/components",
+      "/components/avatar-stack",
+      "/components/cursor",
+      "/components/calendar",
+      "/components/gantt"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "kokonut",
+    "name": "kokonutui.com",
+    "localCount": 4,
+    "remoteCount": 49,
+    "sampleSlugs": [
+      "https://kokonutui.com",
+      "https://kokonutui.com/docs",
+      "https://kokonutui.com/docs/mcp",
+      "https://kokonutui.com/docs/ai/ai-input-search",
+      "https://kokonutui.com/docs/ai/ai-loading"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "motion-primitives",
+    "name": "motion-primitives.com",
+    "localCount": 6,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "shadcn-charts",
+    "name": "shadcn/ui Charts",
+    "localCount": 6,
+    "remoteCount": 2,
+    "sampleSlugs": [
+      "/docs/components",
+      "/docs/components/chart"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "rareui",
+    "name": "rareui.com",
+    "localCount": 2,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "transitions",
+    "name": "transitions.dev",
+    "localCount": 2,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "beautifului",
+    "name": "beautifului.dev",
+    "localCount": 2,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "tailark",
+    "name": "tailark.com",
+    "localCount": 2,
+    "remoteCount": 6,
+    "sampleSlugs": [
+      "https://tailark.com",
+      "https://tailark.com/blocks",
+      "https://tailark.com/illustrations",
+      "https://tailark.com/pages",
+      "https://tailark.com/blog"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "shadcnspace",
+    "name": "shadcnspace.com",
+    "localCount": 2,
+    "remoteCount": 93,
+    "sampleSlugs": [
+      "/components",
+      "/components/accordion",
+      "/components/alert",
+      "/components/animated-list",
+      "/components/animated-text"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "21st",
+    "name": "21st.dev",
+    "localCount": 3,
+    "remoteCount": 178,
+    "sampleSlugs": [
+      "/community/components/featured",
+      "/community/components/newest",
+      "/community/components/s/announcement",
+      "/community/components/s/background",
+      "/community/components/s/border"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "heroui",
+    "name": "heroui.pro",
+    "localCount": 2,
+    "remoteCount": 67,
+    "sampleSlugs": [
+      "/docs/react/components",
+      "/docs/react/components/area-chart",
+      "/docs/react/components/bar-chart",
+      "/docs/react/components/chart-tooltip",
+      "/docs/react/components/composed-chart"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "boardui",
+    "name": "boardui.com",
+    "localCount": 3,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "refero",
+    "name": "styles.refero.design",
+    "localCount": 2,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "reui",
+    "name": "reui.io",
+    "localCount": 2,
+    "remoteCount": 149,
+    "sampleSlugs": [
+      "/components/data-grid",
+      "/components/event-calendar",
+      "/components/gantt",
+      "/components/cascader",
+      "/components/filters"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "mynaui",
+    "name": "mynaui.com",
+    "localCount": 2,
+    "remoteCount": 69,
+    "sampleSlugs": [
+      "/components/accordion",
+      "/components/alert",
+      "/components/alert-dialog",
+      "/components/avatar",
+      "/components/avatar-groups"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "shadcnstudio",
+    "name": "shadcnstudio.com",
+    "localCount": 2,
+    "remoteCount": 117,
+    "sampleSlugs": [
+      "/components",
+      "/blocks/marketing-ui/hero-section",
+      "/blocks/marketing-ui/features-section",
+      "/blocks/marketing-ui/pricing-component",
+      "/blocks/marketing-ui/testimonials-component"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "animate-ui",
+    "name": "animate-ui.com",
+    "localCount": 2,
+    "remoteCount": 75,
+    "sampleSlugs": [
+      "/docs/components",
+      "/docs/components/animate/avatar-group",
+      "/docs/components/animate/code",
+      "/docs/components/animate/code-tabs",
+      "/docs/components/animate/cursor"
+    ],
+    "status": "ok",
+    "note": ""
+  },
+  {
+    "id": "veloraui",
+    "name": "veloraui.com",
+    "localCount": 3,
+    "remoteCount": 0,
+    "sampleSlugs": [],
+    "status": "error: fetch failed",
+    "note": ""
+  }
+]
