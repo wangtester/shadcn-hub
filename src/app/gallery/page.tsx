@@ -193,8 +193,8 @@ export default function GalleryPage() {
               onClick={() => setSelectedSite("all")}
               className={`px-2.5 py-1 rounded-lg text-xs font-mono shrink-0 transition-all cursor-pointer ${
                 selectedSite === "all"
-                  ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20"
-                  : "bg-muted/50 hover:bg-muted text-muted-foreground hover:text-foreground"
+                  ? "bg-blue-500/12 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/25 shadow-2xs"
+                  : "bg-muted/50 hover:bg-muted text-muted-foreground hover:text-foreground border border-transparent"
               }`}
             >
               {isEn ? `All Sources (${REGISTRY_DATA.length})` : `全部站点 (${REGISTRY_DATA.length})`}
@@ -209,12 +209,12 @@ export default function GalleryPage() {
                   onClick={() => setSelectedSite(site.id)}
                   className={`px-2.5 py-1 rounded-lg text-xs font-mono shrink-0 transition-all cursor-pointer flex items-center gap-1 ${
                     isSelected
-                      ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20"
+                      ? "bg-blue-500/12 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/25 shadow-2xs"
                       : "bg-muted/40 hover:bg-muted text-muted-foreground hover:text-foreground border border-transparent hover:border-border"
                   }`}
                 >
                   <span>{site.name}</span>
-                  <span className={`text-[10px] px-1 rounded-full ${isSelected ? "bg-white/20 text-white" : "text-muted-foreground/60"}`}>
+                  <span className={`text-[10px] px-1 rounded-full ${isSelected ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold" : "text-muted-foreground/60"}`}>
                     {count}
                   </span>
                 </button>
