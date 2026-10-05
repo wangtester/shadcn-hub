@@ -93,12 +93,60 @@ import {
   Pie,
   Cell,
 } from "recharts";
+import { MAGICUI_PREVIEWS } from "@/components/magicui";
 
 interface LivePreviewProps {
   componentKey: string;
 }
 
 export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
+  return (
+    <PreviewMount>
+      <PreviewSwitch componentKey={componentKey} />
+    </PreviewMount>
+  );
+}
+
+/**
+ * 画廊页面一次性会挂载上百个动效预览，全部立即挂载会让首屏明显卡顿。
+ * 这里让预览进入视口附近时才真正渲染，占位块保持高度避免布局跳动。
+ */
+function PreviewMount({ children }: { children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === "undefined") {
+      const fallbackTimer = window.setTimeout(() => setVisible(true), 0);
+      return () => window.clearTimeout(fallbackTimer);
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="w-full">
+      {visible ? (
+        children
+      ) : (
+        <div className="h-[132px] rounded-xl border bg-muted/20 animate-pulse" aria-hidden="true" />
+      )}
+    </div>
+  );
+}
+
+function PreviewSwitch({ componentKey }: LivePreviewProps) {
   switch (componentKey) {
     // 1. shadcn button
     case "shadcn-button":
@@ -113,8 +161,6 @@ export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
       return <MagicDockDemo />;
     case "magicui-marquee":
       return <MagicMarqueeDemo />;
-    case "magicui-bento":
-      return <MagicBentoDemo />;
 
     // 3. Aceternity UI
     case "aceternity-lamp":
@@ -246,8 +292,6 @@ export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
     // Extra Rich Components
     case "shadcn-calendar":
       return <ShadcnCalendarDemo />;
-    case "magicui-beam":
-      return <MagicUIBeamDemo />;
     case "aceternity-sparkles":
       return <AceternitySparklesDemo />;
     case "boardui-kpi-banner":
@@ -838,8 +882,12 @@ export function RegistryLivePreview({ componentKey }: LivePreviewProps) {
     case "beui-motion-tooltip-demo":
       return <BeUI_beui_motion_tooltip />;
 
-    default:
+    default: {
+      // Magic UI 的 76 个组件各自有独立预览实现，命中后不再走通用占位模板
+      const MagicUiPreview = MAGICUI_PREVIEWS[componentKey];
+      if (MagicUiPreview) return <MagicUiPreview />;
       return <UniversalInteractivePreview componentKey={componentKey} />;
+    }
   }
 }
 
@@ -1229,27 +1277,6 @@ function MagicMarqueeDemo() {
           </span>
         ))}
       </motion.div>
-    </div>
-  );
-}
-
-function MagicBentoDemo() {
-  return (
-    <div className="grid grid-cols-2 gap-2.5 p-3 rounded-xl border bg-card text-xs">
-      <div className="p-3 rounded-lg border bg-gradient-to-br from-indigo-500/10 to-transparent flex flex-col justify-between">
-        <Sparkles className="h-4 w-4 text-indigo-500 mb-2" />
-        <div>
-          <h4 className="font-semibold text-foreground">Adaptive AI</h4>
-          <p className="text-[11px] text-muted-foreground mt-0.5">Real-time model latency</p>
-        </div>
-      </div>
-      <div className="p-3 rounded-lg border bg-gradient-to-br from-cyan-500/10 to-transparent flex flex-col justify-between">
-        <Zap className="h-4 w-4 text-cyan-500 mb-2" />
-        <div>
-          <h4 className="font-semibold text-foreground">Edge Streaming</h4>
-          <p className="text-[11px] text-muted-foreground mt-0.5">Zero TTFB overhead</p>
-        </div>
-      </div>
     </div>
   );
 }
@@ -2387,26 +2414,6 @@ function ShadcnCalendarDemo() {
             {day}
           </button>
         ))}
-      </div>
-    </div>
-  );
-}
-
-function MagicUIBeamDemo() {
-  return (
-    <div className="relative p-6 rounded-xl border bg-muted/20 flex items-center justify-between overflow-hidden">
-      <div className="w-10 h-10 rounded-xl bg-card border flex items-center justify-center font-bold text-xs shadow-md z-10">
-        API
-      </div>
-      <div className="flex-1 relative mx-4 h-1 bg-border rounded-full overflow-hidden">
-        <motion.div
-          animate={{ x: [-100, 300] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="w-16 h-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent"
-        />
-      </div>
-      <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-lg shadow-indigo-500/30 z-10">
-        AI
       </div>
     </div>
   );

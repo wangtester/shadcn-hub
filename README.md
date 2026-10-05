@@ -113,7 +113,7 @@ Switching between a dozen disparate websites is tedious. Moreover, many showcase
 | # | Ecosystem / Site | Source URL | Rendered Items | Core Categories & Scope |
 | :-: | :--- | :--- | :-: | :--- |
 | **01** | **shadcn/ui Core** | [ui.shadcn.com](https://ui.shadcn.com) | **64 Components** | Forms (17), Layout (8), Overlay (8), Data (9), Nav (5), Feedback (8), Extended (9) |
-| **02** | **Magic UI** | [magicui.design](https://magicui.design) | **5 Motion + 3 Blocks** | Marquee, Animated Beam, Border Beam, Orbiting Circles, Ripple; Magic Bento, Meteors, Retro Grid |
+| **02** | **Magic UI** | [magicui.design](https://magicui.design) | **76 Components + 1 Block** | Every component on the docs index: Marquee, Dock, Bento Grid, Animated Beam, Border Beam, Shine Border, Particles, Number Ticker, Meteors, Retro Grid, Globe, Icon Cloud, Terminal, Tweet Card and more — each with its own in-place live preview |
 | **03** | **Aceternity UI** | [ui.aceternity.com](https://ui.aceternity.com) | **4 Visuals + 2 Blocks** | Lamp Header, Sparkles & Stars, 3D Pin Card, Conic Border; Tracing Beam, Background Beams |
 | **04** | **BoardUI** | [boardui.com](https://www.boardui.com) | **19 Charts + AI Kit + Primitives** | 19 dashboard charts; AI Thinking Chain, Token Monitor; Announcement Banner, Filter Chips, Delta KPI |
 | **05** | **ShadcnStore** | [shadcnstore.com](https://shadcnstore.com) | **39 Block Types + Shop** | All 39 vertical section categories (Hero, Bento, Pricing Tables, Stats, CTA); Cart drawer |

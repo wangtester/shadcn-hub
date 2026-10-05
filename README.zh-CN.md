@@ -115,7 +115,7 @@
 | # | 生态库 / 站点名称 | 原始网址 | 实装收录数量 | 核心功能与收录范围 |
 | :-: | :--- | :--- | :-: | :--- |
 | **01** | **shadcn/ui 官方核心** | [ui.shadcn.com](https://ui.shadcn.com) | **64 款全量组件** | 表单类 (17), 布局类 (8), 浮层类 (8), 数据展示 (9), 导航类 (5), 反馈类 (8), 扩展类 (9) |
-| **02** | **Magic UI** | [magicui.design](https://magicui.design) | **5 动效 + 3 区块** | Marquee 跑马灯, Animated Beam 节点数据流, Border Beam 流光边框, Orbiting Circles; Magic Bento, Meteors, Retro Grid |
+| **02** | **Magic UI** | [magicui.design](https://magicui.design) | **76 款组件 + 1 个区块** | 官方文档索引上的全部组件：Marquee 跑马灯、Dock 交互坞、Bento Grid 便当盒、Animated Beam 节点数据流、Border Beam 流光边框、Shine Border 高光边、Particles 粒子、Number Ticker 数字滚动、Meteors 流星、Retro Grid 复古网格、Globe 点阵地球、Icon Cloud 图标云、Terminal 终端、Tweet Card 推文卡等，每款都有独立原地实机预览 |
 | **03** | **Aceternity UI** | [ui.aceternity.com](https://ui.aceternity.com) | **4 视觉 + 2 区块** | Lamp Header 神灯光锥聚光, Sparkles 星光粒子, 3D Pin 空间图钉, 渐变边框; Tracing Beam 阅读追踪流, Background Beams |
 | **04** | **BoardUI** | [boardui.com](https://www.boardui.com) | **19 图表 + AI 交互 + 基元** | 19 款高密度工业图表卡片; AI 思维链、Token 监控网格; Announcement Banner 通告条、Filter Chips 过滤芯片、Delta KPI |
 | **05** | **ShadcnStore** | [shadcnstore.com](https://shadcnstore.com) | **39 类目区块 + 商城** | 覆盖全部 39 个垂直业务区块（Hero, Bento, Pricing 定价表, Stats 指标墙, CTA 横幅）；完整购物车侧抽屉 |
