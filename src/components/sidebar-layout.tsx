@@ -218,7 +218,7 @@ export function SidebarLayout({
   );
 
   return (
-    <div className="flex min-h-[calc(100vh-3.5rem)] w-full">
+    <div className="flex min-h-[calc(100vh-3.5rem)] w-full max-w-full overflow-x-clip">
       {/* 桌面端固定侧边栏 */}
       <aside className="hidden md:block w-60 shrink-0 border-r bg-card/30 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
         <ScrollArea className="h-full px-2 py-4">
@@ -246,7 +246,7 @@ export function SidebarLayout({
       </div>
 
       {/* 右侧主内容展示区 */}
-      <div className="flex-1 min-w-0 px-6 md:px-12 lg:px-16 py-8 md:py-14 max-w-6xl mx-auto">
+      <div className="flex-1 min-w-0 px-4 md:px-12 lg:px-16 py-8 md:py-14 max-w-6xl mx-auto overflow-x-clip">
         {children}
       </div>
     </div>

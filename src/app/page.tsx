@@ -469,7 +469,7 @@ export default function HomeHubPage() {
   });
 
   return (
-    <div className="container mx-auto px-4 md:px-8 py-10 md:py-16 max-w-6xl space-y-12">
+    <div className="container mx-auto px-4 md:px-8 py-10 md:py-16 max-w-6xl space-y-12 max-w-full overflow-x-clip">
       {/* 1. 极简 Hero 区域 */}
       <section className="text-center space-y-4 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border bg-primary/10 text-primary text-xs font-mono font-medium">
@@ -506,8 +506,8 @@ export default function HomeHubPage() {
 
       {/* 2. 分类筛选器 */}
       <section className="space-y-6">
-        <div className="flex items-center justify-between pb-2 border-b">
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs overflow-x-auto scrollbar-none max-w-full">
             {[
               { key: "all", label: t("home.tabAll"), count: siteList.length },
               { key: "motion", label: t("home.tabMotion"), count: siteList.filter((s) => s.category === "motion").length },
@@ -519,7 +519,7 @@ export default function HomeHubPage() {
                 <button
                   key={tab.key}
                   onClick={() => setFilter(tab.key as any)}
-                  className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap ${
                     active
                       ? "bg-background text-foreground shadow-xs font-semibold"
                       : "text-muted-foreground hover:text-foreground"
@@ -534,7 +534,7 @@ export default function HomeHubPage() {
             })}
           </div>
 
-          <span className="text-xs text-muted-foreground hidden sm:inline-block font-mono">
+          <span className="text-xs text-muted-foreground hidden sm:inline-block font-mono shrink-0">
             {t("home.sitesCount").replace("{count}", filteredSites.length.toString())}
           </span>
         </div>

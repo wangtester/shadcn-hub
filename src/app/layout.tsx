@@ -71,11 +71,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body className="min-h-full flex flex-col bg-background text-foreground max-w-full overflow-x-hidden">
         <I18nProvider>
           <TooltipProvider>
             <TopNav />
-            <main className="flex-1 flex flex-col w-full">
+            <main className="flex-1 flex flex-col w-full min-w-0 overflow-x-clip">
               {children}
             </main>
             <SiteFooter />

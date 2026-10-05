@@ -8,7 +8,7 @@ export function SiteFooter() {
   const { t } = useI18n();
 
   return (
-    <footer className="border-t bg-muted/20 py-8 px-4 md:px-8 text-xs text-muted-foreground mt-auto">
+    <footer className="border-t bg-muted/20 py-8 px-4 md:px-8 text-xs text-muted-foreground mt-auto w-full max-w-full overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* 左侧：项目标识 */}
         <div className="flex items-center gap-3">

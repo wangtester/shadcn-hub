@@ -40,7 +40,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState, useEffect, useRef } from "react";
-import { GlobalSearch } from "@/components/global-search";
 import { LanguageToggle } from "@/components/language-toggle";
 import { useI18n } from "@/context/i18n-context";
 
@@ -433,11 +432,11 @@ export function TopNav() {
   const isEcosystemActive = pathname.startsWith("/sites/") || pathname.startsWith("/shadcn");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-2xs">
-      <div className="flex h-14 items-center justify-between px-4 md:px-6 w-full gap-3">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-2xs overflow-x-clip">
+      <div className="flex h-14 items-center justify-between px-3 sm:px-4 md:px-6 w-full max-w-full gap-2 sm:gap-4">
         {/* 左侧：Logo 标识与主导航 */}
-        <div className="flex items-center gap-6 shrink-0">
-          <Link href="/" className="flex items-center gap-2.5 font-bold text-sm md:text-base group">
+        <div className="flex items-center gap-3 lg:gap-6 min-w-0">
+          <Link href="/" className="flex items-center gap-2 font-bold text-sm md:text-base group shrink-0">
             <div className="h-7 w-7 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
               <Layers className="h-4 w-4" />
             </div>
@@ -447,11 +446,11 @@ export function TopNav() {
           </Link>
 
           {/* 桌面端导航 */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-0.5 lg:gap-1 text-xs lg:text-sm">
             <Link
               href="/"
               className={cn(
-                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium",
+                "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium shrink-0",
                 pathname === "/"
                   ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -464,13 +463,13 @@ export function TopNav() {
             <Link
               href="/shadcn"
               className={cn(
-                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5",
+                "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname.startsWith("/shadcn")
                   ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <Box className="h-3.5 w-3.5" />
+              <Box className="h-3.5 w-3.5 shrink-0" />
               <span>{t("nav.official")}</span>
               <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-muted text-foreground/80 font-mono font-semibold">
                 64
@@ -481,13 +480,13 @@ export function TopNav() {
             <Link
               href="/gallery"
               className={cn(
-                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5",
+                "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname.startsWith("/gallery")
                   ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+              <Sparkles className="h-3.5 w-3.5 text-amber-500 shrink-0" />
               <span>{t("nav.gallery")}</span>
               <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono font-bold">
                 {t("nav.galleryBadge")}
@@ -498,18 +497,18 @@ export function TopNav() {
             <div
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="relative inline-flex items-center"
+              className="relative inline-flex items-center shrink-0"
             >
               <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
                 <PopoverTrigger
                   className={cn(
-                    "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
+                    "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
                     isEcosystemActive && !pathname.startsWith("/gallery")
                       ? "bg-primary/15 text-primary border-primary/30 font-semibold"
                       : "border-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
                   )}
                 >
-                  <Grid className="h-3.5 w-3.5" />
+                  <Grid className="h-3.5 w-3.5 shrink-0" />
                   <span>{t("nav.sources")}</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
                     28
@@ -527,7 +526,7 @@ export function TopNav() {
                   sideOffset={8}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
-                  className="w-[820px] p-4.5 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
+                  className="w-[90vw] max-w-[820px] p-4.5 rounded-2xl shadow-2xl border bg-popover/98 backdrop-blur"
                 >
                   {/* 4 大分类 4 列精简平铺 */}
                   <div className="grid grid-cols-4 gap-3">
@@ -611,21 +610,20 @@ export function TopNav() {
             <Link
               href="/tools"
               className={cn(
-                "px-3 py-1.5 text-xs md:text-sm rounded-lg transition-all font-medium flex items-center gap-1.5",
+                "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname === "/tools"
                   ? "bg-primary text-primary-foreground shadow-xs font-semibold"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <Wrench className="h-3.5 w-3.5" />
+              <Wrench className="h-3.5 w-3.5 shrink-0" />
               <span>{t("nav.tools")}</span>
             </Link>
           </nav>
         </div>
 
-        {/* 右侧：全局搜索、语言切换、GitHub、主题切换与移动端菜单 */}
-        <div className="flex items-center gap-2 shrink-0">
-          <GlobalSearch />
+        {/* 右侧：语言切换、GitHub、主题切换与移动端菜单 */}
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
 
           {/* 专业设计师中英语言切换器 */}
           <LanguageToggle />

@@ -80,7 +80,7 @@ export default function GalleryPage() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-7xl space-y-8">
+    <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-7xl space-y-8 max-w-full overflow-x-clip">
       {/* 顶部标题区 */}
       <section className="space-y-4">
         <div className="flex flex-wrap items-center gap-2">
@@ -142,7 +142,7 @@ export default function GalleryPage() {
           </div>
 
           {/* 类别切换胶囊 */}
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs overflow-x-auto scrollbar-none max-w-full">
             {[
               { id: "all", label: isEn ? "All" : "全部形态", count: categoryStats.all, icon: <Layers className="h-3 w-3" /> },
               { id: "component", label: isEn ? "Components" : "原子组件", count: categoryStats.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
@@ -154,7 +154,7 @@ export default function GalleryPage() {
                 <button
                   key={tab.id}
                   onClick={() => setSelectedCategory(tab.id)}
-                  className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap ${
                     active
                       ? "bg-background text-foreground shadow-xs font-semibold"
                       : "text-muted-foreground hover:text-foreground"

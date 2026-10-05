@@ -154,7 +154,7 @@ export function SitePageTemplate({
         </div>
 
         {/* 类别筛选 */}
-        <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs">
+        <div className="flex items-center gap-1 p-1 rounded-xl bg-muted/50 border text-xs overflow-x-auto scrollbar-none max-w-full">
           {[
             { id: "all", label: isEn ? "All" : "全部", count: categoryCounts.all, icon: <Layers className="h-3 w-3" /> },
             { id: "component", label: isEn ? "Components" : "组件", count: categoryCounts.component, icon: <Box className="h-3 w-3 text-blue-500" /> },
@@ -166,7 +166,7 @@ export function SitePageTemplate({
               <button
                 key={tab.id}
                 onClick={() => setCategoryFilter(tab.id)}
-                className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap ${
                   active
                     ? "bg-background text-foreground shadow-xs font-semibold"
                     : "text-muted-foreground hover:text-foreground"
