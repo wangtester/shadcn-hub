@@ -119,8 +119,8 @@ export default function ShadcnStoreProductsPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`text-xs px-3.5 py-1.5 rounded-full font-medium transition-all ${
                   activeCategory === cat
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "bg-muted/60 text-muted-foreground hover:bg-muted"
+                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                    : "bg-muted/60 text-muted-foreground hover:bg-muted border border-transparent"
                 }`}
               >
                 {cat}

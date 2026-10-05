@@ -119,7 +119,7 @@ export default function BoardUIComponentsPage() {
                   onClick={() => toggleToken(token.id)}
                   className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium transition-all ${
                     active
-                      ? "border-primary bg-primary text-primary-foreground shadow-xs font-semibold"
+                      ? "border-blue-500/25 bg-blue-500/10 text-blue-600 dark:text-blue-400 shadow-2xs font-semibold"
                       : "bg-muted/40 hover:bg-muted text-muted-foreground hover:text-foreground border-transparent"
                   }`}
                 >
@@ -127,7 +127,7 @@ export default function BoardUIComponentsPage() {
                   <span>{token.label}</span>
                   <span
                     className={`ml-1 text-[10px] font-mono px-1.5 py-0.2 rounded-full ${
-                      active ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
+                      active ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold" : "bg-muted text-muted-foreground"
                     }`}
                   >
                     {token.count}

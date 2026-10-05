@@ -108,6 +108,12 @@ const COMMON_TRANSLATIONS: Record<string, string> = {
   "全景总览": "Overview",
 };
 
+export const SidebarContext = React.createContext(false);
+
+export function useSidebarContext() {
+  return React.useContext(SidebarContext);
+}
+
 export function SidebarLayout({
   siteTitle,
   siteTitleEn,
@@ -218,37 +224,39 @@ export function SidebarLayout({
   );
 
   return (
-    <div className="flex min-h-[calc(100vh-3.5rem)] w-full max-w-full overflow-x-clip">
-      {/* 桌面端固定侧边栏 */}
-      <aside className="hidden md:block w-60 shrink-0 border-r bg-card/30 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
-        <ScrollArea className="h-full px-2 py-4">
-          {navContent}
-        </ScrollArea>
-      </aside>
-
-      {/* 移动端侧边抽屉按钮 */}
-      <div className="md:hidden fixed bottom-4 right-4 z-40">
-        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-          <SheetTrigger
-            render={
-              <Button size="icon" className="rounded-full shadow-lg h-12 w-12 cursor-pointer bg-primary text-primary-foreground">
-                <Menu className="h-5 w-5" />
-              </Button>
-            }
-          />
-          <SheetContent side="left" className="w-72 p-4">
-            <SheetHeader className="mb-2">
-              <SheetTitle className="text-left">{currentSiteTitle}</SheetTitle>
-            </SheetHeader>
+    <SidebarContext.Provider value={true}>
+      <div className="flex min-h-[calc(100vh-3.5rem)] w-full max-w-full overflow-x-clip">
+        {/* 桌面端固定侧边栏 */}
+        <aside className="hidden md:block w-60 shrink-0 border-r bg-card/30 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
+          <ScrollArea className="h-full px-2 py-4">
             {navContent}
-          </SheetContent>
-        </Sheet>
-      </div>
+          </ScrollArea>
+        </aside>
 
-      {/* 右侧主内容展示区 */}
-      <div className="flex-1 min-w-0 px-4 md:px-12 lg:px-16 py-8 md:py-14 max-w-6xl mx-auto overflow-x-clip">
-        {children}
+        {/* 移动端侧边抽屉按钮 */}
+        <div className="md:hidden fixed bottom-4 right-4 z-40">
+          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+            <SheetTrigger
+              render={
+                <Button size="icon" className="rounded-full shadow-lg h-12 w-12 cursor-pointer bg-primary text-primary-foreground">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              }
+            />
+            <SheetContent side="left" className="w-72 p-4">
+              <SheetHeader className="mb-2">
+                <SheetTitle className="text-left">{currentSiteTitle}</SheetTitle>
+              </SheetHeader>
+              {navContent}
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        {/* 右侧主内容展示区 */}
+        <div className="flex-1 min-w-0 px-4 md:px-12 lg:px-16 py-8 md:py-14 max-w-6xl mx-auto overflow-x-clip">
+          {children}
+        </div>
       </div>
-    </div>
+    </SidebarContext.Provider>
   );
 }

@@ -108,8 +108,8 @@ export default function ReferoTokensPage() {
                     onClick={() => setSelectedStyle(styleName)}
                     className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${
                       selectedStyle === styleName
-                        ? "bg-primary text-primary-foreground shadow-xs font-semibold"
-                        : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground"
+                        ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                        : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground border border-transparent"
                     }`}
                   >
                     {styleName}

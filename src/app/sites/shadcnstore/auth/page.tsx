@@ -50,7 +50,9 @@ export default function ShadcnStoreAuthPage() {
           <button
             onClick={() => setAuthMode("login")}
             className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-all ${
-              authMode === "login" ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+              authMode === "login"
+                ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                : "bg-muted text-muted-foreground border border-transparent"
             }`}
           >
             登录卡片
@@ -58,7 +60,9 @@ export default function ShadcnStoreAuthPage() {
           <button
             onClick={() => setAuthMode("otp")}
             className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-all ${
-              authMode === "otp" ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+              authMode === "otp"
+                ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                : "bg-muted text-muted-foreground border border-transparent"
             }`}
           >
             两步验证 OTP

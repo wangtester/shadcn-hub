@@ -24,6 +24,9 @@ import {
 } from "lucide-react";
 import { useI18n } from "@/context/i18n-context";
 
+import { useSidebarContext } from "@/components/sidebar-layout";
+import { cn } from "@/lib/utils";
+
 interface SitePageTemplateProps {
   siteId: string;
   customTitle?: string;
@@ -37,6 +40,7 @@ export function SitePageTemplate({
   customDesc,
   children,
 }: SitePageTemplateProps) {
+  const inSidebar = useSidebarContext();
   const { isEn, t } = useI18n();
   const site = SITES_METADATA.find((s) => s.id === siteId);
   const items = useMemo(() => {
@@ -81,7 +85,14 @@ export function SitePageTemplate({
   };
 
   return (
-    <div className="w-full space-y-8 py-2 md:py-4">
+    <div
+      className={cn(
+        "w-full space-y-8",
+        inSidebar
+          ? "py-2 md:py-4"
+          : "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12"
+      )}
+    >
       {/* 顶部导航面包屑与站点来源外链 */}
       <div className="flex items-center justify-between gap-4 border-b pb-4">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -100,7 +111,7 @@ export function SitePageTemplate({
           href={site.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-mono font-medium text-primary hover:underline bg-primary/10 hover:bg-primary/20 px-3 py-1.5 rounded-lg transition-colors border border-primary/20"
+          className="flex items-center gap-1.5 text-xs font-mono font-medium text-blue-600 dark:text-blue-400 hover:underline bg-blue-500/10 hover:bg-blue-500/20 px-3 py-1.5 rounded-lg transition-colors border border-blue-500/20"
         >
           <span>{t("template.visitOfficial")}</span>
           <ArrowUpRight className="h-3.5 w-3.5" />
@@ -110,7 +121,7 @@ export function SitePageTemplate({
       {/* 站点 Hero 标头 */}
       <div className="space-y-3">
         <div className="flex items-center gap-2 flex-wrap">
-          <Badge className="bg-primary text-primary-foreground font-mono text-xs">
+          <Badge className="bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono text-xs">
             {site.badge}
           </Badge>
           <Badge variant="outline" className="font-mono text-xs">
@@ -168,13 +179,13 @@ export function SitePageTemplate({
                 onClick={() => setCategoryFilter(tab.id)}
                 className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap ${
                   active
-                    ? "bg-background text-foreground shadow-xs font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                    : "text-muted-foreground hover:text-foreground border border-transparent"
                 }`}
               >
                 {tab.icon}
                 <span>{tab.label}</span>
-                <span className={`text-[10px] px-1 rounded-full ${active ? "bg-muted font-mono" : "text-muted-foreground/60"}`}>
+                <span className={`text-[10px] px-1 rounded-full ${active ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-mono font-semibold" : "text-muted-foreground/60"}`}>
                   {tab.count}
                 </span>
               </button>

@@ -10,10 +10,10 @@ import { Button } from "@/components/ui/button";
 import { Compass, BookOpen, Layers, ExternalLink } from "lucide-react";
 
 const featureLinks = [
-  { title: "表单交互体系", href: "/forms", desc: "按钮、输入框、滑块与选项组" },
-  { title: "布局组织结构", href: "/layout", desc: "卡片、折叠面板与可调整区域" },
-  { title: "浮层交互组件", href: "/overlay", desc: "弹窗、抽屉与气泡说明" },
-  { title: "数据可视化呈现", href: "/data", desc: "表格、统计图表与日历" },
+  { title: "表单交互体系", href: "/shadcn/forms", desc: "按钮、输入框、滑块与选项组" },
+  { title: "布局组织结构", href: "/shadcn/layout", desc: "卡片、折叠面板与可调整区域" },
+  { title: "浮层交互组件", href: "/shadcn/overlay", desc: "弹窗、抽屉与气泡说明" },
+  { title: "数据可视化呈现", href: "/shadcn/data", desc: "表格、统计图表与日历" },
 ];
 
 export default function NavigationPage() {
@@ -38,7 +38,7 @@ export default function NavigationPage() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/navigation">导航架构</BreadcrumbLink>
+                  <BreadcrumbLink href="/shadcn/navigation">导航架构</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>

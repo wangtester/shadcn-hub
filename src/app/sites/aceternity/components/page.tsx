@@ -53,8 +53,10 @@ export default function AceternityComponentsPage() {
               <button
                 key={c}
                 onClick={() => setLampColor(c)}
-                className={`text-[10px] px-2 py-0.5 rounded font-mono uppercase transition-colors ${
-                  lampColor === c ? "bg-primary text-primary-foreground font-bold" : "bg-muted text-muted-foreground"
+                className={`text-[10px] px-2 py-0.5 rounded font-mono uppercase transition-colors border ${
+                  lampColor === c
+                    ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold border-blue-500/30"
+                    : "bg-muted text-muted-foreground border-transparent"
                 }`}
               >
                 {c}

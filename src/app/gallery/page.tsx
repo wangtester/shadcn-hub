@@ -156,13 +156,13 @@ export default function GalleryPage() {
                   onClick={() => setSelectedCategory(tab.id)}
                   className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap ${
                     active
-                      ? "bg-background text-foreground shadow-xs font-semibold"
-                      : "text-muted-foreground hover:text-foreground"
+                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                      : "text-muted-foreground hover:text-foreground border border-transparent"
                   }`}
                 >
                   {tab.icon}
                   <span>{tab.label}</span>
-                  <span className={`text-[10px] px-1 py-0.2 rounded-full ${active ? "bg-muted font-mono" : "text-muted-foreground/60"}`}>
+                  <span className={`text-[10px] px-1 py-0.2 rounded-full ${active ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-mono font-semibold" : "text-muted-foreground/60"}`}>
                     {tab.count}
                   </span>
                 </button>

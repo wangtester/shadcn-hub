@@ -1636,7 +1636,9 @@ function TwentyFirstDockDemo() {
             key={item}
             onClick={() => setActive(item)}
             className={`px-3 py-1.5 rounded-full text-xs font-mono font-medium transition-all ${
-              active === item ? "bg-primary text-primary-foreground shadow-xs" : "hover:bg-muted text-muted-foreground"
+              active === item
+                ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                : "hover:bg-muted text-muted-foreground border border-transparent"
             }`}
           >
             {item}
@@ -2408,7 +2410,7 @@ function ShadcnCalendarDemo() {
             key={day}
             onClick={() => setSelectedDay(day)}
             className={`p-1 rounded-md transition-colors font-mono ${
-              selectedDay === day ? "bg-primary text-primary-foreground font-bold" : "hover:bg-muted"
+              selectedDay === day ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold border border-blue-500/30" : "hover:bg-muted"
             }`}
           >
             {day}
@@ -2872,13 +2874,13 @@ function ShadcnIoAccessTokensDemo() {
         <div className="flex gap-1">
           <button
             onClick={() => setPerm("read")}
-            className={`px-2 py-0.5 rounded text-[10px] font-mono ${perm === "read" ? "bg-primary text-primary-foreground font-bold" : "bg-muted text-muted-foreground"}`}
+            className={`px-2 py-0.5 rounded text-[10px] font-mono ${perm === "read" ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold border border-blue-500/30" : "bg-muted text-muted-foreground border border-transparent"}`}
           >
             Read Only
           </button>
           <button
             onClick={() => setPerm("write")}
-            className={`px-2 py-0.5 rounded text-[10px] font-mono ${perm === "write" ? "bg-primary text-primary-foreground font-bold" : "bg-muted text-muted-foreground"}`}
+            className={`px-2 py-0.5 rounded text-[10px] font-mono ${perm === "write" ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold border border-blue-500/30" : "bg-muted text-muted-foreground border border-transparent"}`}
           >
             Read & Write
           </button>

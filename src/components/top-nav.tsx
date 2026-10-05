@@ -429,7 +429,7 @@ export function TopNav() {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
 
-  const isEcosystemActive = pathname.startsWith("/sites/") || pathname.startsWith("/shadcn");
+  const isEcosystemActive = pathname.startsWith("/sites/");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-2xs overflow-x-clip">
@@ -523,7 +523,7 @@ export function TopNav() {
                   className={cn(
                     "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
                     isEcosystemActive && !pathname.startsWith("/gallery")
-                      ? "bg-blue-50 text-blue-600 border-blue-200 dark:bg-blue-950/50 dark:text-blue-400 dark:border-blue-800 font-semibold"
+                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20 font-semibold"
                       : "border-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
                   )}
                 >
@@ -533,8 +533,8 @@ export function TopNav() {
                     className={cn(
                       "text-[10px] px-1.5 py-0.2 rounded-full font-bold",
                       isEcosystemActive && !pathname.startsWith("/gallery")
-                        ? "bg-blue-600/15 text-blue-600 dark:text-blue-400"
-                        : "bg-primary/10 text-primary"
+                        ? "bg-blue-500/15 text-blue-600 dark:text-blue-400"
+                        : "bg-muted text-foreground/80"
                     )}
                   >
                     28
@@ -799,7 +799,7 @@ export function TopNav() {
                             onClick={() => setMobileOpen(false)}
                             className={cn(
                               "flex items-center justify-between p-2 rounded-lg text-xs hover:bg-muted/70 transition-colors",
-                              pathname.startsWith(site.href) && "bg-blue-50 dark:bg-blue-950/60 font-bold text-blue-600 dark:text-blue-400"
+                              site.href !== "/shadcn" && pathname.startsWith(site.href) && "bg-blue-500/10 font-bold text-blue-600 dark:text-blue-400"
                             )}
                           >
                             <span className="truncate">{site.title}</span>

@@ -101,8 +101,8 @@ export default function ShadcnStoreDataTablesPage() {
                   onClick={() => setStatusFilter(st)}
                   className={`text-xs px-2.5 py-1 rounded-md font-medium transition-colors ${
                     statusFilter === st
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:bg-muted"
+                      ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20 shadow-2xs"
+                      : "text-muted-foreground hover:bg-muted border border-transparent"
                   }`}
                 >
                   {st === "All" ? "全部" : st}
