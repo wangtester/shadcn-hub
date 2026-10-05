@@ -193,7 +193,7 @@ export default function GalleryPage() {
               onClick={() => setSelectedSite("all")}
               className={`px-2.5 py-1 rounded-lg text-xs font-mono shrink-0 transition-all cursor-pointer ${
                 selectedSite === "all"
-                  ? "bg-primary text-primary-foreground font-semibold shadow-xs"
+                  ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20"
                   : "bg-muted/50 hover:bg-muted text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -209,7 +209,7 @@ export default function GalleryPage() {
                   onClick={() => setSelectedSite(site.id)}
                   className={`px-2.5 py-1 rounded-lg text-xs font-mono shrink-0 transition-all cursor-pointer flex items-center gap-1 ${
                     isSelected
-                      ? "bg-primary text-primary-foreground font-semibold shadow-xs"
+                      ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20"
                       : "bg-muted/40 hover:bg-muted text-muted-foreground hover:text-foreground border border-transparent hover:border-border"
                   }`}
                 >

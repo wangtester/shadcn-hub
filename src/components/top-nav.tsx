@@ -437,7 +437,7 @@ export function TopNav() {
         {/* 左侧：Logo 标识与主导航 */}
         <div className="flex items-center gap-3 lg:gap-6 min-w-0">
           <Link href="/" className="flex items-center gap-2 font-bold text-sm md:text-base group shrink-0">
-            <div className="h-7 w-7 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
+            <div className="h-7 w-7 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-xs shadow-blue-500/20 group-hover:scale-105 transition-transform">
               <Layers className="h-4 w-4" />
             </div>
             <div className="flex items-center gap-2">
@@ -452,7 +452,7 @@ export function TopNav() {
               className={cn(
                 "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium shrink-0",
                 pathname === "/"
-                  ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                  ? "bg-blue-600 text-white shadow-xs font-semibold shadow-blue-500/20"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
@@ -465,13 +465,20 @@ export function TopNav() {
               className={cn(
                 "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname.startsWith("/shadcn")
-                  ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                  ? "bg-blue-600 text-white shadow-xs font-semibold shadow-blue-500/20"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
               <Box className="h-3.5 w-3.5 shrink-0" />
               <span>{t("nav.official")}</span>
-              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-muted text-foreground/80 font-mono font-semibold">
+              <span
+                className={cn(
+                  "text-[10px] px-1.5 py-0.2 rounded-full font-mono font-semibold transition-colors",
+                  pathname.startsWith("/shadcn")
+                    ? "bg-white/20 text-white"
+                    : "bg-muted text-foreground/80"
+                )}
+              >
                 64
               </span>
             </Link>
@@ -482,13 +489,25 @@ export function TopNav() {
               className={cn(
                 "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname.startsWith("/gallery")
-                  ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                  ? "bg-blue-600 text-white shadow-xs font-semibold shadow-blue-500/20"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <Sparkles className="h-3.5 w-3.5 text-amber-500 shrink-0" />
+              <Sparkles
+                className={cn(
+                  "h-3.5 w-3.5 shrink-0",
+                  pathname.startsWith("/gallery") ? "text-amber-300" : "text-amber-500"
+                )}
+              />
               <span>{t("nav.gallery")}</span>
-              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono font-bold">
+              <span
+                className={cn(
+                  "text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold transition-colors",
+                  pathname.startsWith("/gallery")
+                    ? "bg-white/20 text-white"
+                    : "bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                )}
+              >
                 {t("nav.galleryBadge")}
               </span>
             </Link>
@@ -504,13 +523,20 @@ export function TopNav() {
                   className={cn(
                     "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 cursor-pointer outline-hidden border",
                     isEcosystemActive && !pathname.startsWith("/gallery")
-                      ? "bg-primary/15 text-primary border-primary/30 font-semibold"
+                      ? "bg-blue-50 text-blue-600 border-blue-200 dark:bg-blue-950/50 dark:text-blue-400 dark:border-blue-800 font-semibold"
                       : "border-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
                   )}
                 >
                   <Grid className="h-3.5 w-3.5 shrink-0" />
                   <span>{t("nav.sources")}</span>
-                  <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-primary/10 text-primary font-bold">
+                  <span
+                    className={cn(
+                      "text-[10px] px-1.5 py-0.2 rounded-full font-bold",
+                      isEcosystemActive && !pathname.startsWith("/gallery")
+                        ? "bg-blue-600/15 text-blue-600 dark:text-blue-400"
+                        : "bg-primary/10 text-primary"
+                    )}
+                  >
                     28
                   </span>
                   <ChevronDown
@@ -551,7 +577,7 @@ export function TopNav() {
                                 className={cn(
                                   "flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs transition-colors group/item",
                                   isCurrent
-                                    ? "bg-primary text-primary-foreground font-semibold shadow-2xs"
+                                    ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20"
                                     : "text-muted-foreground hover:bg-muted hover:text-foreground"
                                 )}
                               >
@@ -560,7 +586,7 @@ export function TopNav() {
                                     className={cn(
                                       "shrink-0 h-3.5 w-3.5",
                                       isCurrent
-                                        ? "text-primary-foreground"
+                                        ? "text-white"
                                         : "text-muted-foreground group-hover/item:text-foreground"
                                     )}
                                   >
@@ -572,9 +598,9 @@ export function TopNav() {
                                 </div>
                                 <span
                                   className={cn(
-                                    "text-[9px] font-mono px-1 py-0.2 rounded-sm shrink-0 ml-1",
+                                    "text-[9px] font-mono px-1 py-0.2 rounded-sm shrink-0 ml-1 transition-colors",
                                     isCurrent
-                                      ? "bg-primary-foreground/20 text-primary-foreground"
+                                      ? "bg-white/20 text-white"
                                       : "bg-muted text-muted-foreground/80 group-hover/item:bg-muted-foreground/15"
                                   )}
                                 >
@@ -596,7 +622,7 @@ export function TopNav() {
                     <Link
                       href="/gallery"
                       onClick={() => setPopoverOpen(false)}
-                      className="font-medium text-primary hover:underline flex items-center gap-1 text-xs"
+                      className="font-medium text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 text-xs"
                     >
                       <span>{t("nav.enterGallery")}</span>
                       <ArrowRight className="h-3 w-3" />
@@ -612,7 +638,7 @@ export function TopNav() {
               className={cn(
                 "px-2.5 lg:px-3 py-1.5 rounded-lg transition-all font-medium flex items-center gap-1.5 shrink-0",
                 pathname === "/tools"
-                  ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                  ? "bg-blue-600 text-white shadow-xs font-semibold shadow-blue-500/20"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
@@ -666,7 +692,7 @@ export function TopNav() {
             <SheetContent side="right" className="w-[320px] sm:w-[360px] p-6 overflow-y-auto">
               <SheetHeader className="pb-4 border-b text-left">
                 <SheetTitle className="flex items-center gap-2 text-base font-bold">
-                  <div className="h-6 w-6 rounded-lg bg-primary text-primary-foreground flex items-center justify-center">
+                  <div className="h-6 w-6 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-xs shadow-blue-500/20">
                     <Layers className="h-3.5 w-3.5" />
                   </div>
                   <span>shadcn-hub</span>
@@ -683,8 +709,8 @@ export function TopNav() {
                     href="/"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
-                      pathname === "/" ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium transition-colors",
+                      pathname === "/" ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20" : "hover:bg-muted"
                     )}
                   >
                     <span>{t("nav.home")}</span>
@@ -694,15 +720,23 @@ export function TopNav() {
                     href="/gallery"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
-                      pathname.startsWith("/gallery") ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium transition-colors",
+                      pathname.startsWith("/gallery") ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20" : "hover:bg-muted"
                     )}
                   >
                     <span className="flex items-center gap-2">
-                      <Sparkles className="h-4 w-4 text-amber-500" />
+                      <Sparkles className={cn("h-4 w-4", pathname.startsWith("/gallery") ? "text-amber-300" : "text-amber-500")} />
                       <span>{isEn ? "Live Gallery (28 Sources)" : "全景画廊 (28 源站实机)"}</span>
                     </span>
-                    <Badge variant="outline" className="text-[10px] text-amber-500 border-amber-500/30">
+                    <Badge
+                      variant="outline"
+                      className={cn(
+                        "text-[10px]",
+                        pathname.startsWith("/gallery")
+                          ? "bg-white/20 text-white border-white/30"
+                          : "text-amber-500 border-amber-500/30"
+                      )}
+                    >
                       Live
                     </Badge>
                   </Link>
@@ -711,23 +745,30 @@ export function TopNav() {
                     href="/shadcn"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
-                      pathname.startsWith("/shadcn") ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium transition-colors",
+                      pathname.startsWith("/shadcn") ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20" : "hover:bg-muted"
                     )}
                   >
                     <span className="flex items-center gap-2">
                       <Box className="h-4 w-4" />
                       <span>{t("nav.official64")}</span>
                     </span>
-                    <span className="text-[11px] font-mono opacity-80">64</span>
+                    <span
+                      className={cn(
+                        "text-[11px] font-mono",
+                        pathname.startsWith("/shadcn") ? "text-white/90" : "opacity-80"
+                      )}
+                    >
+                      64
+                    </span>
                   </Link>
 
                   <Link
                     href="/tools"
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium",
-                      pathname === "/tools" ? "bg-primary text-primary-foreground font-semibold" : "hover:bg-muted"
+                      "flex items-center justify-between p-2.5 rounded-xl text-xs font-medium transition-colors",
+                      pathname === "/tools" ? "bg-blue-600 text-white font-semibold shadow-xs shadow-blue-500/20" : "hover:bg-muted"
                     )}
                   >
                     <span className="flex items-center gap-2">
@@ -758,7 +799,7 @@ export function TopNav() {
                             onClick={() => setMobileOpen(false)}
                             className={cn(
                               "flex items-center justify-between p-2 rounded-lg text-xs hover:bg-muted/70 transition-colors",
-                              pathname.startsWith(site.href) && "bg-muted font-bold text-primary"
+                              pathname.startsWith(site.href) && "bg-blue-50 dark:bg-blue-950/60 font-bold text-blue-600 dark:text-blue-400"
                             )}
                           >
                             <span className="truncate">{site.title}</span>

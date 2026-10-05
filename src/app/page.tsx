@@ -472,7 +472,7 @@ export default function HomeHubPage() {
     <div className="container mx-auto px-4 md:px-8 py-10 md:py-16 max-w-6xl space-y-12 max-w-full overflow-x-clip">
       {/* 1. 极简 Hero 区域 */}
       <section className="text-center space-y-4 max-w-3xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border bg-primary/10 text-primary text-xs font-mono font-medium">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-mono font-medium">
           <Sparkles className="h-3.5 w-3.5" />
           <span>{t("home.badge")}</span>
         </div>
@@ -488,7 +488,7 @@ export default function HomeHubPage() {
         <div className="flex items-center justify-center gap-3 pt-2">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-semibold text-xs md:text-sm shadow-md hover:bg-primary/90 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs md:text-sm shadow-md shadow-blue-500/25 transition-all cursor-pointer"
           >
             <Sparkles className="h-4 w-4" />
             <span>{t("home.ctaGallery")}</span>

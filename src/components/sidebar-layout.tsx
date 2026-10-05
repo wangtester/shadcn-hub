@@ -175,7 +175,7 @@ export function SidebarLayout({
                       className={cn(
                         "flex items-center justify-between px-3 py-2 text-xs md:text-sm font-medium rounded-lg transition-all group",
                         isActive
-                          ? "bg-primary text-primary-foreground shadow-xs font-semibold"
+                          ? "bg-blue-600 text-white shadow-xs font-semibold shadow-blue-500/20"
                           : "text-muted-foreground hover:bg-muted hover:text-foreground"
                       )}
                     >
@@ -183,9 +183,9 @@ export function SidebarLayout({
                         {item.icon && (
                           <span
                             className={cn(
-                              "shrink-0 size-4",
+                              "shrink-0 size-4 transition-colors",
                               isActive
-                                ? "text-primary-foreground"
+                                ? "text-white"
                                 : "text-muted-foreground group-hover:text-foreground"
                             )}
                           >
@@ -197,9 +197,9 @@ export function SidebarLayout({
                       {itemBadge && (
                         <span
                           className={cn(
-                            "text-[10px] px-1.5 py-0.5 rounded-full font-mono font-medium shrink-0 ml-1.5",
+                            "text-[10px] px-1.5 py-0.5 rounded-full font-mono font-medium shrink-0 ml-1.5 transition-colors",
                             isActive
-                              ? "bg-primary-foreground/20 text-primary-foreground"
+                              ? "bg-white/20 text-white"
                               : "bg-muted text-muted-foreground"
                           )}
                         >
@@ -231,7 +231,7 @@ export function SidebarLayout({
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger
             render={
-              <Button size="icon" className="rounded-full shadow-lg h-12 w-12 cursor-pointer">
+              <Button size="icon" className="rounded-full shadow-lg h-12 w-12 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white shadow-blue-500/25">
                 <Menu className="h-5 w-5" />
               </Button>
             }

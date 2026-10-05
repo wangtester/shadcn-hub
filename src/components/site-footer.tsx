@@ -12,7 +12,7 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* 左侧：项目标识 */}
         <div className="flex items-center gap-3">
-          <div className="h-7 w-7 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shrink-0 shadow-xs">
+          <div className="h-7 w-7 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs shadow-blue-500/20">
             <Layers className="h-4 w-4" />
           </div>
           <div className="flex items-center gap-2">
