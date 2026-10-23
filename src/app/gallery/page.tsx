@@ -176,7 +176,7 @@ export default function GalleryPage() {
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span className="flex items-center gap-1.5 font-medium">
               <Compass className="h-3.5 w-3.5 text-primary" />
-              <span>{isEn ? "Filter by Source (28 Target Sources):" : "按来源站点筛选 (28 个源站)："}</span>
+              <span>{isEn ? `Filter by Source (${SITES_METADATA.length} Target Sources):` : `按来源站点筛选 (${SITES_METADATA.length} 个源站)：`}</span>
             </span>
             {(selectedSite !== "all" || selectedCategory !== "all" || search) && (
               <button

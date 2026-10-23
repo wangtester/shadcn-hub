@@ -24,8 +24,8 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.officialBadge": "64",
     "nav.gallery": "Live Gallery",
     "nav.galleryBadge": "Live",
-    "nav.sources": "28 Target Sources",
-    "nav.sourcesCount": "28",
+    "nav.sources": "31 Target Sources",
+    "nav.sourcesCount": "31",
     "nav.tools": "Design Tools",
     "nav.star": "Star on GitHub",
     "nav.theme": "Toggle Theme",
@@ -35,10 +35,10 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.searchPlaceholder": "Search components, sites, tools...",
     "nav.mobileMenu": "Open Menu",
     "nav.enterGallery": "Enter Live Gallery",
-    "nav.sourcesSub": "28 Mainstream Sources · 100% In-Place Interactive",
+    "nav.sourcesSub": "31 Mainstream Sources · 100% In-Place Interactive",
     "nav.official64": "Official 64 Components",
     "nav.toolsBox": "Designer Toolbox",
-    "nav.allSourcesList": "All 28 UI Target Sources",
+    "nav.allSourcesList": "All 31 UI Target Sources",
 
     // Ecosystem Mega Menu Groups
     "eco.group.motion": "Motion & Cutting-Edge Visuals",
@@ -63,9 +63,9 @@ const translations: Record<Locale, Record<string, string>> = {
     "search.groupStyles": "Design Styles & Norms",
 
     // Home Page
-    "home.badge": "28 UI Sources Panorama Discovery & In-Place Rendering",
+    "home.badge": "31 UI Sources Panorama Discovery & In-Place Rendering",
     "home.title": "shadcn Ecosystem Components & Blocks Gallery",
-    "home.desc": "Complete collection of 28 mainstream UI sites, encompassing atomic components, composite blocks, and full-page templates. Zero secondary page jumps — 100% real interactive live rendering in cards with official links.",
+    "home.desc": "Complete collection of 31 mainstream UI sites, encompassing atomic components, composite blocks, and full-page templates. Zero secondary page jumps — 100% real interactive live rendering in cards with official links.",
     "home.ctaGallery": "Enter Live Gallery",
     "home.ctaOfficial": "Official 64 Components",
     "home.tabAll": "All",
@@ -78,11 +78,11 @@ const translations: Record<Locale, Record<string, string>> = {
 
     // Gallery Page
     "gallery.badge": "Live Component & Block Gallery",
-    "gallery.sub": "28 Target Sources Full Coverage · 100% In-Place Interactive Live Rendering",
+    "gallery.sub": "31 Target Sources Full Coverage · 100% In-Place Interactive Live Rendering",
     "gallery.title": "Panorama Live Component Gallery",
-    "gallery.desc": "Real-time in-place interactive sandbox for 28 mainstream UI sources. Switch libraries, categories, and test live states with zero external jumps.",
+    "gallery.desc": "Real-time in-place interactive sandbox for 31 mainstream UI sources. Switch libraries, categories, and test live states with zero external jumps.",
     "gallery.searchPlaceholder": "Search component, block, tag or site...",
-    "gallery.filterAllSites": "All 28 Sources",
+    "gallery.filterAllSites": "All 31 Sources",
     "gallery.filterAllCategories": "All Resource Categories",
     "gallery.filterAllStatus": "All Statuses",
     "gallery.statusCollected": "Collected & Adapted",
@@ -189,8 +189,8 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.officialBadge": "64",
     "nav.gallery": "全景画廊",
     "nav.galleryBadge": "实机预览",
-    "nav.sources": "28 目标源站",
-    "nav.sourcesCount": "28",
+    "nav.sources": "31 目标源站",
+    "nav.sourcesCount": "31",
     "nav.tools": "设计工具",
     "nav.star": "Star on GitHub",
     "nav.theme": "切换主题",
@@ -200,10 +200,10 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.searchPlaceholder": "搜索全站组件与源站...",
     "nav.mobileMenu": "打开移动端主菜单",
     "nav.enterGallery": "进入全景画廊",
-    "nav.sourcesSub": "28 大主流源站 · 100% 原地真实交互运行",
+    "nav.sourcesSub": "31 大主流源站 · 100% 原地真实交互运行",
     "nav.official64": "官方 64 组件",
     "nav.toolsBox": "设计工具箱",
-    "nav.allSourcesList": "28 大 UI 目标源站",
+    "nav.allSourcesList": "31 大 UI 目标源站",
 
     // Ecosystem Mega Menu Groups
     "eco.group.motion": "动效与前沿视觉",
@@ -228,9 +228,9 @@ const translations: Record<Locale, Record<string, string>> = {
     "search.groupStyles": "设计流派与规范",
 
     // Home Page
-    "home.badge": "28 大 UI 资源全景发现与原地渲染",
+    "home.badge": "31 大 UI 资源全景发现与原地渲染",
     "home.title": "shadcn 生态全景组件与区块画廊",
-    "home.desc": "完整收录 28 个主流 UI 站点，包含原子组件、复合区块与整页模板。严禁跳转二级页面，卡片内 100% 真实交互运行，附带原站直达外链。",
+    "home.desc": "完整收录 31 个主流 UI 站点，包含原子组件、复合区块与整页模板。严禁跳转二级页面，卡片内 100% 真实交互运行，附带原站直达外链。",
     "home.ctaGallery": "进入全景原生画廊 (Live Gallery)",
     "home.ctaOfficial": "官方 64 组件",
     "home.tabAll": "全部",
@@ -243,11 +243,11 @@ const translations: Record<Locale, Record<string, string>> = {
 
     // Gallery Page
     "gallery.badge": "Live Component & Block Gallery",
-    "gallery.sub": "28 大源站全景覆盖 · 100% 原地交互实机渲染",
+    "gallery.sub": "31 大源站全景覆盖 · 100% 原地交互实机渲染",
     "gallery.title": "全景原生实机组件画廊",
-    "gallery.desc": "汇聚 28 大主流 UI 源站的真实代码运行沙盒。任意切换站点库、分类与交互状态，卡片内原地 100% 实机响应与原站直达。",
+    "gallery.desc": "汇聚 31 大主流 UI 源站的真实代码运行沙盒。任意切换站点库、分类与交互状态，卡片内原地 100% 实机响应与原站直达。",
     "gallery.searchPlaceholder": "搜索组件、区块、标签或来源站点...",
-    "gallery.filterAllSites": "全部 28 大源站",
+    "gallery.filterAllSites": "全部 31 大源站",
     "gallery.filterAllCategories": "全部资源分类",
     "gallery.filterAllStatus": "全部状态",
     "gallery.statusCollected": "已收录并实装",

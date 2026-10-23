@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wangtester.github.io/shadcn-hub"),
   title: "shadcn-hub · shadcn Ecosystem Components & Blocks Gallery",
-  description: "Curated collection of 64 official shadcn/ui components and 28 mainstream UI ecosystem libraries with 100% interactive live preview.",
+  description: "Curated collection of 64 official shadcn/ui components and 31 mainstream UI ecosystem libraries with 100% interactive live preview.",
   keywords: [
     "shadcn",
     "shadcn/ui",
@@ -36,13 +36,16 @@ export const metadata: Metadata = {
     "BoardUI",
     "ShadcnStore",
     "Refero Design",
+    "Arc UI",
+    "Bencho",
+    "Coss UI",
     "Designer Tools",
     "Bento Grid",
   ],
   authors: [{ name: "wangtester" }],
   openGraph: {
     title: "shadcn-hub · shadcn Ecosystem Components & Blocks Gallery",
-    description: "Curated collection of 64 official components and 28 mainstream UI libraries with 100% live interactive rendering.",
+    description: "Curated collection of 64 official components and 31 mainstream UI libraries with 100% live interactive rendering.",
     url: "https://github.com/wangtester/shadcn-hub",
     siteName: "shadcn-hub",
     images: [
@@ -59,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "shadcn-hub · shadcn Ecosystem Components & Blocks Matrix",
-    description: "64 official core components, 28 top UI libraries, and designer toolbox with 100% in-place interactive sandbox",
+    description: "64 official core components, 31 top UI libraries, and designer toolbox with 100% in-place interactive sandbox",
     images: ["/og-image.jpg"],
   },
 };

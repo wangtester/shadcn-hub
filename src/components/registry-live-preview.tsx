@@ -288,6 +288,36 @@ function PreviewSwitch({ componentKey }: LivePreviewProps) {
     case "shadcnstudio-pricing":
       return <ShadcnStudioPricingDemo />;
 
+    // 29. Arc UI (uiarc.dev)
+    case "uiarc-action-group":
+      return <ArcActionGroupDemo />;
+    case "uiarc-code-block":
+      return <ArcCodeBlockDemo />;
+    case "uiarc-image-compare":
+      return <ArcImageCompareDemo />;
+    case "uiarc-schedule-block":
+      return <ArcScheduleBlockDemo />;
+
+    // 30. Bencho (bencho.dev)
+    case "bencho-dynamic-island":
+      return <BenchoDynamicIslandDemo />;
+    case "bencho-magnetic-select":
+      return <BenchoMagneticSelectDemo />;
+    case "bencho-slosh-slider":
+      return <BenchoSloshSliderDemo />;
+    case "bencho-liquid-toggle":
+      return <BenchoLiquidToggleDemo />;
+
+    // 31. Coss UI (coss.com/ui)
+    case "coss-particles-accordion":
+      return <CossParticlesAccordionDemo />;
+    case "coss-auth-flow":
+      return <CossAuthFlowDemo />;
+    case "coss-filter-pills":
+      return <CossFilterPillsDemo />;
+    case "coss-stepper":
+      return <CossStepperDemo />;
+
 
     // Extra Rich Components
     case "shadcn-calendar":
@@ -2388,6 +2418,671 @@ function ShadcnStudioPricingDemo() {
   );
 }
 
+
+/* ========================================================================= */
+/* 29. Arc UI (uiarc.dev)                                                    */
+/* ========================================================================= */
+
+function ArcActionGroupDemo() {
+  const [activeAction, setActiveAction] = useState<string | null>(null);
+  const [running, setRunning] = useState(false);
+
+  const handleAction = (name: string) => {
+    setActiveAction(name);
+    if (name === "Run MCP Tool") {
+      setRunning(true);
+      setTimeout(() => setRunning(false), 1500);
+    }
+  };
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-1.5 font-semibold text-foreground">
+          <Sparkles className="h-3.5 w-3.5 text-blue-500" />
+          <span>Arc UI Agent Action Group</span>
+        </div>
+        <Badge variant="outline" className="text-[10px] bg-blue-500/10 text-blue-500 border-blue-500/20 font-mono">
+          MCP Ready
+        </Badge>
+      </div>
+
+      <div className="inline-flex items-center p-1 rounded-xl bg-muted/60 border shadow-2xs gap-1">
+        <button
+          onClick={() => handleAction("Run MCP Tool")}
+          disabled={running}
+          className="px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 cursor-pointer bg-blue-600 text-white hover:bg-blue-700 shadow-2xs"
+        >
+          {running ? <RotateCcw className="h-3 w-3 animate-spin" /> : <Play className="h-3 w-3" />}
+          <span>{running ? "Executing..." : "Run Tool"}</span>
+        </button>
+        <button
+          onClick={() => handleAction("Copy Spec")}
+          className="px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 cursor-pointer hover:bg-background text-muted-foreground hover:text-foreground"
+        >
+          <Copy className="h-3 w-3" />
+          <span>Copy</span>
+        </button>
+        <button
+          onClick={() => handleAction("Schema Diff")}
+          className="px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 cursor-pointer hover:bg-background text-muted-foreground hover:text-foreground"
+        >
+          <GitPullRequest className="h-3 w-3" />
+          <span>Diff</span>
+        </button>
+      </div>
+
+      {activeAction && (
+        <div className="text-[11px] text-muted-foreground flex items-center gap-1 font-mono pt-1 border-t">
+          <CheckCircle2 className="h-3 w-3 text-emerald-500 shrink-0" />
+          <span>Triggered: {activeAction}</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ArcCodeBlockDemo() {
+  const [tab, setTab] = useState<"ts" | "json">("ts");
+  const [copied, setCopied] = useState(false);
+
+  const tsCode = `// Arc UI MCP Agent Integration
+import { defineTool } from "@uiarc/agent";
+
+export const buttonTool = defineTool({
+  name: "renderArcButton",
+  schema: { variant: "glow", size: "sm" }
+});`;
+
+  const jsonCode = `{
+  "$schema": "https://uiarc.dev/schema.json",
+  "name": "ArcUI-MCP",
+  "version": "1.4.0",
+  "shadcnIntegration": true
+}`;
+
+  const handleCopy = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="p-3 rounded-xl border bg-slate-950 text-slate-100 font-mono text-xs space-y-2">
+      <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+        <div className="flex items-center gap-1.5">
+          <button
+            onClick={() => setTab("ts")}
+            className={`px-2 py-0.5 rounded text-[11px] font-sans ${tab === "ts" ? "bg-blue-500/20 text-blue-400 font-semibold" : "text-slate-400 hover:text-slate-200"}`}
+          >
+            agent.ts
+          </button>
+          <button
+            onClick={() => setTab("json")}
+            className={`px-2 py-0.5 rounded text-[11px] font-sans ${tab === "json" ? "bg-blue-500/20 text-blue-400 font-semibold" : "text-slate-400 hover:text-slate-200"}`}
+          >
+            mcp.json
+          </button>
+        </div>
+        <button
+          onClick={handleCopy}
+          className="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] flex items-center gap-1 text-slate-300 font-sans cursor-pointer transition-colors"
+        >
+          {copied ? <Check className="h-3 w-3 text-emerald-400" /> : <Copy className="h-3 w-3" />}
+          <span>{copied ? "Copied" : "Copy"}</span>
+        </button>
+      </div>
+      <pre className="text-[11px] leading-relaxed text-slate-300 overflow-x-auto py-1">
+        {tab === "ts" ? tsCode : jsonCode}
+      </pre>
+    </div>
+  );
+}
+
+function ArcImageCompareDemo() {
+  const [sliderPos, setSliderPos] = useState(52);
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-2.5">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Arc UI Dual Preview Comparison</span>
+        <Badge variant="outline" className="text-[10px] font-mono">Split: {sliderPos}%</Badge>
+      </div>
+
+      <div className="relative h-24 w-full rounded-lg overflow-hidden border select-none bg-muted/40">
+        {/* Left Side (Raw / Before) */}
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 text-slate-400">
+          <div className="text-center space-y-1">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500">Unstyled Raw</span>
+            <div className="px-3 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-mono">HTML Button</div>
+          </div>
+        </div>
+
+        {/* Right Side (Polished Arc UI) */}
+        <div
+          className="absolute inset-y-0 right-0 overflow-hidden bg-gradient-to-br from-blue-950/90 to-indigo-900/90 flex items-center justify-center text-blue-200"
+          style={{ width: `${100 - sliderPos}%` }}
+        >
+          <div className="text-center space-y-1 min-w-[140px]">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-blue-400">Arc UI Polished</span>
+            <div className="px-3 py-1 rounded-lg bg-blue-600 text-white text-xs font-semibold shadow-lg shadow-blue-500/20 border border-blue-400/30">
+              ✨ Shimmer Button
+            </div>
+          </div>
+        </div>
+
+        {/* Draggable Divider Line */}
+        <div
+          className="absolute inset-y-0 w-0.5 bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)] pointer-events-none"
+          style={{ left: `${sliderPos}%` }}
+        >
+          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-white text-slate-900 flex items-center justify-center shadow-md text-[9px] font-bold">
+            ↔
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-2 pt-1">
+        <span className="text-[10px] text-muted-foreground font-mono">Drag:</span>
+        <input
+          type="range"
+          min="10"
+          max="90"
+          value={sliderPos}
+          onChange={(e) => setSliderPos(Number(e.target.value))}
+          className="w-full h-1.5 bg-muted rounded-lg appearance-none cursor-pointer accent-blue-500"
+        />
+      </div>
+    </div>
+  );
+}
+
+function ArcScheduleBlockDemo() {
+  const [selectedDate, setSelectedDate] = useState("Fri 24");
+  const [selectedSlot, setSelectedSlot] = useState("11:00 AM");
+
+  const dates = ["Thu 23", "Fri 24", "Sat 25", "Sun 26"];
+  const slots = ["09:30 AM", "11:00 AM", "02:15 PM", "04:45 PM"];
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Arc UI Schedule Flow</span>
+        <Badge variant="outline" className="text-[10px] font-mono bg-emerald-500/10 text-emerald-600 border-emerald-500/20">
+          Available
+        </Badge>
+      </div>
+
+      <div className="space-y-1.5">
+        <span className="text-[10px] text-muted-foreground font-mono">1. Select Date</span>
+        <div className="grid grid-cols-4 gap-1.5">
+          {dates.map((d) => (
+            <button
+              key={d}
+              onClick={() => setSelectedDate(d)}
+              className={`p-1.5 rounded-lg text-center font-mono text-[11px] transition-all border cursor-pointer ${
+                selectedDate === d
+                  ? "bg-blue-600 text-white font-semibold border-blue-600 shadow-2xs"
+                  : "bg-muted/40 hover:bg-muted text-foreground border-transparent"
+              }`}
+            >
+              {d}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="space-y-1.5">
+        <span className="text-[10px] text-muted-foreground font-mono">2. Select Time Slot</span>
+        <div className="grid grid-cols-2 gap-1.5">
+          {slots.map((s) => (
+            <button
+              key={s}
+              onClick={() => setSelectedSlot(s)}
+              className={`px-2.5 py-1.5 rounded-lg text-center font-mono text-xs transition-all border cursor-pointer ${
+                selectedSlot === s
+                  ? "bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold border-blue-500/30"
+                  : "bg-muted/30 hover:bg-muted text-muted-foreground hover:text-foreground border-border/40"
+              }`}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="p-2 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-between text-[11px]">
+        <span className="text-blue-600 dark:text-blue-400 font-medium">Booked: {selectedDate} @ {selectedSlot}</span>
+        <Button size="sm" className="h-6 text-[10px] px-2 bg-blue-600 hover:bg-blue-700">Confirm</Button>
+      </div>
+    </div>
+  );
+}
+
+/* ========================================================================= */
+/* 30. Bencho (bencho.dev)                                                    */
+/* ========================================================================= */
+
+function BenchoDynamicIslandDemo() {
+  const [mode, setMode] = useState<"idle" | "flight" | "music" | "call">("flight");
+
+  return (
+    <div className="p-4 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Bencho Dynamic Island</span>
+        <div className="flex items-center gap-1">
+          {(["idle", "flight", "music", "call"] as const).map((m) => (
+            <button
+              key={m}
+              onClick={() => setMode(m)}
+              className={`px-1.5 py-0.5 rounded text-[10px] font-mono capitalize transition-all cursor-pointer ${
+                mode === m ? "bg-primary text-primary-foreground font-semibold" : "bg-muted text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Dynamic Island Capsule Container */}
+      <div className="py-4 flex justify-center items-center">
+        <div className="bg-black text-white rounded-full transition-all duration-300 ease-out shadow-xl border border-white/10 px-4 py-2 flex items-center gap-3">
+          {mode === "idle" && (
+            <div className="flex items-center gap-2 text-xs font-mono">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span>Standby · 92%</span>
+            </div>
+          )}
+
+          {mode === "flight" && (
+            <div className="flex items-center gap-3 text-xs font-mono">
+              <span className="text-amber-400">✈️ BA-249</span>
+              <span className="text-zinc-400 text-[10px]">SFO → JFK</span>
+              <span className="px-1.5 py-0.5 rounded bg-zinc-800 text-[10px] text-emerald-400">2h 14m</span>
+            </div>
+          )}
+
+          {mode === "music" && (
+            <div className="flex items-center gap-2.5 text-xs font-mono">
+              <span className="text-pink-400 animate-bounce">🎵</span>
+              <div className="text-left">
+                <div className="font-medium text-[11px] leading-tight">Midnight City</div>
+                <div className="text-zinc-400 text-[9px]">M83 · Playing</div>
+              </div>
+              <div className="flex items-center gap-0.5 h-3 ml-1">
+                <span className="w-0.5 h-3 bg-pink-400 animate-pulse" />
+                <span className="w-0.5 h-2 bg-pink-400 animate-pulse delay-75" />
+                <span className="w-0.5 h-3.5 bg-pink-400 animate-pulse delay-150" />
+              </div>
+            </div>
+          )}
+
+          {mode === "call" && (
+            <div className="flex items-center gap-3 text-xs font-mono">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                <span className="font-medium text-[11px]">Liam Vance</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <button className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px]">✓</button>
+                <button className="w-5 h-5 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px]">✕</button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      <p className="text-[10px] text-muted-foreground text-center font-mono">Morphing pill capsule with physics spring transitions.</p>
+    </div>
+  );
+}
+
+function BenchoMagneticSelectDemo() {
+  const [selected, setSelected] = useState("Physics");
+  const options = ["Design", "Physics", "Haptics", "Fluid"];
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Bencho Magnetic Select</span>
+        <Badge variant="outline" className="text-[10px] font-mono text-purple-500 border-purple-500/20">
+          Elastic Snap
+        </Badge>
+      </div>
+
+      <div className="p-1 rounded-2xl bg-muted/60 border flex items-center gap-1 shadow-inner">
+        {options.map((opt) => {
+          const isSelected = selected === opt;
+          return (
+            <button
+              key={opt}
+              onClick={() => setSelected(opt)}
+              className={`flex-1 py-1.5 rounded-xl text-center font-mono text-xs transition-all duration-200 cursor-pointer relative ${
+                isSelected
+                  ? "bg-background text-foreground font-semibold shadow-sm border border-border/60"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/40"
+              }`}
+            >
+              {opt}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="p-2 rounded-lg bg-muted/30 border border-border/40 text-[11px] text-muted-foreground flex items-center justify-between font-mono">
+        <span>Active Channel:</span>
+        <span className="text-purple-600 dark:text-purple-400 font-semibold">{selected} Module</span>
+      </div>
+    </div>
+  );
+}
+
+function BenchoSloshSliderDemo() {
+  const [viscosity, setViscosity] = useState(68);
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Bencho Slosh Slider</span>
+        <Badge variant="outline" className="text-[10px] font-mono text-cyan-500 border-cyan-500/20">
+          Fluid: {viscosity}%
+        </Badge>
+      </div>
+
+      <div className="relative h-6 w-full rounded-full bg-muted overflow-hidden border">
+        <div
+          className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 transition-all duration-150"
+          style={{ width: `${viscosity}%` }}
+        />
+        <div className="absolute inset-0 flex items-center justify-center font-mono text-[10px] font-bold text-foreground mix-blend-difference pointer-events-none">
+          DAMPING RATIO: {viscosity}%
+        </div>
+      </div>
+
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value={viscosity}
+        onChange={(e) => setViscosity(Number(e.target.value))}
+        className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-cyan-500"
+      />
+
+      <div className="flex justify-between text-[10px] text-muted-foreground font-mono">
+        <span>Light Inertia</span>
+        <span>Standard</span>
+        <span>High Drag</span>
+      </div>
+    </div>
+  );
+}
+
+function BenchoLiquidToggleDemo() {
+  const [toggled, setToggled] = useState(true);
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Bencho Liquid Toggle</span>
+        <Badge variant="outline" className={`text-[10px] font-mono ${toggled ? "text-emerald-500 border-emerald-500/20" : "text-muted-foreground"}`}>
+          {toggled ? "Active" : "Bypassed"}
+        </Badge>
+      </div>
+
+      <div className="flex items-center justify-between p-3 rounded-lg bg-muted/30 border">
+        <div>
+          <div className="font-medium text-foreground">Haptic Micro-Interaction</div>
+          <div className="text-[11px] text-muted-foreground">Gelatinous squish deformation on switch</div>
+        </div>
+
+        <button
+          onClick={() => setToggled(!toggled)}
+          className={`w-12 h-7 rounded-full p-1 transition-all duration-300 cursor-pointer ${
+            toggled ? "bg-emerald-500" : "bg-zinc-700"
+          }`}
+        >
+          <div
+            className={`w-5 h-5 rounded-full bg-white shadow-md transform transition-transform duration-300 ${
+              toggled ? "translate-x-5 scale-x-110" : "translate-x-0"
+            }`}
+          />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/* ========================================================================= */
+/* 31. Coss UI (coss.com/ui)                                                 */
+/* ========================================================================= */
+
+function CossParticlesAccordionDemo() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const items = [
+    {
+      title: "Base UI Headless Architecture",
+      badge: "Primitive",
+      content: "Unstyled, accessible core from MUI with full keyboard navigation and zero CSS pollution."
+    },
+    {
+      title: "Particles & Atoms Component Matrix",
+      badge: "Particles",
+      content: "Pre-assembled design system patterns built with Tailwind CSS v4 and strict token compliance."
+    },
+    {
+      title: "Cal.com Production Battle-Tested",
+      badge: "Enterprise",
+      content: "Engineered to power millions of scheduling bookings with high reliability and modularity."
+    }
+  ];
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-2.5">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Coss UI Particles Accordion</span>
+        <Badge variant="outline" className="text-[10px] font-mono bg-blue-500/10 text-blue-500 border-blue-500/20">
+          Base UI
+        </Badge>
+      </div>
+
+      <div className="space-y-1.5">
+        {items.map((it, idx) => {
+          const isOpen = openIndex === idx;
+          return (
+            <div key={it.title} className="rounded-lg border bg-background overflow-hidden transition-all">
+              <button
+                onClick={() => setOpenIndex(isOpen ? null : idx)}
+                className="w-full p-2.5 flex items-center justify-between text-left font-medium hover:bg-muted/50 cursor-pointer"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="text-foreground">{it.title}</span>
+                  <Badge variant="secondary" className="text-[9px] font-mono px-1.5 py-0">{it.badge}</Badge>
+                </div>
+                <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isOpen ? "rotate-180" : ""}`} />
+              </button>
+              {isOpen && (
+                <div className="px-2.5 pb-2.5 pt-1 text-[11px] text-muted-foreground border-t bg-muted/10 leading-relaxed font-sans">
+                  {it.content}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function CossAuthFlowDemo() {
+  const [method, setMethod] = useState<"passkey" | "magic">("passkey");
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Coss UI Auth Flow Card</span>
+        <Badge variant="outline" className="text-[10px] font-mono text-emerald-500 border-emerald-500/20">
+          SOC-2 Ready
+        </Badge>
+      </div>
+
+      <div className="p-1 rounded-lg bg-muted/60 border flex gap-1">
+        <button
+          onClick={() => setMethod("passkey")}
+          className={`flex-1 py-1 rounded text-[11px] font-medium transition-all cursor-pointer ${
+            method === "passkey" ? "bg-background shadow-xs text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          Passkey (Biometric)
+        </button>
+        <button
+          onClick={() => setMethod("magic")}
+          className={`flex-1 py-1 rounded text-[11px] font-medium transition-all cursor-pointer ${
+            method === "magic" ? "bg-background shadow-xs text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          Magic Link
+        </button>
+      </div>
+
+      {method === "passkey" ? (
+        <div className="p-3 rounded-lg border bg-muted/20 text-center space-y-2">
+          <div className="w-8 h-8 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto">
+            <Lock className="h-4 w-4" />
+          </div>
+          <div className="text-[11px] font-medium text-foreground">Fast Hardware Passkey Sign-in</div>
+          <Button size="sm" className="w-full h-7 text-xs bg-foreground text-background hover:bg-foreground/90">
+            Verify with Touch ID / YubiKey
+          </Button>
+        </div>
+      ) : (
+        <div className="space-y-2">
+          <input
+            placeholder="developer@company.com"
+            className="w-full px-2.5 py-1.5 rounded-lg border bg-background text-xs outline-none"
+          />
+          <Button size="sm" className="w-full h-7 text-xs bg-blue-600 text-white hover:bg-blue-700">
+            Send Secure Sign-in Link
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CossFilterPillsDemo() {
+  const [activeFilters, setActiveFilters] = useState(["Status: Active", "Role: Admin"]);
+
+  const allFilters = ["Status: Active", "Role: Admin", "Region: US-East", "Plan: Enterprise"];
+
+  const toggleFilter = (f: string) => {
+    if (activeFilters.includes(f)) {
+      setActiveFilters(activeFilters.filter((x) => x !== f));
+    } else {
+      setActiveFilters([...activeFilters, f]);
+    }
+  };
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Coss UI Filter Pill Matrix</span>
+        {activeFilters.length > 0 && (
+          <button
+            onClick={() => setActiveFilters([])}
+            className="text-[10px] text-muted-foreground hover:text-foreground underline cursor-pointer font-mono"
+          >
+            Clear ({activeFilters.length})
+          </button>
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-1.5">
+        {allFilters.map((f) => {
+          const isActive = activeFilters.includes(f);
+          return (
+            <button
+              key={f}
+              onClick={() => toggleFilter(f)}
+              className={`px-2.5 py-1 rounded-full text-xs font-mono transition-all flex items-center gap-1 cursor-pointer border ${
+                isActive
+                  ? "bg-blue-600 text-white border-blue-600 font-medium shadow-2xs"
+                  : "bg-muted/40 hover:bg-muted text-muted-foreground hover:text-foreground border-border/50"
+              }`}
+            >
+              <span>{f}</span>
+              {isActive && <X className="h-3 w-3" />}
+            </button>
+          );
+        })}
+      </div>
+      <p className="text-[10px] text-muted-foreground font-mono">Accessible keyboard navigation filter pills with Base UI.</p>
+    </div>
+  );
+}
+
+function CossStepperDemo() {
+  const [step, setStep] = useState(2);
+  const steps = ["Org", "Workspace", "Members", "Deploy"];
+
+  return (
+    <div className="p-3.5 rounded-xl border bg-card text-xs space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-foreground">Coss UI Stepper Wizard</span>
+        <Badge variant="outline" className="text-[10px] font-mono">
+          Step {step} of 4
+        </Badge>
+      </div>
+
+      <div className="flex items-center justify-between relative">
+        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-muted -translate-y-1/2 z-0" />
+        {steps.map((st, i) => {
+          const idx = i + 1;
+          const isDone = idx < step;
+          const isCurrent = idx === step;
+          return (
+            <div key={st} className="relative z-10 flex flex-col items-center gap-1">
+              <button
+                onClick={() => setStep(idx)}
+                className={`w-6 h-6 rounded-full flex items-center justify-center font-mono text-[10px] font-bold transition-all cursor-pointer ${
+                  isDone
+                    ? "bg-emerald-500 text-white"
+                    : isCurrent
+                    ? "bg-blue-600 text-white ring-2 ring-blue-500/20"
+                    : "bg-muted text-muted-foreground border"
+                }`}
+              >
+                {isDone ? "✓" : idx}
+              </button>
+              <span className={`text-[9px] font-mono ${isCurrent ? "font-bold text-foreground" : "text-muted-foreground"}`}>
+                {st}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="flex justify-between pt-1">
+        <Button
+          size="sm"
+          variant="outline"
+          disabled={step === 1}
+          onClick={() => setStep(step - 1)}
+          className="h-6 text-[10px] px-2"
+        >
+          Back
+        </Button>
+        <Button
+          size="sm"
+          disabled={step === 4}
+          onClick={() => setStep(step + 1)}
+          className="h-6 text-[10px] px-2 bg-blue-600 hover:bg-blue-700"
+        >
+          {step === 4 ? "Complete" : "Next Step"}
+        </Button>
+      </div>
+    </div>
+  );
+}
 
 /* ========================================================================= */
 /* Additional Rich Live Previews for Full 28 Sites                          */

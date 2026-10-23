@@ -285,6 +285,9 @@ This workbench stands on the shoulders of these incredible open-source projects 
 - [Transitions.dev](https://transitions.dev)
 - [BeautifulUI](https://www.beautifului.dev)
 - [ShadcnSpace](https://shadcnspace.com)
+- [Arc UI](https://uiarc.dev)
+- [Bencho](https://bencho.dev)
+- [Coss UI](https://coss.com/ui)
 
 ---
 

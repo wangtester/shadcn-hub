@@ -237,10 +237,10 @@ export const SITES_METADATA: SiteMetadata[] = [
   {
     "id": "origin-ui",
     "name": "Origin UI",
-    "url": "https://coss.com/ui",
+    "url": "https://originui.com",
     "category": "core",
-    "badge": "Base UI演进版",
-    "desc": "基于新兴 Base UI 体系打造的超高可访问性与极简工业风组件集合。",
+    "badge": "Radix演进版",
+    "desc": "基于 Radix UI 与 Tailwind CSS 打造的超高可访问性与极简工业风组件集合。",
     "itemsCount": 33
   },
   {
@@ -278,6 +278,33 @@ export const SITES_METADATA: SiteMetadata[] = [
     "badge": "深色商业套件",
     "desc": "包含 1000+ 免费与 Pro 级的深色科技商业营销区块，支持即插即用复制渲染。",
     "itemsCount": 50
+  },
+  {
+    "id": "coss",
+    "name": "Coss UI",
+    "url": "https://coss.com/ui",
+    "category": "core",
+    "badge": "Base UI架构",
+    "desc": "Cal.com 官方开源设计系统，基于 Base UI 无样式基元与 Tailwind CSS，分为 Primitives、Particles 与 Atoms 三层架构。",
+    "itemsCount": 16
+  },
+  {
+    "id": "uiarc",
+    "name": "Arc UI",
+    "url": "https://uiarc.dev",
+    "category": "motion",
+    "badge": "AI Agent组件库",
+    "desc": "专为 Next.js 与 AI Agent (MCP) 打造的高颜值可交互动效组件与流程区块库，支持即插即用与 shadcn CLI 安装。",
+    "itemsCount": 16
+  },
+  {
+    "id": "bencho",
+    "name": "Bencho",
+    "url": "https://bencho.dev",
+    "category": "motion",
+    "badge": "物理微交互",
+    "desc": "专注拟真物理动效与灵动微交互，包含 Dynamic Island 灵动胶囊、Slosh/Wake 物理流体滑块与磁吸选择器。",
+    "itemsCount": 16
   }
 ];
 
@@ -22426,5 +22453,917 @@ export const REGISTRY_DATA: RegistryItem[] = [
       "Style"
     ],
     "componentKey": "refero-418b374a-demo"
+  },
+  {
+    "id": "uiarc-action-group",
+    "name": "Arc UI Action Group",
+    "nameCn": "Arc UI 微动效操作按钮组",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/action-group",
+    "status": "collected",
+    "description": "专为 AI Agent 和现代 SaaS 打造的带微动效状态反馈操作按钮编组，支持即插即用。",
+    "tags": [
+      "Action",
+      "Button",
+      "MCP",
+      "Agent"
+    ],
+    "componentKey": "uiarc-action-group"
+  },
+  {
+    "id": "uiarc-code-block",
+    "name": "Arc UI Code Block",
+    "nameCn": "Arc UI 多语法高亮代码块",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/code-block",
+    "status": "collected",
+    "description": "具备多语言代码高亮、行号指示、格式切换与一键复制反馈的现代代码展示块。",
+    "tags": [
+      "Code",
+      "Syntax",
+      "Developer",
+      "Copy"
+    ],
+    "componentKey": "uiarc-code-block"
+  },
+  {
+    "id": "uiarc-image-compare",
+    "name": "Arc UI Image Comparison Slider",
+    "nameCn": "Arc UI 图像实时对比滑块",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/image-compare",
+    "status": "collected",
+    "description": "交互式双图滑动对比组件，支持自由拖拽分界线并提供平滑过渡质感。",
+    "tags": [
+      "Media",
+      "Slider",
+      "Comparison",
+      "Interactive"
+    ],
+    "componentKey": "uiarc-image-compare"
+  },
+  {
+    "id": "uiarc-schedule-block",
+    "name": "Arc UI Schedule Booking Block",
+    "nameCn": "Arc UI 多步骤排程预约流区块",
+    "category": "block",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/blocks/schedule",
+    "status": "collected",
+    "description": "用于会议排程、日程预定与时间槽匹配的端到端预约流程复合区块。",
+    "tags": [
+      "Calendar",
+      "Booking",
+      "Block",
+      "Schedule"
+    ],
+    "componentKey": "uiarc-schedule-block"
+  },
+  {
+    "id": "uiarc-data-grid",
+    "name": "Arc UI Data Grid",
+    "nameCn": "Arc UI 高性能极简内联数据网格",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/data-grid",
+    "status": "collected",
+    "description": "轻量快速的数据列表与网格容器，支持行高自适应与即时筛选。",
+    "tags": [
+      "Data",
+      "Table",
+      "Grid",
+      "Base"
+    ],
+    "componentKey": "uiarc-action-group"
+  },
+  {
+    "id": "uiarc-color-picker",
+    "name": "Arc UI Color Picker",
+    "nameCn": "Arc UI 视觉调色与色值拷贝器",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/color-picker",
+    "status": "collected",
+    "description": "支持 HEX/RGB/HSL 色彩空间选择与预设色板快速调用的取色器。",
+    "tags": [
+      "Input",
+      "Color",
+      "Palette",
+      "Form"
+    ],
+    "componentKey": "uiarc-code-block"
+  },
+  {
+    "id": "uiarc-date-picker",
+    "name": "Arc UI Date & Time Picker",
+    "nameCn": "Arc UI 现代日期与时间点选器",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/date-picker",
+    "status": "collected",
+    "description": "支持多时间粒度选择、范围选取与本地化格式化的日期拾取组件。",
+    "tags": [
+      "Date",
+      "Picker",
+      "Form",
+      "Time"
+    ],
+    "componentKey": "uiarc-schedule-block"
+  },
+  {
+    "id": "uiarc-search-input",
+    "name": "Arc UI Animated Search Input",
+    "nameCn": "Arc UI 动效展开搜索输入框",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/search-input",
+    "status": "collected",
+    "description": "支持焦点平滑展开、快捷键呼出与清空按钮的全局搜索输入框。",
+    "tags": [
+      "Search",
+      "Input",
+      "Motion",
+      "Header"
+    ],
+    "componentKey": "uiarc-action-group"
+  },
+  {
+    "id": "uiarc-sparkline-chart",
+    "name": "Arc UI Sparkline Mini Chart",
+    "nameCn": "Arc UI 微型趋势折线图",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/sparkline",
+    "status": "collected",
+    "description": "内联在卡片与数据表行中的紧凑型趋势火花图，展示历史波动轨迹。",
+    "tags": [
+      "Chart",
+      "Analytics",
+      "Trend",
+      "Mini"
+    ],
+    "componentKey": "uiarc-code-block"
+  },
+  {
+    "id": "uiarc-donut-chart",
+    "name": "Arc UI Donut Metric Chart",
+    "nameCn": "Arc UI 环形占比指标图表",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/donut-chart",
+    "status": "collected",
+    "description": "带有中央动态数值显示与悬停微放大的环形占比可视化基元。",
+    "tags": [
+      "Chart",
+      "Metric",
+      "Data",
+      "Donut"
+    ],
+    "componentKey": "uiarc-code-block"
+  },
+  {
+    "id": "uiarc-triage-flow",
+    "name": "Arc UI Onboarding Triage Flow",
+    "nameCn": "Arc UI AI 引导分流流程卡",
+    "category": "block",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/blocks/triage",
+    "status": "collected",
+    "description": "面向新用户接入与意图识别的多向分支分流卡片，支持流畅步进。",
+    "tags": [
+      "Onboarding",
+      "Flow",
+      "AI",
+      "Block"
+    ],
+    "componentKey": "uiarc-schedule-block"
+  },
+  {
+    "id": "uiarc-rich-textarea",
+    "name": "Arc UI Mention Rich Textarea",
+    "nameCn": "Arc UI @ 艾特与补全文本文档域",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/textarea",
+    "status": "collected",
+    "description": "具备智能补全、Markdown 简易高亮与快捷操作的丰富文本输入域。",
+    "tags": [
+      "Text",
+      "Mention",
+      "Editor",
+      "Input"
+    ],
+    "componentKey": "uiarc-action-group"
+  },
+  {
+    "id": "uiarc-password-strength",
+    "name": "Arc UI Password Strength Indicator",
+    "nameCn": "Arc UI 安全等级动效密码框",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/password",
+    "status": "collected",
+    "description": "实时计算熵值并展示动态颜色渐变进度条的安全密码输入框。",
+    "tags": [
+      "Password",
+      "Security",
+      "Form",
+      "Validation"
+    ],
+    "componentKey": "uiarc-action-group"
+  },
+  {
+    "id": "uiarc-badge-status",
+    "name": "Arc UI Status Glow Badge",
+    "nameCn": "Arc UI 微光状态指示徽章",
+    "category": "component",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/components/badge",
+    "status": "collected",
+    "description": "带呼吸灯脉冲效果与渐变背景的微光运行状态徽标。",
+    "tags": [
+      "Badge",
+      "Status",
+      "Glow",
+      "Pulse"
+    ],
+    "componentKey": "uiarc-image-compare"
+  },
+  {
+    "id": "uiarc-agent-console",
+    "name": "Arc UI AI Agent Console Template",
+    "nameCn": "Arc UI 智能体交互控制台模板",
+    "category": "template",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/templates/agent-console",
+    "status": "collected",
+    "description": "专为大模型智能体设计的全套工作台布局，内置提示词区与执行面板。",
+    "tags": [
+      "Agent",
+      "Console",
+      "Template",
+      "Dashboard"
+    ],
+    "componentKey": "uiarc-schedule-block"
+  },
+  {
+    "id": "uiarc-metric-card",
+    "name": "Arc UI Stat Trend Metric Card",
+    "nameCn": "Arc UI 核心指标趋势卡",
+    "category": "block",
+    "siteId": "uiarc",
+    "siteName": "Arc UI",
+    "siteUrl": "https://uiarc.dev",
+    "originUrl": "https://uiarc.dev/blocks/metric-card",
+    "status": "collected",
+    "description": "带有环比增幅百分比、正负色温标识与微缩图的高保真指标卡片。",
+    "tags": [
+      "Metric",
+      "Analytics",
+      "Card",
+      "KPI"
+    ],
+    "componentKey": "uiarc-image-compare"
+  },
+  {
+    "id": "bencho-dynamic-island",
+    "name": "Bencho Dynamic Island",
+    "nameCn": "Bencho 灵动岛多态交互胶囊",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/dynamic-island",
+    "status": "collected",
+    "description": "支持在 Idle、航班、音乐播放与来电等多种态势下流畅形变的灵动胶囊。",
+    "tags": [
+      "Island",
+      "Micro-UX",
+      "Animation",
+      "Physics"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-magnetic-select",
+    "name": "Bencho Magnetic Select",
+    "nameCn": "Bencho 磁力吸附弹性选择器",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/magnetic-select",
+    "status": "collected",
+    "description": "拥有光标引力吸附与物理弹性胶囊跟随的次时代选项切换器。",
+    "tags": [
+      "Magnetic",
+      "Select",
+      "Physics",
+      "Tabs"
+    ],
+    "componentKey": "bencho-magnetic-select"
+  },
+  {
+    "id": "bencho-slosh-slider",
+    "name": "Bencho Slosh Slider",
+    "nameCn": "Bencho 物理惯性流体阻尼滑块",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/slosh-slider",
+    "status": "collected",
+    "description": "带有液体流动惯性与阻尼手感回弹的物理滑块控制器。",
+    "tags": [
+      "Slider",
+      "Physics",
+      "Inertia",
+      "Fluid"
+    ],
+    "componentKey": "bencho-slosh-slider"
+  },
+  {
+    "id": "bencho-liquid-toggle",
+    "name": "Bencho Liquid Toggle",
+    "nameCn": "Bencho 液态黏滞形变切换开关",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/liquid-toggle",
+    "status": "collected",
+    "description": "切换时产生果冻拉伸黏滞效应的拟真物理开关组件。",
+    "tags": [
+      "Toggle",
+      "Liquid",
+      "Switch",
+      "Motion"
+    ],
+    "componentKey": "bencho-liquid-toggle"
+  },
+  {
+    "id": "bencho-radial-menu",
+    "name": "Bencho Radial Arc Menu",
+    "nameCn": "Bencho 极客环形放射状展开菜单",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/radial-menu",
+    "status": "collected",
+    "description": "点击中心展开环形扇面子菜单，带有角度交错飞入动画与声音触觉反馈。",
+    "tags": [
+      "Menu",
+      "Radial",
+      "Interaction",
+      "Arc"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-wake-slider",
+    "name": "Bencho Wake Slider",
+    "nameCn": "Bencho 水波纹涟漪扩散滑块",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/wake-slider",
+    "status": "collected",
+    "description": "滑动游标时向两侧持续产生水波物理干涉微波纹的滑块容器。",
+    "tags": [
+      "Slider",
+      "Wave",
+      "Feedback",
+      "Ripple"
+    ],
+    "componentKey": "bencho-slosh-slider"
+  },
+  {
+    "id": "bencho-flight-island",
+    "name": "Bencho Flight Tracker Island",
+    "nameCn": "Bencho 航班实时追踪灵动岛",
+    "category": "block",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/flight-island",
+    "status": "collected",
+    "description": "展示起落地点、航行进度百分比与剩余时间的常驻监控灵动胶囊。",
+    "tags": [
+      "Flight",
+      "Island",
+      "Travel",
+      "Widget"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-music-island",
+    "name": "Bencho Music Player Island",
+    "nameCn": "Bencho 音频波形律动播放岛",
+    "category": "block",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/music-island",
+    "status": "collected",
+    "description": "包含实时跳跃频谱柱状波形与快捷暂停/切歌的桌面级灵动岛控件。",
+    "tags": [
+      "Music",
+      "Audio",
+      "Player",
+      "Island"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-dot-matrix-hover",
+    "name": "Bencho Magnetic Dot Grid",
+    "nameCn": "Bencho 磁场网格鼠标引力点阵",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/dot-matrix",
+    "status": "collected",
+    "description": "鼠标划过时周边点阵朝光标产生引力偏移与高亮泛光的交互背景。",
+    "tags": [
+      "Matrix",
+      "Grid",
+      "Attraction",
+      "Background"
+    ],
+    "componentKey": "bencho-magnetic-select"
+  },
+  {
+    "id": "bencho-elastic-button",
+    "name": "Bencho Elastic Squish Button",
+    "nameCn": "Bencho 果冻弹性形变按压按钮",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/elastic-button",
+    "status": "collected",
+    "description": "按压时向内凹陷形变、释放时带有阻尼多重反弹的弹性按键。",
+    "tags": [
+      "Button",
+      "Squish",
+      "Elastic",
+      "Physics"
+    ],
+    "componentKey": "bencho-liquid-toggle"
+  },
+  {
+    "id": "bencho-budget-slider",
+    "name": "Bencho Budget Slider",
+    "nameCn": "Bencho 预算分配惯性分段滑块",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/budget-slider",
+    "status": "collected",
+    "description": "专为财务与预算场景打造的带有关键数值刻度磁吸停靠的滑块。",
+    "tags": [
+      "Finance",
+      "Budget",
+      "Slider",
+      "Scale"
+    ],
+    "componentKey": "bencho-slosh-slider"
+  },
+  {
+    "id": "bencho-call-island",
+    "name": "Bencho Live Call Island",
+    "nameCn": "Bencho 通话与人声灵动胶囊",
+    "category": "block",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/call-island",
+    "status": "collected",
+    "description": "来电震动波纹提示、通话计时与麦克风静音切换的灵动岛区块。",
+    "tags": [
+      "Call",
+      "Communication",
+      "Island",
+      "Audio"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-magnetic-card",
+    "name": "Bencho 3D Magnetic Tilt Card",
+    "nameCn": "Bencho 鼠标磁吸倾斜高光卡片",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/magnetic-card",
+    "status": "collected",
+    "description": "基于视差算法在 3D 空间内随光标朝向动态俯仰的高奢卡片容器。",
+    "tags": [
+      "Card",
+      "3D",
+      "Tilt",
+      "Parallax"
+    ],
+    "componentKey": "bencho-magnetic-select"
+  },
+  {
+    "id": "bencho-smooth-counter",
+    "name": "Bencho Spring Number Counter",
+    "nameCn": "Bencho 物理弹簧数值步进器",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/counter",
+    "status": "collected",
+    "description": "滚轮翻转过渡动画与数字平滑变动的现代计数器控件。",
+    "tags": [
+      "Counter",
+      "Spring",
+      "Number",
+      "Stepper"
+    ],
+    "componentKey": "bencho-slosh-slider"
+  },
+  {
+    "id": "bencho-morph-dock",
+    "name": "Bencho Morphing Capsule Dock",
+    "nameCn": "Bencho 形变吸附交互胶囊坞",
+    "category": "component",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/components/morph-dock",
+    "status": "collected",
+    "description": "根据鼠标悬停热区动态形变展开子功能的浮动胶囊底栏。",
+    "tags": [
+      "Dock",
+      "Morph",
+      "Navigation",
+      "Capsule"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "bencho-pro-workspace",
+    "name": "Bencho Micro-interaction Workspace",
+    "nameCn": "Bencho 微交互试验台完整模板",
+    "category": "template",
+    "siteId": "bencho",
+    "siteName": "Bencho",
+    "siteUrl": "https://bencho.dev",
+    "originUrl": "https://bencho.dev/templates/workspace",
+    "status": "collected",
+    "description": "支持实时调节物理阻尼系数、引力半径与流动速度的可视化测试工作台。",
+    "tags": [
+      "Workspace",
+      "Template",
+      "Lab",
+      "Playground"
+    ],
+    "componentKey": "bencho-dynamic-island"
+  },
+  {
+    "id": "coss-particles-accordion",
+    "name": "Coss Particles Accordion",
+    "nameCn": "Coss Particles 工业风折叠手风琴",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/accordion",
+    "status": "collected",
+    "description": "基于 Base UI 无样式基元打造的极简工业风折叠面板，支持键盘导航与微渐变指示。",
+    "tags": [
+      "Accordion",
+      "BaseUI",
+      "Layout",
+      "Cal"
+    ],
+    "componentKey": "coss-particles-accordion"
+  },
+  {
+    "id": "coss-auth-flow",
+    "name": "Coss Auth Flow Card",
+    "nameCn": "Coss 复合通行密钥认证面板",
+    "category": "block",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/blocks/auth",
+    "status": "collected",
+    "description": "结合 Passkey 硬件密钥、Magic Link 邮件登录与社会化 SSO 的现代认证区块。",
+    "tags": [
+      "Auth",
+      "Passkey",
+      "Security",
+      "Block"
+    ],
+    "componentKey": "coss-auth-flow"
+  },
+  {
+    "id": "coss-filter-pills",
+    "name": "Coss Filter Pill Bar",
+    "nameCn": "Coss Base UI 防重过滤器标签胶囊",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/filter-pills",
+    "status": "collected",
+    "description": "支持多条件交并集过滤、快捷清空与计数指示的 Base UI 高阶标签栏。",
+    "tags": [
+      "Filter",
+      "Chips",
+      "BaseUI",
+      "Pill"
+    ],
+    "componentKey": "coss-filter-pills"
+  },
+  {
+    "id": "coss-stepper",
+    "name": "Coss Wizard Stepper",
+    "nameCn": "Coss 工业风多步骤向导指示器",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/stepper",
+    "status": "collected",
+    "description": "清晰展示完成度打勾状态、当前激活步与跳步校验的流程向导控件。",
+    "tags": [
+      "Stepper",
+      "Wizard",
+      "Flow",
+      "Progress"
+    ],
+    "componentKey": "coss-stepper"
+  },
+  {
+    "id": "coss-command-menu",
+    "name": "Coss Command Palette",
+    "nameCn": "Coss 极简工业风全局命令快捷浮层",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/command",
+    "status": "collected",
+    "description": "Cmd+K 呼出的低延迟键盘导航全局命令菜单，支持分组与快捷键绑定。",
+    "tags": [
+      "Command",
+      "Palette",
+      "Search",
+      "BaseUI"
+    ],
+    "componentKey": "coss-filter-pills"
+  },
+  {
+    "id": "coss-segmented-control",
+    "name": "Coss Segmented Control",
+    "nameCn": "Coss 无缝滑块分段控制器",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/segmented-control",
+    "status": "collected",
+    "description": "带有底层活动滑块动画与严格可访问性焦点的模式切换胶囊组。",
+    "tags": [
+      "Tabs",
+      "Segmented",
+      "BaseUI",
+      "Control"
+    ],
+    "componentKey": "coss-stepper"
+  },
+  {
+    "id": "coss-alert-banner",
+    "name": "Coss Particle Alert Banner",
+    "nameCn": "Coss 语义化警示高保真通告条",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/alert",
+    "status": "collected",
+    "description": "提供 Info、Success、Warning、Destructive 语义的纤细边框通告卡片。",
+    "tags": [
+      "Alert",
+      "Notification",
+      "Feedback",
+      "Banner"
+    ],
+    "componentKey": "coss-particles-accordion"
+  },
+  {
+    "id": "coss-dialog-modal",
+    "name": "Coss Accessible Modal Dialog",
+    "nameCn": "Coss 焦点隔离对话框浮层",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/dialog",
+    "status": "collected",
+    "description": "基于 Base UI 焦点陷阱与无障碍规范的现代模态框与操作确认窗。",
+    "tags": [
+      "Dialog",
+      "Modal",
+      "BaseUI",
+      "Overlay"
+    ],
+    "componentKey": "coss-auth-flow"
+  },
+  {
+    "id": "coss-slider-dual",
+    "name": "Coss Dual-Thumb Range Slider",
+    "nameCn": "Coss 双游标区间范围滑块",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/slider",
+    "status": "collected",
+    "description": "支持区间上下限同时调节的高精度双游标滑轨组件。",
+    "tags": [
+      "Slider",
+      "Range",
+      "Form",
+      "Dual"
+    ],
+    "componentKey": "coss-filter-pills"
+  },
+  {
+    "id": "coss-button-variants",
+    "name": "Coss Atoms Button Matrix",
+    "nameCn": "Coss Atoms 工业边框按钮矩阵",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/button",
+    "status": "collected",
+    "description": "包含 Primary、Secondary、Ghost 与 Destructive 多维变体的原子按钮集合。",
+    "tags": [
+      "Button",
+      "Variants",
+      "Atoms",
+      "Base"
+    ],
+    "componentKey": "coss-stepper"
+  },
+  {
+    "id": "coss-metric-block",
+    "name": "Coss Analytics Summary Block",
+    "nameCn": "Coss SaaS 业务指标分析区块",
+    "category": "block",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/blocks/metrics",
+    "status": "collected",
+    "description": "涵盖 MRR、净保留率与客单价等典型 SaaS 指标的高密度聚合面板。",
+    "tags": [
+      "Metrics",
+      "Analytics",
+      "Block",
+      "SaaS"
+    ],
+    "componentKey": "coss-filter-pills"
+  },
+  {
+    "id": "coss-avatar-group",
+    "name": "Coss Micro Avatar Group",
+    "nameCn": "Coss 在线状态微标头像堆叠",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/avatar",
+    "status": "collected",
+    "description": "负间距紧凑堆叠与悬停头像分离提示的团队成员头像编组。",
+    "tags": [
+      "Avatar",
+      "Team",
+      "User",
+      "Stack"
+    ],
+    "componentKey": "coss-particles-accordion"
+  },
+  {
+    "id": "coss-pricing-particle",
+    "name": "Coss Particles Pricing Table",
+    "nameCn": "Coss 阶梯定价与多周期切换表",
+    "category": "block",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/blocks/pricing",
+    "status": "collected",
+    "description": "支持按月/按年付 20% 折扣即时计算与功能点对勾对比的高转化定价区块。",
+    "tags": [
+      "Pricing",
+      "SaaS",
+      "Block",
+      "Table"
+    ],
+    "componentKey": "coss-auth-flow"
+  },
+  {
+    "id": "coss-tooltip-rich",
+    "name": "Coss Rich Content Popover Tooltip",
+    "nameCn": "Coss 图文富文本气泡浮层",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/tooltip",
+    "status": "collected",
+    "description": "带有箭头指向、快捷键指示与富文本图文排版的高性能悬停卡片。",
+    "tags": [
+      "Tooltip",
+      "Popover",
+      "Overlay",
+      "Content"
+    ],
+    "componentKey": "coss-particles-accordion"
+  },
+  {
+    "id": "coss-dashboard-template",
+    "name": "Coss Cal Modern Dashboard Template",
+    "nameCn": "Coss Cal 风格现代化极简仪表盘模板",
+    "category": "template",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/templates/dashboard",
+    "status": "collected",
+    "description": "源自 Cal.com 生产环境沉淀的现代化日程安排与排班中后台布局模板。",
+    "tags": [
+      "Cal",
+      "Dashboard",
+      "Template",
+      "App"
+    ],
+    "componentKey": "coss-auth-flow"
+  },
+  {
+    "id": "coss-dropdown-atomic",
+    "name": "Coss Nested Sub-Menu Dropdown",
+    "nameCn": "Coss 多级嵌套快捷键下拉菜单",
+    "category": "component",
+    "siteId": "coss",
+    "siteName": "Coss UI",
+    "siteUrl": "https://coss.com/ui",
+    "originUrl": "https://coss.com/ui/components/dropdown",
+    "status": "collected",
+    "description": "支持横向级联子菜单、图标对齐与快捷热键标签指示的企业级菜单。",
+    "tags": [
+      "Menu",
+      "Dropdown",
+      "BaseUI",
+      "Nested"
+    ],
+    "componentKey": "coss-stepper"
   }
 ];

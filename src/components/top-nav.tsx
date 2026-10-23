@@ -147,6 +147,17 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         descEn: "Character text reveals and continuous border trail animations",
         icon: <Sparkles className="h-4 w-4 text-amber-500" />,
       },
+      {
+        id: "bencho",
+        title: "Bencho",
+        href: "/sites/bencho",
+        originUrl: "https://bencho.dev",
+        badge: "物理微交互",
+        badgeEn: "Micro-UX",
+        desc: "Dynamic Island 灵动胶囊、Slosh 物理流体滑块与磁吸选择器",
+        descEn: "Dynamic Island, Slosh fluid slider, and magnetic selectors",
+        icon: <Compass className="h-4 w-4 text-cyan-500" />,
+      },
     ],
   },
   {
@@ -299,12 +310,23 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         id: "origin-ui",
         title: "Origin UI",
         href: "/sites/origin-ui",
-        originUrl: "https://coss.com/ui",
-        badge: "Base UI",
-        badgeEn: "Base UI",
-        desc: "基于新兴 Base UI 体系的防重 Chips 标签输入与步进器",
-        descEn: "Base UI-driven chips tag inputs, sliders, and steppers",
+        originUrl: "https://originui.com",
+        badge: "Radix扩展",
+        badgeEn: "Radix UI",
+        desc: "基于 Radix UI 与 Tailwind CSS 的精选高可访问性与极简工业风组件集合",
+        descEn: "Curated Radix UI extensions and accessible minimalist industrial components",
         icon: <Box className="h-4 w-4 text-blue-500" />,
+      },
+      {
+        id: "coss",
+        title: "Coss UI",
+        href: "/sites/coss",
+        originUrl: "https://coss.com/ui",
+        badge: "Base UI架构",
+        badgeEn: "Base UI",
+        desc: "Cal.com 开源设计系统，Base UI 无样式基元与 Particles 复合架构",
+        descEn: "Cal.com open-source design system on Base UI with Particles architecture",
+        icon: <Box className="h-4 w-4 text-indigo-500" />,
       },
       {
         id: "mynaui",
@@ -402,6 +424,17 @@ export const ECOSYSTEM_28_GROUPS: EcosystemGroup[] = [
         descEn: "Gradient area charts, stacked bar charts, and data visualization",
         icon: <BarChart2 className="h-4 w-4 text-indigo-500" />,
       },
+      {
+        id: "uiarc",
+        title: "Arc UI",
+        href: "/sites/uiarc",
+        originUrl: "https://uiarc.dev",
+        badge: "AI Agent组件",
+        badgeEn: "AI Agent",
+        desc: "专为 AI Agent (MCP) 打造的交互微动效组件与排程区块",
+        descEn: "AI Agent & MCP-ready animated interactive components and scheduling blocks",
+        icon: <Sparkles className="h-4 w-4 text-blue-500" />,
+      },
     ],
   },
 ];
@@ -413,6 +446,7 @@ export function TopNav() {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const totalSitesCount = ECOSYSTEM_28_GROUPS.reduce((acc, g) => acc + g.sites.length, 0);
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -537,7 +571,7 @@ export function TopNav() {
                         : "bg-muted text-foreground/80"
                     )}
                   >
-                    28
+                    {totalSitesCount}
                   </span>
                   <ChevronDown
                     className={cn(
@@ -726,7 +760,7 @@ export function TopNav() {
                   >
                     <span className="flex items-center gap-2">
                       <Sparkles className="h-4 w-4 text-amber-500" />
-                      <span>{isEn ? "Live Gallery (28 Sources)" : "全景画廊 (28 源站实机)"}</span>
+                      <span>{isEn ? `Live Gallery (${totalSitesCount} Sources)` : `全景画廊 (${totalSitesCount} 源站实机)`}</span>
                     </span>
                     <Badge
                       variant="outline"
@@ -782,7 +816,7 @@ export function TopNav() {
                 <div className="space-y-4 pt-3 border-t">
                   <h4 className="text-xs font-bold text-foreground flex items-center justify-between">
                     <span>{t("nav.allSourcesList")}</span>
-                    <Badge variant="secondary" className="font-mono text-[10px]">28</Badge>
+                    <Badge variant="secondary" className="font-mono text-[10px]">{totalSitesCount}</Badge>
                   </h4>
 
                   {ECOSYSTEM_28_GROUPS.map((grp) => (
